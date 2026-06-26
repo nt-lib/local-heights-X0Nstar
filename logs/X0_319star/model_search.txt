@@ -1,4 +1,4 @@
-Magma V2.29-4     Sat Jun 13 2026 01:50:54 on mordell  [Seed = 1629994613]
+Magma V2.28-3     Sun Jun 21 2026 22:29:33 on euler    [Seed = 3971934575]
 Type ? for help.  Type <Ctrl>-D to quit.
 
 Loading file "computations/X0_319star/model_search.m"
@@ -113,9 +113,9 @@ The new affine equation for the curve is:
 The map from the original curve to the new model in P^2 is:
 Mapping from: Crv: X319star to CrvPln: C_clean
 with equations : 
-$.1 + 2*$.3
-$.2 + 2*$.3
-$.4
+x[1] + 2*x[3]
+x[2] + 2*x[3]
+x[4]
 
 The images of the known rational points on the new model are:
 [ (2 : 3 : 1), (3 : 1 : 1), (1 : 1 : 0), (0 : 0 : 1), (13/8 : 17/8 : 1) ]
@@ -183,4 +183,4 @@ p = 89: 8 points
 p = 97: 11 points
 ========================================================================
 
-Total time: 0.930 seconds, Total memory usage: 160.22MB
+Total time: 2.810 seconds, Total memory usage: 64.12MB

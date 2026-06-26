@@ -1,4 +1,4 @@
-Magma V2.29-4     Sat Jun 13 2026 01:49:04 on mordell  [Seed = 3170525700]
+Magma V2.28-3     Sun Jun 21 2026 22:22:18 on euler    [Seed = 2613678207]
 Type ? for help.  Type <Ctrl>-D to quit.
 
 Loading file "computations/general/star_quotient_genus_table.m"
@@ -7512,4 +7512,4 @@ N = 714 violates the inequality, but there exists a non-trivial poly.
 true, true, true, true, true, true, false, true, true, true ]
 N = 665 violates the inequality, but there exists a non-trivial poly.
 
-Total time: 3438.789 seconds, Total memory usage: 32.09MB
+Total time: 10987.620 seconds, Total memory usage: 32.09MB

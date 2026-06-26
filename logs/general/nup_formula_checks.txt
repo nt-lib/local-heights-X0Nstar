@@ -1,4 +1,4 @@
-Magma V2.29-4     Sat Jun 13 2026 01:49:04 on mordell  [Seed = 2732882970]
+Magma V2.28-3     Sun Jun 21 2026 22:22:18 on euler    [Seed = 1613917060]
 Type ? for help.  Type <Ctrl>-D to quit.
 
 Loading file "computations/general/nup_formula_checks.m"
@@ -4504,4 +4504,4 @@ d = 997  brute = 7  pred = 7
 d = 1994  brute = 27  pred = 27
 All d | N with d>1 match.
 
-Total time: 6609.479 seconds, Total memory usage: 32.09MB
+Total time: 20218.750 seconds, Total memory usage: 64.12MB

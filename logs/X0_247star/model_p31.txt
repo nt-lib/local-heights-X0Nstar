@@ -1,4 +1,4 @@
-Magma V2.29-4     Sat Jun 13 2026 01:50:08 on mordell  [Seed = 1208915762]
+Magma V2.28-3     Sun Jun 21 2026 22:27:11 on euler    [Seed = 3733773264]
 Type ? for help.  Type <Ctrl>-D to quit.
 
 Loading file "computations/X0_247star/model_p31.m"
@@ -1020,4 +1020,4 @@ bad pts, fake pts, and bad disks:
 [* *]
 []
 
-Total time: 8021.279 seconds, Total memory usage: 543.47MB
+Total time: 22762.099 seconds, Total memory usage: 543.47MB

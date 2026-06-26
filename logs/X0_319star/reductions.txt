@@ -1,4 +1,4 @@
-Magma V2.29-4     Sat Jun 13 2026 01:50:57 on mordell  [Seed = 1966320222]
+Magma V2.28-3     Sun Jun 21 2026 22:30:30 on euler    [Seed = 2194704203]
 Type ? for help.  Type <Ctrl>-D to quit.
 
 Loading file "computations/X0_319star/reductions.m"
@@ -37,4 +37,4 @@ Rational point P = (1, 0) reduces to P_p = (1, 0)
   --> RESULT: The reduced point is SMOOTH.
 
 
-Total time: 0.280 seconds, Total memory usage: 32.09MB
+Total time: 1.090 seconds, Total memory usage: 32.09MB
