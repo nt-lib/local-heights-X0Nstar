@@ -1,11 +1,9 @@
-Magma V2.29-4     Sat Jun 13 2026 01:50:43 on mordell  [Seed = 1191286878]
+Magma V2.28-3     Sun Jun 21 2026 22:29:25 on euler    [Seed = 3169761591]
 Type ? for help.  Type <Ctrl>-D to quit.
 
 Loading file "computations/X0_319star/gonality.m"
 Mapping from: Crv: X to Curve over Rational Field defined by
-0 equal to ambient space
-Projective Space of dimension 1 over Rational Field
-Variables: $.1, $.2
+0
 with equations : 
 x - y + z
 y
@@ -13,4 +11,4 @@ y
 5*x^3*y^3 - 3*x^3*y^2 + 4*x^2*y^3 + x^3*y - 14*x^2*y^2 + x*y^3 + 6*x^2*y - 
     4*x*y^2 - x^2 + 8*x*y - 2*x - 2*y + 1
 
-Total time: 0.640 seconds, Total memory usage: 32.09MB
+Total time: 1.919 seconds, Total memory usage: 32.09MB

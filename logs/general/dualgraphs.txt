@@ -1,4 +1,4 @@
-Magma V2.29-4     Sat Jun 13 2026 01:49:04 on mordell  [Seed = 2177326905]
+Magma V2.28-3     Sun Jun 21 2026 22:22:18 on euler    [Seed = 1866294411]
 Type ? for help.  Type <Ctrl>-D to quit.
 
 Loading file "computations/general/dualgraphs.m"
@@ -18,8 +18,8 @@ Edge #2 of length 1.
 Edge #3 of length 1.
 q = 17:
 Edge #1 of length 1.
-Edge #2 of length 2.
-Edge #3 of length 1.
+Edge #2 of length 1.
+Edge #3 of length 2.
 
 N = 247:
 q = 13:
@@ -40,10 +40,10 @@ Edge #2 of length 1.
 Edge #3 of length 1.
 Edge #4 of length 1.
 q = 29:
-Edge #1 of length 2.
+Edge #1 of length 1.
 Edge #2 of length 1.
 Edge #3 of length 1.
-Edge #4 of length 1.
+Edge #4 of length 2.
 
 
-Total time: 3.509 seconds, Total memory usage: 32.09MB
+Total time: 11.980 seconds, Total memory usage: 32.09MB

@@ -1,11 +1,12 @@
-Magma V2.29-4     Sat Jun 13 2026 01:49:04 on mordell  [Seed = 2277595455]
+Magma V2.28-3     Sun Jun 21 2026 22:22:18 on euler    [Seed = 1748657036]
 Type ? for help.  Type <Ctrl>-D to quit.
 
 Loading file "computations/general/existence_of_relations.m"
 Loading "src/StarQuotientMeasures.m"
-Loaded precomputed class numbers from data/classnumbers_upto_1231230.dat.
+Loading "src/genera_and_bounds.m"
 N = 1: g = 0 is known
 N = 2: g = 0 is known
+Loaded precomputed class numbers from data/classnumbers_upto_1231230.dat.
 N = 3: g = 0 is known
 N = 5: g = 0 is known
 N = 6: g = 0 is known
@@ -630,4 +631,4 @@ N = 6510 has g = 39 <= 40 = B+1, but there exists a non-trivial poly.
 1230000
 Done!
 
-Total time: 118804.339 seconds, Total memory usage: 1223.66MB
+Total time: 246153.299 seconds, Total memory usage: 1213.78MB
