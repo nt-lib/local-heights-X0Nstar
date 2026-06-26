@@ -1,0 +1,47 @@
+Magma V2.29-4     Sat Jun 13 2026 01:50:44 on mordell  [Seed = 1562083907]
+Type ? for help.  Type <Ctrl>-D to quit.
+
+Loading file "computations/X0_319star/model.m"
+Loading "ModularCurvesX0plusG4-6/model_equation_finder.m"
+Loading "QCMod/qc_modular.m"
+Loading "QCMod/coleman.m"
+Loading "QCMod/auxpolys.m"
+Loading "QCMod/coho.m"
+Loading "QCMod/froblift.m"
+Loading "QCMod/reductions.m"
+Loading "QCMod/singleintegrals.m"
+Loading "QCMod/misc.m"
+Loading "QCMod/applications.m"
+Loading "QCMod/symplectic_basis.m"
+Loading "QCMod/hecke_correspondence.m"
+Loading "QCMod/hodge.m"
+Loading "QCMod/frobenius.m"
+Loading "QCMod/heights.m"
+Loading "QCMod/second_patch_quartic.m"
+Curve over Rational Field defined by
+W^2*X - W*X^2 + W^2*Z + W*Y*Z,
+W*X^2 - X^3 + W*X*Z + X*Y*Z,
+W*X*Y - X^2*Y + W*Y*Z + Y^2*Z,
+W*X*Z - X^2*Z + W*Z^2 + Y*Z^2,
+-2*W^3 + X^3 + 2*W^2*Y - 2*W*X*Y - 2*X^2*Y - W*Y^2 + X*Y^2 - W^2*Z + 2*W*Y*Z - 
+    X*Y*Z + Y*Z^2
+[ 61 ]
+ Computing a symplectic basis of H^1
+
+
+Magma: Internal error
+
+Please mail this entire run [*** WITH THE DETAILS BELOW ***]
+    to magma-bugs@maths.usyd.edu.au
+
+You can print the entire input by entering:
+%P
+
+Version: 2.29-4
+Machine type: avx2-linux
+Initial seed: 1562083907
+Time to this point: 363637
+Memory usage: 212554.34MB
+Segmentation fault
+
+Total time: 363637.049 seconds, Total memory usage: 212554.34MB

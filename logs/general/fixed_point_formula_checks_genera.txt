@@ -1,0 +1,6 @@
+Magma V2.29-4     Sat Jun 13 2026 01:49:04 on mordell  [Seed = 2429963816]
+Type ? for help.  Type <Ctrl>-D to quit.
+
+Loading file "computations/general/fixed_point_formula_checks_genera.m"
+
+Total time: 0.000 seconds, Total memory usage: 32.09MB

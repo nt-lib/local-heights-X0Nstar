@@ -1,0 +1,4507 @@
+Magma V2.29-4     Sat Jun 13 2026 01:49:04 on mordell  [Seed = 2732882970]
+Type ? for help.  Type <Ctrl>-D to quit.
+
+Loading file "computations/general/nup_formula_checks.m"
+ks2 = 1
+PredNu_pM(2,2145,39) = 0
+BruteNu_pM(2,2145,39) = 0
+==== M = 5 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 5  N = 10
+Divisors > 1: [ 2, 5, 10 ]
+d = 2  brute = 1  pred = 1
+d = 5  brute = 1  pred = 1
+d = 10  brute = 1  pred = 1
+All d | N with d>1 match.
+==== M = 7 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 7  N = 14
+Divisors > 1: [ 2, 7, 14 ]
+d = 2  brute = 0  pred = 0
+d = 7  brute = 0  pred = 0
+d = 14  brute = 2  pred = 2
+All d | N with d>1 match.
+==== M = 11 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 11  N = 22
+Divisors > 1: [ 2, 11, 22 ]
+d = 2  brute = 1  pred = 1
+d = 11  brute = 1  pred = 1
+d = 22  brute = 1  pred = 1
+All d | N with d>1 match.
+==== M = 13 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 13  N = 26
+Divisors > 1: [ 2, 13, 26 ]
+d = 2  brute = 1  pred = 1
+d = 13  brute = 1  pred = 1
+d = 26  brute = 3  pred = 3
+All d | N with d>1 match.
+==== M = 15 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 15  N = 30
+Divisors > 1: [ 2, 3, 5, 6, 10, 15, 30 ]
+d = 2  brute = 0  pred = 0
+d = 3  brute = 0  pred = 0
+d = 5  brute = 2  pred = 2
+d = 6  brute = 2  pred = 2
+d = 10  brute = 0  pred = 0
+d = 15  brute = 0  pred = 0
+d = 30  brute = 2  pred = 2
+All d | N with d>1 match.
+==== M = 17 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 17  N = 34
+Divisors > 1: [ 2, 17, 34 ]
+d = 2  brute = 2  pred = 2
+d = 17  brute = 2  pred = 2
+d = 34  brute = 2  pred = 2
+All d | N with d>1 match.
+==== M = 19 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 19  N = 38
+Divisors > 1: [ 2, 19, 38 ]
+d = 2  brute = 1  pred = 1
+d = 19  brute = 1  pred = 1
+d = 38  brute = 3  pred = 3
+All d | N with d>1 match.
+==== M = 21 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 21  N = 42
+Divisors > 1: [ 2, 3, 6, 7, 14, 21, 42 ]
+d = 2  brute = 0  pred = 0
+d = 3  brute = 2  pred = 2
+d = 6  brute = 2  pred = 2
+d = 7  brute = 0  pred = 0
+d = 14  brute = 4  pred = 4
+d = 21  brute = 2  pred = 2
+d = 42  brute = 2  pred = 2
+All d | N with d>1 match.
+==== M = 23 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 23  N = 46
+Divisors > 1: [ 2, 23, 46 ]
+d = 2  brute = 0  pred = 0
+d = 23  brute = 0  pred = 0
+d = 46  brute = 2  pred = 2
+All d | N with d>1 match.
+==== M = 29 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 29  N = 58
+Divisors > 1: [ 2, 29, 58 ]
+d = 2  brute = 1  pred = 1
+d = 29  brute = 3  pred = 3
+d = 58  brute = 1  pred = 1
+All d | N with d>1 match.
+==== M = 31 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 31  N = 62
+Divisors > 1: [ 2, 31, 62 ]
+d = 2  brute = 0  pred = 0
+d = 31  brute = 0  pred = 0
+d = 62  brute = 4  pred = 4
+All d | N with d>1 match.
+==== M = 33 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 33  N = 66
+Divisors > 1: [ 2, 3, 6, 11, 22, 33, 66 ]
+d = 2  brute = 2  pred = 2
+d = 3  brute = 0  pred = 0
+d = 6  brute = 2  pred = 2
+d = 11  brute = 2  pred = 2
+d = 22  brute = 0  pred = 0
+d = 33  brute = 2  pred = 2
+d = 66  brute = 4  pred = 4
+All d | N with d>1 match.
+==== M = 35 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 35  N = 70
+Divisors > 1: [ 2, 5, 7, 10, 14, 35, 70 ]
+d = 2  brute = 0  pred = 0
+d = 5  brute = 2  pred = 2
+d = 7  brute = 0  pred = 0
+d = 10  brute = 2  pred = 2
+d = 14  brute = 4  pred = 4
+d = 35  brute = 2  pred = 2
+d = 70  brute = 2  pred = 2
+All d | N with d>1 match.
+==== M = 37 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 37  N = 74
+Divisors > 1: [ 2, 37, 74 ]
+d = 2  brute = 1  pred = 1
+d = 37  brute = 1  pred = 1
+d = 74  brute = 5  pred = 5
+All d | N with d>1 match.
+==== M = 39 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 39  N = 78
+Divisors > 1: [ 2, 3, 6, 13, 26, 39, 78 ]
+d = 2  brute = 0  pred = 0
+d = 3  brute = 2  pred = 2
+d = 6  brute = 0  pred = 0
+d = 13  brute = 0  pred = 0
+d = 26  brute = 6  pred = 6
+d = 39  brute = 0  pred = 0
+d = 78  brute = 2  pred = 2
+All d | N with d>1 match.
+==== M = 41 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 41  N = 82
+Divisors > 1: [ 2, 41, 82 ]
+d = 2  brute = 2  pred = 2
+d = 41  brute = 4  pred = 4
+d = 82  brute = 2  pred = 2
+All d | N with d>1 match.
+==== M = 43 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 43  N = 86
+Divisors > 1: [ 2, 43, 86 ]
+d = 2  brute = 1  pred = 1
+d = 43  brute = 1  pred = 1
+d = 86  brute = 5  pred = 5
+All d | N with d>1 match.
+==== M = 47 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 47  N = 94
+Divisors > 1: [ 2, 47, 94 ]
+d = 2  brute = 0  pred = 0
+d = 47  brute = 0  pred = 0
+d = 94  brute = 4  pred = 4
+All d | N with d>1 match.
+==== M = 51 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 51  N = 102
+Divisors > 1: [ 2, 3, 6, 17, 34, 51, 102 ]
+d = 2  brute = 2  pred = 2
+d = 3  brute = 0  pred = 0
+d = 6  brute = 0  pred = 0
+d = 17  brute = 4  pred = 4
+d = 34  brute = 0  pred = 0
+d = 51  brute = 2  pred = 2
+d = 102  brute = 2  pred = 2
+All d | N with d>1 match.
+==== M = 53 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 53  N = 106
+Divisors > 1: [ 2, 53, 106 ]
+d = 2  brute = 1  pred = 1
+d = 53  brute = 3  pred = 3
+d = 106  brute = 3  pred = 3
+All d | N with d>1 match.
+==== M = 55 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 55  N = 110
+Divisors > 1: [ 2, 5, 10, 11, 22, 55, 110 ]
+d = 2  brute = 0  pred = 0
+d = 5  brute = 0  pred = 0
+d = 10  brute = 2  pred = 2
+d = 11  brute = 2  pred = 2
+d = 22  brute = 0  pred = 0
+d = 55  brute = 0  pred = 0
+d = 110  brute = 6  pred = 6
+All d | N with d>1 match.
+==== M = 57 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 57  N = 114
+Divisors > 1: [ 2, 3, 6, 19, 38, 57, 114 ]
+d = 2  brute = 2  pred = 2
+d = 3  brute = 2  pred = 2
+d = 6  brute = 0  pred = 0
+d = 19  brute = 0  pred = 0
+d = 38  brute = 6  pred = 6
+d = 57  brute = 2  pred = 2
+d = 114  brute = 4  pred = 4
+All d | N with d>1 match.
+==== M = 59 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 59  N = 118
+Divisors > 1: [ 2, 59, 118 ]
+d = 2  brute = 1  pred = 1
+d = 59  brute = 3  pred = 3
+d = 118  brute = 3  pred = 3
+All d | N with d>1 match.
+==== M = 61 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 61  N = 122
+Divisors > 1: [ 2, 61, 122 ]
+d = 2  brute = 1  pred = 1
+d = 61  brute = 3  pred = 3
+d = 122  brute = 5  pred = 5
+All d | N with d>1 match.
+==== M = 65 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 65  N = 130
+Divisors > 1: [ 2, 5, 10, 13, 26, 65, 130 ]
+d = 2  brute = 2  pred = 2
+d = 5  brute = 0  pred = 0
+d = 10  brute = 2  pred = 2
+d = 13  brute = 0  pred = 0
+d = 26  brute = 6  pred = 6
+d = 65  brute = 4  pred = 4
+d = 130  brute = 2  pred = 2
+All d | N with d>1 match.
+==== M = 67 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 67  N = 134
+Divisors > 1: [ 2, 67, 134 ]
+d = 2  brute = 1  pred = 1
+d = 67  brute = 1  pred = 1
+d = 134  brute = 7  pred = 7
+All d | N with d>1 match.
+==== M = 69 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 69  N = 138
+Divisors > 1: [ 2, 3, 6, 23, 46, 69, 138 ]
+d = 2  brute = 0  pred = 0
+d = 3  brute = 0  pred = 0
+d = 6  brute = 0  pred = 0
+d = 23  brute = 0  pred = 0
+d = 46  brute = 0  pred = 0
+d = 69  brute = 4  pred = 4
+d = 138  brute = 4  pred = 4
+All d | N with d>1 match.
+==== M = 71 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 71  N = 142
+Divisors > 1: [ 2, 71, 142 ]
+d = 2  brute = 0  pred = 0
+d = 71  brute = 0  pred = 0
+d = 142  brute = 2  pred = 2
+All d | N with d>1 match.
+==== M = 73 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 73  N = 146
+Divisors > 1: [ 2, 73, 146 ]
+d = 2  brute = 2  pred = 2
+d = 73  brute = 2  pred = 2
+d = 146  brute = 8  pred = 8
+All d | N with d>1 match.
+==== M = 77 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 77  N = 154
+Divisors > 1: [ 2, 7, 11, 14, 22, 77, 154 ]
+d = 2  brute = 0  pred = 0
+d = 7  brute = 0  pred = 0
+d = 11  brute = 0  pred = 0
+d = 14  brute = 0  pred = 0
+d = 22  brute = 0  pred = 0
+d = 77  brute = 4  pred = 4
+d = 154  brute = 4  pred = 4
+All d | N with d>1 match.
+==== M = 79 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 79  N = 158
+Divisors > 1: [ 2, 79, 158 ]
+d = 2  brute = 0  pred = 0
+d = 79  brute = 0  pred = 0
+d = 158  brute = 4  pred = 4
+All d | N with d>1 match.
+==== M = 83 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 83  N = 166
+Divisors > 1: [ 2, 83, 166 ]
+d = 2  brute = 1  pred = 1
+d = 83  brute = 3  pred = 3
+d = 166  brute = 5  pred = 5
+All d | N with d>1 match.
+==== M = 85 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 85  N = 170
+Divisors > 1: [ 2, 5, 10, 17, 34, 85, 170 ]
+d = 2  brute = 2  pred = 2
+d = 5  brute = 0  pred = 0
+d = 10  brute = 0  pred = 0
+d = 17  brute = 0  pred = 0
+d = 34  brute = 4  pred = 4
+d = 85  brute = 2  pred = 2
+d = 170  brute = 6  pred = 6
+All d | N with d>1 match.
+==== M = 87 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 87  N = 174
+Divisors > 1: [ 2, 3, 6, 29, 58, 87, 174 ]
+d = 2  brute = 0  pred = 0
+d = 3  brute = 0  pred = 0
+d = 6  brute = 2  pred = 2
+d = 29  brute = 6  pred = 6
+d = 58  brute = 0  pred = 0
+d = 87  brute = 0  pred = 0
+d = 174  brute = 6  pred = 6
+All d | N with d>1 match.
+==== M = 89 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 89  N = 178
+Divisors > 1: [ 2, 89, 178 ]
+d = 2  brute = 2  pred = 2
+d = 89  brute = 6  pred = 6
+d = 178  brute = 4  pred = 4
+All d | N with d>1 match.
+==== M = 91 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 91  N = 182
+Divisors > 1: [ 2, 7, 13, 14, 26, 91, 182 ]
+d = 2  brute = 0  pred = 0
+d = 7  brute = 0  pred = 0
+d = 13  brute = 2  pred = 2
+d = 14  brute = 4  pred = 4
+d = 26  brute = 6  pred = 6
+d = 91  brute = 2  pred = 2
+d = 182  brute = 6  pred = 6
+All d | N with d>1 match.
+==== M = 93 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 93  N = 186
+Divisors > 1: [ 2, 3, 6, 31, 62, 93, 186 ]
+d = 2  brute = 0  pred = 0
+d = 3  brute = 2  pred = 2
+d = 6  brute = 2  pred = 2
+d = 31  brute = 0  pred = 0
+d = 62  brute = 8  pred = 8
+d = 93  brute = 2  pred = 2
+d = 186  brute = 6  pred = 6
+All d | N with d>1 match.
+==== M = 95 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 95  N = 190
+Divisors > 1: [ 2, 5, 10, 19, 38, 95, 190 ]
+d = 2  brute = 0  pred = 0
+d = 5  brute = 0  pred = 0
+d = 10  brute = 2  pred = 2
+d = 19  brute = 2  pred = 2
+d = 38  brute = 0  pred = 0
+d = 95  brute = 0  pred = 0
+d = 190  brute = 2  pred = 2
+All d | N with d>1 match.
+==== M = 97 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 97  N = 194
+Divisors > 1: [ 2, 97, 194 ]
+d = 2  brute = 2  pred = 2
+d = 97  brute = 2  pred = 2
+d = 194  brute = 10  pred = 10
+All d | N with d>1 match.
+==== M = 101 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 101  N = 202
+Divisors > 1: [ 2, 101, 202 ]
+d = 2  brute = 1  pred = 1
+d = 101  brute = 7  pred = 7
+d = 202  brute = 3  pred = 3
+All d | N with d>1 match.
+==== M = 103 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 103  N = 206
+Divisors > 1: [ 2, 103, 206 ]
+d = 2  brute = 0  pred = 0
+d = 103  brute = 0  pred = 0
+d = 206  brute = 10  pred = 10
+All d | N with d>1 match.
+==== M = 105 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 105  N = 210
+Divisors > 1: [ 2, 3, 5, 6, 7, 10, 14, 15, 21, 30, 35, 42, 70, 105, 210 ]
+d = 2  brute = 0  pred = 0
+d = 3  brute = 0  pred = 0
+d = 5  brute = 4  pred = 4
+d = 6  brute = 4  pred = 4
+d = 7  brute = 0  pred = 0
+d = 10  brute = 0  pred = 0
+d = 14  brute = 8  pred = 8
+d = 15  brute = 0  pred = 0
+d = 21  brute = 4  pred = 4
+d = 30  brute = 0  pred = 0
+d = 35  brute = 4  pred = 4
+d = 42  brute = 0  pred = 0
+d = 70  brute = 0  pred = 0
+d = 105  brute = 4  pred = 4
+d = 210  brute = 4  pred = 4
+All d | N with d>1 match.
+==== M = 107 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 107  N = 214
+Divisors > 1: [ 2, 107, 214 ]
+d = 2  brute = 1  pred = 1
+d = 107  brute = 3  pred = 3
+d = 214  brute = 3  pred = 3
+All d | N with d>1 match.
+==== M = 109 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 109  N = 218
+Divisors > 1: [ 2, 109, 218 ]
+d = 2  brute = 1  pred = 1
+d = 109  brute = 3  pred = 3
+d = 218  brute = 5  pred = 5
+All d | N with d>1 match.
+==== M = 111 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 111  N = 222
+Divisors > 1: [ 2, 3, 6, 37, 74, 111, 222 ]
+d = 2  brute = 0  pred = 0
+d = 3  brute = 2  pred = 2
+d = 6  brute = 0  pred = 0
+d = 37  brute = 0  pred = 0
+d = 74  brute = 10  pred = 10
+d = 111  brute = 0  pred = 0
+d = 222  brute = 6  pred = 6
+All d | N with d>1 match.
+==== M = 113 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 113  N = 226
+Divisors > 1: [ 2, 113, 226 ]
+d = 2  brute = 2  pred = 2
+d = 113  brute = 4  pred = 4
+d = 226  brute = 4  pred = 4
+All d | N with d>1 match.
+==== M = 115 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 115  N = 230
+Divisors > 1: [ 2, 5, 10, 23, 46, 115, 230 ]
+d = 2  brute = 0  pred = 0
+d = 5  brute = 2  pred = 2
+d = 10  brute = 2  pred = 2
+d = 23  brute = 0  pred = 0
+d = 46  brute = 4  pred = 4
+d = 115  brute = 2  pred = 2
+d = 230  brute = 10  pred = 10
+All d | N with d>1 match.
+==== M = 119 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 119  N = 238
+Divisors > 1: [ 2, 7, 14, 17, 34, 119, 238 ]
+d = 2  brute = 0  pred = 0
+d = 7  brute = 0  pred = 0
+d = 14  brute = 0  pred = 0
+d = 17  brute = 4  pred = 4
+d = 34  brute = 4  pred = 4
+d = 119  brute = 0  pred = 0
+d = 238  brute = 4  pred = 4
+All d | N with d>1 match.
+==== M = 123 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 123  N = 246
+Divisors > 1: [ 2, 3, 6, 41, 82, 123, 246 ]
+d = 2  brute = 2  pred = 2
+d = 3  brute = 0  pred = 0
+d = 6  brute = 0  pred = 0
+d = 41  brute = 8  pred = 8
+d = 82  brute = 0  pred = 0
+d = 123  brute = 2  pred = 2
+d = 246  brute = 6  pred = 6
+All d | N with d>1 match.
+==== M = 127 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 127  N = 254
+Divisors > 1: [ 2, 127, 254 ]
+d = 2  brute = 0  pred = 0
+d = 127  brute = 0  pred = 0
+d = 254  brute = 8  pred = 8
+All d | N with d>1 match.
+==== M = 129 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 129  N = 258
+Divisors > 1: [ 2, 3, 6, 43, 86, 129, 258 ]
+d = 2  brute = 2  pred = 2
+d = 3  brute = 2  pred = 2
+d = 6  brute = 0  pred = 0
+d = 43  brute = 0  pred = 0
+d = 86  brute = 10  pred = 10
+d = 129  brute = 6  pred = 6
+d = 258  brute = 4  pred = 4
+All d | N with d>1 match.
+==== M = 131 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 131  N = 262
+Divisors > 1: [ 2, 131, 262 ]
+d = 2  brute = 1  pred = 1
+d = 131  brute = 5  pred = 5
+d = 262  brute = 3  pred = 3
+All d | N with d>1 match.
+==== M = 133 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 133  N = 266
+Divisors > 1: [ 2, 7, 14, 19, 38, 133, 266 ]
+d = 2  brute = 0  pred = 0
+d = 7  brute = 0  pred = 0
+d = 14  brute = 4  pred = 4
+d = 19  brute = 2  pred = 2
+d = 38  brute = 6  pred = 6
+d = 133  brute = 2  pred = 2
+d = 266  brute = 10  pred = 10
+All d | N with d>1 match.
+==== M = 137 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 137  N = 274
+Divisors > 1: [ 2, 137, 274 ]
+d = 2  brute = 2  pred = 2
+d = 137  brute = 4  pred = 4
+d = 274  brute = 6  pred = 6
+All d | N with d>1 match.
+==== M = 139 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 139  N = 278
+Divisors > 1: [ 2, 139, 278 ]
+d = 2  brute = 1  pred = 1
+d = 139  brute = 3  pred = 3
+d = 278  brute = 7  pred = 7
+All d | N with d>1 match.
+==== M = 141 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 141  N = 282
+Divisors > 1: [ 2, 3, 6, 47, 94, 141, 282 ]
+d = 2  brute = 0  pred = 0
+d = 3  brute = 0  pred = 0
+d = 6  brute = 0  pred = 0
+d = 47  brute = 0  pred = 0
+d = 94  brute = 0  pred = 0
+d = 141  brute = 4  pred = 4
+d = 282  brute = 4  pred = 4
+All d | N with d>1 match.
+==== M = 143 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 143  N = 286
+Divisors > 1: [ 2, 11, 13, 22, 26, 143, 286 ]
+d = 2  brute = 0  pred = 0
+d = 11  brute = 0  pred = 0
+d = 13  brute = 2  pred = 2
+d = 22  brute = 2  pred = 2
+d = 26  brute = 0  pred = 0
+d = 143  brute = 0  pred = 0
+d = 286  brute = 6  pred = 6
+All d | N with d>1 match.
+==== M = 145 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 145  N = 290
+Divisors > 1: [ 2, 5, 10, 29, 58, 145, 290 ]
+d = 2  brute = 2  pred = 2
+d = 5  brute = 2  pred = 2
+d = 10  brute = 0  pred = 0
+d = 29  brute = 6  pred = 6
+d = 58  brute = 0  pred = 0
+d = 145  brute = 4  pred = 4
+d = 290  brute = 10  pred = 10
+All d | N with d>1 match.
+==== M = 149 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 149  N = 298
+Divisors > 1: [ 2, 149, 298 ]
+d = 2  brute = 1  pred = 1
+d = 149  brute = 7  pred = 7
+d = 298  brute = 3  pred = 3
+All d | N with d>1 match.
+==== M = 151 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 151  N = 302
+Divisors > 1: [ 2, 151, 302 ]
+d = 2  brute = 0  pred = 0
+d = 151  brute = 0  pred = 0
+d = 302  brute = 6  pred = 6
+All d | N with d>1 match.
+==== M = 155 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 155  N = 310
+Divisors > 1: [ 2, 5, 10, 31, 62, 155, 310 ]
+d = 2  brute = 0  pred = 0
+d = 5  brute = 0  pred = 0
+d = 10  brute = 0  pred = 0
+d = 31  brute = 0  pred = 0
+d = 62  brute = 0  pred = 0
+d = 155  brute = 4  pred = 4
+d = 310  brute = 4  pred = 4
+All d | N with d>1 match.
+==== M = 157 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 157  N = 314
+Divisors > 1: [ 2, 157, 314 ]
+d = 2  brute = 1  pred = 1
+d = 157  brute = 3  pred = 3
+d = 314  brute = 13  pred = 13
+All d | N with d>1 match.
+==== M = 159 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 159  N = 318
+Divisors > 1: [ 2, 3, 6, 53, 106, 159, 318 ]
+d = 2  brute = 0  pred = 0
+d = 3  brute = 0  pred = 0
+d = 6  brute = 2  pred = 2
+d = 53  brute = 6  pred = 6
+d = 106  brute = 0  pred = 0
+d = 159  brute = 0  pred = 0
+d = 318  brute = 6  pred = 6
+All d | N with d>1 match.
+==== M = 161 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 161  N = 322
+Divisors > 1: [ 2, 7, 14, 23, 46, 161, 322 ]
+d = 2  brute = 0  pred = 0
+d = 7  brute = 0  pred = 0
+d = 14  brute = 4  pred = 4
+d = 23  brute = 0  pred = 0
+d = 46  brute = 0  pred = 0
+d = 161  brute = 8  pred = 8
+d = 322  brute = 4  pred = 4
+All d | N with d>1 match.
+==== M = 163 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 163  N = 326
+Divisors > 1: [ 2, 163, 326 ]
+d = 2  brute = 1  pred = 1
+d = 163  brute = 1  pred = 1
+d = 326  brute = 11  pred = 11
+All d | N with d>1 match.
+==== M = 165 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 165  N = 330
+Divisors > 1: [ 2, 3, 5, 6, 10, 11, 15, 22, 30, 33, 55, 66, 110, 165, 330 ]
+d = 2  brute = 0  pred = 0
+d = 3  brute = 0  pred = 0
+d = 5  brute = 0  pred = 0
+d = 6  brute = 4  pred = 4
+d = 10  brute = 0  pred = 0
+d = 11  brute = 4  pred = 4
+d = 15  brute = 0  pred = 0
+d = 22  brute = 0  pred = 0
+d = 30  brute = 4  pred = 4
+d = 33  brute = 0  pred = 0
+d = 55  brute = 0  pred = 0
+d = 66  brute = 8  pred = 8
+d = 110  brute = 12  pred = 12
+d = 165  brute = 4  pred = 4
+d = 330  brute = 4  pred = 4
+All d | N with d>1 match.
+==== M = 167 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 167  N = 334
+Divisors > 1: [ 2, 167, 334 ]
+d = 2  brute = 0  pred = 0
+d = 167  brute = 0  pred = 0
+d = 334  brute = 6  pred = 6
+All d | N with d>1 match.
+==== M = 173 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 173  N = 346
+Divisors > 1: [ 2, 173, 346 ]
+d = 2  brute = 1  pred = 1
+d = 173  brute = 7  pred = 7
+d = 346  brute = 5  pred = 5
+All d | N with d>1 match.
+==== M = 177 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 177  N = 354
+Divisors > 1: [ 2, 3, 6, 59, 118, 177, 354 ]
+d = 2  brute = 2  pred = 2
+d = 3  brute = 0  pred = 0
+d = 6  brute = 2  pred = 2
+d = 59  brute = 6  pred = 6
+d = 118  brute = 0  pred = 0
+d = 177  brute = 2  pred = 2
+d = 354  brute = 8  pred = 8
+All d | N with d>1 match.
+==== M = 179 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 179  N = 358
+Divisors > 1: [ 2, 179, 358 ]
+d = 2  brute = 1  pred = 1
+d = 179  brute = 5  pred = 5
+d = 358  brute = 3  pred = 3
+All d | N with d>1 match.
+==== M = 181 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 181  N = 362
+Divisors > 1: [ 2, 181, 362 ]
+d = 2  brute = 1  pred = 1
+d = 181  brute = 5  pred = 5
+d = 362  brute = 9  pred = 9
+All d | N with d>1 match.
+==== M = 183 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 183  N = 366
+Divisors > 1: [ 2, 3, 6, 61, 122, 183, 366 ]
+d = 2  brute = 0  pred = 0
+d = 3  brute = 2  pred = 2
+d = 6  brute = 0  pred = 0
+d = 61  brute = 0  pred = 0
+d = 122  brute = 10  pred = 10
+d = 183  brute = 0  pred = 0
+d = 366  brute = 6  pred = 6
+All d | N with d>1 match.
+==== M = 185 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 185  N = 370
+Divisors > 1: [ 2, 5, 10, 37, 74, 185, 370 ]
+d = 2  brute = 2  pred = 2
+d = 5  brute = 0  pred = 0
+d = 10  brute = 2  pred = 2
+d = 37  brute = 0  pred = 0
+d = 74  brute = 10  pred = 10
+d = 185  brute = 8  pred = 8
+d = 370  brute = 6  pred = 6
+All d | N with d>1 match.
+==== M = 187 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 187  N = 374
+Divisors > 1: [ 2, 11, 17, 22, 34, 187, 374 ]
+d = 2  brute = 2  pred = 2
+d = 11  brute = 0  pred = 0
+d = 17  brute = 4  pred = 4
+d = 22  brute = 0  pred = 0
+d = 34  brute = 0  pred = 0
+d = 187  brute = 2  pred = 2
+d = 374  brute = 14  pred = 14
+All d | N with d>1 match.
+==== M = 191 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 191  N = 382
+Divisors > 1: [ 2, 191, 382 ]
+d = 2  brute = 0  pred = 0
+d = 191  brute = 0  pred = 0
+d = 382  brute = 4  pred = 4
+All d | N with d>1 match.
+==== M = 193 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 193  N = 386
+Divisors > 1: [ 2, 193, 386 ]
+d = 2  brute = 2  pred = 2
+d = 193  brute = 2  pred = 2
+d = 386  brute = 10  pred = 10
+All d | N with d>1 match.
+==== M = 195 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 195  N = 390
+Divisors > 1: [ 2, 3, 5, 6, 10, 13, 15, 26, 30, 39, 65, 78, 130, 195, 390 ]
+d = 2  brute = 0  pred = 0
+d = 3  brute = 0  pred = 0
+d = 5  brute = 0  pred = 0
+d = 6  brute = 0  pred = 0
+d = 10  brute = 0  pred = 0
+d = 13  brute = 0  pred = 0
+d = 15  brute = 0  pred = 0
+d = 26  brute = 12  pred = 12
+d = 30  brute = 4  pred = 4
+d = 39  brute = 0  pred = 0
+d = 65  brute = 8  pred = 8
+d = 78  brute = 0  pred = 0
+d = 130  brute = 0  pred = 0
+d = 195  brute = 4  pred = 4
+d = 390  brute = 8  pred = 8
+All d | N with d>1 match.
+==== M = 197 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 197  N = 394
+Divisors > 1: [ 2, 197, 394 ]
+d = 2  brute = 1  pred = 1
+d = 197  brute = 5  pred = 5
+d = 394  brute = 5  pred = 5
+All d | N with d>1 match.
+==== M = 199 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 199  N = 398
+Divisors > 1: [ 2, 199, 398 ]
+d = 2  brute = 0  pred = 0
+d = 199  brute = 0  pred = 0
+d = 398  brute = 10  pred = 10
+All d | N with d>1 match.
+==== M = 201 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 201  N = 402
+Divisors > 1: [ 2, 3, 6, 67, 134, 201, 402 ]
+d = 2  brute = 2  pred = 2
+d = 3  brute = 2  pred = 2
+d = 6  brute = 0  pred = 0
+d = 67  brute = 0  pred = 0
+d = 134  brute = 14  pred = 14
+d = 201  brute = 6  pred = 6
+d = 402  brute = 8  pred = 8
+All d | N with d>1 match.
+==== M = 203 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 203  N = 406
+Divisors > 1: [ 2, 7, 14, 29, 58, 203, 406 ]
+d = 2  brute = 0  pred = 0
+d = 7  brute = 0  pred = 0
+d = 14  brute = 0  pred = 0
+d = 29  brute = 0  pred = 0
+d = 58  brute = 0  pred = 0
+d = 203  brute = 4  pred = 4
+d = 406  brute = 8  pred = 8
+All d | N with d>1 match.
+==== M = 205 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 205  N = 410
+Divisors > 1: [ 2, 5, 10, 41, 82, 205, 410 ]
+d = 2  brute = 2  pred = 2
+d = 5  brute = 2  pred = 2
+d = 10  brute = 2  pred = 2
+d = 41  brute = 8  pred = 8
+d = 82  brute = 0  pred = 0
+d = 205  brute = 4  pred = 4
+d = 410  brute = 8  pred = 8
+All d | N with d>1 match.
+==== M = 209 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 209  N = 418
+Divisors > 1: [ 2, 11, 19, 22, 38, 209, 418 ]
+d = 2  brute = 2  pred = 2
+d = 11  brute = 0  pred = 0
+d = 19  brute = 2  pred = 2
+d = 22  brute = 2  pred = 2
+d = 38  brute = 0  pred = 0
+d = 209  brute = 10  pred = 10
+d = 418  brute = 4  pred = 4
+All d | N with d>1 match.
+==== M = 211 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 211  N = 422
+Divisors > 1: [ 2, 211, 422 ]
+d = 2  brute = 1  pred = 1
+d = 211  brute = 3  pred = 3
+d = 422  brute = 5  pred = 5
+All d | N with d>1 match.
+==== M = 213 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 213  N = 426
+Divisors > 1: [ 2, 3, 6, 71, 142, 213, 426 ]
+d = 2  brute = 0  pred = 0
+d = 3  brute = 0  pred = 0
+d = 6  brute = 0  pred = 0
+d = 71  brute = 0  pred = 0
+d = 142  brute = 0  pred = 0
+d = 213  brute = 4  pred = 4
+d = 426  brute = 12  pred = 12
+All d | N with d>1 match.
+==== M = 215 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 215  N = 430
+Divisors > 1: [ 2, 5, 10, 43, 86, 215, 430 ]
+d = 2  brute = 0  pred = 0
+d = 5  brute = 2  pred = 2
+d = 10  brute = 0  pred = 0
+d = 43  brute = 0  pred = 0
+d = 86  brute = 10  pred = 10
+d = 215  brute = 0  pred = 0
+d = 430  brute = 6  pred = 6
+All d | N with d>1 match.
+==== M = 217 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 217  N = 434
+Divisors > 1: [ 2, 7, 14, 31, 62, 217, 434 ]
+d = 2  brute = 0  pred = 0
+d = 7  brute = 0  pred = 0
+d = 14  brute = 0  pred = 0
+d = 31  brute = 0  pred = 0
+d = 62  brute = 8  pred = 8
+d = 217  brute = 4  pred = 4
+d = 434  brute = 12  pred = 12
+All d | N with d>1 match.
+==== M = 219 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 219  N = 438
+Divisors > 1: [ 2, 3, 6, 73, 146, 219, 438 ]
+d = 2  brute = 2  pred = 2
+d = 3  brute = 2  pred = 2
+d = 6  brute = 2  pred = 2
+d = 73  brute = 0  pred = 0
+d = 146  brute = 16  pred = 16
+d = 219  brute = 4  pred = 4
+d = 438  brute = 4  pred = 4
+All d | N with d>1 match.
+==== M = 221 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 221  N = 442
+Divisors > 1: [ 2, 13, 17, 26, 34, 221, 442 ]
+d = 2  brute = 2  pred = 2
+d = 13  brute = 2  pred = 2
+d = 17  brute = 4  pred = 4
+d = 26  brute = 6  pred = 6
+d = 34  brute = 0  pred = 0
+d = 221  brute = 8  pred = 8
+d = 442  brute = 4  pred = 4
+All d | N with d>1 match.
+==== M = 223 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 223  N = 446
+Divisors > 1: [ 2, 223, 446 ]
+d = 2  brute = 0  pred = 0
+d = 223  brute = 0  pred = 0
+d = 446  brute = 16  pred = 16
+All d | N with d>1 match.
+==== M = 227 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 227  N = 454
+Divisors > 1: [ 2, 227, 454 ]
+d = 2  brute = 1  pred = 1
+d = 227  brute = 5  pred = 5
+d = 454  brute = 7  pred = 7
+All d | N with d>1 match.
+==== M = 229 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 229  N = 458
+Divisors > 1: [ 2, 229, 458 ]
+d = 2  brute = 1  pred = 1
+d = 229  brute = 5  pred = 5
+d = 458  brute = 13  pred = 13
+All d | N with d>1 match.
+==== M = 231 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 231  N = 462
+Divisors > 1: [ 2, 3, 6, 7, 11, 14, 21, 22, 33, 42, 66, 77, 154, 231, 462 ]
+d = 2  brute = 0  pred = 0
+d = 3  brute = 0  pred = 0
+d = 6  brute = 4  pred = 4
+d = 7  brute = 0  pred = 0
+d = 11  brute = 0  pred = 0
+d = 14  brute = 0  pred = 0
+d = 21  brute = 4  pred = 4
+d = 22  brute = 0  pred = 0
+d = 33  brute = 4  pred = 4
+d = 42  brute = 0  pred = 0
+d = 66  brute = 8  pred = 8
+d = 77  brute = 8  pred = 8
+d = 154  brute = 0  pred = 0
+d = 231  brute = 0  pred = 0
+d = 462  brute = 4  pred = 4
+All d | N with d>1 match.
+==== M = 233 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 233  N = 466
+Divisors > 1: [ 2, 233, 466 ]
+d = 2  brute = 2  pred = 2
+d = 233  brute = 6  pred = 6
+d = 466  brute = 4  pred = 4
+All d | N with d>1 match.
+==== M = 235 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 235  N = 470
+Divisors > 1: [ 2, 5, 10, 47, 94, 235, 470 ]
+d = 2  brute = 0  pred = 0
+d = 5  brute = 2  pred = 2
+d = 10  brute = 2  pred = 2
+d = 47  brute = 0  pred = 0
+d = 94  brute = 8  pred = 8
+d = 235  brute = 2  pred = 2
+d = 470  brute = 10  pred = 10
+All d | N with d>1 match.
+==== M = 237 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 237  N = 474
+Divisors > 1: [ 2, 3, 6, 79, 158, 237, 474 ]
+d = 2  brute = 0  pred = 0
+d = 3  brute = 2  pred = 2
+d = 6  brute = 2  pred = 2
+d = 79  brute = 0  pred = 0
+d = 158  brute = 8  pred = 8
+d = 237  brute = 6  pred = 6
+d = 474  brute = 10  pred = 10
+All d | N with d>1 match.
+==== M = 239 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 239  N = 478
+Divisors > 1: [ 2, 239, 478 ]
+d = 2  brute = 0  pred = 0
+d = 239  brute = 0  pred = 0
+d = 478  brute = 4  pred = 4
+All d | N with d>1 match.
+==== M = 241 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 241  N = 482
+Divisors > 1: [ 2, 241, 482 ]
+d = 2  brute = 2  pred = 2
+d = 241  brute = 6  pred = 6
+d = 482  brute = 10  pred = 10
+All d | N with d>1 match.
+==== M = 247 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 247  N = 494
+Divisors > 1: [ 2, 13, 19, 26, 38, 247, 494 ]
+d = 2  brute = 0  pred = 0
+d = 13  brute = 2  pred = 2
+d = 19  brute = 0  pred = 0
+d = 26  brute = 0  pred = 0
+d = 38  brute = 6  pred = 6
+d = 247  brute = 0  pred = 0
+d = 494  brute = 14  pred = 14
+All d | N with d>1 match.
+==== M = 249 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 249  N = 498
+Divisors > 1: [ 2, 3, 6, 83, 166, 249, 498 ]
+d = 2  brute = 2  pred = 2
+d = 3  brute = 0  pred = 0
+d = 6  brute = 2  pred = 2
+d = 83  brute = 6  pred = 6
+d = 166  brute = 0  pred = 0
+d = 249  brute = 6  pred = 6
+d = 498  brute = 4  pred = 4
+All d | N with d>1 match.
+==== M = 251 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 251  N = 502
+Divisors > 1: [ 2, 251, 502 ]
+d = 2  brute = 1  pred = 1
+d = 251  brute = 7  pred = 7
+d = 502  brute = 7  pred = 7
+All d | N with d>1 match.
+==== M = 253 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 253  N = 506
+Divisors > 1: [ 2, 11, 22, 23, 46, 253, 506 ]
+d = 2  brute = 0  pred = 0
+d = 11  brute = 2  pred = 2
+d = 22  brute = 2  pred = 2
+d = 23  brute = 0  pred = 0
+d = 46  brute = 4  pred = 4
+d = 253  brute = 2  pred = 2
+d = 506  brute = 14  pred = 14
+All d | N with d>1 match.
+==== M = 255 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 255  N = 510
+Divisors > 1: [ 2, 3, 5, 6, 10, 15, 17, 30, 34, 51, 85, 102, 170, 255, 510 ]
+d = 2  brute = 0  pred = 0
+d = 3  brute = 0  pred = 0
+d = 5  brute = 0  pred = 0
+d = 6  brute = 0  pred = 0
+d = 10  brute = 0  pred = 0
+d = 15  brute = 0  pred = 0
+d = 17  brute = 0  pred = 0
+d = 30  brute = 4  pred = 4
+d = 34  brute = 0  pred = 0
+d = 51  brute = 4  pred = 4
+d = 85  brute = 0  pred = 0
+d = 102  brute = 0  pred = 0
+d = 170  brute = 12  pred = 12
+d = 255  brute = 0  pred = 0
+d = 510  brute = 8  pred = 8
+All d | N with d>1 match.
+==== M = 257 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 257  N = 514
+Divisors > 1: [ 2, 257, 514 ]
+d = 2  brute = 2  pred = 2
+d = 257  brute = 8  pred = 8
+d = 514  brute = 8  pred = 8
+All d | N with d>1 match.
+==== M = 259 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 259  N = 518
+Divisors > 1: [ 2, 7, 14, 37, 74, 259, 518 ]
+d = 2  brute = 0  pred = 0
+d = 7  brute = 0  pred = 0
+d = 14  brute = 0  pred = 0
+d = 37  brute = 0  pred = 0
+d = 74  brute = 0  pred = 0
+d = 259  brute = 4  pred = 4
+d = 518  brute = 8  pred = 8
+All d | N with d>1 match.
+==== M = 263 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 263  N = 526
+Divisors > 1: [ 2, 263, 526 ]
+d = 2  brute = 0  pred = 0
+d = 263  brute = 0  pred = 0
+d = 526  brute = 6  pred = 6
+All d | N with d>1 match.
+==== M = 265 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 265  N = 530
+Divisors > 1: [ 2, 5, 10, 53, 106, 265, 530 ]
+d = 2  brute = 2  pred = 2
+d = 5  brute = 0  pred = 0
+d = 10  brute = 2  pred = 2
+d = 53  brute = 0  pred = 0
+d = 106  brute = 6  pred = 6
+d = 265  brute = 4  pred = 4
+d = 530  brute = 14  pred = 14
+All d | N with d>1 match.
+==== M = 267 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 267  N = 534
+Divisors > 1: [ 2, 3, 6, 89, 178, 267, 534 ]
+d = 2  brute = 2  pred = 2
+d = 3  brute = 0  pred = 0
+d = 6  brute = 0  pred = 0
+d = 89  brute = 12  pred = 12
+d = 178  brute = 0  pred = 0
+d = 267  brute = 2  pred = 2
+d = 534  brute = 10  pred = 10
+All d | N with d>1 match.
+==== M = 269 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 269  N = 538
+Divisors > 1: [ 2, 269, 538 ]
+d = 2  brute = 1  pred = 1
+d = 269  brute = 11  pred = 11
+d = 538  brute = 5  pred = 5
+All d | N with d>1 match.
+==== M = 271 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 271  N = 542
+Divisors > 1: [ 2, 271, 542 ]
+d = 2  brute = 0  pred = 0
+d = 271  brute = 0  pred = 0
+d = 542  brute = 12  pred = 12
+All d | N with d>1 match.
+==== M = 273 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 273  N = 546
+Divisors > 1: [ 2, 3, 6, 7, 13, 14, 21, 26, 39, 42, 78, 91, 182, 273, 546 ]
+d = 2  brute = 0  pred = 0
+d = 3  brute = 4  pred = 4
+d = 6  brute = 0  pred = 0
+d = 7  brute = 0  pred = 0
+d = 13  brute = 0  pred = 0
+d = 14  brute = 8  pred = 8
+d = 21  brute = 0  pred = 0
+d = 26  brute = 12  pred = 12
+d = 39  brute = 0  pred = 0
+d = 42  brute = 4  pred = 4
+d = 78  brute = 0  pred = 0
+d = 91  brute = 0  pred = 0
+d = 182  brute = 12  pred = 12
+d = 273  brute = 4  pred = 4
+d = 546  brute = 12  pred = 12
+All d | N with d>1 match.
+==== M = 277 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 277  N = 554
+Divisors > 1: [ 2, 277, 554 ]
+d = 2  brute = 1  pred = 1
+d = 277  brute = 3  pred = 3
+d = 554  brute = 11  pred = 11
+All d | N with d>1 match.
+==== M = 281 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 281  N = 562
+Divisors > 1: [ 2, 281, 562 ]
+d = 2  brute = 2  pred = 2
+d = 281  brute = 10  pred = 10
+d = 562  brute = 4  pred = 4
+All d | N with d>1 match.
+==== M = 283 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 283  N = 566
+Divisors > 1: [ 2, 283, 566 ]
+d = 2  brute = 1  pred = 1
+d = 283  brute = 3  pred = 3
+d = 566  brute = 15  pred = 15
+All d | N with d>1 match.
+==== M = 285 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 285  N = 570
+Divisors > 1: [ 2, 3, 5, 6, 10, 15, 19, 30, 38, 57, 95, 114, 190, 285, 570 ]
+d = 2  brute = 0  pred = 0
+d = 3  brute = 0  pred = 0
+d = 5  brute = 0  pred = 0
+d = 6  brute = 0  pred = 0
+d = 10  brute = 0  pred = 0
+d = 15  brute = 0  pred = 0
+d = 19  brute = 0  pred = 0
+d = 30  brute = 0  pred = 0
+d = 38  brute = 0  pred = 0
+d = 57  brute = 0  pred = 0
+d = 95  brute = 0  pred = 0
+d = 114  brute = 8  pred = 8
+d = 190  brute = 0  pred = 0
+d = 285  brute = 8  pred = 8
+d = 570  brute = 8  pred = 8
+All d | N with d>1 match.
+==== M = 287 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 287  N = 574
+Divisors > 1: [ 2, 7, 14, 41, 82, 287, 574 ]
+d = 2  brute = 0  pred = 0
+d = 7  brute = 0  pred = 0
+d = 14  brute = 0  pred = 0
+d = 41  brute = 8  pred = 8
+d = 82  brute = 4  pred = 4
+d = 287  brute = 0  pred = 0
+d = 574  brute = 8  pred = 8
+All d | N with d>1 match.
+==== M = 291 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 291  N = 582
+Divisors > 1: [ 2, 3, 6, 97, 194, 291, 582 ]
+d = 2  brute = 2  pred = 2
+d = 3  brute = 2  pred = 2
+d = 6  brute = 2  pred = 2
+d = 97  brute = 0  pred = 0
+d = 194  brute = 20  pred = 20
+d = 291  brute = 4  pred = 4
+d = 582  brute = 8  pred = 8
+All d | N with d>1 match.
+==== M = 293 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 293  N = 586
+Divisors > 1: [ 2, 293, 586 ]
+d = 2  brute = 1  pred = 1
+d = 293  brute = 9  pred = 9
+d = 586  brute = 9  pred = 9
+All d | N with d>1 match.
+==== M = 295 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 295  N = 590
+Divisors > 1: [ 2, 5, 10, 59, 118, 295, 590 ]
+d = 2  brute = 0  pred = 0
+d = 5  brute = 0  pred = 0
+d = 10  brute = 2  pred = 2
+d = 59  brute = 6  pred = 6
+d = 118  brute = 0  pred = 0
+d = 295  brute = 0  pred = 0
+d = 590  brute = 10  pred = 10
+All d | N with d>1 match.
+==== M = 299 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 299  N = 598
+Divisors > 1: [ 2, 13, 23, 26, 46, 299, 598 ]
+d = 2  brute = 0  pred = 0
+d = 13  brute = 0  pred = 0
+d = 23  brute = 0  pred = 0
+d = 26  brute = 0  pred = 0
+d = 46  brute = 0  pred = 0
+d = 299  brute = 8  pred = 8
+d = 598  brute = 4  pred = 4
+All d | N with d>1 match.
+==== M = 301 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 301  N = 602
+Divisors > 1: [ 2, 7, 14, 43, 86, 301, 602 ]
+d = 2  brute = 0  pred = 0
+d = 7  brute = 0  pred = 0
+d = 14  brute = 0  pred = 0
+d = 43  brute = 0  pred = 0
+d = 86  brute = 0  pred = 0
+d = 301  brute = 4  pred = 4
+d = 602  brute = 12  pred = 12
+All d | N with d>1 match.
+==== M = 303 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 303  N = 606
+Divisors > 1: [ 2, 3, 6, 101, 202, 303, 606 ]
+d = 2  brute = 0  pred = 0
+d = 3  brute = 0  pred = 0
+d = 6  brute = 2  pred = 2
+d = 101  brute = 14  pred = 14
+d = 202  brute = 0  pred = 0
+d = 303  brute = 0  pred = 0
+d = 606  brute = 6  pred = 6
+All d | N with d>1 match.
+==== M = 305 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 305  N = 610
+Divisors > 1: [ 2, 5, 10, 61, 122, 305, 610 ]
+d = 2  brute = 2  pred = 2
+d = 5  brute = 2  pred = 2
+d = 10  brute = 0  pred = 0
+d = 61  brute = 6  pred = 6
+d = 122  brute = 0  pred = 0
+d = 305  brute = 8  pred = 8
+d = 610  brute = 6  pred = 6
+All d | N with d>1 match.
+==== M = 307 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 307  N = 614
+Divisors > 1: [ 2, 307, 614 ]
+d = 2  brute = 1  pred = 1
+d = 307  brute = 3  pred = 3
+d = 614  brute = 17  pred = 17
+All d | N with d>1 match.
+==== M = 309 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 309  N = 618
+Divisors > 1: [ 2, 3, 6, 103, 206, 309, 618 ]
+d = 2  brute = 0  pred = 0
+d = 3  brute = 2  pred = 2
+d = 6  brute = 2  pred = 2
+d = 103  brute = 0  pred = 0
+d = 206  brute = 20  pred = 20
+d = 309  brute = 6  pred = 6
+d = 618  brute = 6  pred = 6
+All d | N with d>1 match.
+==== M = 311 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 311  N = 622
+Divisors > 1: [ 2, 311, 622 ]
+d = 2  brute = 0  pred = 0
+d = 311  brute = 0  pred = 0
+d = 622  brute = 6  pred = 6
+All d | N with d>1 match.
+==== M = 313 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 313  N = 626
+Divisors > 1: [ 2, 313, 626 ]
+d = 2  brute = 2  pred = 2
+d = 313  brute = 4  pred = 4
+d = 626  brute = 18  pred = 18
+All d | N with d>1 match.
+==== M = 317 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 317  N = 634
+Divisors > 1: [ 2, 317, 634 ]
+d = 2  brute = 1  pred = 1
+d = 317  brute = 5  pred = 5
+d = 634  brute = 7  pred = 7
+All d | N with d>1 match.
+==== M = 319 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 319  N = 638
+Divisors > 1: [ 2, 11, 22, 29, 58, 319, 638 ]
+d = 2  brute = 0  pred = 0
+d = 11  brute = 0  pred = 0
+d = 22  brute = 2  pred = 2
+d = 29  brute = 6  pred = 6
+d = 58  brute = 0  pred = 0
+d = 319  brute = 0  pred = 0
+d = 638  brute = 10  pred = 10
+All d | N with d>1 match.
+==== M = 321 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 321  N = 642
+Divisors > 1: [ 2, 3, 6, 107, 214, 321, 642 ]
+d = 2  brute = 2  pred = 2
+d = 3  brute = 0  pred = 0
+d = 6  brute = 2  pred = 2
+d = 107  brute = 6  pred = 6
+d = 214  brute = 0  pred = 0
+d = 321  brute = 10  pred = 10
+d = 642  brute = 8  pred = 8
+All d | N with d>1 match.
+==== M = 323 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 323  N = 646
+Divisors > 1: [ 2, 17, 19, 34, 38, 323, 646 ]
+d = 2  brute = 2  pred = 2
+d = 17  brute = 0  pred = 0
+d = 19  brute = 2  pred = 2
+d = 34  brute = 4  pred = 4
+d = 38  brute = 6  pred = 6
+d = 323  brute = 4  pred = 4
+d = 646  brute = 8  pred = 8
+All d | N with d>1 match.
+==== M = 327 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 327  N = 654
+Divisors > 1: [ 2, 3, 6, 109, 218, 327, 654 ]
+d = 2  brute = 0  pred = 0
+d = 3  brute = 2  pred = 2
+d = 6  brute = 0  pred = 0
+d = 109  brute = 0  pred = 0
+d = 218  brute = 10  pred = 10
+d = 327  brute = 0  pred = 0
+d = 654  brute = 14  pred = 14
+All d | N with d>1 match.
+==== M = 329 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 329  N = 658
+Divisors > 1: [ 2, 7, 14, 47, 94, 329, 658 ]
+d = 2  brute = 0  pred = 0
+d = 7  brute = 0  pred = 0
+d = 14  brute = 0  pred = 0
+d = 47  brute = 0  pred = 0
+d = 94  brute = 8  pred = 8
+d = 329  brute = 12  pred = 12
+d = 658  brute = 4  pred = 4
+All d | N with d>1 match.
+==== M = 331 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 331  N = 662
+Divisors > 1: [ 2, 331, 662 ]
+d = 2  brute = 1  pred = 1
+d = 331  brute = 3  pred = 3
+d = 662  brute = 11  pred = 11
+All d | N with d>1 match.
+==== M = 335 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 335  N = 670
+Divisors > 1: [ 2, 5, 10, 67, 134, 335, 670 ]
+d = 2  brute = 0  pred = 0
+d = 5  brute = 2  pred = 2
+d = 10  brute = 0  pred = 0
+d = 67  brute = 0  pred = 0
+d = 134  brute = 14  pred = 14
+d = 335  brute = 0  pred = 0
+d = 670  brute = 6  pred = 6
+All d | N with d>1 match.
+==== M = 337 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 337  N = 674
+Divisors > 1: [ 2, 337, 674 ]
+d = 2  brute = 2  pred = 2
+d = 337  brute = 4  pred = 4
+d = 674  brute = 12  pred = 12
+All d | N with d>1 match.
+==== M = 339 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 339  N = 678
+Divisors > 1: [ 2, 3, 6, 113, 226, 339, 678 ]
+d = 2  brute = 2  pred = 2
+d = 3  brute = 0  pred = 0
+d = 6  brute = 0  pred = 0
+d = 113  brute = 8  pred = 8
+d = 226  brute = 0  pred = 0
+d = 339  brute = 6  pred = 6
+d = 678  brute = 10  pred = 10
+All d | N with d>1 match.
+==== M = 341 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 341  N = 682
+Divisors > 1: [ 2, 11, 22, 31, 62, 341, 682 ]
+d = 2  brute = 0  pred = 0
+d = 11  brute = 2  pred = 2
+d = 22  brute = 2  pred = 2
+d = 31  brute = 0  pred = 0
+d = 62  brute = 8  pred = 8
+d = 341  brute = 14  pred = 14
+d = 682  brute = 6  pred = 6
+All d | N with d>1 match.
+==== M = 345 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 345  N = 690
+Divisors > 1: [ 2, 3, 5, 6, 10, 15, 23, 30, 46, 69, 115, 138, 230, 345, 690 ]
+d = 2  brute = 0  pred = 0
+d = 3  brute = 0  pred = 0
+d = 5  brute = 4  pred = 4
+d = 6  brute = 0  pred = 0
+d = 10  brute = 0  pred = 0
+d = 15  brute = 0  pred = 0
+d = 23  brute = 0  pred = 0
+d = 30  brute = 4  pred = 4
+d = 46  brute = 0  pred = 0
+d = 69  brute = 8  pred = 8
+d = 115  brute = 0  pred = 0
+d = 138  brute = 0  pred = 0
+d = 230  brute = 20  pred = 20
+d = 345  brute = 4  pred = 4
+d = 690  brute = 8  pred = 8
+All d | N with d>1 match.
+==== M = 347 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 347  N = 694
+Divisors > 1: [ 2, 347, 694 ]
+d = 2  brute = 1  pred = 1
+d = 347  brute = 5  pred = 5
+d = 694  brute = 5  pred = 5
+All d | N with d>1 match.
+==== M = 349 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 349  N = 698
+Divisors > 1: [ 2, 349, 698 ]
+d = 2  brute = 1  pred = 1
+d = 349  brute = 7  pred = 7
+d = 698  brute = 13  pred = 13
+All d | N with d>1 match.
+==== M = 353 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 353  N = 706
+Divisors > 1: [ 2, 353, 706 ]
+d = 2  brute = 2  pred = 2
+d = 353  brute = 8  pred = 8
+d = 706  brute = 12  pred = 12
+All d | N with d>1 match.
+==== M = 355 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 355  N = 710
+Divisors > 1: [ 2, 5, 10, 71, 142, 355, 710 ]
+d = 2  brute = 0  pred = 0
+d = 5  brute = 0  pred = 0
+d = 10  brute = 0  pred = 0
+d = 71  brute = 0  pred = 0
+d = 142  brute = 0  pred = 0
+d = 355  brute = 4  pred = 4
+d = 710  brute = 16  pred = 16
+All d | N with d>1 match.
+==== M = 357 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 357  N = 714
+Divisors > 1: [ 2, 3, 6, 7, 14, 17, 21, 34, 42, 51, 102, 119, 238, 357, 714 ]
+d = 2  brute = 0  pred = 0
+d = 3  brute = 0  pred = 0
+d = 6  brute = 0  pred = 0
+d = 7  brute = 0  pred = 0
+d = 14  brute = 0  pred = 0
+d = 17  brute = 8  pred = 8
+d = 21  brute = 4  pred = 4
+d = 34  brute = 0  pred = 0
+d = 42  brute = 4  pred = 4
+d = 51  brute = 0  pred = 0
+d = 102  brute = 0  pred = 0
+d = 119  brute = 0  pred = 0
+d = 238  brute = 0  pred = 0
+d = 357  brute = 4  pred = 4
+d = 714  brute = 12  pred = 12
+All d | N with d>1 match.
+==== M = 359 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 359  N = 718
+Divisors > 1: [ 2, 359, 718 ]
+d = 2  brute = 0  pred = 0
+d = 359  brute = 0  pred = 0
+d = 718  brute = 6  pred = 6
+All d | N with d>1 match.
+==== M = 365 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 365  N = 730
+Divisors > 1: [ 2, 5, 10, 73, 146, 365, 730 ]
+d = 2  brute = 2  pred = 2
+d = 5  brute = 0  pred = 0
+d = 10  brute = 0  pred = 0
+d = 73  brute = 0  pred = 0
+d = 146  brute = 16  pred = 16
+d = 365  brute = 10  pred = 10
+d = 730  brute = 6  pred = 6
+All d | N with d>1 match.
+==== M = 367 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 367  N = 734
+Divisors > 1: [ 2, 367, 734 ]
+d = 2  brute = 0  pred = 0
+d = 367  brute = 0  pred = 0
+d = 734  brute = 20  pred = 20
+All d | N with d>1 match.
+==== M = 371 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 371  N = 742
+Divisors > 1: [ 2, 7, 14, 53, 106, 371, 742 ]
+d = 2  brute = 0  pred = 0
+d = 7  brute = 0  pred = 0
+d = 14  brute = 0  pred = 0
+d = 53  brute = 0  pred = 0
+d = 106  brute = 0  pred = 0
+d = 371  brute = 8  pred = 8
+d = 742  brute = 4  pred = 4
+All d | N with d>1 match.
+==== M = 373 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 373  N = 746
+Divisors > 1: [ 2, 373, 746 ]
+d = 2  brute = 1  pred = 1
+d = 373  brute = 5  pred = 5
+d = 746  brute = 13  pred = 13
+All d | N with d>1 match.
+==== M = 377 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 377  N = 754
+Divisors > 1: [ 2, 13, 26, 29, 58, 377, 754 ]
+d = 2  brute = 2  pred = 2
+d = 13  brute = 2  pred = 2
+d = 26  brute = 0  pred = 0
+d = 29  brute = 6  pred = 6
+d = 58  brute = 0  pred = 0
+d = 377  brute = 8  pred = 8
+d = 754  brute = 10  pred = 10
+All d | N with d>1 match.
+==== M = 379 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 379  N = 758
+Divisors > 1: [ 2, 379, 758 ]
+d = 2  brute = 1  pred = 1
+d = 379  brute = 3  pred = 3
+d = 758  brute = 11  pred = 11
+All d | N with d>1 match.
+==== M = 381 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 381  N = 762
+Divisors > 1: [ 2, 3, 6, 127, 254, 381, 762 ]
+d = 2  brute = 0  pred = 0
+d = 3  brute = 2  pred = 2
+d = 6  brute = 2  pred = 2
+d = 127  brute = 0  pred = 0
+d = 254  brute = 16  pred = 16
+d = 381  brute = 10  pred = 10
+d = 762  brute = 6  pred = 6
+All d | N with d>1 match.
+==== M = 383 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 383  N = 766
+Divisors > 1: [ 2, 383, 766 ]
+d = 2  brute = 0  pred = 0
+d = 383  brute = 0  pred = 0
+d = 766  brute = 12  pred = 12
+All d | N with d>1 match.
+==== M = 385 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 385  N = 770
+Divisors > 1: [ 2, 5, 7, 10, 11, 14, 22, 35, 55, 70, 77, 110, 154, 385, 770 ]
+d = 2  brute = 0  pred = 0
+d = 5  brute = 0  pred = 0
+d = 7  brute = 0  pred = 0
+d = 10  brute = 4  pred = 4
+d = 11  brute = 0  pred = 0
+d = 14  brute = 0  pred = 0
+d = 22  brute = 0  pred = 0
+d = 35  brute = 4  pred = 4
+d = 55  brute = 0  pred = 0
+d = 70  brute = 0  pred = 0
+d = 77  brute = 0  pred = 0
+d = 110  brute = 12  pred = 12
+d = 154  brute = 8  pred = 8
+d = 385  brute = 4  pred = 4
+d = 770  brute = 16  pred = 16
+All d | N with d>1 match.
+==== M = 389 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 389  N = 778
+Divisors > 1: [ 2, 389, 778 ]
+d = 2  brute = 1  pred = 1
+d = 389  brute = 11  pred = 11
+d = 778  brute = 7  pred = 7
+All d | N with d>1 match.
+==== M = 391 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 391  N = 782
+Divisors > 1: [ 2, 17, 23, 34, 46, 391, 782 ]
+d = 2  brute = 0  pred = 0
+d = 17  brute = 4  pred = 4
+d = 23  brute = 0  pred = 0
+d = 34  brute = 4  pred = 4
+d = 46  brute = 0  pred = 0
+d = 391  brute = 0  pred = 0
+d = 782  brute = 12  pred = 12
+All d | N with d>1 match.
+==== M = 393 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 393  N = 786
+Divisors > 1: [ 2, 3, 6, 131, 262, 393, 786 ]
+d = 2  brute = 2  pred = 2
+d = 3  brute = 0  pred = 0
+d = 6  brute = 2  pred = 2
+d = 131  brute = 10  pred = 10
+d = 262  brute = 0  pred = 0
+d = 393  brute = 6  pred = 6
+d = 786  brute = 8  pred = 8
+All d | N with d>1 match.
+==== M = 395 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 395  N = 790
+Divisors > 1: [ 2, 5, 10, 79, 158, 395, 790 ]
+d = 2  brute = 0  pred = 0
+d = 5  brute = 0  pred = 0
+d = 10  brute = 0  pred = 0
+d = 79  brute = 0  pred = 0
+d = 158  brute = 0  pred = 0
+d = 395  brute = 8  pred = 8
+d = 790  brute = 8  pred = 8
+All d | N with d>1 match.
+==== M = 397 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 397  N = 794
+Divisors > 1: [ 2, 397, 794 ]
+d = 2  brute = 1  pred = 1
+d = 397  brute = 3  pred = 3
+d = 794  brute = 21  pred = 21
+All d | N with d>1 match.
+==== M = 399 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 399  N = 798
+Divisors > 1: [ 2, 3, 6, 7, 14, 19, 21, 38, 42, 57, 114, 133, 266, 399, 798 ]
+d = 2  brute = 0  pred = 0
+d = 3  brute = 4  pred = 4
+d = 6  brute = 0  pred = 0
+d = 7  brute = 0  pred = 0
+d = 14  brute = 8  pred = 8
+d = 19  brute = 0  pred = 0
+d = 21  brute = 4  pred = 4
+d = 38  brute = 12  pred = 12
+d = 42  brute = 0  pred = 0
+d = 57  brute = 0  pred = 0
+d = 114  brute = 0  pred = 0
+d = 133  brute = 0  pred = 0
+d = 266  brute = 20  pred = 20
+d = 399  brute = 0  pred = 0
+d = 798  brute = 8  pred = 8
+All d | N with d>1 match.
+==== M = 401 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 401  N = 802
+Divisors > 1: [ 2, 401, 802 ]
+d = 2  brute = 2  pred = 2
+d = 401  brute = 10  pred = 10
+d = 802  brute = 6  pred = 6
+All d | N with d>1 match.
+==== M = 403 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 403  N = 806
+Divisors > 1: [ 2, 13, 26, 31, 62, 403, 806 ]
+d = 2  brute = 0  pred = 0
+d = 13  brute = 2  pred = 2
+d = 26  brute = 6  pred = 6
+d = 31  brute = 0  pred = 0
+d = 62  brute = 8  pred = 8
+d = 403  brute = 2  pred = 2
+d = 806  brute = 14  pred = 14
+All d | N with d>1 match.
+==== M = 407 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 407  N = 814
+Divisors > 1: [ 2, 11, 22, 37, 74, 407, 814 ]
+d = 2  brute = 0  pred = 0
+d = 11  brute = 2  pred = 2
+d = 22  brute = 0  pred = 0
+d = 37  brute = 0  pred = 0
+d = 74  brute = 10  pred = 10
+d = 407  brute = 0  pred = 0
+d = 814  brute = 6  pred = 6
+All d | N with d>1 match.
+==== M = 409 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 409  N = 818
+Divisors > 1: [ 2, 409, 818 ]
+d = 2  brute = 2  pred = 2
+d = 409  brute = 8  pred = 8
+d = 818  brute = 14  pred = 14
+All d | N with d>1 match.
+==== M = 411 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 411  N = 822
+Divisors > 1: [ 2, 3, 6, 137, 274, 411, 822 ]
+d = 2  brute = 2  pred = 2
+d = 3  brute = 0  pred = 0
+d = 6  brute = 0  pred = 0
+d = 137  brute = 8  pred = 8
+d = 274  brute = 0  pred = 0
+d = 411  brute = 6  pred = 6
+d = 822  brute = 10  pred = 10
+All d | N with d>1 match.
+==== M = 413 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 413  N = 826
+Divisors > 1: [ 2, 7, 14, 59, 118, 413, 826 ]
+d = 2  brute = 0  pred = 0
+d = 7  brute = 0  pred = 0
+d = 14  brute = 4  pred = 4
+d = 59  brute = 6  pred = 6
+d = 118  brute = 6  pred = 6
+d = 413  brute = 10  pred = 10
+d = 826  brute = 6  pred = 6
+All d | N with d>1 match.
+==== M = 415 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 415  N = 830
+Divisors > 1: [ 2, 5, 10, 83, 166, 415, 830 ]
+d = 2  brute = 0  pred = 0
+d = 5  brute = 2  pred = 2
+d = 10  brute = 0  pred = 0
+d = 83  brute = 0  pred = 0
+d = 166  brute = 10  pred = 10
+d = 415  brute = 0  pred = 0
+d = 830  brute = 10  pred = 10
+All d | N with d>1 match.
+==== M = 417 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 417  N = 834
+Divisors > 1: [ 2, 3, 6, 139, 278, 417, 834 ]
+d = 2  brute = 2  pred = 2
+d = 3  brute = 2  pred = 2
+d = 6  brute = 0  pred = 0
+d = 139  brute = 0  pred = 0
+d = 278  brute = 14  pred = 14
+d = 417  brute = 6  pred = 6
+d = 834  brute = 8  pred = 8
+All d | N with d>1 match.
+==== M = 419 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 419  N = 838
+Divisors > 1: [ 2, 419, 838 ]
+d = 2  brute = 1  pred = 1
+d = 419  brute = 9  pred = 9
+d = 838  brute = 7  pred = 7
+All d | N with d>1 match.
+==== M = 421 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 421  N = 842
+Divisors > 1: [ 2, 421, 842 ]
+d = 2  brute = 1  pred = 1
+d = 421  brute = 5  pred = 5
+d = 842  brute = 13  pred = 13
+All d | N with d>1 match.
+==== M = 427 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 427  N = 854
+Divisors > 1: [ 2, 7, 14, 61, 122, 427, 854 ]
+d = 2  brute = 0  pred = 0
+d = 7  brute = 0  pred = 0
+d = 14  brute = 4  pred = 4
+d = 61  brute = 6  pred = 6
+d = 122  brute = 10  pred = 10
+d = 427  brute = 2  pred = 2
+d = 854  brute = 22  pred = 22
+All d | N with d>1 match.
+==== M = 429 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 429  N = 858
+Divisors > 1: [ 2, 3, 6, 11, 13, 22, 26, 33, 39, 66, 78, 143, 286, 429, 858 ]
+d = 2  brute = 0  pred = 0
+d = 3  brute = 0  pred = 0
+d = 6  brute = 0  pred = 0
+d = 11  brute = 0  pred = 0
+d = 13  brute = 0  pred = 0
+d = 22  brute = 0  pred = 0
+d = 26  brute = 0  pred = 0
+d = 33  brute = 0  pred = 0
+d = 39  brute = 0  pred = 0
+d = 66  brute = 8  pred = 8
+d = 78  brute = 0  pred = 0
+d = 143  brute = 0  pred = 0
+d = 286  brute = 0  pred = 0
+d = 429  brute = 8  pred = 8
+d = 858  brute = 8  pred = 8
+All d | N with d>1 match.
+==== M = 431 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 431  N = 862
+Divisors > 1: [ 2, 431, 862 ]
+d = 2  brute = 0  pred = 0
+d = 431  brute = 0  pred = 0
+d = 862  brute = 4  pred = 4
+All d | N with d>1 match.
+==== M = 433 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 433  N = 866
+Divisors > 1: [ 2, 433, 866 ]
+d = 2  brute = 2  pred = 2
+d = 433  brute = 6  pred = 6
+d = 866  brute = 22  pred = 22
+All d | N with d>1 match.
+==== M = 435 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 435  N = 870
+Divisors > 1: [ 2, 3, 5, 6, 10, 15, 29, 30, 58, 87, 145, 174, 290, 435, 870 ]
+d = 2  brute = 0  pred = 0
+d = 3  brute = 0  pred = 0
+d = 5  brute = 4  pred = 4
+d = 6  brute = 4  pred = 4
+d = 10  brute = 0  pred = 0
+d = 15  brute = 0  pred = 0
+d = 29  brute = 12  pred = 12
+d = 30  brute = 4  pred = 4
+d = 58  brute = 0  pred = 0
+d = 87  brute = 0  pred = 0
+d = 145  brute = 0  pred = 0
+d = 174  brute = 12  pred = 12
+d = 290  brute = 20  pred = 20
+d = 435  brute = 4  pred = 4
+d = 870  brute = 8  pred = 8
+All d | N with d>1 match.
+==== M = 437 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 437  N = 874
+Divisors > 1: [ 2, 19, 23, 38, 46, 437, 874 ]
+d = 2  brute = 0  pred = 0
+d = 19  brute = 2  pred = 2
+d = 23  brute = 0  pred = 0
+d = 38  brute = 6  pred = 6
+d = 46  brute = 4  pred = 4
+d = 437  brute = 10  pred = 10
+d = 874  brute = 10  pred = 10
+All d | N with d>1 match.
+==== M = 439 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 439  N = 878
+Divisors > 1: [ 2, 439, 878 ]
+d = 2  brute = 0  pred = 0
+d = 439  brute = 0  pred = 0
+d = 878  brute = 10  pred = 10
+All d | N with d>1 match.
+==== M = 443 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 443  N = 886
+Divisors > 1: [ 2, 443, 886 ]
+d = 2  brute = 1  pred = 1
+d = 443  brute = 5  pred = 5
+d = 886  brute = 9  pred = 9
+All d | N with d>1 match.
+==== M = 445 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 445  N = 890
+Divisors > 1: [ 2, 5, 10, 89, 178, 445, 890 ]
+d = 2  brute = 2  pred = 2
+d = 5  brute = 2  pred = 2
+d = 10  brute = 2  pred = 2
+d = 89  brute = 12  pred = 12
+d = 178  brute = 0  pred = 0
+d = 445  brute = 4  pred = 4
+d = 890  brute = 12  pred = 12
+All d | N with d>1 match.
+==== M = 447 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 447  N = 894
+Divisors > 1: [ 2, 3, 6, 149, 298, 447, 894 ]
+d = 2  brute = 0  pred = 0
+d = 3  brute = 0  pred = 0
+d = 6  brute = 2  pred = 2
+d = 149  brute = 14  pred = 14
+d = 298  brute = 0  pred = 0
+d = 447  brute = 0  pred = 0
+d = 894  brute = 14  pred = 14
+All d | N with d>1 match.
+==== M = 449 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 449  N = 898
+Divisors > 1: [ 2, 449, 898 ]
+d = 2  brute = 2  pred = 2
+d = 449  brute = 10  pred = 10
+d = 898  brute = 6  pred = 6
+All d | N with d>1 match.
+==== M = 451 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 451  N = 902
+Divisors > 1: [ 2, 11, 22, 41, 82, 451, 902 ]
+d = 2  brute = 2  pred = 2
+d = 11  brute = 0  pred = 0
+d = 22  brute = 0  pred = 0
+d = 41  brute = 8  pred = 8
+d = 82  brute = 0  pred = 0
+d = 451  brute = 6  pred = 6
+d = 902  brute = 14  pred = 14
+All d | N with d>1 match.
+==== M = 453 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 453  N = 906
+Divisors > 1: [ 2, 3, 6, 151, 302, 453, 906 ]
+d = 2  brute = 0  pred = 0
+d = 3  brute = 2  pred = 2
+d = 6  brute = 2  pred = 2
+d = 151  brute = 0  pred = 0
+d = 302  brute = 12  pred = 12
+d = 453  brute = 6  pred = 6
+d = 906  brute = 14  pred = 14
+All d | N with d>1 match.
+==== M = 455 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 455  N = 910
+Divisors > 1: [ 2, 5, 7, 10, 13, 14, 26, 35, 65, 70, 91, 130, 182, 455, 910 ]
+d = 2  brute = 0  pred = 0
+d = 5  brute = 0  pred = 0
+d = 7  brute = 0  pred = 0
+d = 10  brute = 4  pred = 4
+d = 13  brute = 0  pred = 0
+d = 14  brute = 8  pred = 8
+d = 26  brute = 12  pred = 12
+d = 35  brute = 4  pred = 4
+d = 65  brute = 0  pred = 0
+d = 70  brute = 0  pred = 0
+d = 91  brute = 4  pred = 4
+d = 130  brute = 0  pred = 0
+d = 182  brute = 0  pred = 0
+d = 455  brute = 0  pred = 0
+d = 910  brute = 8  pred = 8
+All d | N with d>1 match.
+==== M = 457 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 457  N = 914
+Divisors > 1: [ 2, 457, 914 ]
+d = 2  brute = 2  pred = 2
+d = 457  brute = 4  pred = 4
+d = 914  brute = 18  pred = 18
+All d | N with d>1 match.
+==== M = 461 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 461  N = 922
+Divisors > 1: [ 2, 461, 922 ]
+d = 2  brute = 1  pred = 1
+d = 461  brute = 15  pred = 15
+d = 922  brute = 9  pred = 9
+All d | N with d>1 match.
+==== M = 463 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 463  N = 926
+Divisors > 1: [ 2, 463, 926 ]
+d = 2  brute = 0  pred = 0
+d = 463  brute = 0  pred = 0
+d = 926  brute = 20  pred = 20
+All d | N with d>1 match.
+==== M = 465 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 465  N = 930
+Divisors > 1: [ 2, 3, 5, 6, 10, 15, 30, 31, 62, 93, 155, 186, 310, 465, 930 ]
+d = 2  brute = 0  pred = 0
+d = 3  brute = 0  pred = 0
+d = 5  brute = 0  pred = 0
+d = 6  brute = 4  pred = 4
+d = 10  brute = 0  pred = 0
+d = 15  brute = 0  pred = 0
+d = 30  brute = 4  pred = 4
+d = 31  brute = 0  pred = 0
+d = 62  brute = 0  pred = 0
+d = 93  brute = 0  pred = 0
+d = 155  brute = 8  pred = 8
+d = 186  brute = 12  pred = 12
+d = 310  brute = 0  pred = 0
+d = 465  brute = 8  pred = 8
+d = 930  brute = 12  pred = 12
+All d | N with d>1 match.
+==== M = 467 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 467  N = 934
+Divisors > 1: [ 2, 467, 934 ]
+d = 2  brute = 1  pred = 1
+d = 467  brute = 7  pred = 7
+d = 934  brute = 13  pred = 13
+All d | N with d>1 match.
+==== M = 469 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 469  N = 938
+Divisors > 1: [ 2, 7, 14, 67, 134, 469, 938 ]
+d = 2  brute = 0  pred = 0
+d = 7  brute = 0  pred = 0
+d = 14  brute = 0  pred = 0
+d = 67  brute = 0  pred = 0
+d = 134  brute = 0  pred = 0
+d = 469  brute = 8  pred = 8
+d = 938  brute = 8  pred = 8
+All d | N with d>1 match.
+==== M = 471 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 471  N = 942
+Divisors > 1: [ 2, 3, 6, 157, 314, 471, 942 ]
+d = 2  brute = 0  pred = 0
+d = 3  brute = 2  pred = 2
+d = 6  brute = 0  pred = 0
+d = 157  brute = 0  pred = 0
+d = 314  brute = 26  pred = 26
+d = 471  brute = 0  pred = 0
+d = 942  brute = 6  pred = 6
+All d | N with d>1 match.
+==== M = 473 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 473  N = 946
+Divisors > 1: [ 2, 11, 22, 43, 86, 473, 946 ]
+d = 2  brute = 2  pred = 2
+d = 11  brute = 0  pred = 0
+d = 22  brute = 2  pred = 2
+d = 43  brute = 2  pred = 2
+d = 86  brute = 0  pred = 0
+d = 473  brute = 6  pred = 6
+d = 946  brute = 8  pred = 8
+All d | N with d>1 match.
+==== M = 479 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 479  N = 958
+Divisors > 1: [ 2, 479, 958 ]
+d = 2  brute = 0  pred = 0
+d = 479  brute = 0  pred = 0
+d = 958  brute = 8  pred = 8
+All d | N with d>1 match.
+==== M = 481 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 481  N = 962
+Divisors > 1: [ 2, 13, 26, 37, 74, 481, 962 ]
+d = 2  brute = 2  pred = 2
+d = 13  brute = 0  pred = 0
+d = 26  brute = 6  pred = 6
+d = 37  brute = 0  pred = 0
+d = 74  brute = 10  pred = 10
+d = 481  brute = 8  pred = 8
+d = 962  brute = 14  pred = 14
+All d | N with d>1 match.
+==== M = 483 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 483  N = 966
+Divisors > 1: [ 2, 3, 6, 7, 14, 21, 23, 42, 46, 69, 138, 161, 322, 483, 966 ]
+d = 2  brute = 0  pred = 0
+d = 3  brute = 0  pred = 0
+d = 6  brute = 0  pred = 0
+d = 7  brute = 0  pred = 0
+d = 14  brute = 8  pred = 8
+d = 21  brute = 4  pred = 4
+d = 23  brute = 0  pred = 0
+d = 42  brute = 4  pred = 4
+d = 46  brute = 0  pred = 0
+d = 69  brute = 8  pred = 8
+d = 138  brute = 8  pred = 8
+d = 161  brute = 16  pred = 16
+d = 322  brute = 0  pred = 0
+d = 483  brute = 4  pred = 4
+d = 966  brute = 12  pred = 12
+All d | N with d>1 match.
+==== M = 485 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 485  N = 970
+Divisors > 1: [ 2, 5, 10, 97, 194, 485, 970 ]
+d = 2  brute = 2  pred = 2
+d = 5  brute = 0  pred = 0
+d = 10  brute = 0  pred = 0
+d = 97  brute = 0  pred = 0
+d = 194  brute = 20  pred = 20
+d = 485  brute = 10  pred = 10
+d = 970  brute = 6  pred = 6
+All d | N with d>1 match.
+==== M = 487 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 487  N = 974
+Divisors > 1: [ 2, 487, 974 ]
+d = 2  brute = 0  pred = 0
+d = 487  brute = 0  pred = 0
+d = 974  brute = 18  pred = 18
+All d | N with d>1 match.
+==== M = 489 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 489  N = 978
+Divisors > 1: [ 2, 3, 6, 163, 326, 489, 978 ]
+d = 2  brute = 2  pred = 2
+d = 3  brute = 2  pred = 2
+d = 6  brute = 0  pred = 0
+d = 163  brute = 0  pred = 0
+d = 326  brute = 22  pred = 22
+d = 489  brute = 10  pred = 10
+d = 978  brute = 12  pred = 12
+All d | N with d>1 match.
+==== M = 491 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 491  N = 982
+Divisors > 1: [ 2, 491, 982 ]
+d = 2  brute = 1  pred = 1
+d = 491  brute = 9  pred = 9
+d = 982  brute = 5  pred = 5
+All d | N with d>1 match.
+==== M = 493 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 493  N = 986
+Divisors > 1: [ 2, 17, 29, 34, 58, 493, 986 ]
+d = 2  brute = 2  pred = 2
+d = 17  brute = 0  pred = 0
+d = 29  brute = 0  pred = 0
+d = 34  brute = 4  pred = 4
+d = 58  brute = 0  pred = 0
+d = 493  brute = 6  pred = 6
+d = 986  brute = 22  pred = 22
+All d | N with d>1 match.
+==== M = 497 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 497  N = 994
+Divisors > 1: [ 2, 7, 14, 71, 142, 497, 994 ]
+d = 2  brute = 0  pred = 0
+d = 7  brute = 0  pred = 0
+d = 14  brute = 4  pred = 4
+d = 71  brute = 0  pred = 0
+d = 142  brute = 0  pred = 0
+d = 497  brute = 12  pred = 12
+d = 994  brute = 8  pred = 8
+All d | N with d>1 match.
+==== M = 499 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 499  N = 998
+Divisors > 1: [ 2, 499, 998 ]
+d = 2  brute = 1  pred = 1
+d = 499  brute = 3  pred = 3
+d = 998  brute = 13  pred = 13
+All d | N with d>1 match.
+==== M = 501 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 501  N = 1002
+Divisors > 1: [ 2, 3, 6, 167, 334, 501, 1002 ]
+d = 2  brute = 0  pred = 0
+d = 3  brute = 0  pred = 0
+d = 6  brute = 0  pred = 0
+d = 167  brute = 0  pred = 0
+d = 334  brute = 0  pred = 0
+d = 501  brute = 8  pred = 8
+d = 1002  brute = 8  pred = 8
+All d | N with d>1 match.
+==== M = 503 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 503  N = 1006
+Divisors > 1: [ 2, 503, 1006 ]
+d = 2  brute = 0  pred = 0
+d = 503  brute = 0  pred = 0
+d = 1006  brute = 10  pred = 10
+All d | N with d>1 match.
+==== M = 505 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 505  N = 1010
+Divisors > 1: [ 2, 5, 10, 101, 202, 505, 1010 ]
+d = 2  brute = 2  pred = 2
+d = 5  brute = 2  pred = 2
+d = 10  brute = 0  pred = 0
+d = 101  brute = 14  pred = 14
+d = 202  brute = 0  pred = 0
+d = 505  brute = 4  pred = 4
+d = 1010  brute = 14  pred = 14
+All d | N with d>1 match.
+==== M = 509 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 509  N = 1018
+Divisors > 1: [ 2, 509, 1018 ]
+d = 2  brute = 1  pred = 1
+d = 509  brute = 15  pred = 15
+d = 1018  brute = 9  pred = 9
+All d | N with d>1 match.
+==== M = 511 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 511  N = 1022
+Divisors > 1: [ 2, 7, 14, 73, 146, 511, 1022 ]
+d = 2  brute = 0  pred = 0
+d = 7  brute = 0  pred = 0
+d = 14  brute = 0  pred = 0
+d = 73  brute = 4  pred = 4
+d = 146  brute = 16  pred = 16
+d = 511  brute = 0  pred = 0
+d = 1022  brute = 16  pred = 16
+All d | N with d>1 match.
+==== M = 515 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 515  N = 1030
+Divisors > 1: [ 2, 5, 10, 103, 206, 515, 1030 ]
+d = 2  brute = 0  pred = 0
+d = 5  brute = 2  pred = 2
+d = 10  brute = 2  pred = 2
+d = 103  brute = 0  pred = 0
+d = 206  brute = 20  pred = 20
+d = 515  brute = 6  pred = 6
+d = 1030  brute = 6  pred = 6
+All d | N with d>1 match.
+==== M = 517 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 517  N = 1034
+Divisors > 1: [ 2, 11, 22, 47, 94, 517, 1034 ]
+d = 2  brute = 0  pred = 0
+d = 11  brute = 2  pred = 2
+d = 22  brute = 2  pred = 2
+d = 47  brute = 0  pred = 0
+d = 94  brute = 8  pred = 8
+d = 517  brute = 6  pred = 6
+d = 1034  brute = 22  pred = 22
+All d | N with d>1 match.
+==== M = 519 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 519  N = 1038
+Divisors > 1: [ 2, 3, 6, 173, 346, 519, 1038 ]
+d = 2  brute = 0  pred = 0
+d = 3  brute = 0  pred = 0
+d = 6  brute = 2  pred = 2
+d = 173  brute = 14  pred = 14
+d = 346  brute = 0  pred = 0
+d = 519  brute = 0  pred = 0
+d = 1038  brute = 6  pred = 6
+All d | N with d>1 match.
+==== M = 521 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 521  N = 1042
+Divisors > 1: [ 2, 521, 1042 ]
+d = 2  brute = 2  pred = 2
+d = 521  brute = 16  pred = 16
+d = 1042  brute = 6  pred = 6
+All d | N with d>1 match.
+==== M = 523 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 523  N = 1046
+Divisors > 1: [ 2, 523, 1046 ]
+d = 2  brute = 1  pred = 1
+d = 523  brute = 5  pred = 5
+d = 1046  brute = 21  pred = 21
+All d | N with d>1 match.
+==== M = 527 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 527  N = 1054
+Divisors > 1: [ 2, 17, 31, 34, 62, 527, 1054 ]
+d = 2  brute = 0  pred = 0
+d = 17  brute = 4  pred = 4
+d = 31  brute = 0  pred = 0
+d = 34  brute = 4  pred = 4
+d = 62  brute = 0  pred = 0
+d = 527  brute = 0  pred = 0
+d = 1054  brute = 8  pred = 8
+All d | N with d>1 match.
+==== M = 533 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 533  N = 1066
+Divisors > 1: [ 2, 13, 26, 41, 82, 533, 1066 ]
+d = 2  brute = 2  pred = 2
+d = 13  brute = 0  pred = 0
+d = 26  brute = 0  pred = 0
+d = 41  brute = 0  pred = 0
+d = 82  brute = 4  pred = 4
+d = 533  brute = 6  pred = 6
+d = 1066  brute = 10  pred = 10
+All d | N with d>1 match.
+==== M = 535 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 535  N = 1070
+Divisors > 1: [ 2, 5, 10, 107, 214, 535, 1070 ]
+d = 2  brute = 0  pred = 0
+d = 5  brute = 2  pred = 2
+d = 10  brute = 0  pred = 0
+d = 107  brute = 0  pred = 0
+d = 214  brute = 6  pred = 6
+d = 535  brute = 0  pred = 0
+d = 1070  brute = 18  pred = 18
+All d | N with d>1 match.
+==== M = 537 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 537  N = 1074
+Divisors > 1: [ 2, 3, 6, 179, 358, 537, 1074 ]
+d = 2  brute = 2  pred = 2
+d = 3  brute = 0  pred = 0
+d = 6  brute = 2  pred = 2
+d = 179  brute = 10  pred = 10
+d = 358  brute = 0  pred = 0
+d = 537  brute = 6  pred = 6
+d = 1074  brute = 16  pred = 16
+All d | N with d>1 match.
+==== M = 541 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 541  N = 1082
+Divisors > 1: [ 2, 541, 1082 ]
+d = 2  brute = 1  pred = 1
+d = 541  brute = 5  pred = 5
+d = 1082  brute = 11  pred = 11
+All d | N with d>1 match.
+==== M = 543 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 543  N = 1086
+Divisors > 1: [ 2, 3, 6, 181, 362, 543, 1086 ]
+d = 2  brute = 0  pred = 0
+d = 3  brute = 2  pred = 2
+d = 6  brute = 0  pred = 0
+d = 181  brute = 0  pred = 0
+d = 362  brute = 18  pred = 18
+d = 543  brute = 0  pred = 0
+d = 1086  brute = 14  pred = 14
+All d | N with d>1 match.
+==== M = 545 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 545  N = 1090
+Divisors > 1: [ 2, 5, 10, 109, 218, 545, 1090 ]
+d = 2  brute = 2  pred = 2
+d = 5  brute = 2  pred = 2
+d = 10  brute = 0  pred = 0
+d = 109  brute = 6  pred = 6
+d = 218  brute = 0  pred = 0
+d = 545  brute = 16  pred = 16
+d = 1090  brute = 6  pred = 6
+All d | N with d>1 match.
+==== M = 547 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 547  N = 1094
+Divisors > 1: [ 2, 547, 1094 ]
+d = 2  brute = 1  pred = 1
+d = 547  brute = 3  pred = 3
+d = 1094  brute = 13  pred = 13
+All d | N with d>1 match.
+==== M = 551 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 551  N = 1102
+Divisors > 1: [ 2, 19, 29, 38, 58, 551, 1102 ]
+d = 2  brute = 0  pred = 0
+d = 19  brute = 0  pred = 0
+d = 29  brute = 6  pred = 6
+d = 38  brute = 6  pred = 6
+d = 58  brute = 0  pred = 0
+d = 551  brute = 0  pred = 0
+d = 1102  brute = 10  pred = 10
+All d | N with d>1 match.
+==== M = 553 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 553  N = 1106
+Divisors > 1: [ 2, 7, 14, 79, 158, 553, 1106 ]
+d = 2  brute = 0  pred = 0
+d = 7  brute = 0  pred = 0
+d = 14  brute = 4  pred = 4
+d = 79  brute = 0  pred = 0
+d = 158  brute = 0  pred = 0
+d = 553  brute = 4  pred = 4
+d = 1106  brute = 24  pred = 24
+All d | N with d>1 match.
+==== M = 555 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 555  N = 1110
+Divisors > 1: [ 2, 3, 5, 6, 10, 15, 30, 37, 74, 111, 185, 222, 370, 555, 1110 ]
+d = 2  brute = 0  pred = 0
+d = 3  brute = 0  pred = 0
+d = 5  brute = 0  pred = 0
+d = 6  brute = 0  pred = 0
+d = 10  brute = 0  pred = 0
+d = 15  brute = 0  pred = 0
+d = 30  brute = 4  pred = 4
+d = 37  brute = 0  pred = 0
+d = 74  brute = 20  pred = 20
+d = 111  brute = 0  pred = 0
+d = 185  brute = 16  pred = 16
+d = 222  brute = 0  pred = 0
+d = 370  brute = 0  pred = 0
+d = 555  brute = 4  pred = 4
+d = 1110  brute = 8  pred = 8
+All d | N with d>1 match.
+==== M = 557 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 557  N = 1114
+Divisors > 1: [ 2, 557, 1114 ]
+d = 2  brute = 1  pred = 1
+d = 557  brute = 9  pred = 9
+d = 1114  brute = 11  pred = 11
+All d | N with d>1 match.
+==== M = 559 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 559  N = 1118
+Divisors > 1: [ 2, 13, 26, 43, 86, 559, 1118 ]
+d = 2  brute = 0  pred = 0
+d = 13  brute = 0  pred = 0
+d = 26  brute = 6  pred = 6
+d = 43  brute = 2  pred = 2
+d = 86  brute = 0  pred = 0
+d = 559  brute = 0  pred = 0
+d = 1118  brute = 18  pred = 18
+All d | N with d>1 match.
+==== M = 561 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 561  N = 1122
+Divisors > 1: [ 2, 3, 6, 11, 17, 22, 33, 34, 51, 66, 102, 187, 374, 561, 1122 ]
+d = 2  brute = 4  pred = 4
+d = 3  brute = 0  pred = 0
+d = 6  brute = 0  pred = 0
+d = 11  brute = 0  pred = 0
+d = 17  brute = 8  pred = 8
+d = 22  brute = 0  pred = 0
+d = 33  brute = 4  pred = 4
+d = 34  brute = 0  pred = 0
+d = 51  brute = 4  pred = 4
+d = 66  brute = 8  pred = 8
+d = 102  brute = 0  pred = 0
+d = 187  brute = 0  pred = 0
+d = 374  brute = 28  pred = 28
+d = 561  brute = 8  pred = 8
+d = 1122  brute = 8  pred = 8
+All d | N with d>1 match.
+==== M = 563 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 563  N = 1126
+Divisors > 1: [ 2, 563, 1126 ]
+d = 2  brute = 1  pred = 1
+d = 563  brute = 9  pred = 9
+d = 1126  brute = 11  pred = 11
+All d | N with d>1 match.
+==== M = 565 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 565  N = 1130
+Divisors > 1: [ 2, 5, 10, 113, 226, 565, 1130 ]
+d = 2  brute = 2  pred = 2
+d = 5  brute = 0  pred = 0
+d = 10  brute = 0  pred = 0
+d = 113  brute = 0  pred = 0
+d = 226  brute = 8  pred = 8
+d = 565  brute = 6  pred = 6
+d = 1130  brute = 22  pred = 22
+All d | N with d>1 match.
+==== M = 569 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 569  N = 1138
+Divisors > 1: [ 2, 569, 1138 ]
+d = 2  brute = 2  pred = 2
+d = 569  brute = 16  pred = 16
+d = 1138  brute = 6  pred = 6
+All d | N with d>1 match.
+==== M = 571 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 571  N = 1142
+Divisors > 1: [ 2, 571, 1142 ]
+d = 2  brute = 1  pred = 1
+d = 571  brute = 5  pred = 5
+d = 1142  brute = 9  pred = 9
+All d | N with d>1 match.
+==== M = 573 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 573  N = 1146
+Divisors > 1: [ 2, 3, 6, 191, 382, 573, 1146 ]
+d = 2  brute = 0  pred = 0
+d = 3  brute = 0  pred = 0
+d = 6  brute = 0  pred = 0
+d = 191  brute = 0  pred = 0
+d = 382  brute = 0  pred = 0
+d = 573  brute = 8  pred = 8
+d = 1146  brute = 16  pred = 16
+All d | N with d>1 match.
+==== M = 577 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 577  N = 1154
+Divisors > 1: [ 2, 577, 1154 ]
+d = 2  brute = 2  pred = 2
+d = 577  brute = 4  pred = 4
+d = 1154  brute = 28  pred = 28
+All d | N with d>1 match.
+==== M = 579 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 579  N = 1158
+Divisors > 1: [ 2, 3, 6, 193, 386, 579, 1158 ]
+d = 2  brute = 2  pred = 2
+d = 3  brute = 2  pred = 2
+d = 6  brute = 2  pred = 2
+d = 193  brute = 0  pred = 0
+d = 386  brute = 20  pred = 20
+d = 579  brute = 8  pred = 8
+d = 1158  brute = 12  pred = 12
+All d | N with d>1 match.
+==== M = 581 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 581  N = 1162
+Divisors > 1: [ 2, 7, 14, 83, 166, 581, 1162 ]
+d = 2  brute = 0  pred = 0
+d = 7  brute = 0  pred = 0
+d = 14  brute = 4  pred = 4
+d = 83  brute = 6  pred = 6
+d = 166  brute = 10  pred = 10
+d = 581  brute = 14  pred = 14
+d = 1162  brute = 6  pred = 6
+All d | N with d>1 match.
+==== M = 583 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 583  N = 1166
+Divisors > 1: [ 2, 11, 22, 53, 106, 583, 1166 ]
+d = 2  brute = 0  pred = 0
+d = 11  brute = 2  pred = 2
+d = 22  brute = 0  pred = 0
+d = 53  brute = 0  pred = 0
+d = 106  brute = 6  pred = 6
+d = 583  brute = 0  pred = 0
+d = 1166  brute = 18  pred = 18
+All d | N with d>1 match.
+==== M = 587 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 587  N = 1174
+Divisors > 1: [ 2, 587, 1174 ]
+d = 2  brute = 1  pred = 1
+d = 587  brute = 7  pred = 7
+d = 1174  brute = 15  pred = 15
+All d | N with d>1 match.
+==== M = 589 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 589  N = 1178
+Divisors > 1: [ 2, 19, 31, 38, 62, 589, 1178 ]
+d = 2  brute = 0  pred = 0
+d = 19  brute = 0  pred = 0
+d = 31  brute = 0  pred = 0
+d = 38  brute = 0  pred = 0
+d = 62  brute = 0  pred = 0
+d = 589  brute = 8  pred = 8
+d = 1178  brute = 8  pred = 8
+All d | N with d>1 match.
+==== M = 591 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 591  N = 1182
+Divisors > 1: [ 2, 3, 6, 197, 394, 591, 1182 ]
+d = 2  brute = 0  pred = 0
+d = 3  brute = 0  pred = 0
+d = 6  brute = 2  pred = 2
+d = 197  brute = 10  pred = 10
+d = 394  brute = 0  pred = 0
+d = 591  brute = 0  pred = 0
+d = 1182  brute = 10  pred = 10
+All d | N with d>1 match.
+==== M = 593 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 593  N = 1186
+Divisors > 1: [ 2, 593, 1186 ]
+d = 2  brute = 2  pred = 2
+d = 593  brute = 12  pred = 12
+d = 1186  brute = 12  pred = 12
+All d | N with d>1 match.
+==== M = 595 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 595  N = 1190
+Divisors > 1: [ 2, 5, 7, 10, 14, 17, 34, 35, 70, 85, 119, 170, 238, 595, 1190 ]
+d = 2  brute = 0  pred = 0
+d = 5  brute = 0  pred = 0
+d = 7  brute = 0  pred = 0
+d = 10  brute = 0  pred = 0
+d = 14  brute = 0  pred = 0
+d = 17  brute = 0  pred = 0
+d = 34  brute = 8  pred = 8
+d = 35  brute = 4  pred = 4
+d = 70  brute = 4  pred = 4
+d = 85  brute = 0  pred = 0
+d = 119  brute = 0  pred = 0
+d = 170  brute = 0  pred = 0
+d = 238  brute = 0  pred = 0
+d = 595  brute = 4  pred = 4
+d = 1190  brute = 20  pred = 20
+All d | N with d>1 match.
+==== M = 597 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 597  N = 1194
+Divisors > 1: [ 2, 3, 6, 199, 398, 597, 1194 ]
+d = 2  brute = 0  pred = 0
+d = 3  brute = 2  pred = 2
+d = 6  brute = 2  pred = 2
+d = 199  brute = 0  pred = 0
+d = 398  brute = 20  pred = 20
+d = 597  brute = 6  pred = 6
+d = 1194  brute = 14  pred = 14
+All d | N with d>1 match.
+==== M = 599 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 599  N = 1198
+Divisors > 1: [ 2, 599, 1198 ]
+d = 2  brute = 0  pred = 0
+d = 599  brute = 0  pred = 0
+d = 1198  brute = 6  pred = 6
+All d | N with d>1 match.
+==== M = 601 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 601  N = 1202
+Divisors > 1: [ 2, 601, 1202 ]
+d = 2  brute = 2  pred = 2
+d = 601  brute = 10  pred = 10
+d = 1202  brute = 12  pred = 12
+All d | N with d>1 match.
+==== M = 607 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 607  N = 1214
+Divisors > 1: [ 2, 607, 1214 ]
+d = 2  brute = 0  pred = 0
+d = 607  brute = 0  pred = 0
+d = 1214  brute = 20  pred = 20
+All d | N with d>1 match.
+==== M = 609 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 609  N = 1218
+Divisors > 1: [ 2, 3, 6, 7, 14, 21, 29, 42, 58, 87, 174, 203, 406, 609, 1218 ]
+d = 2  brute = 0  pred = 0
+d = 3  brute = 0  pred = 0
+d = 6  brute = 4  pred = 4
+d = 7  brute = 0  pred = 0
+d = 14  brute = 0  pred = 0
+d = 21  brute = 0  pred = 0
+d = 29  brute = 0  pred = 0
+d = 42  brute = 4  pred = 4
+d = 58  brute = 0  pred = 0
+d = 87  brute = 0  pred = 0
+d = 174  brute = 12  pred = 12
+d = 203  brute = 8  pred = 8
+d = 406  brute = 0  pred = 0
+d = 609  brute = 8  pred = 8
+d = 1218  brute = 12  pred = 12
+All d | N with d>1 match.
+==== M = 611 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 611  N = 1222
+Divisors > 1: [ 2, 13, 26, 47, 94, 611, 1222 ]
+d = 2  brute = 0  pred = 0
+d = 13  brute = 2  pred = 2
+d = 26  brute = 6  pred = 6
+d = 47  brute = 0  pred = 0
+d = 94  brute = 8  pred = 8
+d = 611  brute = 10  pred = 10
+d = 1222  brute = 6  pred = 6
+All d | N with d>1 match.
+==== M = 613 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 613  N = 1226
+Divisors > 1: [ 2, 613, 1226 ]
+d = 2  brute = 1  pred = 1
+d = 613  brute = 5  pred = 5
+d = 1226  brute = 21  pred = 21
+All d | N with d>1 match.
+==== M = 615 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 615  N = 1230
+Divisors > 1: [ 2, 3, 5, 6, 10, 15, 30, 41, 82, 123, 205, 246, 410, 615, 1230 ]
+d = 2  brute = 0  pred = 0
+d = 3  brute = 0  pred = 0
+d = 5  brute = 4  pred = 4
+d = 6  brute = 0  pred = 0
+d = 10  brute = 0  pred = 0
+d = 15  brute = 0  pred = 0
+d = 30  brute = 0  pred = 0
+d = 41  brute = 16  pred = 16
+d = 82  brute = 0  pred = 0
+d = 123  brute = 0  pred = 0
+d = 205  brute = 0  pred = 0
+d = 246  brute = 12  pred = 12
+d = 410  brute = 16  pred = 16
+d = 615  brute = 0  pred = 0
+d = 1230  brute = 12  pred = 12
+All d | N with d>1 match.
+==== M = 617 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 617  N = 1234
+Divisors > 1: [ 2, 617, 1234 ]
+d = 2  brute = 2  pred = 2
+d = 617  brute = 6  pred = 6
+d = 1234  brute = 12  pred = 12
+All d | N with d>1 match.
+==== M = 619 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 619  N = 1238
+Divisors > 1: [ 2, 619, 1238 ]
+d = 2  brute = 1  pred = 1
+d = 619  brute = 5  pred = 5
+d = 1238  brute = 21  pred = 21
+All d | N with d>1 match.
+==== M = 623 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 623  N = 1246
+Divisors > 1: [ 2, 7, 14, 89, 178, 623, 1246 ]
+d = 2  brute = 0  pred = 0
+d = 7  brute = 0  pred = 0
+d = 14  brute = 0  pred = 0
+d = 89  brute = 12  pred = 12
+d = 178  brute = 8  pred = 8
+d = 623  brute = 0  pred = 0
+d = 1246  brute = 8  pred = 8
+All d | N with d>1 match.
+==== M = 627 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 627  N = 1254
+Divisors > 1: [ 2, 3, 6, 11, 19, 22, 33, 38, 57, 66, 114, 209, 418, 627, 1254 ]
+d = 2  brute = 4  pred = 4
+d = 3  brute = 0  pred = 0
+d = 6  brute = 0  pred = 0
+d = 11  brute = 0  pred = 0
+d = 19  brute = 0  pred = 0
+d = 22  brute = 0  pred = 0
+d = 33  brute = 4  pred = 4
+d = 38  brute = 0  pred = 0
+d = 57  brute = 4  pred = 4
+d = 66  brute = 0  pred = 0
+d = 114  brute = 0  pred = 0
+d = 209  brute = 20  pred = 20
+d = 418  brute = 0  pred = 0
+d = 627  brute = 4  pred = 4
+d = 1254  brute = 12  pred = 12
+All d | N with d>1 match.
+==== M = 629 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 629  N = 1258
+Divisors > 1: [ 2, 17, 34, 37, 74, 629, 1258 ]
+d = 2  brute = 2  pred = 2
+d = 17  brute = 0  pred = 0
+d = 34  brute = 4  pred = 4
+d = 37  brute = 0  pred = 0
+d = 74  brute = 0  pred = 0
+d = 629  brute = 18  pred = 18
+d = 1258  brute = 6  pred = 6
+All d | N with d>1 match.
+==== M = 631 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 631  N = 1262
+Divisors > 1: [ 2, 631, 1262 ]
+d = 2  brute = 0  pred = 0
+d = 631  brute = 0  pred = 0
+d = 1262  brute = 18  pred = 18
+All d | N with d>1 match.
+==== M = 633 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 633  N = 1266
+Divisors > 1: [ 2, 3, 6, 211, 422, 633, 1266 ]
+d = 2  brute = 2  pred = 2
+d = 3  brute = 2  pred = 2
+d = 6  brute = 0  pred = 0
+d = 211  brute = 0  pred = 0
+d = 422  brute = 10  pred = 10
+d = 633  brute = 10  pred = 10
+d = 1266  brute = 16  pred = 16
+All d | N with d>1 match.
+==== M = 635 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 635  N = 1270
+Divisors > 1: [ 2, 5, 10, 127, 254, 635, 1270 ]
+d = 2  brute = 0  pred = 0
+d = 5  brute = 2  pred = 2
+d = 10  brute = 2  pred = 2
+d = 127  brute = 0  pred = 0
+d = 254  brute = 16  pred = 16
+d = 635  brute = 10  pred = 10
+d = 1270  brute = 10  pred = 10
+All d | N with d>1 match.
+==== M = 641 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 641  N = 1282
+Divisors > 1: [ 2, 641, 1282 ]
+d = 2  brute = 2  pred = 2
+d = 641  brute = 14  pred = 14
+d = 1282  brute = 6  pred = 6
+All d | N with d>1 match.
+==== M = 643 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 643  N = 1286
+Divisors > 1: [ 2, 643, 1286 ]
+d = 2  brute = 1  pred = 1
+d = 643  brute = 3  pred = 3
+d = 1286  brute = 29  pred = 29
+All d | N with d>1 match.
+==== M = 645 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 645  N = 1290
+Divisors > 1: [ 2, 3, 5, 6, 10, 15, 30, 43, 86, 129, 215, 258, 430, 645, 1290 ]
+d = 2  brute = 0  pred = 0
+d = 3  brute = 0  pred = 0
+d = 5  brute = 4  pred = 4
+d = 6  brute = 0  pred = 0
+d = 10  brute = 0  pred = 0
+d = 15  brute = 0  pred = 0
+d = 30  brute = 4  pred = 4
+d = 43  brute = 0  pred = 0
+d = 86  brute = 20  pred = 20
+d = 129  brute = 12  pred = 12
+d = 215  brute = 0  pred = 0
+d = 258  brute = 0  pred = 0
+d = 430  brute = 0  pred = 0
+d = 645  brute = 8  pred = 8
+d = 1290  brute = 8  pred = 8
+All d | N with d>1 match.
+==== M = 647 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 647  N = 1294
+Divisors > 1: [ 2, 647, 1294 ]
+d = 2  brute = 0  pred = 0
+d = 647  brute = 0  pred = 0
+d = 1294  brute = 14  pred = 14
+All d | N with d>1 match.
+==== M = 649 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 649  N = 1298
+Divisors > 1: [ 2, 11, 22, 59, 118, 649, 1298 ]
+d = 2  brute = 2  pred = 2
+d = 11  brute = 2  pred = 2
+d = 22  brute = 0  pred = 0
+d = 59  brute = 0  pred = 0
+d = 118  brute = 6  pred = 6
+d = 649  brute = 10  pred = 10
+d = 1298  brute = 16  pred = 16
+All d | N with d>1 match.
+==== M = 651 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 651  N = 1302
+Divisors > 1: [ 2, 3, 6, 7, 14, 21, 31, 42, 62, 93, 186, 217, 434, 651, 1302 ]
+d = 2  brute = 0  pred = 0
+d = 3  brute = 4  pred = 4
+d = 6  brute = 4  pred = 4
+d = 7  brute = 0  pred = 0
+d = 14  brute = 0  pred = 0
+d = 21  brute = 4  pred = 4
+d = 31  brute = 0  pred = 0
+d = 42  brute = 4  pred = 4
+d = 62  brute = 16  pred = 16
+d = 93  brute = 0  pred = 0
+d = 186  brute = 0  pred = 0
+d = 217  brute = 0  pred = 0
+d = 434  brute = 24  pred = 24
+d = 651  brute = 8  pred = 8
+d = 1302  brute = 8  pred = 8
+All d | N with d>1 match.
+==== M = 653 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 653  N = 1306
+Divisors > 1: [ 2, 653, 1306 ]
+d = 2  brute = 1  pred = 1
+d = 653  brute = 7  pred = 7
+d = 1306  brute = 9  pred = 9
+All d | N with d>1 match.
+==== M = 655 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 655  N = 1310
+Divisors > 1: [ 2, 5, 10, 131, 262, 655, 1310 ]
+d = 2  brute = 0  pred = 0
+d = 5  brute = 0  pred = 0
+d = 10  brute = 2  pred = 2
+d = 131  brute = 10  pred = 10
+d = 262  brute = 0  pred = 0
+d = 655  brute = 0  pred = 0
+d = 1310  brute = 18  pred = 18
+All d | N with d>1 match.
+==== M = 659 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 659  N = 1318
+Divisors > 1: [ 2, 659, 1318 ]
+d = 2  brute = 1  pred = 1
+d = 659  brute = 11  pred = 11
+d = 1318  brute = 5  pred = 5
+All d | N with d>1 match.
+==== M = 661 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 661  N = 1322
+Divisors > 1: [ 2, 661, 1322 ]
+d = 2  brute = 1  pred = 1
+d = 661  brute = 9  pred = 9
+d = 1322  brute = 21  pred = 21
+All d | N with d>1 match.
+==== M = 663 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 663  N = 1326
+Divisors > 1: [ 2, 3, 6, 13, 17, 26, 34, 39, 51, 78, 102, 221, 442, 663, 1326 ]
+d = 2  brute = 0  pred = 0
+d = 3  brute = 0  pred = 0
+d = 6  brute = 0  pred = 0
+d = 13  brute = 0  pred = 0
+d = 17  brute = 8  pred = 8
+d = 26  brute = 12  pred = 12
+d = 34  brute = 0  pred = 0
+d = 39  brute = 0  pred = 0
+d = 51  brute = 4  pred = 4
+d = 78  brute = 0  pred = 0
+d = 102  brute = 0  pred = 0
+d = 221  brute = 16  pred = 16
+d = 442  brute = 0  pred = 0
+d = 663  brute = 0  pred = 0
+d = 1326  brute = 20  pred = 20
+All d | N with d>1 match.
+==== M = 665 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 665  N = 1330
+Divisors > 1: [ 2, 5, 7, 10, 14, 19, 35, 38, 70, 95, 133, 190, 266, 665, 1330 ]
+d = 2  brute = 0  pred = 0
+d = 5  brute = 0  pred = 0
+d = 7  brute = 0  pred = 0
+d = 10  brute = 4  pred = 4
+d = 14  brute = 8  pred = 8
+d = 19  brute = 4  pred = 4
+d = 35  brute = 0  pred = 0
+d = 38  brute = 0  pred = 0
+d = 70  brute = 4  pred = 4
+d = 95  brute = 0  pred = 0
+d = 133  brute = 0  pred = 0
+d = 190  brute = 0  pred = 0
+d = 266  brute = 20  pred = 20
+d = 665  brute = 12  pred = 12
+d = 1330  brute = 12  pred = 12
+All d | N with d>1 match.
+==== M = 667 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 667  N = 1334
+Divisors > 1: [ 2, 23, 29, 46, 58, 667, 1334 ]
+d = 2  brute = 0  pred = 0
+d = 23  brute = 0  pred = 0
+d = 29  brute = 0  pred = 0
+d = 46  brute = 0  pred = 0
+d = 58  brute = 0  pred = 0
+d = 667  brute = 4  pred = 4
+d = 1334  brute = 16  pred = 16
+All d | N with d>1 match.
+==== M = 669 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 669  N = 1338
+Divisors > 1: [ 2, 3, 6, 223, 446, 669, 1338 ]
+d = 2  brute = 0  pred = 0
+d = 3  brute = 2  pred = 2
+d = 6  brute = 2  pred = 2
+d = 223  brute = 0  pred = 0
+d = 446  brute = 32  pred = 32
+d = 669  brute = 6  pred = 6
+d = 1338  brute = 10  pred = 10
+All d | N with d>1 match.
+==== M = 671 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 671  N = 1342
+Divisors > 1: [ 2, 11, 22, 61, 122, 671, 1342 ]
+d = 2  brute = 0  pred = 0
+d = 11  brute = 0  pred = 0
+d = 22  brute = 2  pred = 2
+d = 61  brute = 6  pred = 6
+d = 122  brute = 0  pred = 0
+d = 671  brute = 0  pred = 0
+d = 1342  brute = 10  pred = 10
+All d | N with d>1 match.
+==== M = 673 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 673  N = 1346
+Divisors > 1: [ 2, 673, 1346 ]
+d = 2  brute = 2  pred = 2
+d = 673  brute = 6  pred = 6
+d = 1346  brute = 14  pred = 14
+All d | N with d>1 match.
+==== M = 677 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 677  N = 1354
+Divisors > 1: [ 2, 677, 1354 ]
+d = 2  brute = 1  pred = 1
+d = 677  brute = 15  pred = 15
+d = 1354  brute = 11  pred = 11
+All d | N with d>1 match.
+==== M = 679 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 679  N = 1358
+Divisors > 1: [ 2, 7, 14, 97, 194, 679, 1358 ]
+d = 2  brute = 0  pred = 0
+d = 7  brute = 0  pred = 0
+d = 14  brute = 0  pred = 0
+d = 97  brute = 4  pred = 4
+d = 194  brute = 20  pred = 20
+d = 679  brute = 0  pred = 0
+d = 1358  brute = 12  pred = 12
+All d | N with d>1 match.
+==== M = 681 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 681  N = 1362
+Divisors > 1: [ 2, 3, 6, 227, 454, 681, 1362 ]
+d = 2  brute = 2  pred = 2
+d = 3  brute = 0  pred = 0
+d = 6  brute = 2  pred = 2
+d = 227  brute = 10  pred = 10
+d = 454  brute = 0  pred = 0
+d = 681  brute = 10  pred = 10
+d = 1362  brute = 12  pred = 12
+All d | N with d>1 match.
+==== M = 683 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 683  N = 1366
+Divisors > 1: [ 2, 683, 1366 ]
+d = 2  brute = 1  pred = 1
+d = 683  brute = 5  pred = 5
+d = 1366  brute = 9  pred = 9
+All d | N with d>1 match.
+==== M = 685 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 685  N = 1370
+Divisors > 1: [ 2, 5, 10, 137, 274, 685, 1370 ]
+d = 2  brute = 2  pred = 2
+d = 5  brute = 0  pred = 0
+d = 10  brute = 0  pred = 0
+d = 137  brute = 0  pred = 0
+d = 274  brute = 12  pred = 12
+d = 685  brute = 6  pred = 6
+d = 1370  brute = 22  pred = 22
+All d | N with d>1 match.
+==== M = 687 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 687  N = 1374
+Divisors > 1: [ 2, 3, 6, 229, 458, 687, 1374 ]
+d = 2  brute = 0  pred = 0
+d = 3  brute = 2  pred = 2
+d = 6  brute = 0  pred = 0
+d = 229  brute = 0  pred = 0
+d = 458  brute = 26  pred = 26
+d = 687  brute = 0  pred = 0
+d = 1374  brute = 14  pred = 14
+All d | N with d>1 match.
+==== M = 689 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 689  N = 1378
+Divisors > 1: [ 2, 13, 26, 53, 106, 689, 1378 ]
+d = 2  brute = 2  pred = 2
+d = 13  brute = 2  pred = 2
+d = 26  brute = 0  pred = 0
+d = 53  brute = 6  pred = 6
+d = 106  brute = 0  pred = 0
+d = 689  brute = 20  pred = 20
+d = 1378  brute = 10  pred = 10
+All d | N with d>1 match.
+==== M = 691 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 691  N = 1382
+Divisors > 1: [ 2, 691, 1382 ]
+d = 2  brute = 1  pred = 1
+d = 691  brute = 5  pred = 5
+d = 1382  brute = 19  pred = 19
+All d | N with d>1 match.
+==== M = 695 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 695  N = 1390
+Divisors > 1: [ 2, 5, 10, 139, 278, 695, 1390 ]
+d = 2  brute = 0  pred = 0
+d = 5  brute = 0  pred = 0
+d = 10  brute = 2  pred = 2
+d = 139  brute = 6  pred = 6
+d = 278  brute = 0  pred = 0
+d = 695  brute = 0  pred = 0
+d = 1390  brute = 10  pred = 10
+All d | N with d>1 match.
+==== M = 697 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 697  N = 1394
+Divisors > 1: [ 2, 17, 34, 41, 82, 697, 1394 ]
+d = 2  brute = 4  pred = 4
+d = 17  brute = 0  pred = 0
+d = 34  brute = 0  pred = 0
+d = 41  brute = 0  pred = 0
+d = 82  brute = 0  pred = 0
+d = 697  brute = 4  pred = 4
+d = 1394  brute = 24  pred = 24
+All d | N with d>1 match.
+==== M = 699 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 699  N = 1398
+Divisors > 1: [ 2, 3, 6, 233, 466, 699, 1398 ]
+d = 2  brute = 2  pred = 2
+d = 3  brute = 0  pred = 0
+d = 6  brute = 0  pred = 0
+d = 233  brute = 12  pred = 12
+d = 466  brute = 0  pred = 0
+d = 699  brute = 10  pred = 10
+d = 1398  brute = 10  pred = 10
+All d | N with d>1 match.
+==== M = 701 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 701  N = 1402
+Divisors > 1: [ 2, 701, 1402 ]
+d = 2  brute = 1  pred = 1
+d = 701  brute = 17  pred = 17
+d = 1402  brute = 7  pred = 7
+All d | N with d>1 match.
+==== M = 703 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 703  N = 1406
+Divisors > 1: [ 2, 19, 37, 38, 74, 703, 1406 ]
+d = 2  brute = 0  pred = 0
+d = 19  brute = 0  pred = 0
+d = 37  brute = 2  pred = 2
+d = 38  brute = 6  pred = 6
+d = 74  brute = 0  pred = 0
+d = 703  brute = 0  pred = 0
+d = 1406  brute = 22  pred = 22
+All d | N with d>1 match.
+==== M = 705 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 705  N = 1410
+Divisors > 1: [ 2, 3, 5, 6, 10, 15, 30, 47, 94, 141, 235, 282, 470, 705, 1410 ]
+d = 2  brute = 0  pred = 0
+d = 3  brute = 0  pred = 0
+d = 5  brute = 4  pred = 4
+d = 6  brute = 0  pred = 0
+d = 10  brute = 0  pred = 0
+d = 15  brute = 0  pred = 0
+d = 30  brute = 4  pred = 4
+d = 47  brute = 0  pred = 0
+d = 94  brute = 0  pred = 0
+d = 141  brute = 8  pred = 8
+d = 235  brute = 0  pred = 0
+d = 282  brute = 0  pred = 0
+d = 470  brute = 20  pred = 20
+d = 705  brute = 12  pred = 12
+d = 1410  brute = 16  pred = 16
+All d | N with d>1 match.
+==== M = 707 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 707  N = 1414
+Divisors > 1: [ 2, 7, 14, 101, 202, 707, 1414 ]
+d = 2  brute = 0  pred = 0
+d = 7  brute = 0  pred = 0
+d = 14  brute = 4  pred = 4
+d = 101  brute = 14  pred = 14
+d = 202  brute = 6  pred = 6
+d = 707  brute = 6  pred = 6
+d = 1414  brute = 14  pred = 14
+All d | N with d>1 match.
+==== M = 709 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 709  N = 1418
+Divisors > 1: [ 2, 709, 1418 ]
+d = 2  brute = 1  pred = 1
+d = 709  brute = 5  pred = 5
+d = 1418  brute = 17  pred = 17
+All d | N with d>1 match.
+==== M = 713 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 713  N = 1426
+Divisors > 1: [ 2, 23, 31, 46, 62, 713, 1426 ]
+d = 2  brute = 0  pred = 0
+d = 23  brute = 0  pred = 0
+d = 31  brute = 0  pred = 0
+d = 46  brute = 4  pred = 4
+d = 62  brute = 0  pred = 0
+d = 713  brute = 12  pred = 12
+d = 1426  brute = 16  pred = 16
+All d | N with d>1 match.
+==== M = 715 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 715  N = 1430
+Divisors > 1: [ 2, 5, 10, 11, 13, 22, 26, 55, 65, 110, 130, 143, 286, 715, 1430 
+]
+d = 2  brute = 0  pred = 0
+d = 5  brute = 0  pred = 0
+d = 10  brute = 4  pred = 4
+d = 11  brute = 0  pred = 0
+d = 13  brute = 0  pred = 0
+d = 22  brute = 0  pred = 0
+d = 26  brute = 0  pred = 0
+d = 55  brute = 0  pred = 0
+d = 65  brute = 8  pred = 8
+d = 110  brute = 0  pred = 0
+d = 130  brute = 0  pred = 0
+d = 143  brute = 0  pred = 0
+d = 286  brute = 12  pred = 12
+d = 715  brute = 4  pred = 4
+d = 1430  brute = 16  pred = 16
+All d | N with d>1 match.
+==== M = 717 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 717  N = 1434
+Divisors > 1: [ 2, 3, 6, 239, 478, 717, 1434 ]
+d = 2  brute = 0  pred = 0
+d = 3  brute = 0  pred = 0
+d = 6  brute = 0  pred = 0
+d = 239  brute = 0  pred = 0
+d = 478  brute = 0  pred = 0
+d = 717  brute = 8  pred = 8
+d = 1434  brute = 16  pred = 16
+All d | N with d>1 match.
+==== M = 719 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 719  N = 1438
+Divisors > 1: [ 2, 719, 1438 ]
+d = 2  brute = 0  pred = 0
+d = 719  brute = 0  pred = 0
+d = 1438  brute = 8  pred = 8
+All d | N with d>1 match.
+==== M = 721 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 721  N = 1442
+Divisors > 1: [ 2, 7, 14, 103, 206, 721, 1442 ]
+d = 2  brute = 0  pred = 0
+d = 7  brute = 0  pred = 0
+d = 14  brute = 0  pred = 0
+d = 103  brute = 0  pred = 0
+d = 206  brute = 20  pred = 20
+d = 721  brute = 8  pred = 8
+d = 1442  brute = 12  pred = 12
+All d | N with d>1 match.
+==== M = 723 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 723  N = 1446
+Divisors > 1: [ 2, 3, 6, 241, 482, 723, 1446 ]
+d = 2  brute = 2  pred = 2
+d = 3  brute = 2  pred = 2
+d = 6  brute = 2  pred = 2
+d = 241  brute = 0  pred = 0
+d = 482  brute = 20  pred = 20
+d = 723  brute = 4  pred = 4
+d = 1446  brute = 16  pred = 16
+All d | N with d>1 match.
+==== M = 727 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 727  N = 1454
+Divisors > 1: [ 2, 727, 1454 ]
+d = 2  brute = 0  pred = 0
+d = 727  brute = 0  pred = 0
+d = 1454  brute = 30  pred = 30
+All d | N with d>1 match.
+==== M = 731 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 731  N = 1462
+Divisors > 1: [ 2, 17, 34, 43, 86, 731, 1462 ]
+d = 2  brute = 2  pred = 2
+d = 17  brute = 0  pred = 0
+d = 34  brute = 4  pred = 4
+d = 43  brute = 2  pred = 2
+d = 86  brute = 10  pred = 10
+d = 731  brute = 12  pred = 12
+d = 1462  brute = 8  pred = 8
+All d | N with d>1 match.
+==== M = 733 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 733  N = 1466
+Divisors > 1: [ 2, 733, 1466 ]
+d = 2  brute = 1  pred = 1
+d = 733  brute = 7  pred = 7
+d = 1466  brute = 29  pred = 29
+All d | N with d>1 match.
+==== M = 737 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 737  N = 1474
+Divisors > 1: [ 2, 11, 22, 67, 134, 737, 1474 ]
+d = 2  brute = 2  pred = 2
+d = 11  brute = 2  pred = 2
+d = 22  brute = 0  pred = 0
+d = 67  brute = 0  pred = 0
+d = 134  brute = 14  pred = 14
+d = 737  brute = 10  pred = 10
+d = 1474  brute = 8  pred = 8
+All d | N with d>1 match.
+==== M = 739 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 739  N = 1478
+Divisors > 1: [ 2, 739, 1478 ]
+d = 2  brute = 1  pred = 1
+d = 739  brute = 5  pred = 5
+d = 1478  brute = 15  pred = 15
+All d | N with d>1 match.
+==== M = 741 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 741  N = 1482
+Divisors > 1: [ 2, 3, 6, 13, 19, 26, 38, 39, 57, 78, 114, 247, 494, 741, 1482 ]
+d = 2  brute = 0  pred = 0
+d = 3  brute = 4  pred = 4
+d = 6  brute = 0  pred = 0
+d = 13  brute = 0  pred = 0
+d = 19  brute = 0  pred = 0
+d = 26  brute = 0  pred = 0
+d = 38  brute = 12  pred = 12
+d = 39  brute = 0  pred = 0
+d = 57  brute = 0  pred = 0
+d = 78  brute = 4  pred = 4
+d = 114  brute = 8  pred = 8
+d = 247  brute = 0  pred = 0
+d = 494  brute = 28  pred = 28
+d = 741  brute = 12  pred = 12
+d = 1482  brute = 12  pred = 12
+All d | N with d>1 match.
+==== M = 743 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 743  N = 1486
+Divisors > 1: [ 2, 743, 1486 ]
+d = 2  brute = 0  pred = 0
+d = 743  brute = 0  pred = 0
+d = 1486  brute = 10  pred = 10
+All d | N with d>1 match.
+==== M = 745 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 745  N = 1490
+Divisors > 1: [ 2, 5, 10, 149, 298, 745, 1490 ]
+d = 2  brute = 2  pred = 2
+d = 5  brute = 2  pred = 2
+d = 10  brute = 0  pred = 0
+d = 149  brute = 14  pred = 14
+d = 298  brute = 0  pred = 0
+d = 745  brute = 8  pred = 8
+d = 1490  brute = 18  pred = 18
+All d | N with d>1 match.
+==== M = 749 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 749  N = 1498
+Divisors > 1: [ 2, 7, 14, 107, 214, 749, 1498 ]
+d = 2  brute = 0  pred = 0
+d = 7  brute = 0  pred = 0
+d = 14  brute = 0  pred = 0
+d = 107  brute = 0  pred = 0
+d = 214  brute = 0  pred = 0
+d = 749  brute = 16  pred = 16
+d = 1498  brute = 8  pred = 8
+All d | N with d>1 match.
+==== M = 751 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 751  N = 1502
+Divisors > 1: [ 2, 751, 1502 ]
+d = 2  brute = 0  pred = 0
+d = 751  brute = 0  pred = 0
+d = 1502  brute = 12  pred = 12
+All d | N with d>1 match.
+==== M = 753 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 753  N = 1506
+Divisors > 1: [ 2, 3, 6, 251, 502, 753, 1506 ]
+d = 2  brute = 2  pred = 2
+d = 3  brute = 0  pred = 0
+d = 6  brute = 2  pred = 2
+d = 251  brute = 14  pred = 14
+d = 502  brute = 0  pred = 0
+d = 753  brute = 6  pred = 6
+d = 1506  brute = 12  pred = 12
+All d | N with d>1 match.
+==== M = 755 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 755  N = 1510
+Divisors > 1: [ 2, 5, 10, 151, 302, 755, 1510 ]
+d = 2  brute = 0  pred = 0
+d = 5  brute = 0  pred = 0
+d = 10  brute = 0  pred = 0
+d = 151  brute = 0  pred = 0
+d = 302  brute = 0  pred = 0
+d = 755  brute = 12  pred = 12
+d = 1510  brute = 8  pred = 8
+All d | N with d>1 match.
+==== M = 757 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 757  N = 1514
+Divisors > 1: [ 2, 757, 1514 ]
+d = 2  brute = 1  pred = 1
+d = 757  brute = 5  pred = 5
+d = 1514  brute = 25  pred = 25
+All d | N with d>1 match.
+==== M = 759 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 759  N = 1518
+Divisors > 1: [ 2, 3, 6, 11, 22, 23, 33, 46, 66, 69, 138, 253, 506, 759, 1518 ]
+d = 2  brute = 0  pred = 0
+d = 3  brute = 0  pred = 0
+d = 6  brute = 0  pred = 0
+d = 11  brute = 4  pred = 4
+d = 22  brute = 0  pred = 0
+d = 23  brute = 0  pred = 0
+d = 33  brute = 4  pred = 4
+d = 46  brute = 0  pred = 0
+d = 66  brute = 8  pred = 8
+d = 69  brute = 0  pred = 0
+d = 138  brute = 8  pred = 8
+d = 253  brute = 0  pred = 0
+d = 506  brute = 28  pred = 28
+d = 759  brute = 0  pred = 0
+d = 1518  brute = 12  pred = 12
+All d | N with d>1 match.
+==== M = 761 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 761  N = 1522
+Divisors > 1: [ 2, 761, 1522 ]
+d = 2  brute = 2  pred = 2
+d = 761  brute = 20  pred = 20
+d = 1522  brute = 10  pred = 10
+All d | N with d>1 match.
+==== M = 763 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 763  N = 1526
+Divisors > 1: [ 2, 7, 14, 109, 218, 763, 1526 ]
+d = 2  brute = 0  pred = 0
+d = 7  brute = 0  pred = 0
+d = 14  brute = 0  pred = 0
+d = 109  brute = 0  pred = 0
+d = 218  brute = 0  pred = 0
+d = 763  brute = 4  pred = 4
+d = 1526  brute = 24  pred = 24
+All d | N with d>1 match.
+==== M = 767 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 767  N = 1534
+Divisors > 1: [ 2, 13, 26, 59, 118, 767, 1534 ]
+d = 2  brute = 0  pred = 0
+d = 13  brute = 2  pred = 2
+d = 26  brute = 0  pred = 0
+d = 59  brute = 0  pred = 0
+d = 118  brute = 6  pred = 6
+d = 767  brute = 0  pred = 0
+d = 1534  brute = 10  pred = 10
+All d | N with d>1 match.
+==== M = 769 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 769  N = 1538
+Divisors > 1: [ 2, 769, 1538 ]
+d = 2  brute = 2  pred = 2
+d = 769  brute = 10  pred = 10
+d = 1538  brute = 22  pred = 22
+All d | N with d>1 match.
+==== M = 771 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 771  N = 1542
+Divisors > 1: [ 2, 3, 6, 257, 514, 771, 1542 ]
+d = 2  brute = 2  pred = 2
+d = 3  brute = 0  pred = 0
+d = 6  brute = 0  pred = 0
+d = 257  brute = 16  pred = 16
+d = 514  brute = 0  pred = 0
+d = 771  brute = 6  pred = 6
+d = 1542  brute = 10  pred = 10
+All d | N with d>1 match.
+==== M = 773 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 773  N = 1546
+Divisors > 1: [ 2, 773, 1546 ]
+d = 2  brute = 1  pred = 1
+d = 773  brute = 13  pred = 13
+d = 1546  brute = 17  pred = 17
+All d | N with d>1 match.
+==== M = 777 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 777  N = 1554
+Divisors > 1: [ 2, 3, 6, 7, 14, 21, 37, 42, 74, 111, 222, 259, 518, 777, 1554 ]
+d = 2  brute = 0  pred = 0
+d = 3  brute = 4  pred = 4
+d = 6  brute = 0  pred = 0
+d = 7  brute = 0  pred = 0
+d = 14  brute = 0  pred = 0
+d = 21  brute = 4  pred = 4
+d = 37  brute = 0  pred = 0
+d = 42  brute = 0  pred = 0
+d = 74  brute = 0  pred = 0
+d = 111  brute = 0  pred = 0
+d = 222  brute = 12  pred = 12
+d = 259  brute = 0  pred = 0
+d = 518  brute = 16  pred = 16
+d = 777  brute = 8  pred = 8
+d = 1554  brute = 12  pred = 12
+All d | N with d>1 match.
+==== M = 779 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 779  N = 1558
+Divisors > 1: [ 2, 19, 38, 41, 82, 779, 1558 ]
+d = 2  brute = 2  pred = 2
+d = 19  brute = 0  pred = 0
+d = 38  brute = 0  pred = 0
+d = 41  brute = 8  pred = 8
+d = 82  brute = 0  pred = 0
+d = 779  brute = 10  pred = 10
+d = 1558  brute = 6  pred = 6
+All d | N with d>1 match.
+==== M = 781 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 781  N = 1562
+Divisors > 1: [ 2, 11, 22, 71, 142, 781, 1562 ]
+d = 2  brute = 0  pred = 0
+d = 11  brute = 2  pred = 2
+d = 22  brute = 2  pred = 2
+d = 71  brute = 0  pred = 0
+d = 142  brute = 4  pred = 4
+d = 781  brute = 10  pred = 10
+d = 1562  brute = 14  pred = 14
+All d | N with d>1 match.
+==== M = 785 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 785  N = 1570
+Divisors > 1: [ 2, 5, 10, 157, 314, 785, 1570 ]
+d = 2  brute = 2  pred = 2
+d = 5  brute = 0  pred = 0
+d = 10  brute = 2  pred = 2
+d = 157  brute = 0  pred = 0
+d = 314  brute = 26  pred = 26
+d = 785  brute = 8  pred = 8
+d = 1570  brute = 10  pred = 10
+All d | N with d>1 match.
+==== M = 787 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 787  N = 1574
+Divisors > 1: [ 2, 787, 1574 ]
+d = 2  brute = 1  pred = 1
+d = 787  brute = 5  pred = 5
+d = 1574  brute = 27  pred = 27
+All d | N with d>1 match.
+==== M = 789 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 789  N = 1578
+Divisors > 1: [ 2, 3, 6, 263, 526, 789, 1578 ]
+d = 2  brute = 0  pred = 0
+d = 3  brute = 0  pred = 0
+d = 6  brute = 0  pred = 0
+d = 263  brute = 0  pred = 0
+d = 526  brute = 0  pred = 0
+d = 789  brute = 16  pred = 16
+d = 1578  brute = 8  pred = 8
+All d | N with d>1 match.
+==== M = 791 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 791  N = 1582
+Divisors > 1: [ 2, 7, 14, 113, 226, 791, 1582 ]
+d = 2  brute = 0  pred = 0
+d = 7  brute = 0  pred = 0
+d = 14  brute = 4  pred = 4
+d = 113  brute = 0  pred = 0
+d = 226  brute = 0  pred = 0
+d = 791  brute = 0  pred = 0
+d = 1582  brute = 8  pred = 8
+All d | N with d>1 match.
+==== M = 793 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 793  N = 1586
+Divisors > 1: [ 2, 13, 26, 61, 122, 793, 1586 ]
+d = 2  brute = 2  pred = 2
+d = 13  brute = 2  pred = 2
+d = 26  brute = 0  pred = 0
+d = 61  brute = 6  pred = 6
+d = 122  brute = 0  pred = 0
+d = 793  brute = 4  pred = 4
+d = 1586  brute = 22  pred = 22
+All d | N with d>1 match.
+==== M = 795 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 795  N = 1590
+Divisors > 1: [ 2, 3, 5, 6, 10, 15, 30, 53, 106, 159, 265, 318, 530, 795, 1590 ]
+d = 2  brute = 0  pred = 0
+d = 3  brute = 0  pred = 0
+d = 5  brute = 0  pred = 0
+d = 6  brute = 4  pred = 4
+d = 10  brute = 0  pred = 0
+d = 15  brute = 0  pred = 0
+d = 30  brute = 0  pred = 0
+d = 53  brute = 0  pred = 0
+d = 106  brute = 0  pred = 0
+d = 159  brute = 0  pred = 0
+d = 265  brute = 0  pred = 0
+d = 318  brute = 0  pred = 0
+d = 530  brute = 28  pred = 28
+d = 795  brute = 4  pred = 4
+d = 1590  brute = 16  pred = 16
+All d | N with d>1 match.
+==== M = 797 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 797  N = 1594
+Divisors > 1: [ 2, 797, 1594 ]
+d = 2  brute = 1  pred = 1
+d = 797  brute = 15  pred = 15
+d = 1594  brute = 17  pred = 17
+All d | N with d>1 match.
+==== M = 799 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 799  N = 1598
+Divisors > 1: [ 2, 17, 34, 47, 94, 799, 1598 ]
+d = 2  brute = 0  pred = 0
+d = 17  brute = 0  pred = 0
+d = 34  brute = 0  pred = 0
+d = 47  brute = 0  pred = 0
+d = 94  brute = 8  pred = 8
+d = 799  brute = 0  pred = 0
+d = 1598  brute = 16  pred = 16
+All d | N with d>1 match.
+==== M = 803 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 803  N = 1606
+Divisors > 1: [ 2, 11, 22, 73, 146, 803, 1606 ]
+d = 2  brute = 2  pred = 2
+d = 11  brute = 0  pred = 0
+d = 22  brute = 0  pred = 0
+d = 73  brute = 4  pred = 4
+d = 146  brute = 0  pred = 0
+d = 803  brute = 10  pred = 10
+d = 1606  brute = 14  pred = 14
+All d | N with d>1 match.
+==== M = 805 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 805  N = 1610
+Divisors > 1: [ 2, 5, 7, 10, 14, 23, 35, 46, 70, 115, 161, 230, 322, 805, 1610 ]
+d = 2  brute = 0  pred = 0
+d = 5  brute = 4  pred = 4
+d = 7  brute = 0  pred = 0
+d = 10  brute = 4  pred = 4
+d = 14  brute = 8  pred = 8
+d = 23  brute = 0  pred = 0
+d = 35  brute = 0  pred = 0
+d = 46  brute = 0  pred = 0
+d = 70  brute = 0  pred = 0
+d = 115  brute = 4  pred = 4
+d = 161  brute = 16  pred = 16
+d = 230  brute = 20  pred = 20
+d = 322  brute = 0  pred = 0
+d = 805  brute = 8  pred = 8
+d = 1610  brute = 16  pred = 16
+All d | N with d>1 match.
+==== M = 807 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 807  N = 1614
+Divisors > 1: [ 2, 3, 6, 269, 538, 807, 1614 ]
+d = 2  brute = 0  pred = 0
+d = 3  brute = 0  pred = 0
+d = 6  brute = 2  pred = 2
+d = 269  brute = 22  pred = 22
+d = 538  brute = 0  pred = 0
+d = 807  brute = 0  pred = 0
+d = 1614  brute = 14  pred = 14
+All d | N with d>1 match.
+==== M = 809 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 809  N = 1618
+Divisors > 1: [ 2, 809, 1618 ]
+d = 2  brute = 2  pred = 2
+d = 809  brute = 16  pred = 16
+d = 1618  brute = 6  pred = 6
+All d | N with d>1 match.
+==== M = 811 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 811  N = 1622
+Divisors > 1: [ 2, 811, 1622 ]
+d = 2  brute = 1  pred = 1
+d = 811  brute = 7  pred = 7
+d = 1622  brute = 15  pred = 15
+All d | N with d>1 match.
+==== M = 813 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 813  N = 1626
+Divisors > 1: [ 2, 3, 6, 271, 542, 813, 1626 ]
+d = 2  brute = 0  pred = 0
+d = 3  brute = 2  pred = 2
+d = 6  brute = 2  pred = 2
+d = 271  brute = 0  pred = 0
+d = 542  brute = 24  pred = 24
+d = 813  brute = 6  pred = 6
+d = 1626  brute = 10  pred = 10
+All d | N with d>1 match.
+==== M = 815 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 815  N = 1630
+Divisors > 1: [ 2, 5, 10, 163, 326, 815, 1630 ]
+d = 2  brute = 0  pred = 0
+d = 5  brute = 2  pred = 2
+d = 10  brute = 0  pred = 0
+d = 163  brute = 0  pred = 0
+d = 326  brute = 22  pred = 22
+d = 815  brute = 0  pred = 0
+d = 1630  brute = 14  pred = 14
+All d | N with d>1 match.
+==== M = 817 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 817  N = 1634
+Divisors > 1: [ 2, 19, 38, 43, 86, 817, 1634 ]
+d = 2  brute = 2  pred = 2
+d = 19  brute = 2  pred = 2
+d = 38  brute = 0  pred = 0
+d = 43  brute = 0  pred = 0
+d = 86  brute = 10  pred = 10
+d = 817  brute = 6  pred = 6
+d = 1634  brute = 32  pred = 32
+All d | N with d>1 match.
+==== M = 821 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 821  N = 1642
+Divisors > 1: [ 2, 821, 1642 ]
+d = 2  brute = 1  pred = 1
+d = 821  brute = 15  pred = 15
+d = 1642  brute = 7  pred = 7
+All d | N with d>1 match.
+==== M = 823 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 823  N = 1646
+Divisors > 1: [ 2, 823, 1646 ]
+d = 2  brute = 0  pred = 0
+d = 823  brute = 0  pred = 0
+d = 1646  brute = 22  pred = 22
+All d | N with d>1 match.
+==== M = 827 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 827  N = 1654
+Divisors > 1: [ 2, 827, 1654 ]
+d = 2  brute = 1  pred = 1
+d = 827  brute = 7  pred = 7
+d = 1654  brute = 11  pred = 11
+All d | N with d>1 match.
+==== M = 829 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 829  N = 1658
+Divisors > 1: [ 2, 829, 1658 ]
+d = 2  brute = 1  pred = 1
+d = 829  brute = 11  pred = 11
+d = 1658  brute = 21  pred = 21
+All d | N with d>1 match.
+==== M = 831 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 831  N = 1662
+Divisors > 1: [ 2, 3, 6, 277, 554, 831, 1662 ]
+d = 2  brute = 0  pred = 0
+d = 3  brute = 2  pred = 2
+d = 6  brute = 0  pred = 0
+d = 277  brute = 0  pred = 0
+d = 554  brute = 22  pred = 22
+d = 831  brute = 0  pred = 0
+d = 1662  brute = 10  pred = 10
+All d | N with d>1 match.
+==== M = 835 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 835  N = 1670
+Divisors > 1: [ 2, 5, 10, 167, 334, 835, 1670 ]
+d = 2  brute = 0  pred = 0
+d = 5  brute = 2  pred = 2
+d = 10  brute = 2  pred = 2
+d = 167  brute = 0  pred = 0
+d = 334  brute = 12  pred = 12
+d = 835  brute = 6  pred = 6
+d = 1670  brute = 14  pred = 14
+All d | N with d>1 match.
+==== M = 839 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 839  N = 1678
+Divisors > 1: [ 2, 839, 1678 ]
+d = 2  brute = 0  pred = 0
+d = 839  brute = 0  pred = 0
+d = 1678  brute = 10  pred = 10
+All d | N with d>1 match.
+==== M = 843 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 843  N = 1686
+Divisors > 1: [ 2, 3, 6, 281, 562, 843, 1686 ]
+d = 2  brute = 2  pred = 2
+d = 3  brute = 0  pred = 0
+d = 6  brute = 0  pred = 0
+d = 281  brute = 20  pred = 20
+d = 562  brute = 0  pred = 0
+d = 843  brute = 6  pred = 6
+d = 1686  brute = 22  pred = 22
+All d | N with d>1 match.
+==== M = 849 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 849  N = 1698
+Divisors > 1: [ 2, 3, 6, 283, 566, 849, 1698 ]
+d = 2  brute = 2  pred = 2
+d = 3  brute = 2  pred = 2
+d = 6  brute = 0  pred = 0
+d = 283  brute = 0  pred = 0
+d = 566  brute = 30  pred = 30
+d = 849  brute = 14  pred = 14
+d = 1698  brute = 8  pred = 8
+All d | N with d>1 match.
+==== M = 851 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 851  N = 1702
+Divisors > 1: [ 2, 23, 37, 46, 74, 851, 1702 ]
+d = 2  brute = 0  pred = 0
+d = 23  brute = 0  pred = 0
+d = 37  brute = 2  pred = 2
+d = 46  brute = 4  pred = 4
+d = 74  brute = 10  pred = 10
+d = 851  brute = 10  pred = 10
+d = 1702  brute = 10  pred = 10
+All d | N with d>1 match.
+==== M = 853 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 853  N = 1706
+Divisors > 1: [ 2, 853, 1706 ]
+d = 2  brute = 1  pred = 1
+d = 853  brute = 5  pred = 5
+d = 1706  brute = 29  pred = 29
+All d | N with d>1 match.
+==== M = 857 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 857  N = 1714
+Divisors > 1: [ 2, 857, 1714 ]
+d = 2  brute = 2  pred = 2
+d = 857  brute = 16  pred = 16
+d = 1714  brute = 10  pred = 10
+All d | N with d>1 match.
+==== M = 859 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 859  N = 1718
+Divisors > 1: [ 2, 859, 1718 ]
+d = 2  brute = 1  pred = 1
+d = 859  brute = 7  pred = 7
+d = 1718  brute = 23  pred = 23
+All d | N with d>1 match.
+==== M = 861 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 861  N = 1722
+Divisors > 1: [ 2, 3, 6, 7, 14, 21, 41, 42, 82, 123, 246, 287, 574, 861, 1722 ]
+d = 2  brute = 0  pred = 0
+d = 3  brute = 0  pred = 0
+d = 6  brute = 0  pred = 0
+d = 7  brute = 0  pred = 0
+d = 14  brute = 0  pred = 0
+d = 21  brute = 4  pred = 4
+d = 41  brute = 16  pred = 16
+d = 42  brute = 4  pred = 4
+d = 82  brute = 0  pred = 0
+d = 123  brute = 0  pred = 0
+d = 246  brute = 0  pred = 0
+d = 287  brute = 0  pred = 0
+d = 574  brute = 0  pred = 0
+d = 861  brute = 12  pred = 12
+d = 1722  brute = 12  pred = 12
+All d | N with d>1 match.
+==== M = 863 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 863  N = 1726
+Divisors > 1: [ 2, 863, 1726 ]
+d = 2  brute = 0  pred = 0
+d = 863  brute = 0  pred = 0
+d = 1726  brute = 12  pred = 12
+All d | N with d>1 match.
+==== M = 865 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 865  N = 1730
+Divisors > 1: [ 2, 5, 10, 173, 346, 865, 1730 ]
+d = 2  brute = 2  pred = 2
+d = 5  brute = 0  pred = 0
+d = 10  brute = 2  pred = 2
+d = 173  brute = 0  pred = 0
+d = 346  brute = 10  pred = 10
+d = 865  brute = 8  pred = 8
+d = 1730  brute = 18  pred = 18
+All d | N with d>1 match.
+==== M = 869 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 869  N = 1738
+Divisors > 1: [ 2, 11, 22, 79, 158, 869, 1738 ]
+d = 2  brute = 0  pred = 0
+d = 11  brute = 0  pred = 0
+d = 22  brute = 0  pred = 0
+d = 79  brute = 0  pred = 0
+d = 158  brute = 0  pred = 0
+d = 869  brute = 16  pred = 16
+d = 1738  brute = 8  pred = 8
+All d | N with d>1 match.
+==== M = 871 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 871  N = 1742
+Divisors > 1: [ 2, 13, 26, 67, 134, 871, 1742 ]
+d = 2  brute = 0  pred = 0
+d = 13  brute = 2  pred = 2
+d = 26  brute = 0  pred = 0
+d = 67  brute = 0  pred = 0
+d = 134  brute = 14  pred = 14
+d = 871  brute = 0  pred = 0
+d = 1742  brute = 22  pred = 22
+All d | N with d>1 match.
+==== M = 877 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 877  N = 1754
+Divisors > 1: [ 2, 877, 1754 ]
+d = 2  brute = 1  pred = 1
+d = 877  brute = 5  pred = 5
+d = 1754  brute = 19  pred = 19
+All d | N with d>1 match.
+==== M = 879 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 879  N = 1758
+Divisors > 1: [ 2, 3, 6, 293, 586, 879, 1758 ]
+d = 2  brute = 0  pred = 0
+d = 3  brute = 0  pred = 0
+d = 6  brute = 2  pred = 2
+d = 293  brute = 18  pred = 18
+d = 586  brute = 0  pred = 0
+d = 879  brute = 0  pred = 0
+d = 1758  brute = 10  pred = 10
+All d | N with d>1 match.
+==== M = 881 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 881  N = 1762
+Divisors > 1: [ 2, 881, 1762 ]
+d = 2  brute = 2  pred = 2
+d = 881  brute = 20  pred = 20
+d = 1762  brute = 12  pred = 12
+All d | N with d>1 match.
+==== M = 883 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 883  N = 1766
+Divisors > 1: [ 2, 883, 1766 ]
+d = 2  brute = 1  pred = 1
+d = 883  brute = 3  pred = 3
+d = 1766  brute = 25  pred = 25
+All d | N with d>1 match.
+==== M = 885 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 885  N = 1770
+Divisors > 1: [ 2, 3, 5, 6, 10, 15, 30, 59, 118, 177, 295, 354, 590, 885, 1770 ]
+d = 2  brute = 0  pred = 0
+d = 3  brute = 0  pred = 0
+d = 5  brute = 0  pred = 0
+d = 6  brute = 4  pred = 4
+d = 10  brute = 0  pred = 0
+d = 15  brute = 0  pred = 0
+d = 30  brute = 4  pred = 4
+d = 59  brute = 12  pred = 12
+d = 118  brute = 0  pred = 0
+d = 177  brute = 0  pred = 0
+d = 295  brute = 0  pred = 0
+d = 354  brute = 16  pred = 16
+d = 590  brute = 20  pred = 20
+d = 885  brute = 12  pred = 12
+d = 1770  brute = 20  pred = 20
+All d | N with d>1 match.
+==== M = 887 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 887  N = 1774
+Divisors > 1: [ 2, 887, 1774 ]
+d = 2  brute = 0  pred = 0
+d = 887  brute = 0  pred = 0
+d = 1774  brute = 10  pred = 10
+All d | N with d>1 match.
+==== M = 889 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 889  N = 1778
+Divisors > 1: [ 2, 7, 14, 127, 254, 889, 1778 ]
+d = 2  brute = 0  pred = 0
+d = 7  brute = 0  pred = 0
+d = 14  brute = 4  pred = 4
+d = 127  brute = 0  pred = 0
+d = 254  brute = 0  pred = 0
+d = 889  brute = 8  pred = 8
+d = 1778  brute = 20  pred = 20
+All d | N with d>1 match.
+==== M = 893 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 893  N = 1786
+Divisors > 1: [ 2, 19, 38, 47, 94, 893, 1786 ]
+d = 2  brute = 0  pred = 0
+d = 19  brute = 2  pred = 2
+d = 38  brute = 6  pred = 6
+d = 47  brute = 0  pred = 0
+d = 94  brute = 8  pred = 8
+d = 893  brute = 14  pred = 14
+d = 1786  brute = 10  pred = 10
+All d | N with d>1 match.
+==== M = 895 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 895  N = 1790
+Divisors > 1: [ 2, 5, 10, 179, 358, 895, 1790 ]
+d = 2  brute = 0  pred = 0
+d = 5  brute = 0  pred = 0
+d = 10  brute = 2  pred = 2
+d = 179  brute = 10  pred = 10
+d = 358  brute = 0  pred = 0
+d = 895  brute = 0  pred = 0
+d = 1790  brute = 26  pred = 26
+All d | N with d>1 match.
+==== M = 897 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 897  N = 1794
+Divisors > 1: [ 2, 3, 6, 13, 23, 26, 39, 46, 69, 78, 138, 299, 598, 897, 1794 ]
+d = 2  brute = 0  pred = 0
+d = 3  brute = 0  pred = 0
+d = 6  brute = 0  pred = 0
+d = 13  brute = 0  pred = 0
+d = 23  brute = 0  pred = 0
+d = 26  brute = 0  pred = 0
+d = 39  brute = 0  pred = 0
+d = 46  brute = 0  pred = 0
+d = 69  brute = 8  pred = 8
+d = 78  brute = 0  pred = 0
+d = 138  brute = 0  pred = 0
+d = 299  brute = 16  pred = 16
+d = 598  brute = 0  pred = 0
+d = 897  brute = 8  pred = 8
+d = 1794  brute = 16  pred = 16
+All d | N with d>1 match.
+==== M = 899 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 899  N = 1798
+Divisors > 1: [ 2, 29, 31, 58, 62, 899, 1798 ]
+d = 2  brute = 0  pred = 0
+d = 29  brute = 6  pred = 6
+d = 31  brute = 0  pred = 0
+d = 58  brute = 2  pred = 2
+d = 62  brute = 8  pred = 8
+d = 899  brute = 14  pred = 14
+d = 1798  brute = 10  pred = 10
+All d | N with d>1 match.
+==== M = 901 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 901  N = 1802
+Divisors > 1: [ 2, 17, 34, 53, 106, 901, 1802 ]
+d = 2  brute = 2  pred = 2
+d = 17  brute = 4  pred = 4
+d = 34  brute = 0  pred = 0
+d = 53  brute = 6  pred = 6
+d = 106  brute = 6  pred = 6
+d = 901  brute = 12  pred = 12
+d = 1802  brute = 16  pred = 16
+All d | N with d>1 match.
+==== M = 903 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 903  N = 1806
+Divisors > 1: [ 2, 3, 6, 7, 14, 21, 42, 43, 86, 129, 258, 301, 602, 903, 1806 ]
+d = 2  brute = 0  pred = 0
+d = 3  brute = 4  pred = 4
+d = 6  brute = 0  pred = 0
+d = 7  brute = 0  pred = 0
+d = 14  brute = 0  pred = 0
+d = 21  brute = 0  pred = 0
+d = 42  brute = 4  pred = 4
+d = 43  brute = 0  pred = 0
+d = 86  brute = 0  pred = 0
+d = 129  brute = 12  pred = 12
+d = 258  brute = 8  pred = 8
+d = 301  brute = 0  pred = 0
+d = 602  brute = 24  pred = 24
+d = 903  brute = 0  pred = 0
+d = 1806  brute = 20  pred = 20
+All d | N with d>1 match.
+==== M = 905 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 905  N = 1810
+Divisors > 1: [ 2, 5, 10, 181, 362, 905, 1810 ]
+d = 2  brute = 2  pred = 2
+d = 5  brute = 2  pred = 2
+d = 10  brute = 0  pred = 0
+d = 181  brute = 10  pred = 10
+d = 362  brute = 0  pred = 0
+d = 905  brute = 12  pred = 12
+d = 1810  brute = 10  pred = 10
+All d | N with d>1 match.
+==== M = 907 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 907  N = 1814
+Divisors > 1: [ 2, 907, 1814 ]
+d = 2  brute = 1  pred = 1
+d = 907  brute = 3  pred = 3
+d = 1814  brute = 23  pred = 23
+All d | N with d>1 match.
+==== M = 911 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 911  N = 1822
+Divisors > 1: [ 2, 911, 1822 ]
+d = 2  brute = 0  pred = 0
+d = 911  brute = 0  pred = 0
+d = 1822  brute = 8  pred = 8
+All d | N with d>1 match.
+==== M = 913 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 913  N = 1826
+Divisors > 1: [ 2, 11, 22, 83, 166, 913, 1826 ]
+d = 2  brute = 2  pred = 2
+d = 11  brute = 0  pred = 0
+d = 22  brute = 2  pred = 2
+d = 83  brute = 6  pred = 6
+d = 166  brute = 0  pred = 0
+d = 913  brute = 6  pred = 6
+d = 1826  brute = 28  pred = 28
+All d | N with d>1 match.
+==== M = 915 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 915  N = 1830
+Divisors > 1: [ 2, 3, 5, 6, 10, 15, 30, 61, 122, 183, 305, 366, 610, 915, 1830 ]
+d = 2  brute = 0  pred = 0
+d = 3  brute = 0  pred = 0
+d = 5  brute = 4  pred = 4
+d = 6  brute = 0  pred = 0
+d = 10  brute = 0  pred = 0
+d = 15  brute = 0  pred = 0
+d = 30  brute = 0  pred = 0
+d = 61  brute = 0  pred = 0
+d = 122  brute = 0  pred = 0
+d = 183  brute = 0  pred = 0
+d = 305  brute = 16  pred = 16
+d = 366  brute = 12  pred = 12
+d = 610  brute = 0  pred = 0
+d = 915  brute = 8  pred = 8
+d = 1830  brute = 12  pred = 12
+All d | N with d>1 match.
+==== M = 917 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 917  N = 1834
+Divisors > 1: [ 2, 7, 14, 131, 262, 917, 1834 ]
+d = 2  brute = 0  pred = 0
+d = 7  brute = 0  pred = 0
+d = 14  brute = 4  pred = 4
+d = 131  brute = 10  pred = 10
+d = 262  brute = 6  pred = 6
+d = 917  brute = 10  pred = 10
+d = 1834  brute = 18  pred = 18
+All d | N with d>1 match.
+==== M = 919 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 919  N = 1838
+Divisors > 1: [ 2, 919, 1838 ]
+d = 2  brute = 0  pred = 0
+d = 919  brute = 0  pred = 0
+d = 1838  brute = 14  pred = 14
+All d | N with d>1 match.
+==== M = 921 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 921  N = 1842
+Divisors > 1: [ 2, 3, 6, 307, 614, 921, 1842 ]
+d = 2  brute = 2  pred = 2
+d = 3  brute = 2  pred = 2
+d = 6  brute = 0  pred = 0
+d = 307  brute = 0  pred = 0
+d = 614  brute = 34  pred = 34
+d = 921  brute = 10  pred = 10
+d = 1842  brute = 8  pred = 8
+All d | N with d>1 match.
+==== M = 923 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 923  N = 1846
+Divisors > 1: [ 2, 13, 26, 71, 142, 923, 1846 ]
+d = 2  brute = 0  pred = 0
+d = 13  brute = 2  pred = 2
+d = 26  brute = 6  pred = 6
+d = 71  brute = 0  pred = 0
+d = 142  brute = 4  pred = 4
+d = 923  brute = 10  pred = 10
+d = 1846  brute = 14  pred = 14
+All d | N with d>1 match.
+==== M = 929 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 929  N = 1858
+Divisors > 1: [ 2, 929, 1858 ]
+d = 2  brute = 2  pred = 2
+d = 929  brute = 18  pred = 18
+d = 1858  brute = 10  pred = 10
+All d | N with d>1 match.
+==== M = 933 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 933  N = 1866
+Divisors > 1: [ 2, 3, 6, 311, 622, 933, 1866 ]
+d = 2  brute = 0  pred = 0
+d = 3  brute = 0  pred = 0
+d = 6  brute = 0  pred = 0
+d = 311  brute = 0  pred = 0
+d = 622  brute = 0  pred = 0
+d = 933  brute = 8  pred = 8
+d = 1866  brute = 16  pred = 16
+All d | N with d>1 match.
+==== M = 935 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 935  N = 1870
+Divisors > 1: [ 2, 5, 10, 11, 17, 22, 34, 55, 85, 110, 170, 187, 374, 935, 1870 
+]
+d = 2  brute = 0  pred = 0
+d = 5  brute = 0  pred = 0
+d = 10  brute = 0  pred = 0
+d = 11  brute = 0  pred = 0
+d = 17  brute = 0  pred = 0
+d = 22  brute = 0  pred = 0
+d = 34  brute = 0  pred = 0
+d = 55  brute = 0  pred = 0
+d = 85  brute = 4  pred = 4
+d = 110  brute = 12  pred = 12
+d = 170  brute = 0  pred = 0
+d = 187  brute = 0  pred = 0
+d = 374  brute = 28  pred = 28
+d = 935  brute = 0  pred = 0
+d = 1870  brute = 8  pred = 8
+All d | N with d>1 match.
+==== M = 937 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 937  N = 1874
+Divisors > 1: [ 2, 937, 1874 ]
+d = 2  brute = 2  pred = 2
+d = 937  brute = 10  pred = 10
+d = 1874  brute = 28  pred = 28
+All d | N with d>1 match.
+==== M = 939 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 939  N = 1878
+Divisors > 1: [ 2, 3, 6, 313, 626, 939, 1878 ]
+d = 2  brute = 2  pred = 2
+d = 3  brute = 2  pred = 2
+d = 6  brute = 2  pred = 2
+d = 313  brute = 0  pred = 0
+d = 626  brute = 36  pred = 36
+d = 939  brute = 8  pred = 8
+d = 1878  brute = 12  pred = 12
+All d | N with d>1 match.
+==== M = 941 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 941  N = 1882
+Divisors > 1: [ 2, 941, 1882 ]
+d = 2  brute = 1  pred = 1
+d = 941  brute = 23  pred = 23
+d = 1882  brute = 9  pred = 9
+All d | N with d>1 match.
+==== M = 943 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 943  N = 1886
+Divisors > 1: [ 2, 23, 41, 46, 82, 943, 1886 ]
+d = 2  brute = 0  pred = 0
+d = 23  brute = 0  pred = 0
+d = 41  brute = 0  pred = 0
+d = 46  brute = 4  pred = 4
+d = 82  brute = 0  pred = 0
+d = 943  brute = 0  pred = 0
+d = 1886  brute = 32  pred = 32
+All d | N with d>1 match.
+==== M = 947 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 947  N = 1894
+Divisors > 1: [ 2, 947, 1894 ]
+d = 2  brute = 1  pred = 1
+d = 947  brute = 5  pred = 5
+d = 1894  brute = 15  pred = 15
+All d | N with d>1 match.
+==== M = 949 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 949  N = 1898
+Divisors > 1: [ 2, 13, 26, 73, 146, 949, 1898 ]
+d = 2  brute = 2  pred = 2
+d = 13  brute = 0  pred = 0
+d = 26  brute = 0  pred = 0
+d = 73  brute = 0  pred = 0
+d = 146  brute = 16  pred = 16
+d = 949  brute = 6  pred = 6
+d = 1898  brute = 14  pred = 14
+All d | N with d>1 match.
+==== M = 951 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 951  N = 1902
+Divisors > 1: [ 2, 3, 6, 317, 634, 951, 1902 ]
+d = 2  brute = 0  pred = 0
+d = 3  brute = 0  pred = 0
+d = 6  brute = 2  pred = 2
+d = 317  brute = 10  pred = 10
+d = 634  brute = 0  pred = 0
+d = 951  brute = 0  pred = 0
+d = 1902  brute = 18  pred = 18
+All d | N with d>1 match.
+==== M = 953 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 953  N = 1906
+Divisors > 1: [ 2, 953, 1906 ]
+d = 2  brute = 2  pred = 2
+d = 953  brute = 16  pred = 16
+d = 1906  brute = 10  pred = 10
+All d | N with d>1 match.
+==== M = 955 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 955  N = 1910
+Divisors > 1: [ 2, 5, 10, 191, 382, 955, 1910 ]
+d = 2  brute = 0  pred = 0
+d = 5  brute = 0  pred = 0
+d = 10  brute = 0  pred = 0
+d = 191  brute = 0  pred = 0
+d = 382  brute = 0  pred = 0
+d = 955  brute = 4  pred = 4
+d = 1910  brute = 28  pred = 28
+All d | N with d>1 match.
+==== M = 957 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 957  N = 1914
+Divisors > 1: [ 2, 3, 6, 11, 22, 29, 33, 58, 66, 87, 174, 319, 638, 957, 1914 ]
+d = 2  brute = 0  pred = 0
+d = 3  brute = 0  pred = 0
+d = 6  brute = 4  pred = 4
+d = 11  brute = 0  pred = 0
+d = 22  brute = 0  pred = 0
+d = 29  brute = 12  pred = 12
+d = 33  brute = 4  pred = 4
+d = 58  brute = 0  pred = 0
+d = 66  brute = 0  pred = 0
+d = 87  brute = 0  pred = 0
+d = 174  brute = 0  pred = 0
+d = 319  brute = 0  pred = 0
+d = 638  brute = 20  pred = 20
+d = 957  brute = 8  pred = 8
+d = 1914  brute = 24  pred = 24
+All d | N with d>1 match.
+==== M = 959 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 959  N = 1918
+Divisors > 1: [ 2, 7, 14, 137, 274, 959, 1918 ]
+d = 2  brute = 0  pred = 0
+d = 7  brute = 0  pred = 0
+d = 14  brute = 4  pred = 4
+d = 137  brute = 0  pred = 0
+d = 274  brute = 0  pred = 0
+d = 959  brute = 0  pred = 0
+d = 1918  brute = 8  pred = 8
+All d | N with d>1 match.
+==== M = 965 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 965  N = 1930
+Divisors > 1: [ 2, 5, 10, 193, 386, 965, 1930 ]
+d = 2  brute = 2  pred = 2
+d = 5  brute = 0  pred = 0
+d = 10  brute = 0  pred = 0
+d = 193  brute = 0  pred = 0
+d = 386  brute = 20  pred = 20
+d = 965  brute = 22  pred = 22
+d = 1930  brute = 10  pred = 10
+All d | N with d>1 match.
+==== M = 967 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 967  N = 1934
+Divisors > 1: [ 2, 967, 1934 ]
+d = 2  brute = 0  pred = 0
+d = 967  brute = 0  pred = 0
+d = 1934  brute = 26  pred = 26
+All d | N with d>1 match.
+==== M = 969 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 969  N = 1938
+Divisors > 1: [ 2, 3, 6, 17, 19, 34, 38, 51, 57, 102, 114, 323, 646, 969, 1938 ]
+d = 2  brute = 4  pred = 4
+d = 3  brute = 0  pred = 0
+d = 6  brute = 0  pred = 0
+d = 17  brute = 0  pred = 0
+d = 19  brute = 0  pred = 0
+d = 34  brute = 0  pred = 0
+d = 38  brute = 12  pred = 12
+d = 51  brute = 4  pred = 4
+d = 57  brute = 0  pred = 0
+d = 102  brute = 0  pred = 0
+d = 114  brute = 0  pred = 0
+d = 323  brute = 8  pred = 8
+d = 646  brute = 0  pred = 0
+d = 969  brute = 12  pred = 12
+d = 1938  brute = 16  pred = 16
+All d | N with d>1 match.
+==== M = 971 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 971  N = 1942
+Divisors > 1: [ 2, 971, 1942 ]
+d = 2  brute = 1  pred = 1
+d = 971  brute = 15  pred = 15
+d = 1942  brute = 11  pred = 11
+All d | N with d>1 match.
+==== M = 973 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 973  N = 1946
+Divisors > 1: [ 2, 7, 14, 139, 278, 973, 1946 ]
+d = 2  brute = 0  pred = 0
+d = 7  brute = 0  pred = 0
+d = 14  brute = 4  pred = 4
+d = 139  brute = 6  pred = 6
+d = 278  brute = 14  pred = 14
+d = 973  brute = 6  pred = 6
+d = 1946  brute = 34  pred = 34
+All d | N with d>1 match.
+==== M = 977 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 977  N = 1954
+Divisors > 1: [ 2, 977, 1954 ]
+d = 2  brute = 2  pred = 2
+d = 977  brute = 10  pred = 10
+d = 1954  brute = 14  pred = 14
+All d | N with d>1 match.
+==== M = 979 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 979  N = 1958
+Divisors > 1: [ 2, 11, 22, 89, 178, 979, 1958 ]
+d = 2  brute = 2  pred = 2
+d = 11  brute = 2  pred = 2
+d = 22  brute = 2  pred = 2
+d = 89  brute = 0  pred = 0
+d = 178  brute = 8  pred = 8
+d = 979  brute = 8  pred = 8
+d = 1958  brute = 16  pred = 16
+All d | N with d>1 match.
+==== M = 983 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 983  N = 1966
+Divisors > 1: [ 2, 983, 1966 ]
+d = 2  brute = 0  pred = 0
+d = 983  brute = 0  pred = 0
+d = 1966  brute = 18  pred = 18
+All d | N with d>1 match.
+==== M = 985 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 985  N = 1970
+Divisors > 1: [ 2, 5, 10, 197, 394, 985, 1970 ]
+d = 2  brute = 2  pred = 2
+d = 5  brute = 0  pred = 0
+d = 10  brute = 2  pred = 2
+d = 197  brute = 0  pred = 0
+d = 394  brute = 10  pred = 10
+d = 985  brute = 12  pred = 12
+d = 1970  brute = 26  pred = 26
+All d | N with d>1 match.
+==== M = 987 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 987  N = 1974
+Divisors > 1: [ 2, 3, 6, 7, 14, 21, 42, 47, 94, 141, 282, 329, 658, 987, 1974 ]
+d = 2  brute = 0  pred = 0
+d = 3  brute = 0  pred = 0
+d = 6  brute = 0  pred = 0
+d = 7  brute = 0  pred = 0
+d = 14  brute = 0  pred = 0
+d = 21  brute = 0  pred = 0
+d = 42  brute = 0  pred = 0
+d = 47  brute = 0  pred = 0
+d = 94  brute = 0  pred = 0
+d = 141  brute = 0  pred = 0
+d = 282  brute = 0  pred = 0
+d = 329  brute = 24  pred = 24
+d = 658  brute = 0  pred = 0
+d = 987  brute = 8  pred = 8
+d = 1974  brute = 16  pred = 16
+All d | N with d>1 match.
+==== M = 989 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 989  N = 1978
+Divisors > 1: [ 2, 23, 43, 46, 86, 989, 1978 ]
+d = 2  brute = 0  pred = 0
+d = 23  brute = 0  pred = 0
+d = 43  brute = 2  pred = 2
+d = 46  brute = 4  pred = 4
+d = 86  brute = 10  pred = 10
+d = 989  brute = 18  pred = 18
+d = 1978  brute = 6  pred = 6
+All d | N with d>1 match.
+==== M = 991 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 991  N = 1982
+Divisors > 1: [ 2, 991, 1982 ]
+d = 2  brute = 0  pred = 0
+d = 991  brute = 0  pred = 0
+d = 1982  brute = 12  pred = 12
+All d | N with d>1 match.
+==== M = 993 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 993  N = 1986
+Divisors > 1: [ 2, 3, 6, 331, 662, 993, 1986 ]
+d = 2  brute = 2  pred = 2
+d = 3  brute = 2  pred = 2
+d = 6  brute = 0  pred = 0
+d = 331  brute = 0  pred = 0
+d = 662  brute = 22  pred = 22
+d = 993  brute = 6  pred = 6
+d = 1986  brute = 24  pred = 24
+All d | N with d>1 match.
+==== M = 995 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 995  N = 1990
+Divisors > 1: [ 2, 5, 10, 199, 398, 995, 1990 ]
+d = 2  brute = 0  pred = 0
+d = 5  brute = 0  pred = 0
+d = 10  brute = 0  pred = 0
+d = 199  brute = 0  pred = 0
+d = 398  brute = 0  pred = 0
+d = 995  brute = 8  pred = 8
+d = 1990  brute = 12  pred = 12
+All d | N with d>1 match.
+==== M = 997 ====
+--------------------------------------------------
+Checking N = p*M with p = 2  M = 997  N = 1994
+Divisors > 1: [ 2, 997, 1994 ]
+d = 2  brute = 1  pred = 1
+d = 997  brute = 7  pred = 7
+d = 1994  brute = 27  pred = 27
+All d | N with d>1 match.
+
+Total time: 6609.479 seconds, Total memory usage: 32.09MB

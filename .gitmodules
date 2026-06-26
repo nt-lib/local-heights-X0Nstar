@@ -1,0 +1,6 @@
+[submodule "QCMod"]
+	path = QCMod
+	url = https://github.com/steffenmueller/QCMod
+[submodule "ModularCurvesX0plusG4-6"]
+	path = ModularCurvesX0plusG4-6
+	url = https://github.com/AWS2020QC/ModularCurvesX0plusG4-6

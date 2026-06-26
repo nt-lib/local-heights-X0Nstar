@@ -1,0 +1,7515 @@
+Magma V2.29-4     Sat Jun 13 2026 01:49:04 on mordell  [Seed = 3170525700]
+Type ? for help.  Type <Ctrl>-D to quit.
+
+Loading file "computations/general/star_quotient_genus_table.m"
+Loading "src/StarQuotientMeasures.m"
+N       genus   nr_conditions
+2       0       0
+3       0       0
+5       0       0
+6       0       0
+7       0       0
+10      0       0
+11      0       0
+13      0       0
+14      0       0
+15      0       0
+17      0       0
+19      0       0
+21      0       0
+22      0       0
+23      0       0
+26      0       0
+29      0       0
+30      0       0
+31      0       0
+33      0       0
+34      0       0
+35      0       0
+38      0       0
+39      0       0
+41      0       0
+42      0       0
+46      0       0
+47      0       0
+51      0       0
+55      0       0
+59      0       0
+62      0       0
+66      0       0
+69      0       0
+70      0       0
+71      0       0
+78      0       0
+87      0       0
+94      0       0
+95      0       0
+105     0       0
+110     0       0
+119     0       0
+37      1       0
+43      1       0
+53      1       0
+57      1       1
+58      1       1
+61      1       0
+65      1       2
+74      1       0
+77      1       1
+79      1       0
+82      1       1
+83      1       0
+86      1       0
+89      1       0
+91      1       0
+101     1       0
+102     1       2
+111     1       0
+114     1       1
+118     1       1
+123     1       0
+130     1       0
+131     1       0
+138     1       2
+141     1       0
+142     1       0
+143     1       1
+145     1       0
+155     1       0
+159     1       0
+174     1       1
+182     1       0
+190     1       1
+195     1       0
+210     1       1
+222     1       0
+231     1       1
+238     1       1
+67      2       0
+73      2       0
+85      2       3
+93      2       2
+103     2       0
+106     2       1
+107     2       0
+115     2       2
+122     2       1
+129     2       1
+133     2       0
+134     2       0
+146     2       0
+154     2       3
+158     2       0
+161     2       2
+165     2       4
+166     2       1
+167     2       0
+170     2       1
+177     2       0
+186     2       2
+191     2       0
+205     2       0
+206     2       0
+209     2       1
+213     2       0
+215     2       1
+221     2       0
+230     2       2
+255     2       1
+266     2       0
+285     2       2
+286     2       2
+287     2       0
+299     2       0
+330     2       1
+357     2       1
+390     2       1
+97      3       0
+109     3       0
+113     3       0
+127     3       0
+139     3       0
+149     3       0
+151     3       0
+178     3       2
+179     3       0
+183     3       2
+185     3       2
+187     3       1
+194     3       0
+203     3       2
+217     3       0
+239     3       0
+246     3       3
+249     3       0
+258     3       2
+282     3       3
+290     3       2
+295     3       0
+303     3       0
+310     3       3
+318     3       2
+329     3       0
+429     3       2
+430     3       1
+455     3       1
+462     3       2
+510     3       0
+137     4       0
+173     4       0
+199     4       0
+201     4       1
+202     4       3
+214     4       1
+219     4       1
+247     4       1
+251     4       0
+254     4       0
+259     4       0
+262     4       2
+267     4       0
+273     4       5
+305     4       0
+311     4       0
+319     4       1
+321     4       0
+322     4       4
+334     4       0
+335     4       1
+341     4       2
+345     4       3
+354     4       2
+355     4       0
+366     4       1
+370     4       1
+374     4       3
+385     4       3
+395     4       0
+399     4       2
+426     4       2
+434     4       1
+483     4       2
+546     4       2
+570     4       3
+157     5       0
+181     5       0
+218     5       1
+226     5       1
+227     5       0
+235     5       4
+237     5       4
+253     5       2
+263     5       0
+278     5       1
+302     5       0
+323     5       1
+339     5       0
+371     5       2
+377     5       0
+382     5       0
+391     5       2
+393     5       0
+402     5       2
+406     5       3
+407     5       0
+410     5       2
+413     5       0
+418     5       4
+435     5       4
+438     5       0
+442     5       2
+465     5       3
+494     5       2
+551     5       1
+555     5       0
+574     5       2
+595     5       1
+645     5       0
+663     5       0
+714     5       4
+770     5       1
+798     5       1
+910     5       1
+163     6       0
+197     6       0
+211     6       0
+223     6       0
+265     6       4
+269     6       0
+271     6       0
+274     6       1
+291     6       1
+301     6       1
+314     6       1
+327     6       2
+359     6       0
+398     6       0
+447     6       0
+451     6       1
+470     6       4
+506     6       2
+561     6       2
+590     6       2
+598     6       4
+609     6       3
+615     6       3
+627     6       2
+670     6       1
+690     6       4
+858     6       4
+193     7       0
+229     7       0
+233     7       0
+241     7       0
+257     7       0
+281     7       0
+298     7       3
+309     7       4
+326     7       0
+358     7       2
+365     7       3
+411     7       0
+437     7       2
+445     7       0
+446     7       0
+474     7       5
+478     7       0
+498     7       4
+501     7       0
+518     7       4
+519     7       0
+527     7       2
+530     7       1
+582     7       0
+623     7       0
+638     7       2
+646     7       0
+658     7       3
+671     7       1
+710     7       2
+861     7       1
+870     7       3
+897     7       0
+293     8       0
+346     8       3
+362     8       2
+381     8       4
+383     8       0
+403     8       2
+415     8       5
+427     8       0
+431     8       0
+479     8       0
+505     8       0
+511     8       0
+534     8       5
+545     8       0
+559     8       0
+573     8       0
+581     8       0
+606     8       4
+651     8       4
+654     8       1
+665     8       7
+682     8       5
+715     8       5
+759     8       4
+782     8       3
+805     8       1
+814     8       0
+930     8       4
+966     8       4
+283     9       0
+386     9       0
+419     9       0
+454     9       2
+469     9       1
+471     9       2
+473     9       1
+481     9       2
+497     9       6
+502     9       3
+526     9       0
+537     9       0
+542     9       0
+591     9       0
+602     9       5
+610     9       5
+611     9       4
+618     9       5
+622     9       0
+642     9       4
+655     9       0
+689     9       0
+695     9       0
+705     9       5
+777     9       2
+790     9       4
+935     9       3
+987     9       2
+277     10      0
+307     10      0
+347     10      0
+394     10      2
+417     10      5
+422     10      1
+458     10      2
+485     10      3
+493     10      5
+515     10      4
+517     10      4
+535     10      5
+589     10      1
+629     10      3
+678     10      5
+730     10      3
+731     10      1
+741     10      6
+742     10      5
+754     10      4
+755     10      0
+795     10      3
+806     10      2
+826     10      3
+854     10      1
+313     11      0
+317     11      0
+331     11      0
+349     11      0
+353     11      0
+367     11      0
+389     11      0
+439     11      0
+453     11      6
+482     11      2
+489     11      1
+503     11      0
+533     11      5
+583     11      2
+635     11      4
+679     11      0
+707     11      0
+717     11      0
+779     11      1
+786     11      4
+791     11      3
+830     11      4
+874     11      4
+885     11      6
+902     11      5
+903     11      2
+915     11      4
+957     11      5
+969     11      3
+337     12      0
+401     12      0
+461     12      0
+466     12      2
+491     12      0
+514     12      3
+543     12      4
+553     12      4
+566     12      1
+579     12      1
+649     12      5
+667     12      2
+681     12      0
+699     12      0
+703     12      1
+713     12      2
+718     12      0
+762     12      6
+767     12      5
+789     12      0
+799     12      1
+894     12      4
+899     12      2
+942     12      1
+962     12      1
+373     13      0
+379     13      0
+409     13      0
+467     13      0
+538     13      5
+565     13      5
+599     13      0
+614     13      1
+721     13      0
+745     13      0
+753     13      0
+766     13      0
+803     13      1
+815     13      1
+822     13      6
+890     13      4
+986     13      3
+443     14      0
+449     14      0
+509     14      0
+521     14      0
+554     14      1
+562     14      4
+586     14      4
+626     14      1
+734     14      0
+737     14      1
+749     14      5
+807     14      0
+834     14      5
+851     14      2
+869     14      1
+871     14      1
+895     14      0
+946     14      4
+959     14      3
+970     14      3
+397     15      0
+421     15      0
+433     15      0
+563     15      0
+597     15      8
+633     15      5
+697     15      6
+719     15      0
+771     15      0
+781     15      6
+793     15      0
+879     15      0
+901     15      0
+906     15      7
+917     15      0
+933     15      0
+938     15      7
+978     15      3
+994     15      9
+463     16      0
+569     16      0
+647     16      0
+662     16      1
+685     16      5
+687     16      4
+763     16      2
+817     16      1
+831     16      2
+843     16      0
+862     16      0
+893     16      4
+923     16      6
+943     16      3
+955     16      0
+958     16      0
+457     17      0
+487     17      0
+523     17      0
+634     17      2
+659     17      0
+669     17      6
+674     17      1
+694     17      2
+698     17      3
+706     17      3
+905     17      0
+913     17      1
+989     17      2
+995     17      0
+499     18      0
+587     18      0
+723     18      5
+785     18      4
+835     18      10
+838     18      4
+878     18      0
+951     18      0
+979     18      5
+557     19      0
+571     19      0
+593     19      0
+607     19      0
+746     19      2
+758     19      1
+794     19      1
+839     19      0
+889     19      4
+965     19      3
+973     19      0
+541     20      0
+547     20      0
+601     20      0
+631     20      0
+641     20      0
+778     20      5
+818     20      3
+849     20      5
+865     20      8
+866     20      2
+949     20      3
+619     21      0
+677     21      0
+701     21      0
+743     21      0
+802     21      4
+813     21      10
+926     21      0
+934     21      3
+577     22      0
+761     22      0
+842     22      2
+886     22      2
+939     22      3
+985     22      6
+613     23      0
+617     23      0
+661     23      0
+887     23      0
+911     23      0
+914     23      1
+921     23      5
+922     23      7
+974     23      0
+982     23      4
+643     24      0
+653     24      0
+683     24      0
+691     24      0
+727     24      0
+751     24      0
+898     24      4
+673     25      0
+739     26      0
+773     26      0
+797     26      0
+809     26      0
+863     26      0
+971     26      0
+993     26      5
+998     26      1
+709     27      0
+733     27      0
+769     27      0
+811     27      0
+821     27      0
+881     27      0
+787     28      0
+827     28      0
+857     28      0
+941     28      0
+983     28      0
+757     29      0
+829     29      0
+859     29      0
+919     29      0
+823     30      0
+929     30      0
+953     32      0
+853     33      0
+991     33      0
+877     34      0
+883     34      0
+937     34      0
+907     35      0
+947     35      0
+967     35      0
+977     36      0
+997     38      0
+[
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+]
+[ true, true, true, true, true, true, true, true, true, true, true, true, true, 
+true, true, true, true, true, true, true, true, true, true, true ]
+N = 2 violates the inequality, but there exists a non-trivial poly.
+[
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+]
+[ true, true, true, true, true, true, true, true, true, true, true, true, true, 
+true, true, true, true, true, true, true, true, true, true, true ]
+N = 3 violates the inequality, but there exists a non-trivial poly.
+[
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+]
+[ true, true, true, true, true, true, true, true, true, true, true, true, true, 
+true, true, true, true, true, true, true, true, true, true, true ]
+N = 5 violates the inequality, but there exists a non-trivial poly.
+[
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+]
+[ true, true, true, true, true, true, true, true, true, true, true, true, true, 
+true, true, true, true, true, true, true, true, true, true ]
+N = 6 violates the inequality, but there exists a non-trivial poly.
+[
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+]
+[ true, true, true, true, true, true, true, true, true, true, true, true, true, 
+true, true, true, true, true, true, true, true, true, true, true ]
+N = 7 violates the inequality, but there exists a non-trivial poly.
+[
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+]
+[ true, true, true, true, true, true, true, true, true, true, true, true, true, 
+true, true, true, true, true, true, true, true, true, true ]
+N = 10 violates the inequality, but there exists a non-trivial poly.
+[
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+]
+[ true, true, true, true, true, true, true, true, true, true, true, true, true, 
+true, true, true, true, true, true, true, true, true, true, true ]
+N = 11 violates the inequality, but there exists a non-trivial poly.
+[
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+]
+[ true, true, true, true, true, true, true, true, true, true, true, true, true, 
+true, true, true, true, true, true, true, true, true, true, true ]
+N = 13 violates the inequality, but there exists a non-trivial poly.
+[
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+]
+[ true, true, true, true, true, true, true, true, true, true, true, true, true, 
+true, true, true, true, true, true, true, true, true, true ]
+N = 14 violates the inequality, but there exists a non-trivial poly.
+[
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+]
+[ true, true, true, true, true, true, true, true, true, true, true, true, true, 
+true, true, true, true, true, true, true, true, true, true ]
+N = 15 violates the inequality, but there exists a non-trivial poly.
+[
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+]
+[ true, true, true, true, true, true, true, true, true, true, true, true, true, 
+true, true, true, true, true, true, true, true, true, true, true ]
+N = 17 violates the inequality, but there exists a non-trivial poly.
+[
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+]
+[ true, true, true, true, true, true, true, true, true, true, true, true, true, 
+true, true, true, true, true, true, true, true, true, true, true ]
+N = 19 violates the inequality, but there exists a non-trivial poly.
+[
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+]
+[ true, true, true, true, true, true, true, true, true, true, true, true, true, 
+true, true, true, true, true, true, true, true, true, true ]
+N = 21 violates the inequality, but there exists a non-trivial poly.
+[
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+]
+[ true, true, true, true, true, true, true, true, true, true, true, true, true, 
+true, true, true, true, true, true, true, true, true, true ]
+N = 22 violates the inequality, but there exists a non-trivial poly.
+[
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+]
+[ true, true, true, true, true, true, true, true, true, true, true, true, true, 
+true, true, true, true, true, true, true, true, true, true, true ]
+N = 23 violates the inequality, but there exists a non-trivial poly.
+[
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+]
+[ true, true, true, true, true, true, true, true, true, true, true, true, true, 
+true, true, true, true, true, true, true, true, true, true ]
+N = 26 violates the inequality, but there exists a non-trivial poly.
+[
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+]
+[ true, true, true, true, true, true, true, true, true, true, true, true, true, 
+true, true, true, true, true, true, true, true, true, true, true ]
+N = 29 violates the inequality, but there exists a non-trivial poly.
+[
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+]
+[ true, true, true, true, true, true, true, true, true, true, true, true, true, 
+true, true, true, true, true, true, true, true, true ]
+N = 30 violates the inequality, but there exists a non-trivial poly.
+[
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+]
+[ true, true, true, true, true, true, true, true, true, true, true, true, true, 
+true, true, true, true, true, true, true, true, true, true, true ]
+N = 31 violates the inequality, but there exists a non-trivial poly.
+[
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+]
+[ true, true, true, true, true, true, true, true, true, true, true, true, true, 
+true, true, true, true, true, true, true, true, true, true ]
+N = 33 violates the inequality, but there exists a non-trivial poly.
+[
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+]
+[ true, true, true, true, true, true, true, true, true, true, true, true, true, 
+true, true, true, true, true, true, true, true, true, true ]
+N = 34 violates the inequality, but there exists a non-trivial poly.
+[
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+]
+[ true, true, true, true, true, true, true, true, true, true, true, true, true, 
+true, true, true, true, true, true, true, true, true, true ]
+N = 35 violates the inequality, but there exists a non-trivial poly.
+[
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+]
+[ true, true, true, true, true, true, true, true, true, true, true, true, true, 
+true, true, true, true, true, true, true, true, true, true ]
+N = 38 violates the inequality, but there exists a non-trivial poly.
+[
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+]
+[ true, true, true, true, true, true, true, true, true, true, true, true, true, 
+true, true, true, true, true, true, true, true, true, true ]
+N = 39 violates the inequality, but there exists a non-trivial poly.
+[
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+]
+[ true, true, true, true, true, true, true, true, true, true, true, true, true, 
+true, true, true, true, true, true, true, true, true, true, true ]
+N = 41 violates the inequality, but there exists a non-trivial poly.
+[
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+]
+[ true, true, true, true, true, true, true, true, true, true, true, true, true, 
+true, true, true, true, true, true, true, true, true ]
+N = 42 violates the inequality, but there exists a non-trivial poly.
+[
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+]
+[ true, true, true, true, true, true, true, true, true, true, true, true, true, 
+true, true, true, true, true, true, true, true, true, true ]
+N = 46 violates the inequality, but there exists a non-trivial poly.
+[
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+]
+[ true, true, true, true, true, true, true, true, true, true, true, true, true, 
+true, true, true, true, true, true, true, true, true, true, true ]
+N = 47 violates the inequality, but there exists a non-trivial poly.
+[
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+]
+[ true, true, true, true, true, true, true, true, true, true, true, true, true, 
+true, true, true, true, true, true, true, true, true, true ]
+N = 51 violates the inequality, but there exists a non-trivial poly.
+[
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+]
+[ true, true, true, true, true, true, true, true, true, true, true, true, true, 
+true, true, true, true, true, true, true, true, true, true ]
+N = 55 violates the inequality, but there exists a non-trivial poly.
+[
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+]
+[ true, true, true, true, true, true, true, true, true, true, true, true, true, 
+true, true, true, true, true, true, true, true, true, true, true ]
+N = 59 violates the inequality, but there exists a non-trivial poly.
+[
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+]
+[ true, true, true, true, true, true, true, true, true, true, true, true, true, 
+true, true, true, true, true, true, true, true, true, true ]
+N = 62 violates the inequality, but there exists a non-trivial poly.
+[
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+]
+[ true, true, true, true, true, true, true, true, true, true, true, true, true, 
+true, true, true, true, true, true, true, true, true ]
+N = 66 violates the inequality, but there exists a non-trivial poly.
+[
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+]
+[ true, true, true, true, true, true, true, true, true, true, true, true, true, 
+true, true, true, true, true, true, true, true, true, true ]
+N = 69 violates the inequality, but there exists a non-trivial poly.
+[
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+]
+[ true, true, true, true, true, true, true, true, true, true, true, true, true, 
+true, true, true, true, true, true, true, true, true ]
+N = 70 violates the inequality, but there exists a non-trivial poly.
+[
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+]
+[ true, true, true, true, true, true, true, true, true, true, true, true, true, 
+true, true, true, true, true, true, true, true, true, true, true ]
+N = 71 violates the inequality, but there exists a non-trivial poly.
+[
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+]
+[ true, true, true, true, true, true, true, true, true, true, true, true, true, 
+true, true, true, true, true, true, true, true, true ]
+N = 78 violates the inequality, but there exists a non-trivial poly.
+[
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+]
+[ true, true, true, true, true, true, true, true, true, true, true, true, true, 
+true, true, true, true, true, true, true, true, true, true ]
+N = 87 violates the inequality, but there exists a non-trivial poly.
+[
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+]
+[ true, true, true, true, true, true, true, true, true, true, true, true, true, 
+true, true, true, true, true, true, true, true, true, true ]
+N = 94 violates the inequality, but there exists a non-trivial poly.
+[
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+]
+[ true, true, true, true, true, true, true, true, true, true, true, true, true, 
+true, true, true, true, true, true, true, true, true, true ]
+N = 95 violates the inequality, but there exists a non-trivial poly.
+[
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+]
+[ true, true, true, true, true, true, true, true, true, true, true, true, true, 
+true, true, true, true, true, true, true, true, true ]
+N = 105 violates the inequality, but there exists a non-trivial poly.
+[
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+]
+[ true, true, true, true, true, true, true, true, true, true, true, true, true, 
+true, true, true, true, true, true, true, true, true ]
+N = 110 violates the inequality, but there exists a non-trivial poly.
+[
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+]
+[ true, true, true, true, true, true, true, true, true, true, true, true, true, 
+true, true, true, true, true, true, true, true, true, true ]
+N = 119 violates the inequality, but there exists a non-trivial poly.
+[
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+]
+[ true, true, true, true, true, true, true, true, true, true, true, true, true, 
+true, true, true, true, true, true, true, true, true, true, true ]
+N = 37 violates the inequality, but there exists a non-trivial poly.
+[
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+]
+[ true, true, true, true, true, true, true, true, true, true, true, true, true, 
+true, true, true, true, true, true, true, true, true, true, true ]
+N = 43 violates the inequality, but there exists a non-trivial poly.
+[
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+]
+[ true, true, true, true, true, true, true, true, true, true, true, true, true, 
+true, true, true, true, true, true, true, true, true, true, true ]
+N = 53 violates the inequality, but there exists a non-trivial poly.
+[
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ]
+]
+[ true, true, true, true, true, true, true, true, true, true, true, true, true, 
+true, true, true, true, true, true, true, true, true, true ]
+N = 57 violates the inequality, but there exists a non-trivial poly.
+[
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ]
+]
+[ true, true, true, true, true, true, true, true, true, true, true, true, true, 
+true, true, true, true, true, true, true, true, true, true ]
+N = 58 violates the inequality, but there exists a non-trivial poly.
+[
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+]
+[ true, true, true, true, true, true, true, true, true, true, true, true, true, 
+true, true, true, true, true, true, true, true, true, true, true ]
+N = 61 violates the inequality, but there exists a non-trivial poly.
+[
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ]
+]
+[ true, true, true, true, true, true, true, true, true, true, true, true, true, 
+true, true, true, true, true, true, true, true, true, true ]
+N = 65 violates the inequality, but there exists a non-trivial poly.
+[
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+]
+[ true, true, true, true, true, true, true, true, true, true, true, true, true, 
+true, true, true, true, true, true, true, true, true, true ]
+N = 74 violates the inequality, but there exists a non-trivial poly.
+[
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ]
+]
+[ true, true, true, true, true, true, true, true, true, true, true, true, true, 
+true, true, true, true, true, true, true, true, true, true ]
+N = 77 violates the inequality, but there exists a non-trivial poly.
+[
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+]
+[ true, true, true, true, true, true, true, true, true, true, true, true, true, 
+true, true, true, true, true, true, true, true, true, true, true ]
+N = 79 violates the inequality, but there exists a non-trivial poly.
+[
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ]
+]
+[ true, true, true, true, true, true, true, true, true, true, true, true, true, 
+true, true, true, true, true, true, true, true, true, true ]
+N = 82 violates the inequality, but there exists a non-trivial poly.
+[
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+]
+[ true, true, true, true, true, true, true, true, true, true, true, true, true, 
+true, true, true, true, true, true, true, true, true, true, true ]
+N = 83 violates the inequality, but there exists a non-trivial poly.
+[
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+]
+[ true, true, true, true, true, true, true, true, true, true, true, true, true, 
+true, true, true, true, true, true, true, true, true, true ]
+N = 86 violates the inequality, but there exists a non-trivial poly.
+[
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+]
+[ true, true, true, true, true, true, true, true, true, true, true, true, true, 
+true, true, true, true, true, true, true, true, true, true, true ]
+N = 89 violates the inequality, but there exists a non-trivial poly.
+[
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+]
+[ true, true, true, true, true, true, true, true, true, true, true, true, true, 
+true, true, true, true, true, true, true, true, true, true ]
+N = 91 violates the inequality, but there exists a non-trivial poly.
+[
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+]
+[ true, true, true, true, true, true, true, true, true, true, true, true, true, 
+true, true, true, true, true, true, true, true, true, true, true, true ]
+N = 101 violates the inequality, but there exists a non-trivial poly.
+[
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ]
+]
+[ true, true, true, true, true, true, true, true, true, true, true, true, true, 
+true, true, true, true, true, true, true, true, true ]
+N = 102 violates the inequality, but there exists a non-trivial poly.
+[
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+]
+[ true, true, true, true, true, true, true, true, true, true, true, true, true, 
+true, true, true, true, true, true, true, true, true, true ]
+N = 111 violates the inequality, but there exists a non-trivial poly.
+[
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ]
+]
+[ true, true, true, true, true, true, true, true, true, true, true, true, true, 
+true, true, true, true, true, true, true, true, true ]
+N = 114 violates the inequality, but there exists a non-trivial poly.
+[
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ]
+]
+[ true, true, true, true, true, true, true, true, true, true, true, true, true, 
+true, true, true, true, true, true, true, true, true, true ]
+N = 118 violates the inequality, but there exists a non-trivial poly.
+[
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+]
+[ true, true, true, true, true, true, true, true, true, true, true, true, true, 
+true, true, true, true, true, true, true, true, true, true ]
+N = 123 violates the inequality, but there exists a non-trivial poly.
+[
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+]
+[ true, true, true, true, true, true, true, true, true, true, true, true, true, 
+true, true, true, true, true, true, true, true, true ]
+N = 130 violates the inequality, but there exists a non-trivial poly.
+[
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+]
+[ true, true, true, true, true, true, true, true, true, true, true, true, true, 
+true, true, true, true, true, true, true, true, true, true, true, true ]
+N = 131 violates the inequality, but there exists a non-trivial poly.
+[
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ]
+]
+[ true, true, true, true, true, true, true, true, true, true, true, true, true, 
+true, true, true, true, true, true, true, true, true ]
+N = 138 violates the inequality, but there exists a non-trivial poly.
+[
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+]
+[ true, true, true, true, true, true, true, true, true, true, true, true, true, 
+true, true, true, true, true, true, true, true, true, true ]
+N = 141 violates the inequality, but there exists a non-trivial poly.
+[
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+]
+[ true, true, true, true, true, true, true, true, true, true, true, true, true, 
+true, true, true, true, true, true, true, true, true, true ]
+N = 142 violates the inequality, but there exists a non-trivial poly.
+[
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ]
+]
+[ true, true, true, true, true, true, true, true, true, true, true, true, true, 
+true, true, true, true, true, true, true, true, true, true ]
+N = 143 violates the inequality, but there exists a non-trivial poly.
+[
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+]
+[ true, true, true, true, true, true, true, true, true, true, true, true, true, 
+true, true, true, true, true, true, true, true, true, true ]
+N = 145 violates the inequality, but there exists a non-trivial poly.
+[
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+]
+[ true, true, true, true, true, true, true, true, true, true, true, true, true, 
+true, true, true, true, true, true, true, true, true, true ]
+N = 155 violates the inequality, but there exists a non-trivial poly.
+[
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+]
+[ true, true, true, true, true, true, true, true, true, true, true, true, true, 
+true, true, true, true, true, true, true, true, true, true ]
+N = 159 violates the inequality, but there exists a non-trivial poly.
+[
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ]
+]
+[ true, true, true, true, true, true, true, true, true, true, true, true, true, 
+true, true, true, true, true, true, true, true, true ]
+N = 174 violates the inequality, but there exists a non-trivial poly.
+[
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+]
+[ true, true, true, true, true, true, true, true, true, true, true, true, true, 
+true, true, true, true, true, true, true, true, true ]
+N = 182 violates the inequality, but there exists a non-trivial poly.
+[
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ]
+]
+[ true, true, true, true, true, true, true, true, true, true, true, true, true, 
+true, true, true, true, true, true, true, true, true ]
+N = 190 violates the inequality, but there exists a non-trivial poly.
+[
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+]
+[ true, true, true, true, true, true, true, true, true, true, true, true, true, 
+true, true, true, true, true, true, true, true, true ]
+N = 195 violates the inequality, but there exists a non-trivial poly.
+[
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ]
+]
+[ true, true, true, true, true, true, true, true, true, true, true, true, true, 
+true, true, true, true, true, true, true, true ]
+N = 210 violates the inequality, but there exists a non-trivial poly.
+[
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+]
+[ true, true, true, true, true, true, true, true, true, true, true, true, true, 
+true, true, true, true, true, true, true, true, true ]
+N = 222 violates the inequality, but there exists a non-trivial poly.
+[
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ]
+]
+[ true, true, true, true, true, true, true, true, true, true, true, true, true, 
+true, true, true, true, true, true, true, true, true ]
+N = 231 violates the inequality, but there exists a non-trivial poly.
+[
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ]
+]
+[ true, true, true, true, true, true, true, true, true, true, true, true, true, 
+true, true, true, true, true, true, true, true, true ]
+N = 238 violates the inequality, but there exists a non-trivial poly.
+[
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ]
+]
+[ true, true, true, true, true, true, true, true, true, true, true, true, true, 
+true, true, true, true, true, true, true, true, true, true ]
+N = 85 violates the inequality, but there exists a non-trivial poly.
+[
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1,
+        x
+    ]
+]
+[ true, true, true, true, true, true, true, true, true, true, true, true, true, 
+true, false, false, false, false, true, true, true, true, false ]
+N = 93 violates the inequality, but there exists a non-trivial poly.
+[
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ]
+]
+[ true, true, true, true, true, true, true, true, true, true, true, true, true, 
+true, true, true, true, true, true, true, true, true, true ]
+N = 106 violates the inequality, but there exists a non-trivial poly.
+[
+    [
+        1
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ]
+]
+[ true, false, true, true, true, true, true, true, true, true, true, true, true,
+false, true, true, true, true, true, true, true, true, true ]
+N = 115 violates the inequality, but there exists a non-trivial poly.
+[
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ]
+]
+[ false, true, true, true, true, true, true, true, true, false, true, true, 
+false, true, true, true, true, true, true, true, true, true, true ]
+N = 122 violates the inequality, but there exists a non-trivial poly.
+[
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ]
+]
+[ true, true, true, true, true, false, true, false, true, true, true, true, 
+true, true, true, true, true, true, true, true, false, true, true ]
+N = 129 violates the inequality, but there exists a non-trivial poly.
+[
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ]
+]
+[ true, true, true, true, false, true, true, true, true, true, false, true, 
+true, true, true, true, true, true, true, true, true, true ]
+N = 154 violates the inequality, but there exists a non-trivial poly.
+[
+    [
+        1
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ]
+]
+[ true, false, true, true, true, false, true, true, false, true, true, true, 
+true, true, true, true, true, true, true, true, true, true, true ]
+N = 161 violates the inequality, but there exists a non-trivial poly.
+[
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ]
+]
+[ true, true, true, true, true, false, true, false, true, true, true, false, 
+true, false, true, true, true, true, true, false, true, true ]
+N = 165 violates the inequality, but there exists a non-trivial poly.
+[
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ]
+]
+[ false, false, true, true, true, true, true, true, true, true, true, true, 
+true, true, true, true, true, true, true, true, true, true, true ]
+N = 166 violates the inequality, but there exists a non-trivial poly.
+[
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ]
+]
+[ true, true, true, true, true, true, true, true, true, true, true, true, true, 
+true, true, true, true, true, true, true, true, true ]
+N = 170 violates the inequality, but there exists a non-trivial poly.
+[
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1,
+        x
+    ]
+]
+[ true, true, true, true, true, true, true, true, true, true, true, true, true, 
+false, false, false, false, true, true, true, true, false ]
+N = 186 violates the inequality, but there exists a non-trivial poly.
+[
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ]
+]
+[ true, true, false, true, true, true, false, true, true, true, true, true, 
+true, true, true, true, true, true, true, true, true, true, true ]
+N = 209 violates the inequality, but there exists a non-trivial poly.
+[
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ]
+]
+[ true, true, true, true, true, false, false, false, true, true, true, false, 
+true, false, true, true, false, true, true, true, true, true, true ]
+N = 215 violates the inequality, but there exists a non-trivial poly.
+[
+    [
+        1,
+        x
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ]
+]
+[ false, true, true, true, true, true, true, true, true, true, true, true, 
+false, true, true, true, true, true, true, true, true, true ]
+N = 230 violates the inequality, but there exists a non-trivial poly.
+[
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ]
+]
+[ true, true, true, true, true, true, true, true, true, true, true, true, true, 
+true, true, true, true, true, true, true, true, true ]
+N = 255 violates the inequality, but there exists a non-trivial poly.
+[
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ]
+]
+[ true, true, true, true, true, false, true, true, false, false, true, true, 
+true, true, true, true, true, true, true, true, true, true ]
+N = 285 violates the inequality, but there exists a non-trivial poly.
+[
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ]
+]
+[ false, false, true, true, true, true, true, true, true, true, true, true, 
+false, true, true, true, true, true, true, false, true, true ]
+N = 286 violates the inequality, but there exists a non-trivial poly.
+[
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ]
+]
+[ true, true, true, true, false, true, false, true, true, true, false, true, 
+false, true, true, true, true, true, false, true, true ]
+N = 330 violates the inequality, but there exists a non-trivial poly.
+[
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ]
+]
+[ true, true, false, true, true, true, true, true, true, true, true, true, true,
+true, true, true, false, true, true, false, true, true ]
+N = 357 violates the inequality, but there exists a non-trivial poly.
+[
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        x
+    ]
+]
+[ true, true, true, true, true, true, true, true, true, true, true, true, true, 
+true, true, true, true, true, true, true, true ]
+N = 390 violates the inequality, but there exists a non-trivial poly.
+[
+    [
+        1,
+        x^2 + 2*x
+    ],
+    [
+        1,
+        x^2 + 2*x
+    ],
+    [
+        1,
+        x,
+        x^2
+    ],
+    [
+        1,
+        x^2 + 4*x
+    ],
+    [
+        1,
+        x,
+        x^2
+    ],
+    [
+        1,
+        x^2 + 6*x
+    ],
+    [
+        1,
+        -x^2 + 2*x
+    ],
+    [
+        1,
+        x^2 + 14*x
+    ],
+    [
+        1,
+        x^2
+    ],
+    [
+        1,
+        -x^2 + 6*x
+    ],
+    [
+        1,
+        -x^2 + 12*x
+    ],
+    [
+        1,
+        x^2
+    ],
+    [
+        1,
+        -x^2 + 6*x
+    ],
+    [
+        1,
+        x,
+        x^2
+    ],
+    [
+        1,
+        x^2 + 10*x
+    ],
+    [
+        1,
+        x^2 + 4*x
+    ],
+    [
+        1,
+        -x^2 + 12*x
+    ],
+    [
+        1,
+        x^2 + 16*x
+    ],
+    [
+        1,
+        x^2 + 4*x
+    ],
+    [
+        1,
+        x^2 + 2*x
+    ],
+    [
+        1,
+        x^2 + 12*x
+    ],
+    [
+        1,
+        -x^2 + 4*x
+    ],
+    [
+        1,
+        x^2 + 2*x
+    ]
+]
+[ true, true, false, true, false, true, true, true, true, true, true, true, 
+true, false, true, true, true, true, true, true, true, true, true ]
+N = 178 violates the inequality, but there exists a non-trivial poly.
+[
+    [
+        1,
+        x^2 + 2*x
+    ],
+    [
+        1,
+        x,
+        x^2
+    ],
+    [
+        1,
+        x^2 + 2*x
+    ],
+    [
+        1,
+        x^2 + 2*x
+    ],
+    [
+        1,
+        x,
+        x^2
+    ],
+    [
+        1,
+        x,
+        x^2
+    ],
+    [
+        1,
+        -x^2 + 4*x
+    ],
+    [
+        1,
+        x^2 + 2*x
+    ],
+    [
+        1,
+        x^2
+    ],
+    [
+        1,
+        -x^2 + 4*x
+    ],
+    [
+        1,
+        x^2 + 4*x
+    ],
+    [
+        1,
+        x^2 + 6*x
+    ],
+    [
+        1,
+        -x^2 + 12*x
+    ],
+    [
+        1,
+        x^2 + 8*x
+    ],
+    [
+        1,
+        x^2 + 4*x
+    ],
+    [
+        1,
+        x^2 + 10*x
+    ],
+    [
+        1,
+        -x^2 + 6*x
+    ],
+    [
+        1,
+        x,
+        x^2
+    ],
+    [
+        1,
+        x^2 + 10*x
+    ],
+    [
+        1,
+        x^2 + 2*x
+    ],
+    [
+        1,
+        x^2 + 8*x
+    ],
+    [
+        1,
+        x^2 + 16*x
+    ],
+    [
+        1,
+        x^2 + 12*x
+    ]
+]
+[ true, false, true, true, false, false, true, true, true, true, true, true, 
+true, true, true, true, true, false, true, true, true, true, true ]
+N = 183 violates the inequality, but there exists a non-trivial poly.
+[
+    [
+        1,
+        x^2 + x
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1,
+        x,
+        x^2
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1,
+        -x^2 + 8*x
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ]
+]
+[ false, true, true, true, false, true, true, true, false, true, true, true, 
+true, true, true, true, true, true, true, true, true, true, true ]
+N = 185 violates the inequality, but there exists a non-trivial poly.
+[
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1,
+        x,
+        x^2
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ]
+]
+[ true, true, true, true, false, true, true, true, true, true, true, true, true,
+true, true, true, true, true, true, true, true, true, true ]
+N = 203 violates the inequality, but there exists a non-trivial poly.
+[
+    [
+        1,
+        x,
+        x^2
+    ],
+    [
+        1,
+        x^2 + 2*x
+    ],
+    [
+        1,
+        -x^2 + x
+    ],
+    [
+        1,
+        x,
+        x^2
+    ],
+    [
+        1,
+        x^2 + 7*x
+    ],
+    [
+        1,
+        x^2 + 10*x
+    ],
+    [
+        1,
+        x,
+        x^2
+    ],
+    [
+        1,
+        x^2 + 7*x
+    ],
+    [
+        1,
+        x^2 + x
+    ],
+    [
+        1,
+        x^2 + 5*x
+    ],
+    [
+        1,
+        -x^2 + 11*x
+    ],
+    [
+        1,
+        -x^2 + 5*x
+    ],
+    [
+        1,
+        x^2 + 10*x
+    ],
+    [
+        1,
+        x^2
+    ],
+    [
+        1,
+        x^2 + 9*x
+    ],
+    [
+        1,
+        -x^2 + 14*x
+    ],
+    [
+        1,
+        -x^2 + 3*x
+    ],
+    [
+        1,
+        -x^2 + 11*x
+    ],
+    [
+        1,
+        x^2 + 16*x
+    ],
+    [
+        1,
+        -x^2 + 2*x
+    ],
+    [
+        1,
+        -x^2 + 12*x
+    ],
+    [
+        1,
+        x^2 + 16*x
+    ]
+]
+[ false, false, true, false, false, true, false, true, true, false, true, true, 
+true, true, true, false, true, true, true, true, true, true ]
+N = 246 violates the inequality, but there exists a non-trivial poly.
+[
+    [
+        1,
+        x^2 + x
+    ],
+    [
+        1,
+        x^2 + 7*x
+    ],
+    [
+        1,
+        x^2 + 4*x
+    ],
+    [
+        1,
+        x^2
+    ],
+    [
+        1,
+        x^2 + 3*x
+    ],
+    [
+        1,
+        x^2 + 5*x
+    ],
+    [
+        1,
+        x^2 + 5*x
+    ],
+    [
+        1,
+        x^2 + 3*x
+    ],
+    [
+        1,
+        x^2 + 7*x
+    ],
+    [
+        1,
+        -x^2 + 10*x
+    ],
+    [
+        1,
+        -x^2 + x
+    ],
+    [
+        1,
+        x^2 + x
+    ],
+    [
+        1,
+        x^2 + 9*x
+    ],
+    [
+        1,
+        x,
+        x^2
+    ],
+    [
+        1,
+        x^2 + 4*x
+    ],
+    [
+        1,
+        x^2 + 9*x
+    ],
+    [
+        1,
+        x^2 + 22*x
+    ],
+    [
+        1,
+        -x^2 + 12*x
+    ],
+    [
+        1,
+        x^2 + 26*x
+    ],
+    [
+        1,
+        -x^2 + 12*x
+    ],
+    [
+        1,
+        x^2 + 4*x
+    ],
+    [
+        1,
+        -x^2 + 4*x
+    ]
+]
+[ true, true, true, true, false, true, false, true, true, true, true, true, 
+true, false, true, true, true, true, true, false, true, true ]
+N = 258 violates the inequality, but there exists a non-trivial poly.
+[
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1,
+        -x^2 + 4*x
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1,
+        x^2 + 2*x
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1,
+        x^2
+    ],
+    [
+        1,
+        x^2 + 10*x
+    ],
+    [
+        1,
+        -x^2 + 9*x
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ]
+]
+[ true, true, true, true, false, true, true, true, true, true, false, true, 
+true, true, true, true, false, false, false, true, true, true ]
+N = 282 violates the inequality, but there exists a non-trivial poly.
+[
+    [
+        1,
+        x^2 + 3*x
+    ],
+    [
+        1,
+        x,
+        x^2
+    ],
+    [
+        1,
+        -x^2 + x
+    ],
+    [
+        1,
+        x^2 + 3*x
+    ],
+    [
+        1,
+        x^2 + 2*x
+    ],
+    [
+        1,
+        x^2 + 10*x
+    ],
+    [
+        1,
+        x^2 + 6*x
+    ],
+    [
+        1,
+        x^2 + 3*x
+    ],
+    [
+        1,
+        x^2 + 10*x
+    ],
+    [
+        1,
+        -x^2 + 8*x
+    ],
+    [
+        1,
+        x^2 + x
+    ],
+    [
+        1,
+        -x^2 + 7*x
+    ],
+    [
+        1,
+        -x^2 + 11*x
+    ],
+    [
+        1,
+        -x^2 + 4*x
+    ],
+    [
+        1,
+        -x^2 + 14*x
+    ],
+    [
+        1,
+        x^2 + 2*x
+    ],
+    [
+        1,
+        -x^2 + 2*x
+    ],
+    [
+        1,
+        x^2 + 6*x
+    ],
+    [
+        1,
+        x^2 + 17*x
+    ],
+    [
+        1,
+        x^2 + 6*x
+    ],
+    [
+        1,
+        x,
+        x^2
+    ],
+    [
+        1,
+        x^2
+    ]
+]
+[ false, false, true, true, true, false, true, true, true, true, true, true, 
+true, true, true, false, true, true, false, true, false, true ]
+N = 290 violates the inequality, but there exists a non-trivial poly.
+[
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1,
+        -x^2 + x
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1,
+        x^2 + 10*x
+    ]
+]
+[ true, true, true, true, false, true, true, true, true, true, true, true, true,
+true, true, true, true, true, true, true, true, false ]
+N = 310 violates the inequality, but there exists a non-trivial poly.
+[
+    [
+        1,
+        x^2 + 5*x
+    ],
+    [
+        1,
+        x,
+        x^2
+    ],
+    [
+        1,
+        x^2 + 5*x
+    ],
+    [
+        1,
+        x^2 + x
+    ],
+    [
+        1,
+        x^2 + 2*x
+    ],
+    [
+        1,
+        x^2 + 5*x
+    ],
+    [
+        1,
+        x^2 + 4*x
+    ],
+    [
+        1,
+        -x^2 + x
+    ],
+    [
+        1,
+        x^2 + 5*x
+    ],
+    [
+        1,
+        x^2 + x
+    ],
+    [
+        1,
+        x^2 + 14*x
+    ],
+    [
+        1,
+        x^2 + 11*x
+    ],
+    [
+        1,
+        x^2
+    ],
+    [
+        1,
+        -x^2 + 3*x
+    ],
+    [
+        1,
+        -x^2 + 14*x
+    ],
+    [
+        1,
+        -x^2 + 2*x
+    ],
+    [
+        1,
+        -x^2 + 15*x
+    ],
+    [
+        1,
+        -x^2 + 2*x
+    ],
+    [
+        1,
+        x,
+        x^2
+    ],
+    [
+        1,
+        -x^2 + 3*x
+    ],
+    [
+        1,
+        -x^2 + x
+    ],
+    [
+        1,
+        -x^2 + 4*x
+    ]
+]
+[ true, false, true, true, true, true, true, true, true, true, true, true, true,
+true, true, true, true, true, false, true, true, true ]
+N = 318 violates the inequality, but there exists a non-trivial poly.
+[
+    [
+        1,
+        x^2
+    ],
+    [
+        1,
+        x^2 + 2*x
+    ],
+    [
+        1,
+        x,
+        x^2
+    ],
+    [
+        1,
+        -x^2 + 10*x
+    ],
+    [
+        1,
+        x^2 + 8*x
+    ],
+    [
+        1,
+        x,
+        x^2
+    ],
+    [
+        1,
+        -x^2 + 2*x
+    ],
+    [
+        1,
+        x^2 + 6*x
+    ],
+    [
+        1,
+        x,
+        x^2
+    ],
+    [
+        1,
+        x^2 + 4*x
+    ],
+    [
+        1,
+        x^2 + 2*x
+    ],
+    [
+        1,
+        -x^2 + 4*x
+    ],
+    [
+        1,
+        x,
+        x^2
+    ],
+    [
+        1,
+        x^2 + 20*x
+    ],
+    [
+        1,
+        x^2 + 4*x
+    ],
+    [
+        1,
+        x^2 + 14*x
+    ],
+    [
+        1,
+        x^2
+    ],
+    [
+        1,
+        x^2 + 8*x
+    ],
+    [
+        1,
+        -x^2 + 10*x
+    ],
+    [
+        1,
+        x^2
+    ],
+    [
+        1,
+        x^2 + 14*x
+    ],
+    [
+        1,
+        -x^2 + 4*x
+    ]
+]
+[ true, true, false, true, true, false, true, true, false, true, true, true, 
+false, true, true, true, true, true, true, true, true, true ]
+N = 429 violates the inequality, but there exists a non-trivial poly.
+[
+    [
+        1,
+        x^2 + 4*x
+    ],
+    [
+        1,
+        x^2
+    ],
+    [
+        1,
+        x,
+        x^2
+    ],
+    [
+        1,
+        x^2
+    ],
+    [
+        1,
+        x^2
+    ],
+    [
+        1,
+        x^2 + 12*x
+    ],
+    [
+        1,
+        -x^2 + 4*x
+    ],
+    [
+        1,
+        -x^2 + 4*x
+    ],
+    [
+        1,
+        x^2 + 8*x
+    ],
+    [
+        1,
+        x,
+        x^2
+    ],
+    [
+        1,
+        x,
+        x^2
+    ],
+    [
+        1,
+        x,
+        x^2
+    ],
+    [
+        1,
+        x^2 + 20*x
+    ],
+    [
+        1,
+        x^2 + 8*x
+    ],
+    [
+        1,
+        x^2 + 16*x
+    ],
+    [
+        1,
+        x^2 + 8*x
+    ],
+    [
+        1,
+        x^2 + 8*x
+    ],
+    [
+        1,
+        x,
+        x^2
+    ],
+    [
+        1,
+        -x^2 + 8*x
+    ],
+    [
+        1,
+        -x^2 + 4*x
+    ],
+    [
+        1,
+        x^2 + 4*x
+    ]
+]
+[ true, true, false, false, true, true, true, true, true, false, false, false, 
+true, true, true, true, true, false, true, true, true ]
+N = 462 violates the inequality, but there exists a non-trivial poly.
+[
+    [
+        1,
+        x^3 + 3*x^2
+    ],
+    [
+        1,
+        -x^3 - 3*x^2 + 6*x
+    ],
+    [
+        1,
+        -x^3 - 3*x^2 + 18*x
+    ],
+    [
+        1,
+        x^3 + 9*x^2 + 24*x
+    ],
+    [
+        1,
+        -x^3 - 3*x^2 + 36*x
+    ],
+    [
+        1,
+        x^3 + 9*x^2 + 18*x
+    ],
+    [
+        1,
+        x,
+        x^2,
+        x^3
+    ],
+    [
+        1,
+        x^3 + 12*x^2 + 36*x
+    ],
+    [
+        1,
+        -x^3 + 84*x
+    ],
+    [
+        1,
+        -x^3 + 12*x^2
+    ],
+    [
+        1,
+        -x^3 + 3*x^2 + 60*x
+    ],
+    [
+        1,
+        -x^3 + 6*x^2 + 24*x
+    ],
+    [
+        1,
+        x,
+        x^2,
+        x^3
+    ],
+    [
+        1,
+        -x^3 - 6*x^2 + 96*x
+    ],
+    [
+        1,
+        -x^3 + 12*x
+    ],
+    [
+        1,
+        -x^3 + 9*x^2 + 12*x
+    ],
+    [
+        1,
+        -x^3 + 192*x
+    ],
+    [
+        1,
+        x^3 + 21*x^2 + 84*x
+    ],
+    [
+        1,
+        -x^3 - 6*x^2 + 132*x
+    ],
+    [
+        1,
+        -x^3 + 84*x
+    ],
+    [
+        1,
+        -x^3 + 6*x^2 + 144*x
+    ],
+    [
+        1,
+        x^3 + 15*x^2
+    ],
+    [
+        1,
+        -x^3 - 6*x^2 + 216*x
+    ],
+    [
+        1,
+        -x^3 + 15*x^2 + 114*x
+    ]
+]
+[ true, true, true, true, true, true, false, true, true, true, true, true, 
+false, true, true, true, true, true, true, true, true, true, true, true ]
+N = 202 violates the inequality, but there exists a non-trivial poly.
+[
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ]
+]
+[ true, true, true, true, true, true, true, true, true, true, true, true, true, 
+true, true, true, true, true, true, true, true, true ]
+N = 273 violates the inequality, but there exists a non-trivial poly.
+[
+    [
+        1,
+        -x^3 - 3*x^2 + 2*x
+    ],
+    [
+        1,
+        x^2 + 2*x,
+        x^3 + 4*x^2
+    ],
+    [
+        1,
+        -x^3 + 20*x
+    ],
+    [
+        1
+    ],
+    [
+        1,
+        x^3 + 10*x^2 + 20*x
+    ],
+    [
+        1
+    ],
+    [
+        1,
+        -x^3 + 4*x^2 + 23*x
+    ],
+    [
+        1,
+        -x^3 - 7*x^2 + 22*x
+    ],
+    [
+        1,
+        -x^3 + 8*x^2 + 32*x
+    ],
+    [
+        1,
+        -x^3 - 10*x^2 + 5*x
+    ],
+    [
+        1,
+        x^2 + 4*x,
+        x^3 + 8*x^2
+    ],
+    [
+        1
+    ],
+    [
+        1,
+        -x^3 + 12*x^2 + 32*x
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1,
+        -x^3 + 2*x^2 + 132*x
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ]
+]
+[ false, false, false, true, false, true, false, false, false, false, false, 
+true, false, true, true, false, true, true, true, true, true, true ]
+N = 322 violates the inequality, but there exists a non-trivial poly.
+[
+    [
+        1,
+        -x^3 - 3*x^2 + 3*x
+    ],
+    [
+        1,
+        -x^3 - 3*x^2 + 6*x
+    ],
+    [
+        1,
+        x^3 + 6*x^2
+    ],
+    [
+        1,
+        -5*x^3 + 6*x^2 + 135*x
+    ],
+    [
+        1,
+        -16*x^3 + 87*x^2 + 705*x
+    ],
+    [
+        1,
+        -x^3 + 4*x^2 + 52*x
+    ],
+    [
+        1,
+        x
+    ],
+    [
+        1,
+        -11*x^3 - 105*x^2 + 111*x
+    ],
+    [
+        1,
+        -x^3 - 3*x^2 + 54*x
+    ],
+    [
+        1,
+        2*x^3 + 33*x^2 + 105*x
+    ],
+    [
+        1,
+        -x^3 + 72*x
+    ],
+    [
+        1,
+        -50*x^3 - 345*x^2 + 3639*x
+    ],
+    [
+        1,
+        -x^3 + 45*x
+    ],
+    [
+        1,
+        13*x^3 - 564*x^2 + 1137*x
+    ],
+    [
+        1,
+        -17*x^3 + 138*x^2 + 3336*x
+    ],
+    [
+        1,
+        x^3 + 101*x^2 + 270*x
+    ],
+    [
+        1,
+        -71*x^3 - 387*x^2 + 6015*x
+    ],
+    [
+        1,
+        -5*x^3 - 26*x^2 + 411*x
+    ],
+    [
+        1,
+        -55*x^3 + 270*x^2 + 11676*x
+    ],
+    [
+        1,
+        -16*x^3 + 3*x^2 + 2679*x
+    ],
+    [
+        1,
+        -71*x^3 - 294*x^2 + 14940*x
+    ],
+    [
+        1,
+        -3*x^3 + 26*x^2 + 356*x
+    ]
+]
+[ true, true, true, true, true, true, true, true, false, true, false, true, 
+false, true, true, true, true, true, true, true, true, true ]
+N = 345 violates the inequality, but there exists a non-trivial poly.
+[
+    [
+        1,
+        x^2 + x
+    ],
+    [
+        1,
+        x^3 + 7*x^2 + 12*x
+    ],
+    [
+        1,
+        x^2 + 2*x
+    ],
+    [
+        1,
+        -x^3 + 25*x
+    ],
+    [
+        1,
+        -3*x^3 + 8*x^2 + 101*x
+    ],
+    [
+        1,
+        -22*x^3 - 73*x^2 + 751*x
+    ],
+    [
+        1,
+        x^3 + 15*x^2 + 63*x
+    ],
+    [
+        1,
+        -x^3 - 7*x^2 + 18*x
+    ],
+    [
+        1,
+        -80*x^3 - 575*x^2 + 4789*x
+    ],
+    [
+        1,
+        x^2 + 2*x
+    ],
+    [
+        1,
+        -x^3 + 4*x^2 + 96*x
+    ],
+    [
+        1,
+        -2*x^3 + 17*x^2 + 6*x
+    ],
+    [
+        1,
+        4*x^3 + 53*x^2 + 150*x
+    ],
+    [
+        1,
+        -57*x^3 - 28*x^2 + 6341*x
+    ],
+    [
+        1,
+        x^2 + 2*x
+    ],
+    [
+        1,
+        -54*x^3 + x^2 + 9409*x
+    ],
+    [
+        1,
+        -x^3 - 3*x^2 + 40*x
+    ],
+    [
+        1,
+        -3*x^3 - 17*x^2 + x
+    ],
+    [
+        1,
+        -24*x^3 - 271*x^2 + 1979*x
+    ],
+    [
+        1,
+        -x^3 + 8*x^2 + 48*x
+    ],
+    [
+        1,
+        -14*x^3 - 83*x^2 + 1205*x
+    ],
+    [
+        1,
+        6*x^3 + 89*x^2 + 359*x
+    ]
+]
+[ true, true, true, true, true, true, true, true, true, true, true, true, true, 
+true, true, true, true, true, true, true, true, true ]
+N = 374 violates the inequality, but there exists a non-trivial poly.
+[
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ]
+]
+[ true, true, true, true, true, true, true, true, true, true, true, true, true, 
+true, true, true, true, true, true, true, true, true ]
+N = 385 violates the inequality, but there exists a non-trivial poly.
+[
+    [
+        1,
+        -x^3 - x^2 + 4*x
+    ],
+    [
+        1,
+        x^3 + 8*x^2 + 12*x
+    ],
+    [
+        1,
+        x^3 + 7*x^2 + 12*x
+    ],
+    [
+        1,
+        x^3 + 8*x^2 + x,
+        5*x^3 + 39*x^2
+    ],
+    [
+        1,
+        -x^3 - 5*x^2 + 16*x
+    ],
+    [
+        1,
+        -x^3 - 9*x^2 + 12*x
+    ],
+    [
+        1,
+        -x^3 + 2*x^2 + 80*x
+    ],
+    [
+        1,
+        -x^3 - 2*x^2 + 8*x
+    ],
+    [
+        1,
+        -x^3 - 2*x^2 + 8*x
+    ],
+    [
+        1,
+        -x^3 - 10*x^2 + 36*x
+    ],
+    [
+        1,
+        -x^3 + 144*x
+    ],
+    [
+        1,
+        x^3 - 13*x^2 + 24*x
+    ],
+    [
+        1,
+        -x^3 - 7*x^2 + 16*x
+    ],
+    [
+        1,
+        x^2 + 2*x,
+        x^3 + 6*x^2
+    ],
+    [
+        1,
+        -x^3 - 17*x^2 + 40*x
+    ],
+    [
+        1,
+        x,
+        x^2,
+        x^3
+    ],
+    [
+        1,
+        -x^3 - 5*x^2 + 48*x
+    ],
+    [
+        1,
+        -x^3 - 10*x^2 + 64*x
+    ],
+    [
+        1,
+        -x^3 - 10*x^2 + 32*x
+    ],
+    [
+        1,
+        x^3 + 14*x^2 + 40*x
+    ],
+    [
+        1,
+        -x^3 - 22*x^2 + 120*x
+    ]
+]
+[ true, true, true, false, false, true, true, false, false, true, true, true, 
+true, false, true, false, true, true, true, true, true ]
+N = 570 violates the inequality, but there exists a non-trivial poly.
+[
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1,
+        x,
+        x^2,
+        x^3,
+        x^4
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ]
+]
+[ true, true, true, true, true, true, true, true, true, true, true, true, false,
+true, true, true, true, true, true, true, true, true, true ]
+N = 235 violates the inequality, but there exists a non-trivial poly.
+[
+    [
+        1,
+        -x^4 - 3*x^3 + x^2 + 5*x
+    ],
+    [
+        1,
+        -x^4 - 4*x^3 + x^2 + 14*x
+    ],
+    [
+        1,
+        -x^4 - 2*x^3 + 20*x^2 + 40*x
+    ],
+    [
+        1,
+        -x^4 - 8*x^3 - 11*x^2 + 42*x
+    ],
+    [
+        1,
+        -x^4 - 6*x^3 + 21*x^2 + 74*x
+    ],
+    [
+        1,
+        -x^4 - 8*x^3 + 56*x
+    ],
+    [
+        1,
+        -x^4 - 4*x^3 + 27*x^2 + 120*x
+    ],
+    [
+        1,
+        -x^4 - 18*x^3 - 85*x^2 + 32*x
+    ],
+    [
+        1,
+        x^4 + 2*x^3 - 68*x^2 + 40*x
+    ],
+    [
+        1,
+        x^4 - 67*x^2 + 136*x
+    ],
+    [
+        1,
+        x^4 - 4*x^3 - 48*x^2 + 136*x
+    ],
+    [
+        1,
+        -x^4 + 2*x^3 + 76*x^2 + 8*x
+    ],
+    [
+        1,
+        x^4 + 16*x^3 + 68*x^2
+    ],
+    [
+        1,
+        -x^4 - 6*x^3 + 68*x^2 + 424*x
+    ],
+    [
+        1,
+        -x^4 - 6*x^3 + 144*x^2 + 832*x
+    ],
+    [
+        1,
+        x^4 + 2*x^3 - 80*x^2 + 112*x
+    ],
+    [
+        1,
+        x^4 - 18*x^3 + 72*x^2 + 80*x
+    ],
+    [
+        1,
+        x^4 + 40*x^3 + 525*x^2 + 2160*x
+    ],
+    [
+        1,
+        x^4 + 20*x^3 + 96*x^2 + 88*x
+    ],
+    [
+        1,
+        x^4 - 14*x^3 - 73*x^2 + 402*x
+    ],
+    [
+        1,
+        -x^4 - 8*x^3 + 256*x^2 + 1024*x
+    ],
+    [
+        1,
+        -x^4 + 2*x^3 + 115*x^2
+    ],
+    [
+        1,
+        x^4 - 22*x^3 + 75*x^2 + 606*x
+    ]
+]
+[ true, true, true, true, true, true, true, true, true, true, true, true, true, 
+true, true, true, true, true, true, true, true, true, true ]
+N = 237 violates the inequality, but there exists a non-trivial poly.
+[
+    [
+        1
+    ],
+    [
+        1,
+        -x^4 - 4*x^3 + 6*x^2 + 27*x
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1,
+        x^4 + 18*x^3 + 111*x^2 + 274*x
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ]
+]
+[ true, false, true, true, true, false, true, true, true, true, true, true, 
+true, true, true, true, true, true, true, true, true, true ]
+N = 418 violates the inequality, but there exists a non-trivial poly.
+[
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ]
+]
+[ true, true, true, true, true, true, true, true, true, true, true, true, true, 
+true, true, true, true, true, true, true, true, true ]
+N = 435 violates the inequality, but there exists a non-trivial poly.
+[
+    [
+        1
+    ],
+    [
+        1,
+        -x^4 - 7*x^3 - 4*x^2 + 12*x
+    ],
+    [
+        1,
+        x^4 + 12*x^3 + 43*x^2 + 42*x
+    ],
+    [
+        1,
+        -x^4 - 8*x^3 + 5*x^2 + 126*x
+    ],
+    [
+        1
+    ],
+    [
+        1,
+        x^4 - 4*x^3 - 24*x^2 + 32*x
+    ],
+    [
+        1
+    ],
+    [
+        1,
+        -x^4 - 4*x^3 + 66*x^2 + 248*x
+    ],
+    [
+        1
+    ],
+    [
+        1,
+        -x^4 - 6*x^3 + 15*x^2 + 96*x
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1,
+        -x^4 - 12*x^3 + 28*x^2 + 288*x
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1,
+        x^2 + 18*x,
+        x^4 + 13*x^3 + 2*x^2,
+        7*x^4 + 90*x^3
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ]
+]
+[ true, false, false, false, true, false, true, false, true, false, true, true, 
+true, true, true, false, true, true, false, true, true ]
+N = 714 violates the inequality, but there exists a non-trivial poly.
+[
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1,
+        x^7 + 14*x^6 + 37*x^5 - 224*x^4 - 896*x^3 + 1184*x^2 + 4412*x
+    ],
+    [
+        1
+    ],
+    [
+        1,
+        x^7 + 8*x^6 - 113*x^5 - 880*x^4 + 3120*x^3 + 25792*x^2 + 4672*x
+    ],
+    [
+        1
+    ],
+    [
+        1,
+        -2803*x^7 + 5194*x^6 + 65650*x^5 + 4*x^3 + 5*x,
+        -10164*x^7 + 18834*x^6 + 238055*x^5 + 4*x^3 + x^2,
+        -7504*x^7 + 13905*x^6 + 175754*x^5 + 5*x^3,
+        -12674*x^7 + 23485*x^6 + 296843*x^5 + x^4,
+        -13341*x^7 + 24721*x^6 + 312465*x^5
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1,
+        x^7 + 7*x^6 - 66*x^5 - 408*x^4 + 896*x^3 + 5760*x^2 + 6400*x
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1,
+        x^7 + 17*x^6 - 142*x^5 - 3128*x^4 - 480*x^3 + 122400*x^2 + 154816*x
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ],
+    [
+        1
+    ]
+]
+[ true, true, true, false, true, false, true, false, true, true, false, true, 
+true, true, true, true, true, true, false, true, true, true ]
+N = 665 violates the inequality, but there exists a non-trivial poly.
+
+Total time: 3438.789 seconds, Total memory usage: 32.09MB

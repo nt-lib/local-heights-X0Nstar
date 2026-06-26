@@ -1,0 +1,37 @@
+Magma V2.29-4     Sat Jun 13 2026 01:50:55 on mordell  [Seed = 2134483050]
+Type ? for help.  Type <Ctrl>-D to quit.
+
+Loading file "computations/X0_319star/qc_polys.m"
+Loading "QCMod/qc_modular.m"
+Loading "QCMod/coleman.m"
+Loading "QCMod/auxpolys.m"
+Loading "QCMod/coho.m"
+Loading "QCMod/froblift.m"
+Loading "QCMod/reductions.m"
+Loading "QCMod/singleintegrals.m"
+Loading "QCMod/misc.m"
+Loading "QCMod/applications.m"
+Loading "QCMod/symplectic_basis.m"
+Loading "QCMod/hecke_correspondence.m"
+Loading "QCMod/hodge.m"
+Loading "QCMod/frobenius.m"
+Loading "QCMod/heights.m"
+Loading "QCMod/second_patch_quartic.m"
+p = 2
+ Computing a symplectic basis of H^1
+Runtime error: bad prime
+p = 3
+ Computing a symplectic basis of H^1
+Runtime error: bad prime
+p = 5
+ Computing a symplectic basis of H^1
+Runtime error: bad prime
+p = 7
+ Computing a symplectic basis of H^1
+ genus = 4.
+ Computing the cup product matrix
+
+System error: Out of memory (too many memory blocks allocated).
+Magma cannot perform this statement.
+
+Total time: 124792.830 seconds, Total memory usage: 175877.47MB

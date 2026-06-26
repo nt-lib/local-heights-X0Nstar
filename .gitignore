@@ -1,0 +1,3 @@
+*.sig
+/scratch
+.ipynb_checkpoints/

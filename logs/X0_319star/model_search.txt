@@ -1,0 +1,186 @@
+Magma V2.29-4     Sat Jun 13 2026 01:50:54 on mordell  [Seed = 1629994613]
+Type ? for help.  Type <Ctrl>-D to quit.
+
+Loading file "computations/X0_319star/model_search.m"
+Loading "ModularCurvesX0plusG4-6/mef_new_modified.m"
+Loading "QCMod/qc_modular.m"
+Loading "QCMod/coleman.m"
+Loading "QCMod/auxpolys.m"
+Loading "QCMod/coho.m"
+Loading "QCMod/froblift.m"
+Loading "QCMod/reductions.m"
+Loading "QCMod/singleintegrals.m"
+Loading "QCMod/misc.m"
+Loading "QCMod/applications.m"
+Loading "QCMod/symplectic_basis.m"
+Loading "QCMod/hecke_correspondence.m"
+Loading "QCMod/hodge.m"
+Loading "QCMod/frobenius.m"
+Loading "QCMod/heights.m"
+Loading "QCMod/second_patch_quartic.m"
+Found 5 rational points on the curve:
+[ (0 : 1 : 1 : 1), (1 : -1 : 1 : 1), (0 : 0 : 1 : 0), (0 : 0 : 0 : 1), (-2 : -2 
+: 1 : 0) ]
+
+========================================================================
+===== Starting Search 1/5: Projecting from point (0 : 1 : 1 : 1) =====
+========================================================================
+Starting the search for a good plane model...
+The image (-1/2 : 1 : 0) of the Q-point (1 : -1 : 1 : 1) is bad for this model. 
+(Changing the prime won't help.)
+The image (0 : 1 : 1) of the Q-point (0 : 0 : 0 : 1) is bad for this model. 
+(Changing the prime won't help.)
+There are exactly 2 bad Q-points. Moving them to infinity.Apply the automorphism Mapping from: Prj: projective_plane to Prj: 
+projective_plane
+with equations : 
+x
+y
+-2*x - y + z
+and inverse
+x
+y
+2*x + y + z to the image curve.
+This model is not monic in Y.
+
+
+-----------------------------------------------
+      NO SUITABLE MODEL FOUND FOR PROJECTION FROM (0 : 1 : 1 : 1)
+-----------------------------------------------
+The search function exited early
+========================================================================
+========================================================================
+===== Starting Search 2/5: Projecting from point (1 : -1 : 1 : 1) =====
+========================================================================
+Starting the search for a good plane model...
+The image (-2 : -2 : 1) of the Q-point (-2 : -2 : 1 : 0) is bad for this model. 
+(Changing the prime won't help.)
+There are 1 bad Q-points, this patch is not going to work.
+
+
+-----------------------------------------------
+      NO SUITABLE MODEL FOUND FOR PROJECTION FROM (1 : -1 : 1 : 1)
+-----------------------------------------------
+The search function exited early
+========================================================================
+========================================================================
+===== Starting Search 3/5: Projecting from point (0 : 0 : 1 : 0) =====
+========================================================================
+Starting the search for a good plane model...
+The image (0 : 1 : 1) of the Q-point (0 : 1 : 1 : 1) is bad for this model. 
+(Changing the prime won't help.)
+There are 1 bad Q-points, this patch is not going to work.
+
+
+-----------------------------------------------
+      NO SUITABLE MODEL FOUND FOR PROJECTION FROM (0 : 0 : 1 : 0)
+-----------------------------------------------
+The search function exited early
+========================================================================
+========================================================================
+===== Starting Search 4/5: Projecting from point (0 : 0 : 0 : 1) =====
+========================================================================
+Starting the search for a good plane model...
+The image (1 : -1 : 1) of the Q-point (1 : -1 : 1 : 1) is bad for this model. 
+(Changing the prime won't help.)
+There are 1 bad Q-points, this patch is not going to work.
+
+
+-----------------------------------------------
+      NO SUITABLE MODEL FOUND FOR PROJECTION FROM (0 : 0 : 0 : 1)
+-----------------------------------------------
+The search function exited early
+========================================================================
+========================================================================
+===== Starting Search 5/5: Projecting from point (-2 : -2 : 1 : 0) =====
+========================================================================
+Starting the search for a good plane model...
+There are no bad Q-points. Great!
+p = 2: equation defining bad discs is zero. Skipping.
+
+
+-----------------------------------------------
+          RESULTS FOR PROJECTION FROM (-2 : -2 : 1 : 0)
+-----------------------------------------------
+
+A suitable model was found.
+
+The new affine equation for the curve is:
+-8/13*X^5 + 44/13*X^4*Y + 16/13*X^4 - 97/13*X^3*Y^2 - 48/13*X^3*Y - 9/13*X^3 + 
+107/13*X^2*Y^3 + 44/13*X^2*Y^2 + 9/13*X^2*Y + 1/13*X^2 - 59/13*X*Y^4 - 
+8/13*X*Y^3 - 5/13*X*Y^2 - 2/13*X*Y + 1/13*X + Y^5 - 4/13*Y^4 + 4/13*Y^3 - 
+1/13*Y^2 = 0
+
+The map from the original curve to the new model in P^2 is:
+Mapping from: Crv: X319star to CrvPln: C_clean
+with equations : 
+$.1 + 2*$.3
+$.2 + 2*$.3
+$.4
+
+The images of the known rational points on the new model are:
+[ (2 : 3 : 1), (3 : 1 : 1), (1 : 1 : 0), (0 : 0 : 1), (13/8 : 17/8 : 1) ]
+
+The polynomial whose roots are the 'bad' x-coordinates is:
+432/815730721*T^15 - 8360/815730721*T^14 + 1286360/815730721*T^13 - 
+8333032/815730721*T^12 + 20124892/815730721*T^11 - 35165618/815730721*T^10 + 
+69259864/815730721*T^9 - 77482468/815730721*T^8 + 11241132/815730721*T^7 + 
+32921270/815730721*T^6 - 16265512/815730721*T^5 - 4099400/815730721*T^4 + 
+4813672/815730721*T^3 - 1048872/815730721*T^2 + 2552/62748517*T
+
+For this model, the following primes up to 100 are 'good' (no bad points or 
+points at infinity mod p):
+[]
+
+--- Primes where points map to infinity on the image curve ---
+p = 2: 2 points
+p = 3: 2 points
+p = 5: 4 points
+p = 7: 2 points
+p = 11: 2 points
+p = 17: 4 points
+p = 19: 2 points
+p = 23: 2 points
+p = 29: 4 points
+p = 31: 2 points
+p = 37: 4 points
+p = 41: 4 points
+p = 43: 2 points
+p = 47: 2 points
+p = 53: 4 points
+p = 59: 2 points
+p = 61: 4 points
+p = 67: 2 points
+p = 71: 2 points
+p = 73: 4 points
+p = 79: 2 points
+p = 83: 2 points
+p = 89: 4 points
+p = 97: 4 points
+
+--- Primes where the reduction has 'bad' points ---
+p = 3: 8 points
+p = 5: 10 points
+p = 7: 9 points
+p = 11: 15 points
+p = 17: 8 points
+p = 19: 4 points
+p = 23: 11 points
+p = 29: 16 points
+p = 31: 5 points
+p = 37: 12 points
+p = 41: 12 points
+p = 43: 12 points
+p = 47: 20 points
+p = 53: 5 points
+p = 59: 6 points
+p = 61: 3 points
+p = 67: 11 points
+p = 71: 15 points
+p = 73: 7 points
+p = 79: 4 points
+p = 83: 9 points
+p = 89: 8 points
+p = 97: 11 points
+========================================================================
+
+Total time: 0.930 seconds, Total memory usage: 160.22MB

@@ -1,0 +1,40 @@
+Magma V2.29-4     Sat Jun 13 2026 01:50:57 on mordell  [Seed = 1966320222]
+Type ? for help.  Type <Ctrl>-D to quit.
+
+Loading file "computations/X0_319star/reductions.m"
+The reduction of the curve modulo p is Q_p = 0, where Q_p is:
+18*x_p^22 + 25*x_p^21 + 16*x_p^20 + 23*x_p^19 + 21*x_p^18 + 12*x_p^17*y_p + 
+    3*x_p^17 + 13*x_p^16*y_p + 13*x_p^16 + 18*x_p^15*y_p + 13*x_p^15 + 
+    16*x_p^14*y_p + 20*x_p^14 + 16*x_p^13*y_p + 5*x_p^13 + 15*x_p^12*y_p^2 + 
+    18*x_p^11*y_p^2 + 17*x_p^11*y_p + 3*x_p^11 + 5*x_p^10*y_p^2 + 25*x_p^10*y_p 
+    + 17*x_p^10 + 10*x_p^9*y_p^2 + 21*x_p^9*y_p + 3*x_p^9 + x_p^8*y_p^2 + 
+    13*x_p^8*y_p + 23*x_p^8 + 19*x_p^7*y_p^2 + 18*x_p^7*y_p + 23*x_p^7 + 
+    2*x_p^6*y_p^3 + 2*x_p^6*y_p^2 + 22*x_p^6*y_p + 9*x_p^6 + 25*x_p^5*y_p^3 + 
+    16*x_p^5*y_p^2 + 10*x_p^5*y_p + 2*x_p^5 + 18*x_p^4*y_p^3 + 21*x_p^4*y_p^2 + 
+    14*x_p^4*y_p + 9*x_p^4 + 11*x_p^3*y_p^3 + 21*x_p^3*y_p^2 + 22*x_p^3*y_p + 
+    21*x_p^3 + 18*x_p^2*y_p^3 + 14*x_p^2*y_p^2 + 12*x_p^2*y_p + 5*x_p^2 + 
+    5*x_p*y_p^3 + 17*x_p*y_p^2 + 5*x_p*y_p + 18*x_p + y_p^4 + 11*y_p^3 + 
+    25*y_p^2 + 14*y_p
+[ (2, 194/9), (0, 5/18), (0, 0), (1/2, -1/144), (1, 0) ]
+Rational point P = (2, 194/9) reduces to P_p = (2, 28)
+  Partial derivatives at P_p: dQ/dx = 13, dQ/dy = 10
+  --> RESULT: The reduced point is SMOOTH.
+
+Rational point P = (0, 5/18) reduces to P_p = (0, 18)
+  Partial derivatives at P_p: dQ/dx = 5, dQ/dy = 18
+  --> RESULT: The reduced point is SMOOTH.
+
+Rational point P = (0, 0) reduces to P_p = (0, 0)
+  Partial derivatives at P_p: dQ/dx = 18, dQ/dy = 14
+  --> RESULT: The reduced point is SMOOTH.
+
+Rational point P = (1/2, -1/144) reduces to P_p = (15, 1)
+  Partial derivatives at P_p: dQ/dx = 2, dQ/dy = 8
+  --> RESULT: The reduced point is SMOOTH.
+
+Rational point P = (1, 0) reduces to P_p = (1, 0)
+  Partial derivatives at P_p: dQ/dx = 25, dQ/dy = 7
+  --> RESULT: The reduced point is SMOOTH.
+
+
+Total time: 0.280 seconds, Total memory usage: 32.09MB
