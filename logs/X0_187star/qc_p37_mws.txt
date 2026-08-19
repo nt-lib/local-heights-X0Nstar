@@ -1,7 +1,7 @@
 Magma V2.29-4     Sat Jun 13 2026 01:49:07 on mordell  [Seed = 156227507]
 Type ? for help.  Type <Ctrl>-D to quit.
 
-Loading file "computations/X0_187star/qc_p31_mws.m"
+Loading file "computations/X0_187star/qc_p37_mws.m"
 Loading "src/StarQuotientMeasures.m"
 Loading "src/rank.m"
 Loading "QCMod/qc_modular.m"
