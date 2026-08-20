@@ -1,11 +1,12 @@
-Magma V2.29-4     Sat Jun 13 2026 01:49:04 on mordell  [Seed = 2277595455]
+Magma V2.29-4     Wed Aug 19 2026 14:13:11 on mordell  [Seed = 1670166883]
 Type ? for help.  Type <Ctrl>-D to quit.
 
 Loading file "computations/general/existence_of_relations.m"
 Loading "src/StarQuotientMeasures.m"
-Loaded precomputed class numbers from data/classnumbers_upto_1231230.dat.
+Loading "src/genera_and_bounds.m"
 N = 1: g = 0 is known
 N = 2: g = 0 is known
+Loaded precomputed class numbers from data/classnumbers_upto_1231230.dat.
 N = 3: g = 0 is known
 N = 5: g = 0 is known
 N = 6: g = 0 is known
@@ -45,589 +46,794 @@ N = 61: g = 1 is known
 N = 62: g = 0 is known
 N = 65: g = 1 is known
 N = 66: g = 0 is known
-N = 67: g = 2 is known
+N = 67 has g = 2 <= 3 = B+1: There are no kernel polynomials for T_2, so there is no good correspondence.
 N = 69: g = 0 is known
 N = 70: g = 0 is known
 N = 71: g = 0 is known
-N = 73: g = 2 is known
+N = 73 has g = 2 <= 3 = B+1: There are no kernel polynomials for T_2, so there is no good correspondence.
 N = 74: g = 1 is known
 N = 77: g = 1 is known
 N = 78: g = 0 is known
 N = 79: g = 1 is known
 N = 82: g = 1 is known
 N = 83: g = 1 is known
-N = 85: g = 2 is known
+N = 85 has g = 2 <= 8 = B+1: There are no kernel polynomials for T_2, so there is no good correspondence.
 N = 86: g = 1 is known
 N = 87: g = 0 is known
 N = 89: g = 1 is known
 N = 91: g = 1 is known
-N = 93: g = 2 is known
+N = 93 has g = 2 <= 10 = B+1: There are no kernel polynomials for T_2, so there is no good correspondence.
 N = 94: g = 0 is known
 N = 95: g = 0 is known
-N = 97 has g = 3 <= 3 = B+1: there is no good correspondence.
+N = 97 has g = 3 <= 3 = B+1: There are no kernel polynomials for T_2, so there is no good correspondence.
 N = 101: g = 1 is known
 N = 102: g = 1 is known
-N = 103: g = 2 is known
+N = 103 has g = 2 <= 3 = B+1: There are no kernel polynomials for T_2, so there is no good correspondence.
 N = 105: g = 0 is known
-N = 106: g = 2 is known
-N = 107: g = 2 is known
-N = 109 has g = 3 <= 3 = B+1: there is no good correspondence.
+N = 106 has g = 2 <= 11 = B+1: There is exactly 1 kernel polynomial for T_3, but it does not have trace 0 on 
+the Atkin-Lehner +1 eigenspace of S_2(N).
+N = 107 has g = 2 <= 3 = B+1: There are no kernel polynomials for T_2, so there is no good correspondence.
+N = 109 has g = 3 <= 3 = B+1: There are no kernel polynomials for T_2, so there is no good correspondence.
 N = 110: g = 0 is known
 N = 111: g = 1 is known
-N = 113 has g = 3 <= 3 = B+1: there is no good correspondence.
+N = 113 has g = 3 <= 3 = B+1: There are no kernel polynomials for T_2, so there is no good correspondence.
 N = 114: g = 1 is known
-N = 115: g = 2 is known
+N = 115 has g = 2 <= 8 = B+1: There are no kernel polynomials for T_2, so there is no good correspondence.
 N = 118: g = 1 is known
 N = 119: g = 0 is known
-N = 122: g = 2 is known
+N = 122 has g = 2 <= 11 = B+1: There is exactly 1 kernel polynomial for T_5, but it does not have trace 0 on 
+the Atkin-Lehner +1 eigenspace of S_2(N).
 N = 123: g = 1 is known
-N = 127 has g = 3 <= 3 = B+1: there is no good correspondence.
-N = 129: g = 2 is known
+N = 127 has g = 3 <= 3 = B+1: There are no kernel polynomials for T_2, so there is no good correspondence.
+N = 129 has g = 2 <= 9 = B+1: There is exactly 1 kernel polynomial for T_2, but it does not have trace 0 on 
+the Atkin-Lehner +1 eigenspace of S_2(N).
 N = 130: g = 1 is known
 N = 131: g = 1 is known
-N = 133: g = 2 is known
-N = 134: g = 2 is known
+N = 133 has g = 2 <= 6 = B+1: There are no kernel polynomials for T_2, so there is no good correspondence.
+N = 134 has g = 2 <= 10 = B+1: There are no kernel polynomials for T_3, so there is no good correspondence.
 N = 138: g = 1 is known
-N = 139 has g = 3 <= 3 = B+1: there is no good correspondence.
+N = 139 has g = 3 <= 3 = B+1: There are no kernel polynomials for T_2, so there is no good correspondence.
 N = 141: g = 1 is known
 N = 142: g = 1 is known
 N = 143: g = 1 is known
 N = 145: g = 1 is known
-N = 146: g = 2 is known
-N = 149 has g = 3 <= 3 = B+1: there is no good correspondence.
-N = 151 has g = 3 <= 3 = B+1: there is no good correspondence.
-N = 154: g = 2 is known
+N = 146 has g = 2 <= 11 = B+1: There are no kernel polynomials for T_3, so there is no good correspondence.
+N = 149 has g = 3 <= 3 = B+1: There are no kernel polynomials for T_2, so there is no good correspondence.
+N = 151 has g = 3 <= 3 = B+1: There are no kernel polynomials for T_2, so there is no good correspondence.
+N = 154 has g = 2 <= 16 = B+1: There are no kernel polynomials for T_3, so there is no good correspondence.
 N = 155: g = 1 is known
-N = 158: g = 2 is known
+N = 158 has g = 2 <= 11 = B+1: There are no kernel polynomials for T_5, so there is no good correspondence.
 N = 159: g = 1 is known
-N = 161: g = 2 is known
-N = 165: g = 2 is known
-N = 166: g = 2 is known
-N = 167: g = 2 is known
-N = 170: g = 2 is known
+N = 161 has g = 2 <= 8 = B+1: There are no kernel polynomials for T_2, so there is no good correspondence.
+N = 165 has g = 2 <= 14 = B+1: There are no kernel polynomials for T_2, so there is no good correspondence.
+N = 166 has g = 2 <= 11 = B+1: There is exactly 1 kernel polynomial for T_7, but it does not have trace 0 on 
+the Atkin-Lehner +1 eigenspace of S_2(N).
+N = 167 has g = 2 <= 3 = B+1: There are no kernel polynomials for T_2, so there is no good correspondence.
+N = 170 has g = 2 <= 14 = B+1: There is exactly 1 kernel polynomial for T_3, and it has trace 0 on the 
+Atkin-Lehner +1 eigenspace of S_2(N).
 N = 174: g = 1 is known
-N = 177: g = 2 is known
-N = 178 has g = 3 <= 13 = B+1, but there exists a non-trivial poly.
-N = 179 has g = 3 <= 3 = B+1: there is no good correspondence.
+N = 177 has g = 2 <= 8 = B+1: There are no kernel polynomials for T_2, so there is no good correspondence.
+N = 178 has g = 3 <= 13 = B+1: There is exactly 1 kernel polynomial for T_3, but it does not have trace 0 on 
+the Atkin-Lehner +1 eigenspace of S_2(N).
+N = 179 has g = 3 <= 3 = B+1: There are no kernel polynomials for T_2, so there is no good correspondence.
 N = 182: g = 1 is known
-N = 183 has g = 3 <= 10 = B+1, but there exists a non-trivial poly.
-N = 185 has g = 3 <= 7 = B+1: there is no good correspondence.
-N = 186: g = 2 is known
-N = 187 has g = 3 <= 7 = B+1, but there exists a non-trivial poly.
+N = 183 has g = 3 <= 10 = B+1: There is exactly 1 kernel polynomial for T_2, but it does not have trace 0 on 
+the Atkin-Lehner +1 eigenspace of S_2(N).
+N = 185 has g = 3 <= 7 = B+1: There is exactly 1 kernel polynomial for T_3, and it has trace 0 on the 
+Atkin-Lehner +1 eigenspace of S_2(N).
+N = 186 has g = 2 <= 18 = B+1: There are no kernel polynomials for T_5, so there is no good correspondence.
+N = 187 has g = 3 <= 7 = B+1: There are at least 2 kernel polynomials for T_2, so a trace-zero linear 
+combination exists.
 N = 190: g = 1 is known
-N = 191: g = 2 is known
-N = 194 has g = 3 <= 11 = B+1: there is no good correspondence.
+N = 191 has g = 2 <= 3 = B+1: There are no kernel polynomials for T_2, so there is no good correspondence.
+N = 194 has g = 3 <= 11 = B+1: There are no kernel polynomials for T_3, so there is no good correspondence.
 N = 195: g = 1 is known
-N = 201 has g = 4 <= 9 = B+1, but there exists a non-trivial poly.
-N = 202 has g = 4 <= 13 = B+1, but there exists a non-trivial poly.
-N = 203 has g = 3 <= 8 = B+1: there is no good correspondence.
-N = 205: g = 2 is known
-N = 206: g = 2 is known
-N = 209: g = 2 is known
+N = 201 has g = 4 <= 9 = B+1: There are at least 2 kernel polynomials for T_2, so a trace-zero linear 
+combination exists.
+N = 202 has g = 4 <= 13 = B+1: There is exactly 1 kernel polynomial for T_3, but it does not have trace 0 on 
+the Atkin-Lehner +1 eigenspace of S_2(N).
+N = 203 has g = 3 <= 8 = B+1: There is exactly 1 kernel polynomial for T_2, but it does not have trace 0 on 
+the Atkin-Lehner +1 eigenspace of S_2(N).
+N = 205 has g = 2 <= 5 = B+1: There are no kernel polynomials for T_2, so there is no good correspondence.
+N = 206 has g = 2 <= 11 = B+1: There are no kernel polynomials for T_5, so there is no good correspondence.
+N = 209 has g = 2 <= 7 = B+1: There is exactly 1 kernel polynomial for T_2, and it has trace 0 on the 
+Atkin-Lehner +1 eigenspace of S_2(N).
 N = 210: g = 1 is known
-N = 213: g = 2 is known
-N = 214 has g = 4 <= 11 = B+1, but there exists a non-trivial poly.
-N = 215: g = 2 is known
-N = 217 has g = 3 <= 6 = B+1: there is no good correspondence.
-N = 218 has g = 5 <= 11 = B+1, but there exists a non-trivial poly.
-N = 219 has g = 4 <= 9 = B+1, but there exists a non-trivial poly.
-N = 221: g = 2 is known
+N = 213 has g = 2 <= 8 = B+1: There are no kernel polynomials for T_2, so there is no good correspondence.
+N = 214 has g = 4 <= 11 = B+1: There are at least 2 kernel polynomials for T_3, so a trace-zero linear 
+combination exists.
+N = 215 has g = 2 <= 7 = B+1: There is exactly 1 kernel polynomial for T_2, but it does not have trace 0 on 
+the Atkin-Lehner +1 eigenspace of S_2(N).
+N = 217 has g = 3 <= 6 = B+1: There are no kernel polynomials for T_2, so there is no good correspondence.
+N = 218 has g = 5 <= 11 = B+1: There are at least 2 kernel polynomials for T_3, so a trace-zero linear 
+combination exists.
+N = 219 has g = 4 <= 9 = B+1: There are at least 2 kernel polynomials for T_2, so a trace-zero linear 
+combination exists.
+N = 221 has g = 2 <= 5 = B+1: There are no kernel polynomials for T_2, so there is no good correspondence.
 N = 222: g = 1 is known
-N = 226 has g = 5 <= 12 = B+1, but there exists a non-trivial poly.
-N = 230: g = 2 is known
+N = 226 has g = 5 <= 12 = B+1: There are at least 2 kernel polynomials for T_3, so a trace-zero linear 
+combination exists.
+N = 230 has g = 2 <= 16 = B+1: There are no kernel polynomials for T_7, so there is no good correspondence.
 N = 231: g = 1 is known
-N = 235 has g = 5 <= 10 = B+1: there is no good correspondence.
-N = 237 has g = 5 <= 12 = B+1, but there exists a non-trivial poly.
+N = 235 has g = 5 <= 10 = B+1: There is exactly 1 kernel polynomial for T_2, but it does not have trace 0 on 
+the Atkin-Lehner +1 eigenspace of S_2(N).
+N = 237 has g = 5 <= 12 = B+1: There is exactly 1 kernel polynomial for T_2, but it does not have trace 0 on 
+the Atkin-Lehner +1 eigenspace of S_2(N).
 N = 238: g = 1 is known
-N = 239 has g = 3 <= 3 = B+1: there is no good correspondence.
-N = 246 has g = 3 <= 18 = B+1, but there exists a non-trivial poly.
-N = 247 has g = 4 <= 7 = B+1, but there exists a non-trivial poly.
-N = 249 has g = 3 <= 8 = B+1: there is no good correspondence.
-N = 253 has g = 5 <= 8 = B+1, but there exists a non-trivial poly.
-N = 254 has g = 4 <= 11 = B+1: there is no good correspondence.
-N = 255: g = 2 is known
-N = 258 has g = 3 <= 17 = B+1, but there exists a non-trivial poly.
-N = 259 has g = 4 <= 6 = B+1: there is no good correspondence.
-N = 262 has g = 4 <= 12 = B+1, but there exists a non-trivial poly.
-N = 265 has g = 6 <= 9 = B+1, but there exists a non-trivial poly.
-N = 266: g = 2 is known
-N = 267 has g = 4 <= 8 = B+1: there is no good correspondence.
-N = 273 has g = 4 <= 15 = B+1: there is no good correspondence.
-N = 274 has g = 6 <= 12 = B+1, but there exists a non-trivial poly.
-N = 278 has g = 5 <= 11 = B+1, but there exists a non-trivial poly.
-N = 282 has g = 3 <= 18 = B+1: there is no good correspondence.
-N = 285: g = 2 is known
-N = 286: g = 2 is known
-N = 287: g = 2 is known
-N = 290 has g = 3 <= 15 = B+1, but there exists a non-trivial poly.
-N = 291 has g = 6 <= 9 = B+1, but there exists a non-trivial poly.
-N = 295 has g = 3 <= 6 = B+1: there is no good correspondence.
-N = 298 has g = 7 <= 13 = B+1, but there exists a non-trivial poly.
-N = 299: g = 2 is known
-N = 301 has g = 6 <= 7 = B+1, but there exists a non-trivial poly.
-N = 302 has g = 5 <= 11 = B+1: there is no good correspondence.
-N = 303 has g = 3 <= 8 = B+1: there is no good correspondence.
-N = 305 has g = 4 <= 5 = B+1: there is no good correspondence.
-N = 309 has g = 7 <= 12 = B+1, but there exists a non-trivial poly.
-N = 310 has g = 3 <= 16 = B+1: there is no good correspondence.
-N = 314 has g = 6 <= 11 = B+1, but there exists a non-trivial poly.
-N = 318 has g = 3 <= 18 = B+1, but there exists a non-trivial poly.
-N = 319 has g = 4 <= 7 = B+1, but there exists a non-trivial poly.
-N = 321 has g = 4 <= 8 = B+1: there is no good correspondence.
-N = 322 has g = 4 <= 18 = B+1: there is no good correspondence.
-N = 323 has g = 5 <= 7 = B+1, but there exists a non-trivial poly.
-N = 326 has g = 7 <= 10 = B+1: there is no good correspondence.
-N = 327 has g = 6 <= 10 = B+1, but there exists a non-trivial poly.
-N = 329 has g = 3 <= 6 = B+1: there is no good correspondence.
-N = 330: g = 2 is known
-N = 334 has g = 4 <= 11 = B+1: there is no good correspondence.
-N = 335 has g = 4 <= 7 = B+1, but there exists a non-trivial poly.
-N = 339 has g = 5 <= 8 = B+1: there is no good correspondence.
-N = 341 has g = 4 <= 8 = B+1, but there exists a non-trivial poly.
-N = 345 has g = 4 <= 14 = B+1, but there exists a non-trivial poly.
-N = 346 has g = 8 <= 13 = B+1, but there exists a non-trivial poly.
-N = 354 has g = 4 <= 17 = B+1, but there exists a non-trivial poly.
-N = 355 has g = 4 <= 6 = B+1: there is no good correspondence.
-N = 357: g = 2 is known
-N = 358 has g = 7 <= 12 = B+1, but there exists a non-trivial poly.
-N = 362 has g = 8 <= 12 = B+1, but there exists a non-trivial poly.
-N = 365 has g = 7 <= 8 = B+1, but there exists a non-trivial poly.
-N = 366 has g = 4 <= 17 = B+1, but there exists a non-trivial poly.
-N = 370 has g = 4 <= 14 = B+1, but there exists a non-trivial poly.
-N = 371 has g = 5 <= 8 = B+1, but there exists a non-trivial poly.
-N = 374 has g = 4 <= 16 = B+1, but there exists a non-trivial poly.
-N = 377 has g = 5 <= 5 = B+1: there is no good correspondence.
-N = 381 has g = 8 <= 12 = B+1, but there exists a non-trivial poly.
-N = 382 has g = 5 <= 11 = B+1: there is no good correspondence.
-N = 385 has g = 4 <= 13 = B+1: there is no good correspondence.
-N = 386 has g = 9 <= 11 = B+1: there is no good correspondence.
-N = 390: g = 2 is known
-N = 391 has g = 5 <= 8 = B+1, but there exists a non-trivial poly.
-N = 393 has g = 5 <= 8 = B+1: there is no good correspondence.
-N = 394 has g = 10 <= 12 = B+1, but there exists a non-trivial poly.
-N = 395 has g = 4 <= 6 = B+1: there is no good correspondence.
-N = 398 has g = 6 <= 11 = B+1: there is no good correspondence.
-N = 399 has g = 4 <= 13 = B+1, but there exists a non-trivial poly.
-N = 402 has g = 5 <= 17 = B+1, but there exists a non-trivial poly.
-N = 403 has g = 8 <= 8 = B+1, but there exists a non-trivial poly.
-N = 406 has g = 5 <= 16 = B+1, but there exists a non-trivial poly.
-N = 407 has g = 5 <= 6 = B+1: there is no good correspondence.
-N = 410 has g = 5 <= 16 = B+1, but there exists a non-trivial poly.
-N = 411 has g = 7 <= 8 = B+1: there is no good correspondence.
-N = 413 has g = 5 <= 6 = B+1: there is no good correspondence.
-N = 415 has g = 8 <= 11 = B+1, but there exists a non-trivial poly.
-N = 417 has g = 10 <= 13 = B+1, but there exists a non-trivial poly.
-N = 418 has g = 5 <= 17 = B+1: there is no good correspondence.
-N = 422 has g = 10 <= 11 = B+1, but there exists a non-trivial poly.
-N = 426 has g = 4 <= 17 = B+1, but there exists a non-trivial poly.
-N = 429 has g = 3 <= 14 = B+1, but there exists a non-trivial poly.
-N = 430 has g = 3 <= 15 = B+1, but there exists a non-trivial poly.
-N = 434 has g = 4 <= 15 = B+1, but there exists a non-trivial poly.
-N = 435 has g = 5 <= 15 = B+1: there is no good correspondence.
-N = 437 has g = 7 <= 8 = B+1, but there exists a non-trivial poly.
-N = 438 has g = 5 <= 16 = B+1: there is no good correspondence.
-N = 442 has g = 5 <= 16 = B+1, but there exists a non-trivial poly.
-N = 446 has g = 7 <= 11 = B+1: there is no good correspondence.
-N = 447 has g = 6 <= 8 = B+1: there is no good correspondence.
-N = 451 has g = 6 <= 7 = B+1, but there exists a non-trivial poly.
-N = 453 has g = 11 <= 14 = B+1, but there exists a non-trivial poly.
-N = 454 has g = 9 <= 12 = B+1, but there exists a non-trivial poly.
-N = 455 has g = 3 <= 11 = B+1, but there exists a non-trivial poly.
-N = 458 has g = 10 <= 12 = B+1, but there exists a non-trivial poly.
-N = 462 has g = 3 <= 24 = B+1, but there exists a non-trivial poly.
-N = 465 has g = 5 <= 15 = B+1, but there exists a non-trivial poly.
-N = 466 has g = 12 <= 13 = B+1, but there exists a non-trivial poly.
-N = 470 has g = 6 <= 18 = B+1, but there exists a non-trivial poly.
-N = 471 has g = 9 <= 10 = B+1, but there exists a non-trivial poly.
-N = 474 has g = 7 <= 21 = B+1, but there exists a non-trivial poly.
-N = 478 has g = 7 <= 11 = B+1: there is no good correspondence.
-N = 482 has g = 11 <= 13 = B+1, but there exists a non-trivial poly.
-N = 483 has g = 4 <= 14 = B+1, but there exists a non-trivial poly.
-N = 493 has g = 10 <= 10 = B+1, but there exists a non-trivial poly.
-N = 494 has g = 5 <= 16 = B+1, but there exists a non-trivial poly.
-N = 497 has g = 9 <= 12 = B+1, but there exists a non-trivial poly.
-N = 498 has g = 7 <= 19 = B+1, but there exists a non-trivial poly.
-N = 501 has g = 7 <= 8 = B+1: there is no good correspondence.
-N = 502 has g = 9 <= 13 = B+1, but there exists a non-trivial poly.
-N = 506 has g = 6 <= 16 = B+1, but there exists a non-trivial poly.
-N = 510 has g = 3 <= 21 = B+1: there is no good correspondence.
-N = 514 has g = 12 <= 14 = B+1, but there exists a non-trivial poly.
-N = 515 has g = 10 <= 10 = B+1, but there exists a non-trivial poly.
-N = 517 has g = 10 <= 10 = B+1, but there exists a non-trivial poly.
-N = 518 has g = 7 <= 17 = B+1, but there exists a non-trivial poly.
-N = 519 has g = 7 <= 8 = B+1: there is no good correspondence.
-N = 526 has g = 9 <= 11 = B+1: there is no good correspondence.
-N = 527 has g = 7 <= 8 = B+1, but there exists a non-trivial poly.
-N = 530 has g = 7 <= 14 = B+1, but there exists a non-trivial poly.
-N = 534 has g = 8 <= 20 = B+1, but there exists a non-trivial poly.
-N = 535 has g = 10 <= 11 = B+1, but there exists a non-trivial poly.
-N = 538 has g = 13 <= 15 = B+1, but there exists a non-trivial poly.
-N = 542 has g = 9 <= 11 = B+1: there is no good correspondence.
-N = 543 has g = 12 <= 12 = B+1, but there exists a non-trivial poly.
-N = 546 has g = 4 <= 22 = B+1, but there exists a non-trivial poly.
-N = 551 has g = 5 <= 7 = B+1, but there exists a non-trivial poly.
-N = 555 has g = 5 <= 12 = B+1: there is no good correspondence.
-N = 561 has g = 6 <= 13 = B+1, but there exists a non-trivial poly.
-N = 562 has g = 14 <= 15 = B+1, but there exists a non-trivial poly.
-N = 570 has g = 4 <= 23 = B+1, but there exists a non-trivial poly.
-N = 573 has g = 8 <= 8 = B+1: there is no good correspondence.
-N = 574 has g = 5 <= 17 = B+1, but there exists a non-trivial poly.
-N = 582 has g = 7 <= 16 = B+1: there is no good correspondence.
-N = 586 has g = 14 <= 14 = B+1, but there exists a non-trivial poly.
-N = 590 has g = 6 <= 16 = B+1, but there exists a non-trivial poly.
-N = 595 has g = 5 <= 11 = B+1, but there exists a non-trivial poly.
-N = 597 has g = 15 <= 16 = B+1, but there exists a non-trivial poly.
-N = 598 has g = 6 <= 17 = B+1, but there exists a non-trivial poly.
-N = 602 has g = 9 <= 18 = B+1, but there exists a non-trivial poly.
-N = 606 has g = 8 <= 20 = B+1, but there exists a non-trivial poly.
-N = 609 has g = 6 <= 15 = B+1, but there exists a non-trivial poly.
-N = 610 has g = 9 <= 18 = B+1, but there exists a non-trivial poly.
-N = 611 has g = 9 <= 10 = B+1, but there exists a non-trivial poly.
-N = 615 has g = 6 <= 14 = B+1, but there exists a non-trivial poly.
-N = 618 has g = 9 <= 21 = B+1, but there exists a non-trivial poly.
-N = 622 has g = 9 <= 11 = B+1: there is no good correspondence.
-N = 627 has g = 6 <= 14 = B+1, but there exists a non-trivial poly.
-N = 638 has g = 7 <= 16 = B+1, but there exists a non-trivial poly.
-N = 642 has g = 9 <= 19 = B+1, but there exists a non-trivial poly.
-N = 645 has g = 5 <= 11 = B+1: there is no good correspondence.
-N = 646 has g = 7 <= 14 = B+1: there is no good correspondence.
-N = 651 has g = 8 <= 15 = B+1, but there exists a non-trivial poly.
-N = 654 has g = 8 <= 17 = B+1, but there exists a non-trivial poly.
-N = 658 has g = 7 <= 17 = B+1, but there exists a non-trivial poly.
-N = 663 has g = 5 <= 13 = B+1: there is no good correspondence.
-N = 665 has g = 8 <= 15 = B+1: there is no good correspondence.
-N = 670 has g = 6 <= 15 = B+1, but there exists a non-trivial poly.
-N = 671 has g = 7 <= 7 = B+1, but there exists a non-trivial poly.
-N = 678 has g = 10 <= 20 = B+1, but there exists a non-trivial poly.
-N = 682 has g = 8 <= 19 = B+1, but there exists a non-trivial poly.
-N = 690 has g = 6 <= 25 = B+1, but there exists a non-trivial poly.
-N = 705 has g = 9 <= 16 = B+1, but there exists a non-trivial poly.
-N = 710 has g = 7 <= 15 = B+1, but there exists a non-trivial poly.
-N = 714 has g = 5 <= 24 = B+1: there is no good correspondence.
-N = 715 has g = 8 <= 15 = B+1, but there exists a non-trivial poly.
-N = 730 has g = 10 <= 16 = B+1, but there exists a non-trivial poly.
-N = 741 has g = 10 <= 16 = B+1, but there exists a non-trivial poly.
-N = 742 has g = 10 <= 18 = B+1, but there exists a non-trivial poly.
-N = 754 has g = 10 <= 17 = B+1, but there exists a non-trivial poly.
-N = 759 has g = 8 <= 15 = B+1, but there exists a non-trivial poly.
-N = 762 has g = 12 <= 22 = B+1, but there exists a non-trivial poly.
-N = 770 has g = 5 <= 20 = B+1, but there exists a non-trivial poly.
-N = 777 has g = 9 <= 14 = B+1, but there exists a non-trivial poly.
-N = 782 has g = 8 <= 18 = B+1, but there exists a non-trivial poly.
-N = 786 has g = 11 <= 19 = B+1, but there exists a non-trivial poly.
-N = 790 has g = 9 <= 17 = B+1, but there exists a non-trivial poly.
-N = 795 has g = 10 <= 15 = B+1, but there exists a non-trivial poly.
-N = 798 has g = 5 <= 22 = B+1, but there exists a non-trivial poly.
-N = 805 has g = 8 <= 10 = B+1, but there exists a non-trivial poly.
-N = 806 has g = 10 <= 16 = B+1, but there exists a non-trivial poly.
-N = 814 has g = 8 <= 14 = B+1: there is no good correspondence.
-N = 822 has g = 13 <= 21 = B+1, but there exists a non-trivial poly.
-N = 826 has g = 10 <= 17 = B+1, but there exists a non-trivial poly.
-N = 830 has g = 11 <= 18 = B+1, but there exists a non-trivial poly.
-N = 834 has g = 14 <= 20 = B+1, but there exists a non-trivial poly.
-N = 854 has g = 10 <= 15 = B+1, but there exists a non-trivial poly.
-N = 858 has g = 6 <= 24 = B+1, but there exists a non-trivial poly.
-N = 861 has g = 7 <= 12 = B+1, but there exists a non-trivial poly.
-N = 870 has g = 7 <= 23 = B+1, but there exists a non-trivial poly.
-N = 874 has g = 11 <= 18 = B+1, but there exists a non-trivial poly.
-N = 885 has g = 11 <= 16 = B+1, but there exists a non-trivial poly.
-N = 890 has g = 13 <= 18 = B+1, but there exists a non-trivial poly.
-N = 894 has g = 12 <= 20 = B+1, but there exists a non-trivial poly.
-N = 897 has g = 7 <= 12 = B+1: there is no good correspondence.
-N = 902 has g = 11 <= 18 = B+1, but there exists a non-trivial poly.
-N = 903 has g = 11 <= 13 = B+1, but there exists a non-trivial poly.
-N = 906 has g = 15 <= 23 = B+1, but there exists a non-trivial poly.
-N = 910 has g = 5 <= 20 = B+1, but there exists a non-trivial poly.
-N = 915 has g = 11 <= 17 = B+1, but there exists a non-trivial poly.
-N = 930 has g = 8 <= 25 = B+1, but there exists a non-trivial poly.
-N = 935 has g = 9 <= 13 = B+1, but there exists a non-trivial poly.
-N = 938 has g = 15 <= 20 = B+1, but there exists a non-trivial poly.
-N = 942 has g = 12 <= 17 = B+1, but there exists a non-trivial poly.
-N = 946 has g = 14 <= 17 = B+1, but there exists a non-trivial poly.
-N = 957 has g = 11 <= 16 = B+1, but there exists a non-trivial poly.
-N = 962 has g = 12 <= 14 = B+1, but there exists a non-trivial poly.
-N = 966 has g = 8 <= 26 = B+1, but there exists a non-trivial poly.
-N = 969 has g = 11 <= 15 = B+1, but there exists a non-trivial poly.
-N = 970 has g = 14 <= 16 = B+1, but there exists a non-trivial poly.
-N = 978 has g = 15 <= 18 = B+1, but there exists a non-trivial poly.
-N = 986 has g = 13 <= 16 = B+1, but there exists a non-trivial poly.
-N = 987 has g = 9 <= 13 = B+1, but there exists a non-trivial poly.
-N = 994 has g = 15 <= 23 = B+1, but there exists a non-trivial poly.
-N = 1001 has g = 8 <= 10 = B+1, but there exists a non-trivial poly.
-N = 1002 has g = 14 <= 20 = B+1, but there exists a non-trivial poly.
-N = 1005 has g = 10 <= 11 = B+1: there is no good correspondence.
-N = 1010 has g = 15 <= 18 = B+1, but there exists a non-trivial poly.
-N = 1015 has g = 11 <= 15 = B+1, but there exists a non-trivial poly.
-N = 1022 has g = 11 <= 16 = B+1, but there exists a non-trivial poly.
-N = 1023 has g = 10 <= 12 = B+1, but there exists a non-trivial poly.
-N = 1030 has g = 14 <= 19 = B+1, but there exists a non-trivial poly.
-N = 1034 has g = 13 <= 19 = B+1, but there exists a non-trivial poly.
-N = 1038 has g = 15 <= 21 = B+1, but there exists a non-trivial poly.
-N = 1045 has g = 9 <= 11 = B+1, but there exists a non-trivial poly.
-N = 1054 has g = 12 <= 19 = B+1, but there exists a non-trivial poly.
-N = 1065 has g = 14 <= 17 = B+1, but there exists a non-trivial poly.
-N = 1066 has g = 16 <= 17 = B+1, but there exists a non-trivial poly.
-N = 1070 has g = 14 <= 18 = B+1, but there exists a non-trivial poly.
-N = 1074 has g = 16 <= 19 = B+1, but there exists a non-trivial poly.
-N = 1085 has g = 13 <= 16 = B+1, but there exists a non-trivial poly.
-N = 1086 has g = 16 <= 18 = B+1, but there exists a non-trivial poly.
-N = 1090 has g = 17 <= 20 = B+1, but there exists a non-trivial poly.
-N = 1095 has g = 11 <= 12 = B+1: there is no good correspondence.
-N = 1102 has g = 10 <= 16 = B+1, but there exists a non-trivial poly.
-N = 1105 has g = 13 <= 13 = B+1, but there exists a non-trivial poly.
-N = 1106 has g = 16 <= 20 = B+1, but there exists a non-trivial poly.
-N = 1110 has g = 9 <= 24 = B+1, but there exists a non-trivial poly.
-N = 1113 has g = 11 <= 15 = B+1, but there exists a non-trivial poly.
-N = 1118 has g = 12 <= 16 = B+1, but there exists a non-trivial poly.
-N = 1122 has g = 9 <= 22 = B+1, but there exists a non-trivial poly.
-N = 1131 has g = 11 <= 13 = B+1: there is no good correspondence.
-N = 1146 has g = 15 <= 19 = B+1, but there exists a non-trivial poly.
-N = 1155 has g = 8 <= 21 = B+1, but there exists a non-trivial poly.
-N = 1158 has g = 17 <= 17 = B+1, but there exists a non-trivial poly.
-N = 1162 has g = 15 <= 18 = B+1, but there exists a non-trivial poly.
-N = 1166 has g = 15 <= 15 = B+1, but there exists a non-trivial poly.
-N = 1173 has g = 14 <= 19 = B+1, but there exists a non-trivial poly.
-N = 1178 has g = 17 <= 19 = B+1, but there exists a non-trivial poly.
-N = 1182 has g = 17 <= 20 = B+1, but there exists a non-trivial poly.
-N = 1185 has g = 15 <= 19 = B+1, but there exists a non-trivial poly.
-N = 1190 has g = 8 <= 21 = B+1, but there exists a non-trivial poly.
-N = 1194 has g = 20 <= 25 = B+1, but there exists a non-trivial poly.
-N = 1218 has g = 10 <= 24 = B+1, but there exists a non-trivial poly.
-N = 1221 has g = 12 <= 14 = B+1, but there exists a non-trivial poly.
-N = 1222 has g = 15 <= 20 = B+1, but there exists a non-trivial poly.
-N = 1230 has g = 10 <= 24 = B+1, but there exists a non-trivial poly.
-N = 1235 has g = 12 <= 13 = B+1, but there exists a non-trivial poly.
-N = 1239 has g = 11 <= 12 = B+1, but there exists a non-trivial poly.
-N = 1245 has g = 17 <= 20 = B+1, but there exists a non-trivial poly.
-N = 1246 has g = 14 <= 18 = B+1, but there exists a non-trivial poly.
-N = 1254 has g = 12 <= 29 = B+1, but there exists a non-trivial poly.
-N = 1258 has g = 18 <= 20 = B+1, but there exists a non-trivial poly.
-N = 1270 has g = 17 <= 20 = B+1, but there exists a non-trivial poly.
-N = 1281 has g = 19 <= 19 = B+1, but there exists a non-trivial poly.
-N = 1290 has g = 10 <= 23 = B+1, but there exists a non-trivial poly.
-N = 1295 has g = 11 <= 11 = B+1, but there exists a non-trivial poly.
-N = 1298 has g = 18 <= 19 = B+1, but there exists a non-trivial poly.
-N = 1302 has g = 11 <= 25 = B+1, but there exists a non-trivial poly.
-N = 1310 has g = 16 <= 17 = B+1, but there exists a non-trivial poly.
-N = 1311 has g = 13 <= 15 = B+1, but there exists a non-trivial poly.
-N = 1326 has g = 10 <= 25 = B+1, but there exists a non-trivial poly.
-N = 1330 has g = 11 <= 24 = B+1, but there exists a non-trivial poly.
-N = 1338 has g = 22 <= 23 = B+1, but there exists a non-trivial poly.
-N = 1342 has g = 14 <= 18 = B+1, but there exists a non-trivial poly.
-N = 1353 has g = 17 <= 17 = B+1, but there exists a non-trivial poly.
-N = 1358 has g = 16 <= 16 = B+1, but there exists a non-trivial poly.
-N = 1362 has g = 22 <= 22 = B+1, but there exists a non-trivial poly.
-N = 1365 has g = 9 <= 21 = B+1, but there exists a non-trivial poly.
-N = 1378 has g = 19 <= 21 = B+1, but there exists a non-trivial poly.
-N = 1390 has g = 17 <= 18 = B+1, but there exists a non-trivial poly.
-N = 1406 has g = 17 <= 17 = B+1, but there exists a non-trivial poly.
-N = 1410 has g = 14 <= 29 = B+1, but there exists a non-trivial poly.
-N = 1426 has g = 19 <= 20 = B+1, but there exists a non-trivial poly.
-N = 1430 has g = 12 <= 26 = B+1, but there exists a non-trivial poly.
-N = 1435 has g = 18 <= 18 = B+1, but there exists a non-trivial poly.
-N = 1479 has g = 17 <= 17 = B+1, but there exists a non-trivial poly.
-N = 1482 has g = 13 <= 25 = B+1, but there exists a non-trivial poly.
-N = 1491 has g = 17 <= 18 = B+1, but there exists a non-trivial poly.
-N = 1518 has g = 11 <= 24 = B+1, but there exists a non-trivial poly.
-N = 1533 has g = 23 <= 23 = B+1, but there exists a non-trivial poly.
-N = 1534 has g = 19 <= 19 = B+1, but there exists a non-trivial poly.
-N = 1547 has g = 17 <= 18 = B+1, but there exists a non-trivial poly.
-N = 1551 has g = 19 <= 19 = B+1, but there exists a non-trivial poly.
-N = 1554 has g = 14 <= 26 = B+1, but there exists a non-trivial poly.
-N = 1590 has g = 14 <= 23 = B+1, but there exists a non-trivial poly.
-N = 1610 has g = 13 <= 23 = B+1, but there exists a non-trivial poly.
-N = 1722 has g = 15 <= 28 = B+1, but there exists a non-trivial poly.
-N = 1770 has g = 16 <= 25 = B+1, but there exists a non-trivial poly.
-N = 1785 has g = 12 <= 21 = B+1, but there exists a non-trivial poly.
-N = 1794 has g = 15 <= 26 = B+1, but there exists a non-trivial poly.
-N = 1806 has g = 16 <= 25 = B+1, but there exists a non-trivial poly.
-N = 1830 has g = 19 <= 30 = B+1, but there exists a non-trivial poly.
-N = 1870 has g = 13 <= 22 = B+1, but there exists a non-trivial poly.
-N = 1914 has g = 17 <= 28 = B+1, but there exists a non-trivial poly.
-N = 1938 has g = 18 <= 26 = B+1, but there exists a non-trivial poly.
-N = 1974 has g = 18 <= 28 = B+1, but there exists a non-trivial poly.
-N = 1995 has g = 14 <= 22 = B+1, but there exists a non-trivial poly.
-N = 2002 has g = 15 <= 24 = B+1, but there exists a non-trivial poly.
-N = 2010 has g = 17 <= 24 = B+1, but there exists a non-trivial poly.
-N = 2030 has g = 16 <= 24 = B+1, but there exists a non-trivial poly.
-N = 2046 has g = 17 <= 25 = B+1, but there exists a non-trivial poly.
-N = 2090 has g = 16 <= 23 = B+1, but there exists a non-trivial poly.
-N = 2130 has g = 19 <= 23 = B+1, but there exists a non-trivial poly.
-N = 2145 has g = 16 <= 22 = B+1, but there exists a non-trivial poly.
-N = 2170 has g = 20 <= 27 = B+1, but there exists a non-trivial poly.
-N = 2190 has g = 19 <= 25 = B+1, but there exists a non-trivial poly.
-N = 2210 has g = 19 <= 22 = B+1, but there exists a non-trivial poly.
-N = 2226 has g = 19 <= 24 = B+1, but there exists a non-trivial poly.
-N = 2262 has g = 21 <= 29 = B+1, but there exists a non-trivial poly.
-N = 2310 has g = 12 <= 31 = B+1, but there exists a non-trivial poly.
-N = 2346 has g = 22 <= 31 = B+1, but there exists a non-trivial poly.
-N = 2370 has g = 24 <= 30 = B+1, but there exists a non-trivial poly.
-N = 2415 has g = 18 <= 22 = B+1, but there exists a non-trivial poly.
-N = 2418 has g = 22 <= 24 = B+1, but there exists a non-trivial poly.
-N = 2442 has g = 20 <= 26 = B+1, but there exists a non-trivial poly.
-N = 2470 has g = 19 <= 25 = B+1, but there exists a non-trivial poly.
-N = 2478 has g = 21 <= 27 = B+1, but there exists a non-trivial poly.
-N = 2490 has g = 27 <= 33 = B+1, but there exists a non-trivial poly.
-N = 2530 has g = 21 <= 23 = B+1, but there exists a non-trivial poly.
-N = 2562 has g = 25 <= 27 = B+1, but there exists a non-trivial poly.
-N = 2590 has g = 20 <= 26 = B+1, but there exists a non-trivial poly.
-N = 2618 has g = 21 <= 25 = B+1, but there exists a non-trivial poly.
-N = 2622 has g = 23 <= 30 = B+1, but there exists a non-trivial poly.
-N = 2670 has g = 25 <= 25 = B+1, but there exists a non-trivial poly.
-N = 2706 has g = 26 <= 27 = B+1, but there exists a non-trivial poly.
-N = 2730 has g = 14 <= 31 = B+1, but there exists a non-trivial poly.
-N = 2805 has g = 19 <= 21 = B+1, but there exists a non-trivial poly.
-N = 2814 has g = 27 <= 27 = B+1, but there exists a non-trivial poly.
-N = 2838 has g = 28 <= 32 = B+1, but there exists a non-trivial poly.
-N = 2870 has g = 27 <= 31 = B+1, but there exists a non-trivial poly.
-N = 2926 has g = 21 <= 23 = B+1, but there exists a non-trivial poly.
-N = 2982 has g = 29 <= 33 = B+1, but there exists a non-trivial poly.
-N = 2990 has g = 23 <= 26 = B+1, but there exists a non-trivial poly.
-N = 3003 has g = 20 <= 20 = B+1, but there exists a non-trivial poly.
-N = 3010 has g = 26 <= 27 = B+1, but there exists a non-trivial poly.
-N = 3045 has g = 27 <= 31 = B+1, but there exists a non-trivial poly.
-N = 3066 has g = 31 <= 32 = B+1, but there exists a non-trivial poly.
-N = 3094 has g = 27 <= 30 = B+1, but there exists a non-trivial poly.
-N = 3102 has g = 27 <= 28 = B+1, but there exists a non-trivial poly.
-N = 3135 has g = 22 <= 22 = B+1, but there exists a non-trivial poly.
-N = 3162 has g = 28 <= 28 = B+1, but there exists a non-trivial poly.
-N = 3190 has g = 26 <= 28 = B+1, but there exists a non-trivial poly.
-N = 3210 has g = 35 <= 35 = B+1, but there exists a non-trivial poly.
-N = 3290 has g = 30 <= 30 = B+1, but there exists a non-trivial poly.
-N = 3315 has g = 27 <= 27 = B+1, but there exists a non-trivial poly.
-N = 3354 has g = 32 <= 32 = B+1, but there exists a non-trivial poly.
-N = 3570 has g = 19 <= 32 = B+1, but there exists a non-trivial poly.
-N = 3990 has g = 23 <= 38 = B+1, but there exists a non-trivial poly.
-N = 4290 has g = 26 <= 39 = B+1, but there exists a non-trivial poly.
-N = 4830 has g = 28 <= 34 = B+1, but there exists a non-trivial poly.
-N = 5610 has g = 30 <= 33 = B+1, but there exists a non-trivial poly.
-N = 6006 has g = 33 <= 35 = B+1, but there exists a non-trivial poly.
-N = 6090 has g = 39 <= 42 = B+1, but there exists a non-trivial poly.
-N = 6270 has g = 35 <= 35 = B+1, but there exists a non-trivial poly.
-N = 6510 has g = 39 <= 40 = B+1, but there exists a non-trivial poly.
-10000
-20000
-30000
-40000
-50000
-60000
-70000
-80000
-90000
-100000
-110000
-120000
-130000
-140000
-150000
-160000
-170000
-180000
-190000
-200000
-210000
-220000
-230000
-240000
-250000
-260000
-270000
-280000
-290000
-300000
-310000
-320000
-330000
-340000
-350000
-360000
-370000
-380000
-390000
-400000
-410000
-420000
-430000
-440000
-450000
-460000
-470000
-480000
-490000
-500000
-510000
-520000
-530000
-540000
-550000
-560000
-570000
-580000
-590000
-600000
-610000
-620000
-630000
-640000
-650000
-660000
-670000
-680000
-690000
-700000
-710000
-720000
-730000
-740000
-750000
-760000
-770000
-780000
-790000
-800000
-810000
-820000
-830000
-840000
-850000
-860000
-870000
-880000
-890000
-900000
-910000
-920000
-930000
-940000
-950000
-960000
-970000
-980000
-990000
-1000000
-1010000
-1020000
-1030000
-1040000
-1050000
-1060000
-1070000
-1080000
-1090000
-1100000
-1110000
-1120000
-1130000
-1140000
-1150000
-1160000
-1170000
-1180000
-1190000
-1200000
-1210000
-1220000
-1230000
-Done!
-
-Total time: 118804.339 seconds, Total memory usage: 1223.66MB
+N = 239 has g = 3 <= 3 = B+1: There are no kernel polynomials for T_2, so there is no good correspondence.
+N = 246 has g = 3 <= 18 = B+1: There is exactly 1 kernel polynomial for T_11, but it does not have trace 0 on
+the Atkin-Lehner +1 eigenspace of S_2(N).
+N = 247 has g = 4 <= 7 = B+1: There are at least 2 kernel polynomials for T_2, so a trace-zero linear 
+combination exists.
+N = 249 has g = 3 <= 8 = B+1: There are no kernel polynomials for T_5, so there is no good correspondence.
+N = 253 has g = 5 <= 8 = B+1: There are at least 2 kernel polynomials for T_2, so a trace-zero linear 
+combination exists.
+N = 254 has g = 4 <= 11 = B+1: There are no kernel polynomials for T_3, so there is no good correspondence.
+N = 255 has g = 2 <= 13 = B+1: There is exactly 1 kernel polynomial for T_2, and it has trace 0 on the 
+Atkin-Lehner +1 eigenspace of S_2(N).
+N = 258 has g = 3 <= 17 = B+1: There is exactly 1 kernel polynomial for T_5, but it does not have trace 0 on 
+the Atkin-Lehner +1 eigenspace of S_2(N).
+N = 259 has g = 4 <= 6 = B+1: There are no kernel polynomials for T_2, so there is no good correspondence.
+N = 262 has g = 4 <= 12 = B+1: There are at least 2 kernel polynomials for T_3, so a trace-zero linear 
+combination exists.
+N = 265 has g = 6 <= 9 = B+1: There are at least 2 kernel polynomials for T_3, so a trace-zero linear 
+combination exists.
+N = 266 has g = 2 <= 14 = B+1: There are no kernel polynomials for T_3, so there is no good correspondence.
+N = 267 has g = 4 <= 8 = B+1: There are no kernel polynomials for T_2, so there is no good correspondence.
+N = 273 has g = 4 <= 15 = B+1: There are no kernel polynomials for T_2, so there is no good correspondence.
+N = 274 has g = 6 <= 12 = B+1: There are at least 2 kernel polynomials for T_5, so a trace-zero linear 
+combination exists.
+N = 278 has g = 5 <= 11 = B+1: There are at least 2 kernel polynomials for T_3, so a trace-zero linear 
+combination exists.
+N = 282 has g = 3 <= 18 = B+1: There are no kernel polynomials for T_5, so there is no good correspondence.
+N = 285 has g = 2 <= 14 = B+1: There are no kernel polynomials for T_2, so there is no good correspondence.
+N = 286 has g = 2 <= 16 = B+1: There are no kernel polynomials for T_7, so there is no good correspondence.
+N = 287 has g = 2 <= 6 = B+1: There are no kernel polynomials for T_2, so there is no good correspondence.
+N = 290 has g = 3 <= 15 = B+1: There is exactly 1 kernel polynomial for T_11, but it does not have trace 0 on
+the Atkin-Lehner +1 eigenspace of S_2(N).
+N = 291 has g = 6 <= 9 = B+1: There are at least 2 kernel polynomials for T_2, so a trace-zero linear 
+combination exists.
+N = 295 has g = 3 <= 6 = B+1: There are no kernel polynomials for T_2, so there is no good correspondence.
+N = 298 has g = 7 <= 13 = B+1: There are at least 2 kernel polynomials for T_3, so a trace-zero linear 
+combination exists.
+N = 299 has g = 2 <= 6 = B+1: There are no kernel polynomials for T_2, so there is no good correspondence.
+N = 301 has g = 6 <= 7 = B+1: There are at least 2 kernel polynomials for T_2, so a trace-zero linear 
+combination exists.
+N = 302 has g = 5 <= 11 = B+1: There are no kernel polynomials for T_3, so there is no good correspondence.
+N = 303 has g = 3 <= 8 = B+1: There are no kernel polynomials for T_2, so there is no good correspondence.
+N = 305 has g = 4 <= 5 = B+1: There are no kernel polynomials for T_2, so there is no good correspondence.
+N = 309 has g = 7 <= 12 = B+1: There are at least 2 kernel polynomials for T_2, so a trace-zero linear 
+combination exists.
+N = 310 has g = 3 <= 16 = B+1: There are no kernel polynomials for T_3, so there is no good correspondence.
+N = 314 has g = 6 <= 11 = B+1: There are at least 2 kernel polynomials for T_3, so a trace-zero linear 
+combination exists.
+N = 318 has g = 3 <= 18 = B+1: There is exactly 1 kernel polynomial for T_5, but it does not have trace 0 on 
+the Atkin-Lehner +1 eigenspace of S_2(N).
+N = 319 has g = 4 <= 7 = B+1: There are at least 2 kernel polynomials for T_2, so a trace-zero linear 
+combination exists.
+N = 321 has g = 4 <= 8 = B+1: There are no kernel polynomials for T_11, so there is no good correspondence.
+N = 322 has g = 4 <= 18 = B+1: There are no kernel polynomials for T_13, so there is no good correspondence.
+N = 323 has g = 5 <= 7 = B+1: There are at least 2 kernel polynomials for T_2, so a trace-zero linear 
+combination exists.
+N = 326 has g = 7 <= 10 = B+1: There are no kernel polynomials for T_5, so there is no good correspondence.
+N = 327 has g = 6 <= 10 = B+1: There are at least 2 kernel polynomials for T_2, so a trace-zero linear 
+combination exists.
+N = 329 has g = 3 <= 6 = B+1: There are no kernel polynomials for T_2, so there is no good correspondence.
+N = 330 has g = 2 <= 21 = B+1: There is exactly 1 kernel polynomial for T_7, and it has trace 0 on the 
+Atkin-Lehner +1 eigenspace of S_2(N).
+N = 334 has g = 4 <= 11 = B+1: There are no kernel polynomials for T_7, so there is no good correspondence.
+N = 335 has g = 4 <= 7 = B+1: There are at least 2 kernel polynomials for T_2, so a trace-zero linear 
+combination exists.
+N = 339 has g = 5 <= 8 = B+1: There are no kernel polynomials for T_2, so there is no good correspondence.
+N = 341 has g = 4 <= 8 = B+1: There are at least 2 kernel polynomials for T_3, so a trace-zero linear 
+combination exists.
+N = 345 has g = 4 <= 14 = B+1: There is exactly 1 kernel polynomial for T_2, and it has trace 0 on the 
+Atkin-Lehner +1 eigenspace of S_2(N).
+N = 346 has g = 8 <= 13 = B+1: There are at least 2 kernel polynomials for T_3, so a trace-zero linear 
+combination exists.
+N = 354 has g = 4 <= 17 = B+1: There are at least 2 kernel polynomials for T_5, so a trace-zero linear 
+combination exists.
+N = 355 has g = 4 <= 6 = B+1: There are no kernel polynomials for T_2, so there is no good correspondence.
+N = 357 has g = 2 <= 12 = B+1: There is exactly 1 kernel polynomial for T_2, and it has trace 0 on the 
+Atkin-Lehner +1 eigenspace of S_2(N).
+N = 358 has g = 7 <= 12 = B+1: There are at least 2 kernel polynomials for T_3, so a trace-zero linear 
+combination exists.
+N = 362 has g = 8 <= 12 = B+1: There are at least 2 kernel polynomials for T_3, so a trace-zero linear 
+combination exists.
+N = 365 has g = 7 <= 8 = B+1: There are at least 2 kernel polynomials for T_2, so a trace-zero linear 
+combination exists.
+N = 366 has g = 4 <= 17 = B+1: There are at least 2 kernel polynomials for T_7, so a trace-zero linear 
+combination exists.
+N = 370 has g = 4 <= 14 = B+1: There are at least 2 kernel polynomials for T_3, so a trace-zero linear 
+combination exists.
+N = 371 has g = 5 <= 8 = B+1: There are at least 2 kernel polynomials for T_2, so a trace-zero linear 
+combination exists.
+N = 374 has g = 4 <= 16 = B+1: There is exactly 1 kernel polynomial for T_3, but it does not have trace 0 on 
+the Atkin-Lehner +1 eigenspace of S_2(N).
+N = 377 has g = 5 <= 5 = B+1: There are no kernel polynomials for T_2, so there is no good correspondence.
+N = 381 has g = 8 <= 12 = B+1: There are at least 2 kernel polynomials for T_2, so a trace-zero linear 
+combination exists.
+N = 382 has g = 5 <= 11 = B+1: There are no kernel polynomials for T_5, so there is no good correspondence.
+N = 385 has g = 4 <= 13 = B+1: There is exactly 1 kernel polynomial for T_2, and it has trace 0 on the 
+Atkin-Lehner +1 eigenspace of S_2(N).
+N = 386 has g = 9 <= 11 = B+1: There are no kernel polynomials for T_5, so there is no good correspondence.
+N = 390 has g = 2 <= 21 = B+1: There is exactly 1 kernel polynomial for T_7, but it does not have trace 0 on 
+the Atkin-Lehner +1 eigenspace of S_2(N).
+N = 391 has g = 5 <= 8 = B+1: There are at least 2 kernel polynomials for T_2, so a trace-zero linear 
+combination exists.
+N = 393 has g = 5 <= 8 = B+1: There are no kernel polynomials for T_2, so there is no good correspondence.
+N = 394 has g = 10 <= 12 = B+1: There are at least 2 kernel polynomials for T_3, so a trace-zero linear 
+combination exists.
+N = 395 has g = 4 <= 6 = B+1: There are no kernel polynomials for T_2, so there is no good correspondence.
+N = 398 has g = 6 <= 11 = B+1: There are no kernel polynomials for T_7, so there is no good correspondence.
+N = 399 has g = 4 <= 13 = B+1: There are at least 2 kernel polynomials for T_2, so a trace-zero linear 
+combination exists.
+N = 402 has g = 5 <= 17 = B+1: There are at least 2 kernel polynomials for T_23, so a trace-zero linear 
+combination exists.
+N = 403 has g = 8 <= 8 = B+1: There are at least 2 kernel polynomials for T_2, so a trace-zero linear 
+combination exists.
+N = 406 has g = 5 <= 16 = B+1: There are at least 2 kernel polynomials for T_3, so a trace-zero linear 
+combination exists.
+N = 407 has g = 5 <= 6 = B+1: There are no kernel polynomials for T_2, so there is no good correspondence.
+N = 410 has g = 5 <= 16 = B+1: There are at least 2 kernel polynomials for T_7, so a trace-zero linear 
+combination exists.
+N = 411 has g = 7 <= 8 = B+1: There are no kernel polynomials for T_2, so there is no good correspondence.
+N = 413 has g = 5 <= 6 = B+1: There are no kernel polynomials for T_2, so there is no good correspondence.
+N = 415 has g = 8 <= 11 = B+1: There are at least 2 kernel polynomials for T_2, so a trace-zero linear 
+combination exists.
+N = 417 has g = 10 <= 13 = B+1: There are at least 2 kernel polynomials for T_2, so a trace-zero linear 
+combination exists.
+N = 418 has g = 5 <= 17 = B+1: There is exactly 1 kernel polynomial for T_3, but it does not have trace 0 on 
+the Atkin-Lehner +1 eigenspace of S_2(N).
+N = 422 has g = 10 <= 11 = B+1: There are at least 2 kernel polynomials for T_3, so a trace-zero linear 
+combination exists.
+N = 426 has g = 4 <= 17 = B+1: There are at least 2 kernel polynomials for T_13, so a trace-zero linear 
+combination exists.
+N = 429 has g = 3 <= 14 = B+1: There is exactly 1 kernel polynomial for T_2, and it has trace 0 on the 
+Atkin-Lehner +1 eigenspace of S_2(N).
+N = 430 has g = 3 <= 15 = B+1: There are at least 2 kernel polynomials for T_7, so a trace-zero linear 
+combination exists.
+N = 434 has g = 4 <= 15 = B+1: There are at least 2 kernel polynomials for T_3, so a trace-zero linear 
+combination exists.
+N = 435 has g = 5 <= 15 = B+1: There is exactly 1 kernel polynomial for T_2, but it does not have trace 0 on 
+the Atkin-Lehner +1 eigenspace of S_2(N).
+N = 437 has g = 7 <= 8 = B+1: There are at least 2 kernel polynomials for T_3, so a trace-zero linear 
+combination exists.
+N = 438 has g = 5 <= 16 = B+1: There are no kernel polynomials for T_5, so there is no good correspondence.
+N = 442 has g = 5 <= 16 = B+1: There are at least 2 kernel polynomials for T_3, so a trace-zero linear 
+combination exists.
+N = 446 has g = 7 <= 11 = B+1: There are no kernel polynomials for T_3, so there is no good correspondence.
+N = 447 has g = 6 <= 8 = B+1: There are no kernel polynomials for T_7, so there is no good correspondence.
+N = 451 has g = 6 <= 7 = B+1: There are at least 2 kernel polynomials for T_2, so a trace-zero linear 
+combination exists.
+N = 453 has g = 11 <= 14 = B+1: There are at least 2 kernel polynomials for T_2, so a trace-zero linear 
+combination exists.
+N = 454 has g = 9 <= 12 = B+1: There are at least 2 kernel polynomials for T_5, so a trace-zero linear 
+combination exists.
+N = 455 has g = 3 <= 11 = B+1: There are at least 2 kernel polynomials for T_2, so a trace-zero linear 
+combination exists.
+N = 458 has g = 10 <= 12 = B+1: There are at least 2 kernel polynomials for T_5, so a trace-zero linear 
+combination exists.
+N = 462 has g = 3 <= 24 = B+1: There is exactly 1 kernel polynomial for T_5, but it does not have trace 0 on 
+the Atkin-Lehner +1 eigenspace of S_2(N).
+N = 465 has g = 5 <= 15 = B+1: There are at least 2 kernel polynomials for T_2, so a trace-zero linear 
+combination exists.
+N = 466 has g = 12 <= 13 = B+1: There are at least 2 kernel polynomials for T_3, so a trace-zero linear 
+combination exists.
+N = 470 has g = 6 <= 18 = B+1: There are at least 2 kernel polynomials for T_3, so a trace-zero linear 
+combination exists.
+N = 471 has g = 9 <= 10 = B+1: There are at least 2 kernel polynomials for T_2, so a trace-zero linear 
+combination exists.
+N = 474 has g = 7 <= 21 = B+1: There are at least 2 kernel polynomials for T_5, so a trace-zero linear 
+combination exists.
+N = 478 has g = 7 <= 11 = B+1: There are no kernel polynomials for T_3, so there is no good correspondence.
+N = 482 has g = 11 <= 13 = B+1: There are at least 2 kernel polynomials for T_3, so a trace-zero linear 
+combination exists.
+N = 483 has g = 4 <= 14 = B+1: There are at least 2 kernel polynomials for T_5, so a trace-zero linear 
+combination exists.
+N = 493 has g = 10 <= 10 = B+1: There are at least 2 kernel polynomials for T_2, so a trace-zero linear 
+combination exists.
+N = 494 has g = 5 <= 16 = B+1: There are at least 2 kernel polynomials for T_3, so a trace-zero linear 
+combination exists.
+N = 497 has g = 9 <= 12 = B+1: There are at least 2 kernel polynomials for T_2, so a trace-zero linear 
+combination exists.
+N = 498 has g = 7 <= 19 = B+1: There are at least 2 kernel polynomials for T_7, so a trace-zero linear 
+combination exists.
+N = 501 has g = 7 <= 8 = B+1: There are no kernel polynomials for T_2, so there is no good correspondence.
+N = 502 has g = 9 <= 13 = B+1: There are at least 2 kernel polynomials for T_3, so a trace-zero linear 
+combination exists.
+N = 506 has g = 6 <= 16 = B+1: There are at least 2 kernel polynomials for T_3, so a trace-zero linear 
+combination exists.
+N = 510 has g = 3 <= 21 = B+1: There are no kernel polynomials for T_7, so there is no good correspondence.
+N = 514 has g = 12 <= 14 = B+1: There are at least 2 kernel polynomials for T_3, so a trace-zero linear 
+combination exists.
+N = 515 has g = 10 <= 10 = B+1: There are at least 2 kernel polynomials for T_11, so a trace-zero linear 
+combination exists.
+N = 517 has g = 10 <= 10 = B+1: There are at least 2 kernel polynomials for T_2, so a trace-zero linear 
+combination exists.
+N = 518 has g = 7 <= 17 = B+1: There are at least 2 kernel polynomials for T_3, so a trace-zero linear 
+combination exists.
+N = 519 has g = 7 <= 8 = B+1: There are no kernel polynomials for T_2, so there is no good correspondence.
+N = 526 has g = 9 <= 11 = B+1: There are no kernel polynomials for T_3, so there is no good correspondence.
+N = 527 has g = 7 <= 8 = B+1: There are at least 2 kernel polynomials for T_2, so a trace-zero linear 
+combination exists.
+N = 530 has g = 7 <= 14 = B+1: There are at least 2 kernel polynomials for T_3, so a trace-zero linear 
+combination exists.
+N = 534 has g = 8 <= 20 = B+1: There are at least 2 kernel polynomials for T_17, so a trace-zero linear 
+combination exists.
+N = 535 has g = 10 <= 11 = B+1: There are at least 2 kernel polynomials for T_2, so a trace-zero linear 
+combination exists.
+N = 538 has g = 13 <= 15 = B+1: There are at least 2 kernel polynomials for T_3, so a trace-zero linear 
+combination exists.
+N = 542 has g = 9 <= 11 = B+1: There are no kernel polynomials for T_3, so there is no good correspondence.
+N = 543 has g = 12 <= 12 = B+1: There are at least 2 kernel polynomials for T_2, so a trace-zero linear 
+combination exists.
+N = 546 has g = 4 <= 22 = B+1: There are at least 2 kernel polynomials for T_5, so a trace-zero linear 
+combination exists.
+N = 551 has g = 5 <= 7 = B+1: There are at least 2 kernel polynomials for T_11, so a trace-zero linear 
+combination exists.
+N = 555 has g = 5 <= 12 = B+1: There are no kernel polynomials for T_7, so there is no good correspondence.
+N = 561 has g = 6 <= 13 = B+1: There are at least 2 kernel polynomials for T_5, so a trace-zero linear 
+combination exists.
+N = 562 has g = 14 <= 15 = B+1: There are at least 2 kernel polynomials for T_3, so a trace-zero linear 
+combination exists.
+N = 570 has g = 4 <= 23 = B+1: There is exactly 1 kernel polynomial for T_7, but it does not have trace 0 on 
+the Atkin-Lehner +1 eigenspace of S_2(N).
+N = 573 has g = 8 <= 8 = B+1: There are no kernel polynomials for T_2, so there is no good correspondence.
+N = 574 has g = 5 <= 17 = B+1: There are at least 2 kernel polynomials for T_3, so a trace-zero linear 
+combination exists.
+N = 582 has g = 7 <= 16 = B+1: There are no kernel polynomials for T_7, so there is no good correspondence.
+N = 586 has g = 14 <= 14 = B+1: There are at least 2 kernel polynomials for T_7, so a trace-zero linear 
+combination exists.
+N = 590 has g = 6 <= 16 = B+1: There are at least 2 kernel polynomials for T_3, so a trace-zero linear 
+combination exists.
+N = 595 has g = 5 <= 11 = B+1: There are at least 2 kernel polynomials for T_2, so a trace-zero linear 
+combination exists.
+N = 597 has g = 15 <= 16 = B+1: There are at least 2 kernel polynomials for T_2, so a trace-zero linear 
+combination exists.
+N = 598 has g = 6 <= 17 = B+1: There are at least 2 kernel polynomials for T_3, so a trace-zero linear 
+combination exists.
+N = 602 has g = 9 <= 18 = B+1: There are at least 2 kernel polynomials for T_3, so a trace-zero linear 
+combination exists.
+N = 606 has g = 8 <= 20 = B+1: There are at least 2 kernel polynomials for T_5, so a trace-zero linear 
+combination exists.
+N = 609 has g = 6 <= 15 = B+1: There are at least 2 kernel polynomials for T_5, so a trace-zero linear 
+combination exists.
+N = 610 has g = 9 <= 18 = B+1: There are at least 2 kernel polynomials for T_7, so a trace-zero linear 
+combination exists.
+N = 611 has g = 9 <= 10 = B+1: There are at least 2 kernel polynomials for T_2, so a trace-zero linear 
+combination exists.
+N = 615 has g = 6 <= 14 = B+1: There are at least 2 kernel polynomials for T_2, so a trace-zero linear 
+combination exists.
+N = 618 has g = 9 <= 21 = B+1: There are at least 2 kernel polynomials for T_5, so a trace-zero linear 
+combination exists.
+N = 622 has g = 9 <= 11 = B+1: There are no kernel polynomials for T_5, so there is no good correspondence.
+N = 627 has g = 6 <= 14 = B+1: There are at least 2 kernel polynomials for T_2, so a trace-zero linear 
+combination exists.
+N = 638 has g = 7 <= 16 = B+1: There are at least 2 kernel polynomials for T_3, so a trace-zero linear 
+combination exists.
+N = 642 has g = 9 <= 19 = B+1: There are at least 2 kernel polynomials for T_11, so a trace-zero linear 
+combination exists.
+N = 645 has g = 5 <= 11 = B+1: There are no kernel polynomials for T_11, so there is no good correspondence.
+N = 646 has g = 7 <= 14 = B+1: There are no kernel polynomials for T_3, so there is no good correspondence.
+N = 651 has g = 8 <= 15 = B+1: There are at least 2 kernel polynomials for T_2, so a trace-zero linear 
+combination exists.
+N = 654 has g = 8 <= 17 = B+1: There are at least 2 kernel polynomials for T_7, so a trace-zero linear 
+combination exists.
+N = 658 has g = 7 <= 17 = B+1: There are at least 2 kernel polynomials for T_3, so a trace-zero linear 
+combination exists.
+N = 663 has g = 5 <= 13 = B+1: There are no kernel polynomials for T_2, so there is no good correspondence.
+N = 665 has g = 8 <= 15 = B+1: There is exactly 1 kernel polynomial for T_2, and it has trace 0 on the 
+Atkin-Lehner +1 eigenspace of S_2(N).
+N = 670 has g = 6 <= 15 = B+1: There are at least 2 kernel polynomials for T_17, so a trace-zero linear 
+combination exists.
+N = 671 has g = 7 <= 7 = B+1: There are at least 2 kernel polynomials for T_2, so a trace-zero linear 
+combination exists.
+N = 678 has g = 10 <= 20 = B+1: There are at least 2 kernel polynomials for T_19, so a trace-zero linear 
+combination exists.
+N = 682 has g = 8 <= 19 = B+1: There are at least 2 kernel polynomials for T_3, so a trace-zero linear 
+combination exists.
+N = 690 has g = 6 <= 25 = B+1: There are at least 2 kernel polynomials for T_11, so a trace-zero linear 
+combination exists.
+N = 705 has g = 9 <= 16 = B+1: There are at least 2 kernel polynomials for T_13, so a trace-zero linear 
+combination exists.
+N = 710 has g = 7 <= 15 = B+1: There are at least 2 kernel polynomials for T_3, so a trace-zero linear 
+combination exists.
+N = 714 has g = 5 <= 24 = B+1: There is exactly 1 kernel polynomial for T_5, but it does not have trace 0 on 
+the Atkin-Lehner +1 eigenspace of S_2(N).
+N = 715 has g = 8 <= 15 = B+1: There are at least 2 kernel polynomials for T_2, so a trace-zero linear 
+combination exists.
+N = 730 has g = 10 <= 16 = B+1: There are at least 2 kernel polynomials for T_3, so a trace-zero linear 
+combination exists.
+N = 741 has g = 10 <= 16 = B+1: There are at least 2 kernel polynomials for T_2, so a trace-zero linear 
+combination exists.
+N = 742 has g = 10 <= 18 = B+1: There are at least 2 kernel polynomials for T_29, so a trace-zero linear 
+combination exists.
+N = 754 has g = 10 <= 17 = B+1: There are at least 2 kernel polynomials for T_3, so a trace-zero linear 
+combination exists.
+N = 759 has g = 8 <= 15 = B+1: There are at least 2 kernel polynomials for T_2, so a trace-zero linear 
+combination exists.
+N = 762 has g = 12 <= 22 = B+1: There are at least 2 kernel polynomials for T_5, so a trace-zero linear 
+combination exists.
+N = 770 has g = 5 <= 20 = B+1: There are at least 2 kernel polynomials for T_3, so a trace-zero linear 
+combination exists.
+N = 777 has g = 9 <= 14 = B+1: There are at least 2 kernel polynomials for T_2, so a trace-zero linear 
+combination exists.
+N = 782 has g = 8 <= 18 = B+1: There are at least 2 kernel polynomials for T_7, so a trace-zero linear 
+combination exists.
+N = 786 has g = 11 <= 19 = B+1: There are at least 2 kernel polynomials for T_11, so a trace-zero linear 
+combination exists.
+N = 790 has g = 9 <= 17 = B+1: There are at least 2 kernel polynomials for T_7, so a trace-zero linear 
+combination exists.
+N = 795 has g = 10 <= 15 = B+1: There are at least 2 kernel polynomials for T_13, so a trace-zero linear 
+combination exists.
+N = 798 has g = 5 <= 22 = B+1: There are at least 2 kernel polynomials for T_11, so a trace-zero linear 
+combination exists.
+N = 805 has g = 8 <= 10 = B+1: There are at least 2 kernel polynomials for T_2, so a trace-zero linear 
+combination exists.
+N = 806 has g = 10 <= 16 = B+1: There are at least 2 kernel polynomials for T_3, so a trace-zero linear 
+combination exists.
+N = 814 has g = 8 <= 14 = B+1: There are no kernel polynomials for T_3, so there is no good correspondence.
+N = 822 has g = 13 <= 21 = B+1: There are at least 2 kernel polynomials for T_5, so a trace-zero linear 
+combination exists.
+N = 826 has g = 10 <= 17 = B+1: There are at least 2 kernel polynomials for T_3, so a trace-zero linear 
+combination exists.
+N = 830 has g = 11 <= 18 = B+1: There are at least 2 kernel polynomials for T_7, so a trace-zero linear 
+combination exists.
+N = 834 has g = 14 <= 20 = B+1: There are at least 2 kernel polynomials for T_5, so a trace-zero linear 
+combination exists.
+N = 854 has g = 10 <= 15 = B+1: There are at least 2 kernel polynomials for T_5, so a trace-zero linear 
+combination exists.
+N = 858 has g = 6 <= 24 = B+1: There are at least 2 kernel polynomials for T_19, so a trace-zero linear 
+combination exists.
+N = 861 has g = 7 <= 12 = B+1: There are at least 2 kernel polynomials for T_2, so a trace-zero linear 
+combination exists.
+N = 870 has g = 7 <= 23 = B+1: There are at least 2 kernel polynomials for T_11, so a trace-zero linear 
+combination exists.
+N = 874 has g = 11 <= 18 = B+1: There are at least 2 kernel polynomials for T_3, so a trace-zero linear 
+combination exists.
+N = 885 has g = 11 <= 16 = B+1: There are at least 2 kernel polynomials for T_2, so a trace-zero linear 
+combination exists.
+N = 890 has g = 13 <= 18 = B+1: There are at least 2 kernel polynomials for T_3, so a trace-zero linear 
+combination exists.
+N = 894 has g = 12 <= 20 = B+1: There are at least 2 kernel polynomials for T_11, so a trace-zero linear 
+combination exists.
+N = 897 has g = 7 <= 12 = B+1: There are no kernel polynomials for T_2, so there is no good correspondence.
+N = 902 has g = 11 <= 18 = B+1: There are at least 2 kernel polynomials for T_5, so a trace-zero linear 
+combination exists.
+N = 903 has g = 11 <= 13 = B+1: There are at least 2 kernel polynomials for T_2, so a trace-zero linear 
+combination exists.
+N = 906 has g = 15 <= 23 = B+1: There are at least 2 kernel polynomials for T_11, so a trace-zero linear 
+combination exists.
+N = 910 has g = 5 <= 20 = B+1: There are at least 2 kernel polynomials for T_11, so a trace-zero linear 
+combination exists.
+N = 915 has g = 11 <= 17 = B+1: There are at least 2 kernel polynomials for T_2, so a trace-zero linear 
+combination exists.
+N = 930 has g = 8 <= 25 = B+1: There are at least 2 kernel polynomials for T_41, so a trace-zero linear 
+combination exists.
+N = 935 has g = 9 <= 13 = B+1: There are at least 2 kernel polynomials for T_2, so a trace-zero linear 
+combination exists.
+N = 938 has g = 15 <= 20 = B+1: There are at least 2 kernel polynomials for T_3, so a trace-zero linear 
+combination exists.
+N = 942 has g = 12 <= 17 = B+1: There are at least 2 kernel polynomials for T_5, so a trace-zero linear 
+combination exists.
+N = 946 has g = 14 <= 17 = B+1: There are at least 2 kernel polynomials for T_5, so a trace-zero linear 
+combination exists.
+N = 957 has g = 11 <= 16 = B+1: There are at least 2 kernel polynomials for T_2, so a trace-zero linear 
+combination exists.
+N = 962 has g = 12 <= 14 = B+1: There are at least 2 kernel polynomials for T_3, so a trace-zero linear 
+combination exists.
+N = 966 has g = 8 <= 26 = B+1: There are at least 2 kernel polynomials for T_13, so a trace-zero linear 
+combination exists.
+N = 969 has g = 11 <= 15 = B+1: There are at least 2 kernel polynomials for T_2, so a trace-zero linear 
+combination exists.
+N = 970 has g = 14 <= 16 = B+1: There are at least 2 kernel polynomials for T_3, so a trace-zero linear 
+combination exists.
+N = 978 has g = 15 <= 18 = B+1: There are at least 2 kernel polynomials for T_5, so a trace-zero linear 
+combination exists.
+N = 986 has g = 13 <= 16 = B+1: There are at least 2 kernel polynomials for T_3, so a trace-zero linear 
+combination exists.
+N = 987 has g = 9 <= 13 = B+1: There are at least 2 kernel polynomials for T_2, so a trace-zero linear 
+combination exists.
+N = 994 has g = 15 <= 23 = B+1: There are at least 2 kernel polynomials for T_3, so a trace-zero linear 
+combination exists.
+N = 1001 has g = 8 <= 10 = B+1: There are at least 2 kernel polynomials for T_3, so a trace-zero linear 
+combination exists.
+N = 1002 has g = 14 <= 20 = B+1: There are at least 2 kernel polynomials for T_7, so a trace-zero linear 
+combination exists.
+N = 1005 has g = 10 <= 11 = B+1: There are no kernel polynomials for T_2, so there is no good correspondence.
+N = 1010 has g = 15 <= 18 = B+1: There are at least 2 kernel polynomials for T_3, so a trace-zero linear 
+combination exists.
+N = 1015 has g = 11 <= 15 = B+1: There are at least 2 kernel polynomials for T_2, so a trace-zero linear 
+combination exists.
+N = 1022 has g = 11 <= 16 = B+1: There are at least 2 kernel polynomials for T_3, so a trace-zero linear 
+combination exists.
+N = 1023 has g = 10 <= 12 = B+1: There are at least 2 kernel polynomials for T_5, so a trace-zero linear 
+combination exists.
+N = 1030 has g = 14 <= 19 = B+1: There are at least 2 kernel polynomials for T_11, so a trace-zero linear 
+combination exists.
+N = 1034 has g = 13 <= 19 = B+1: There are at least 2 kernel polynomials for T_3, so a trace-zero linear 
+combination exists.
+N = 1038 has g = 15 <= 21 = B+1: There are at least 2 kernel polynomials for T_5, so a trace-zero linear 
+combination exists.
+N = 1045 has g = 9 <= 11 = B+1: There are at least 2 kernel polynomials for T_2, so a trace-zero linear 
+combination exists.
+N = 1054 has g = 12 <= 19 = B+1: There are at least 2 kernel polynomials for T_3, so a trace-zero linear 
+combination exists.
+N = 1065 has g = 14 <= 17 = B+1: There are at least 2 kernel polynomials for T_2, so a trace-zero linear 
+combination exists.
+N = 1066 has g = 16 <= 17 = B+1: There are at least 2 kernel polynomials for T_37, so a trace-zero linear 
+combination exists.
+N = 1070 has g = 14 <= 18 = B+1: There are at least 2 kernel polynomials for T_3, so a trace-zero linear 
+combination exists.
+N = 1074 has g = 16 <= 19 = B+1: There are at least 2 kernel polynomials for T_5, so a trace-zero linear 
+combination exists.
+N = 1085 has g = 13 <= 16 = B+1: There are at least 2 kernel polynomials for T_3, so a trace-zero linear 
+combination exists.
+N = 1086 has g = 16 <= 18 = B+1: There are at least 2 kernel polynomials for T_5, so a trace-zero linear 
+combination exists.
+N = 1090 has g = 17 <= 20 = B+1: There are at least 2 kernel polynomials for T_3, so a trace-zero linear 
+combination exists.
+N = 1095 has g = 11 <= 12 = B+1: There are no kernel polynomials for T_2, so there is no good correspondence.
+N = 1102 has g = 10 <= 16 = B+1: There are at least 2 kernel polynomials for T_41, so a trace-zero linear 
+combination exists.
+N = 1105 has g = 13 <= 13 = B+1: There are at least 2 kernel polynomials for T_2, so a trace-zero linear 
+combination exists.
+N = 1106 has g = 16 <= 20 = B+1: There are at least 2 kernel polynomials for T_5, so a trace-zero linear 
+combination exists.
+N = 1110 has g = 9 <= 24 = B+1: There are at least 2 kernel polynomials for T_7, so a trace-zero linear 
+combination exists.
+N = 1113 has g = 11 <= 15 = B+1: There are at least 2 kernel polynomials for T_23, so a trace-zero linear 
+combination exists.
+N = 1118 has g = 12 <= 16 = B+1: There are at least 2 kernel polynomials for T_3, so a trace-zero linear 
+combination exists.
+N = 1122 has g = 9 <= 22 = B+1: There are at least 2 kernel polynomials for T_5, so a trace-zero linear 
+combination exists.
+N = 1131 has g = 11 <= 13 = B+1: There are no kernel polynomials for T_2, so there is no good correspondence.
+N = 1146 has g = 15 <= 19 = B+1: There are at least 2 kernel polynomials for T_7, so a trace-zero linear 
+combination exists.
+N = 1155 has g = 8 <= 21 = B+1: There are at least 2 kernel polynomials for T_2, so a trace-zero linear 
+combination exists.
+N = 1158 has g = 17 <= 17 = B+1: There are at least 2 kernel polynomials for T_5, so a trace-zero linear 
+combination exists.
+N = 1162 has g = 15 <= 18 = B+1: There are at least 2 kernel polynomials for T_11, so a trace-zero linear 
+combination exists.
+N = 1166 has g = 15 <= 15 = B+1: There are at least 2 kernel polynomials for T_17, so a trace-zero linear 
+combination exists.
+N = 1173 has g = 14 <= 19 = B+1: There are at least 2 kernel polynomials for T_2, so a trace-zero linear 
+combination exists.
+N = 1178 has g = 17 <= 19 = B+1: There are at least 2 kernel polynomials for T_3, so a trace-zero linear 
+combination exists.
+N = 1182 has g = 17 <= 20 = B+1: There are at least 2 kernel polynomials for T_11, so a trace-zero linear 
+combination exists.
+N = 1185 has g = 15 <= 19 = B+1: There are at least 2 kernel polynomials for T_7, so a trace-zero linear 
+combination exists.
+N = 1190 has g = 8 <= 21 = B+1: There are at least 2 kernel polynomials for T_3, so a trace-zero linear 
+combination exists.
+N = 1194 has g = 20 <= 25 = B+1: There are at least 2 kernel polynomials for T_11, so a trace-zero linear 
+combination exists.
+N = 1218 has g = 10 <= 24 = B+1: There are at least 2 kernel polynomials for T_5, so a trace-zero linear 
+combination exists.
+N = 1221 has g = 12 <= 14 = B+1: There are at least 2 kernel polynomials for T_2, so a trace-zero linear 
+combination exists.
+N = 1222 has g = 15 <= 20 = B+1: There are at least 2 kernel polynomials for T_5, so a trace-zero linear 
+combination exists.
+N = 1230 has g = 10 <= 24 = B+1: There are at least 2 kernel polynomials for T_11, so a trace-zero linear 
+combination exists.
+N = 1235 has g = 12 <= 13 = B+1: There are at least 2 kernel polynomials for T_2, so a trace-zero linear 
+combination exists.
+N = 1239 has g = 11 <= 12 = B+1: There are at least 2 kernel polynomials for T_2, so a trace-zero linear 
+combination exists.
+N = 1245 has g = 17 <= 20 = B+1: There are at least 2 kernel polynomials for T_7, so a trace-zero linear 
+combination exists.
+N = 1246 has g = 14 <= 18 = B+1: There are at least 2 kernel polynomials for T_11, so a trace-zero linear 
+combination exists.
+N = 1254 has g = 12 <= 29 = B+1: There are at least 2 kernel polynomials for T_7, so a trace-zero linear 
+combination exists.
+N = 1258 has g = 18 <= 20 = B+1: There are at least 2 kernel polynomials for T_3, so a trace-zero linear 
+combination exists.
+N = 1270 has g = 17 <= 20 = B+1: There are at least 2 kernel polynomials for T_3, so a trace-zero linear 
+combination exists.
+N = 1281 has g = 19 <= 19 = B+1: There are at least 2 kernel polynomials for T_23, so a trace-zero linear 
+combination exists.
+N = 1290 has g = 10 <= 23 = B+1: There are at least 2 kernel polynomials for T_11, so a trace-zero linear 
+combination exists.
+N = 1295 has g = 11 <= 11 = B+1: There are at least 2 kernel polynomials for T_3, so a trace-zero linear 
+combination exists.
+N = 1298 has g = 18 <= 19 = B+1: There are at least 2 kernel polynomials for T_3, so a trace-zero linear 
+combination exists.
+N = 1302 has g = 11 <= 25 = B+1: There are at least 2 kernel polynomials for T_5, so a trace-zero linear 
+combination exists.
+N = 1310 has g = 16 <= 17 = B+1: There are at least 2 kernel polynomials for T_3, so a trace-zero linear 
+combination exists.
+N = 1311 has g = 13 <= 15 = B+1: There are at least 2 kernel polynomials for T_5, so a trace-zero linear 
+combination exists.
+N = 1326 has g = 10 <= 25 = B+1: There are at least 2 kernel polynomials for T_7, so a trace-zero linear 
+combination exists.
+N = 1330 has g = 11 <= 24 = B+1: There are at least 2 kernel polynomials for T_17, so a trace-zero linear 
+combination exists.
+N = 1338 has g = 22 <= 23 = B+1: There are at least 2 kernel polynomials for T_7, so a trace-zero linear 
+combination exists.
+N = 1342 has g = 14 <= 18 = B+1: There are at least 2 kernel polynomials for T_5, so a trace-zero linear 
+combination exists.
+N = 1353 has g = 17 <= 17 = B+1: There are at least 2 kernel polynomials for T_5, so a trace-zero linear 
+combination exists.
+N = 1358 has g = 16 <= 16 = B+1: There are at least 2 kernel polynomials for T_5, so a trace-zero linear 
+combination exists.
+N = 1362 has g = 22 <= 22 = B+1: There are at least 2 kernel polynomials for T_5, so a trace-zero linear 
+combination exists.
+N = 1365 has g = 9 <= 21 = B+1: There are at least 2 kernel polynomials for T_2, so a trace-zero linear 
+combination exists.
+N = 1378 has g = 19 <= 21 = B+1: There are at least 2 kernel polynomials for T_3, so a trace-zero linear 
+combination exists.
+N = 1390 has g = 17 <= 18 = B+1: There are at least 2 kernel polynomials for T_3, so a trace-zero linear 
+combination exists.
+N = 1406 has g = 17 <= 17 = B+1: There are at least 2 kernel polynomials for T_3, so a trace-zero linear 
+combination exists.
+N = 1410 has g = 14 <= 29 = B+1: There are at least 2 kernel polynomials for T_29, so a trace-zero linear 
+combination exists.
+N = 1426 has g = 19 <= 20 = B+1: There are at least 2 kernel polynomials for T_3, so a trace-zero linear 
+combination exists.
+N = 1430 has g = 12 <= 26 = B+1: There are at least 2 kernel polynomials for T_7, so a trace-zero linear 
+combination exists.
+N = 1435 has g = 18 <= 18 = B+1: There are at least 2 kernel polynomials for T_13, so a trace-zero linear 
+combination exists.
+N = 1479 has g = 17 <= 17 = B+1: There are at least 2 kernel polynomials for T_2, so a trace-zero linear 
+combination exists.
+N = 1482 has g = 13 <= 25 = B+1: There are at least 2 kernel polynomials for T_11, so a trace-zero linear 
+combination exists.
+N = 1491 has g = 17 <= 18 = B+1: There are at least 2 kernel polynomials for T_2, so a trace-zero linear 
+combination exists.
+N = 1518 has g = 11 <= 24 = B+1: There are at least 2 kernel polynomials for T_7, so a trace-zero linear 
+combination exists.
+N = 1533 has g = 23 <= 23 = B+1: There are at least 2 kernel polynomials for T_2, so a trace-zero linear 
+combination exists.
+N = 1534 has g = 19 <= 19 = B+1: There are at least 2 kernel polynomials for T_7, so a trace-zero linear 
+combination exists.
+N = 1547 has g = 17 <= 18 = B+1: There are at least 2 kernel polynomials for T_2, so a trace-zero linear 
+combination exists.
+N = 1551 has g = 19 <= 19 = B+1: There are at least 2 kernel polynomials for T_2, so a trace-zero linear 
+combination exists.
+N = 1554 has g = 14 <= 26 = B+1: There are at least 2 kernel polynomials for T_5, so a trace-zero linear 
+combination exists.
+N = 1590 has g = 14 <= 23 = B+1: There are at least 2 kernel polynomials for T_29, so a trace-zero linear 
+combination exists.
+N = 1610 has g = 13 <= 23 = B+1: There are at least 2 kernel polynomials for T_19, so a trace-zero linear 
+combination exists.
+N = 1722 has g = 15 <= 28 = B+1: There are at least 2 kernel polynomials for T_31, so a trace-zero linear 
+combination exists.
+N = 1770 has g = 16 <= 25 = B+1: There are at least 2 kernel polynomials for T_17, so a trace-zero linear 
+combination exists.
+N = 1785 has g = 12 <= 21 = B+1: There are at least 2 kernel polynomials for T_2, so a trace-zero linear 
+combination exists.
+N = 1794 has g = 15 <= 26 = B+1: There are at least 2 kernel polynomials for T_5, so a trace-zero linear 
+combination exists.
+N = 1806 has g = 16 <= 25 = B+1: There are at least 2 kernel polynomials for T_47, so a trace-zero linear 
+combination exists.
+N = 1830 has g = 19 <= 30 = B+1: There are at least 2 kernel polynomials for T_7, so a trace-zero linear 
+combination exists.
+N = 1870 has g = 13 <= 22 = B+1: There are at least 2 kernel polynomials for T_3, so a trace-zero linear 
+combination exists.
+N = 1914 has g = 17 <= 28 = B+1: There are at least 2 kernel polynomials for T_13, so a trace-zero linear 
+combination exists.
+N = 1938 has g = 18 <= 26 = B+1: There are at least 2 kernel polynomials for T_37, so a trace-zero linear 
+combination exists.
+N = 1974 has g = 18 <= 28 = B+1: There are at least 2 kernel polynomials for T_5, so a trace-zero linear 
+combination exists.
+N = 1995 has g = 14 <= 22 = B+1: There are at least 2 kernel polynomials for T_17, so a trace-zero linear 
+combination exists.
+N = 2002 has g = 15 <= 24 = B+1: There are at least 2 kernel polynomials for T_47, so a trace-zero linear 
+combination exists.
+N = 2010 has g = 17 <= 24 = B+1: There are at least 2 kernel polynomials for T_29, so a trace-zero linear 
+combination exists.
+N = 2030 has g = 16 <= 24 = B+1: There are at least 2 kernel polynomials for T_11, so a trace-zero linear 
+combination exists.
+N = 2046 has g = 17 <= 25 = B+1: There are at least 2 kernel polynomials for T_5, so a trace-zero linear 
+combination exists.
+N = 2090 has g = 16 <= 23 = B+1: There are at least 2 kernel polynomials for T_3, so a trace-zero linear 
+combination exists.
+N = 2130 has g = 19 <= 23 = B+1: There are at least 2 kernel polynomials for T_13, so a trace-zero linear 
+combination exists.
+N = 2145 has g = 16 <= 22 = B+1: There are at least 2 kernel polynomials for T_2, so a trace-zero linear 
+combination exists.
+N = 2170 has g = 20 <= 27 = B+1: There are at least 2 kernel polynomials for T_3, so a trace-zero linear 
+combination exists.
+N = 2190 has g = 19 <= 25 = B+1: There are at least 2 kernel polynomials for T_31, so a trace-zero linear 
+combination exists.
+N = 2210 has g = 19 <= 22 = B+1: There are at least 2 kernel polynomials for T_7, so a trace-zero linear 
+combination exists.
+N = 2226 has g = 19 <= 24 = B+1: There are at least 2 kernel polynomials for T_43, so a trace-zero linear 
+combination exists.
+N = 2262 has g = 21 <= 29 = B+1: There are at least 2 kernel polynomials for T_5, so a trace-zero linear 
+combination exists.
+N = 2310 has g = 12 <= 31 = B+1: There are at least 2 kernel polynomials for T_67, so a trace-zero linear 
+combination exists.
+N = 2346 has g = 22 <= 31 = B+1: There are at least 2 kernel polynomials for T_53, so a trace-zero linear 
+combination exists.
+N = 2370 has g = 24 <= 30 = B+1: There are at least 2 kernel polynomials for T_13, so a trace-zero linear 
+combination exists.
+N = 2415 has g = 18 <= 22 = B+1: There are at least 2 kernel polynomials for T_11, so a trace-zero linear 
+combination exists.
+N = 2418 has g = 22 <= 24 = B+1: There are at least 2 kernel polynomials for T_5, so a trace-zero linear 
+combination exists.
+N = 2442 has g = 20 <= 26 = B+1: There are at least 2 kernel polynomials for T_5, so a trace-zero linear 
+combination exists.
+N = 2470 has g = 19 <= 25 = B+1: There are at least 2 kernel polynomials for T_17, so a trace-zero linear 
+combination exists.
+N = 2478 has g = 21 <= 27 = B+1: There are at least 2 kernel polynomials for T_5, so a trace-zero linear 
+combination exists.
+N = 2490 has g = 27 <= 33 = B+1: There are at least 2 kernel polynomials for T_17, so a trace-zero linear 
+combination exists.
+N = 2530 has g = 21 <= 23 = B+1: There are at least 2 kernel polynomials for T_7, so a trace-zero linear 
+combination exists.
+N = 2562 has g = 25 <= 27 = B+1: There are at least 2 kernel polynomials for T_23, so a trace-zero linear 
+combination exists.
+N = 2590 has g = 20 <= 26 = B+1: There are at least 2 kernel polynomials for T_3, so a trace-zero linear 
+combination exists.
+N = 2618 has g = 21 <= 25 = B+1: There are at least 2 kernel polynomials for T_5, so a trace-zero linear 
+combination exists.
+N = 2622 has g = 23 <= 30 = B+1: There are at least 2 kernel polynomials for T_5, so a trace-zero linear 
+combination exists.
+N = 2670 has g = 25 <= 25 = B+1: There are at least 2 kernel polynomials for T_23, so a trace-zero linear 
+combination exists.
+N = 2706 has g = 26 <= 27 = B+1: There are at least 2 kernel polynomials for T_59, so a trace-zero linear 
+combination exists.
+N = 2730 has g = 14 <= 31 = B+1: There are at least 2 kernel polynomials for T_23, so a trace-zero linear 
+combination exists.
+N = 2805 has g = 19 <= 21 = B+1: There are at least 2 kernel polynomials for T_7, so a trace-zero linear 
+combination exists.
+N = 2814 has g = 27 <= 27 = B+1: There are at least 2 kernel polynomials for T_43, so a trace-zero linear 
+combination exists.
+N = 2838 has g = 28 <= 32 = B+1: There are at least 2 kernel polynomials for T_5, so a trace-zero linear 
+combination exists.
+N = 2870 has g = 27 <= 31 = B+1: There are at least 2 kernel polynomials for T_19, so a trace-zero linear 
+combination exists.
+N = 2926 has g = 21 <= 23 = B+1: There are at least 2 kernel polynomials for T_3, so a trace-zero linear 
+combination exists.
+N = 2982 has g = 29 <= 33 = B+1: There are at least 2 kernel polynomials for T_17, so a trace-zero linear 
+combination exists.
+N = 2990 has g = 23 <= 26 = B+1: There are at least 2 kernel polynomials for T_19, so a trace-zero linear 
+combination exists.
+N = 3003 has g = 20 <= 20 = B+1: There are at least 2 kernel polynomials for T_19, so a trace-zero linear 
+combination exists.
+N = 3010 has g = 26 <= 27 = B+1: There are at least 2 kernel polynomials for T_11, so a trace-zero linear 
+combination exists.
+N = 3045 has g = 27 <= 31 = B+1: There are at least 2 kernel polynomials for T_11, so a trace-zero linear 
+combination exists.
+N = 3066 has g = 31 <= 32 = B+1: There are at least 2 kernel polynomials for T_31, so a trace-zero linear 
+combination exists.
+N = 3094 has g = 27 <= 30 = B+1: There are at least 2 kernel polynomials for T_5, so a trace-zero linear 
+combination exists.
+N = 3102 has g = 27 <= 28 = B+1: There are at least 2 kernel polynomials for T_23, so a trace-zero linear 
+combination exists.
+N = 3135 has g = 22 <= 22 = B+1: There are at least 2 kernel polynomials for T_2, so a trace-zero linear 
+combination exists.
+N = 3162 has g = 28 <= 28 = B+1: There are at least 2 kernel polynomials for T_5, so a trace-zero linear 
+combination exists.
+N = 3190 has g = 26 <= 28 = B+1: There are at least 2 kernel polynomials for T_13, so a trace-zero linear 
+combination exists.
+N = 3210 has g = 35 <= 35 = B+1: There are at least 2 kernel polynomials for T_11, so a trace-zero linear 
+combination exists.
+N = 3290 has g = 30 <= 30 = B+1: There are at least 2 kernel polynomials for T_3, so a trace-zero linear 
+combination exists.
+N = 3315 has g = 27 <= 27 = B+1: There are at least 2 kernel polynomials for T_2, so a trace-zero linear 
+combination exists.
+N = 3354 has g = 32 <= 32 = B+1: There are at least 2 kernel polynomials for T_11, so a trace-zero linear 
+combination exists.
+N = 3570 has g = 19 <= 32 = B+1: There are at least 2 kernel polynomials for T_61, so a trace-zero linear 
+combination exists.
+N = 3990 has g = 23 <= 38 = B+1: There are at least 2 kernel polynomials for T_131, so a trace-zero linear 
+combination exists.
+N = 4290 has g = 26 <= 39 = B+1: There are at least 2 kernel polynomials for T_19, so a trace-zero linear 
+combination exists.
+N = 4830 has g = 28 <= 34 = B+1: There are at least 2 kernel polynomials for T_113, so a trace-zero linear 
+combination exists.
+N = 5610 has g = 30 <= 33 = B+1: There are at least 2 kernel polynomials for T_19, so a trace-zero linear 
+combination exists.
+N = 6006 has g = 33 <= 35 = B+1: There are at least 2 kernel polynomials for T_73, so a trace-zero linear 
+combination exists.
+N = 6090 has g = 39 <= 42 = B+1: There are at least 2 kernel polynomials for T_113, so a trace-zero linear 
+combination exists.
+N = 6270 has g = 35 <= 35 = B+1: There are at least 2 kernel polynomials for T_53, so a trace-zero linear 
+combination exists.
+N = 6510 has g = 39 <= 40 = B+1
