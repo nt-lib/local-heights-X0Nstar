@@ -158,6 +158,9 @@ function StarQuotientHeightRelations(N, r_list)
                 row := [powers[k+1][j,j] : k in [0..g-1]];
                 Append(~relations[i], row);
             end for;
+            if #relations[i] eq 0 then
+                Append(~relations[i], [0 : k in [1..g]]);
+            end if;
         end for;
     end for;
     return relations, is_hecke_generator;
@@ -240,16 +243,21 @@ function StarQuotientHasGoodCorrespondenceList(N, r_list)
         Sprintf("No T_r in r_list generates the Hecke algebra for N = %o.", N);
     i := hecke_gen_indices[1];
     if #use_polys[i] gt 1 then
-        return true;
+        return true, Sprintf("There are at least 2 kernel polynomials for T_%o, so a trace-zero linear combination exists.", r_list[i]);
     elif #use_polys[i] eq 1 then
         r := r_list[i];
         f := use_polys[i][1];
         S := CuspidalSubspace(ModularSymbols(N, 2, 1));
         Sstar := AtkinLehnerFixedSubspace(S);
         Tr := RestrictMatrix(HeckeOperator(S, r), Sstar);
+        if Trace(Evaluate(f, Tr)) eq 0 then
+            return true, Sprintf("There is exactly 1 kernel polynomial for T_%o, and it has trace 0 on the Atkin-Lehner +1 eigenspace of S_2(N).", r);
+        else
+            return false, Sprintf("There is exactly 1 kernel polynomial for T_%o, but it does not have trace 0 on the Atkin-Lehner +1 eigenspace of S_2(N).", r);
+        end if;
         return Trace(Evaluate(f, Tr)) eq 0;
     else
-        return false;
+        return false, Sprintf("There are no kernel polynomials for T_%o, so there is no good correspondence.", r_list[i]);
     end if;
 end function;
 

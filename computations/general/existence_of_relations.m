@@ -14,7 +14,7 @@ for N in [1..N_max] do
     if IsSquarefree(N) then
         WN := HallDivisors(N);
         g := GenusX0Nstar(N);
-        if g in {0,1,2} then
+        if g in {0,1} then
             printf "N = %o: g = %o is known\n", N, g;
             continue;
         end if;
@@ -23,11 +23,12 @@ for N in [1..N_max] do
             // Borderline (rare): cross-check the closed-form genus against the geometric
             // Brandt-module genus before running the explicit correspondence search.
             assert StarQuotientGenus(N) eq g;
-            printf "N = %o has g = %o <= %o = B+1", N, g, B+1;
-            if StarQuotientHasGoodCorrespondence(N) then
-                printf ", but there exists a non-trivial poly.\n";
+            printf "N = %o: has g = %o <= %o = B+1", N, g, B+1;
+            hasGoodCorrespondence, message := StarQuotientHasGoodCorrespondence(N);
+            if hasGoodCorrespondence then
+                printf ": there is a good correspondence: %o\n", message;
             else
-                printf ": there is no good correspondence.\n";
+                printf ": there is no good correspondence: %o\n", message;
             end if;
         end if;
     end if;
