@@ -1,4 +1,4 @@
-Magma V2.29-4     Sat Jun 13 2026 01:50:45 on mordell  [Seed = 1798157428]
+Magma V2.29-4     Thu Aug 20 2026 20:54:46 on mordell  [Seed = 1770290483]
 Type ? for help.  Type <Ctrl>-D to quit.
 
 Loading file "computations/X0_319star/model_p31.m"
@@ -346,4 +346,4 @@ true
 [* *]
 []
 
-Total time: 136.479 seconds, Total memory usage: 246.56MB
+Total time: 135.280 seconds, Total memory usage: 246.56MB

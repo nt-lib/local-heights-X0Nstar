@@ -72,7 +72,11 @@ function StarQuotientGenus(N)
     return g0 + #stabiliser_sizes;
 end function;
 
-function LocalHeightsAtp(p, N, rs)
+function LocalHeightsAtp(p, N, rs : warn := true)
+    if warn then
+        error "This function is likely to have a bug, as it computes traces of hecke operators on the dual graph of X_0(N)^* in characteristic p, but we should compute traces in characterstic 0, as the dual graph in characteristic p only give a part of the trace! Pass warn := false to ignore this warning.";
+    end if;
+
     h_ps := [];
     Ts_raw, a, b := StarQuotientMeasures(p, ExactQuotient(N, p), rs);
     // Trace-zero (primitive) part on the dual graph at p: subtract the scalar so that the
@@ -120,8 +124,17 @@ end function;
 
 
 function StarQuotientHeightRelations(N, r_list)
-    // the linear relations (T_p)^0, (T_p)^1, ..., (T_p)^(g-1) should satify for trivial height contribution 
-    assert IsSquarefree(N);
+    // Returns for each r in r_list the linear relations a :=(a_0,...,a_{g-1}) should satisfy in 
+    // order for the correspondence given by:
+    //    T_a := a_0(T_r)^0 + a_1(T_r)^1 + ... + a_{g-1}(T_r)^(g-1)
+    // to have trivial height contribution at all primes q | N. The relations are given as a list 
+    // of lists of length g, one for each r in r_list. The i-th list contains the relations for T_{r_i}.
+    // If the list is empty, then there are no relations for T_{r_i} (i.e. any polynomial in T_{r_i} has
+    //  trivial height contribution at all q | N). The function also returns a list of booleans indicating 
+    // whether T_{r_i} generates the Hecke algebra (true) or not (false).
+    //
+    // These relations are just that T_{a,i,i} = 0 for all i corresponding to loops of length > 1 in the dual
+    //  graph of X_0(N)^* in characteristic q, for all q | N. 
     relations := [[] : i in [1..#r_list]];
     
     is_hecke_generator := [true : i in [1..#r_list]];
@@ -132,30 +145,22 @@ function StarQuotientHeightRelations(N, r_list)
         hecke, stabiliser_sizes, weights := StarQuotientMeasures(q, N div q, r_list);
 
         for i in [1..#r_list] do
-            T := hecke[i];
-            // n = dimension of the Brandt module B* at this prime q = #loops at q (the toric
-            // rank), which is the size of T. This is the SAME normalization used in
-            // LocalHeightsAtp (the matrix Ts = 2*Nrows(Tr)*Tr - 2*Trace(Tr)*I).
+            T := hecke[i]; 
             n := Nrows(T);
             if Degree(MinimalPolynomial(T)) ne n then
                 is_hecke_generator[i] := false;
             end if;
-            // Precompute the powers T^0,...,T^(g-1) and their traces ONCE per (q, r); the
-            // trace-zero diagonal at each loop is then a cheap lookup (was recomputed per loop).
+            // Precompute the powers T^0,...,T^(g-1) once per (q, r); 
             powers := [T^k : k in [0..g-1]];
-            traces := [Trace(P) : P in powers];
             for j in [1..#stabiliser_sizes] do
                 if stabiliser_sizes[j]*weights[j] eq 1 then continue; end if;
-                // Use the trace-zero diagonals Z_jj = 2n*(T_r^k)_jj - 2*Tr(T_r^k), NOT the raw
-                // (T_r^k)_jj (the height pairing only sees the trace-zero part of the correspondence)
-                // and NOT 2*g*(...) (n != g whenever X_0(N)^* is not totally degenerate at q, e.g.
-                // N = 185, 262, 310; using g there produces spurious "good" polynomials). With the n
-                // scaling the k=0 (identity) column 2n*1 - 2*Tr(I) = 2n - 2n vanishes identically, so
-                // c_0 is unconstrained.
-                row := [2*n*powers[k+1][j,j] - 2*traces[k+1] : k in [0..g-1]];
-                assert row[1] eq 0;   // identity column must vanish (trace-zero normalization)
+
+                row := [powers[k+1][j,j] : k in [0..g-1]];
                 Append(~relations[i], row);
             end for;
+            if #relations[i] eq 0 then
+                Append(~relations[i], [0 : k in [1..g]]);
+            end if;
         end for;
     end for;
     return relations, is_hecke_generator;
@@ -183,6 +188,16 @@ procedure StarQuotientDualGraph(N, r_list)
 end procedure;
 
 function StarQuotientGoodCorrespondences(N, r_list)
+    // Returns for each r in r_list a list of polynomials f(x) in Z[x] such that the correspondence
+    // T_f := f(T_r) has trivial height contribution at all primes q | N. The function also returns 
+    // a list of booleans indicating whether T_{r_i} generates the Hecke algebra (true) or not (false).
+    // Note that these T_f have not yet been normalized to have trace 0. So an actualy good correspondence
+    // is only guaranteed to exists if there are at least 2 polynomials in the list for some r. 
+    // If there is exactly 1, there might still be a good correspondence. But we need to check directly 
+    // that it has trace 0 on the weight-2 cuspidal modular symbols of sign +1, restricted to the Atkin-Lehner +1 eigenspace.
+    // 
+    // Note that this is ok to pass to QCModAffine since QCModAffine will take suitable linear combinations to ensure trace 0 automatically.
+    // Actually at the time of writing QCModAffine will raise an error if all correspondence you pass to it have trace 0.
     R<x> := PolynomialRing(Integers());
     use_polys := [[] : i in [1..#r_list]];
     relations, is_hecke_generator := StarQuotientHeightRelations(N, r_list);
@@ -228,16 +243,21 @@ function StarQuotientHasGoodCorrespondenceList(N, r_list)
         Sprintf("No T_r in r_list generates the Hecke algebra for N = %o.", N);
     i := hecke_gen_indices[1];
     if #use_polys[i] gt 1 then
-        return true;
+        return true, Sprintf("There are at least 2 kernel polynomials for T_%o, so a trace-zero linear combination exists.", r_list[i]);
     elif #use_polys[i] eq 1 then
         r := r_list[i];
         f := use_polys[i][1];
         S := CuspidalSubspace(ModularSymbols(N, 2, 1));
         Sstar := AtkinLehnerFixedSubspace(S);
         Tr := RestrictMatrix(HeckeOperator(S, r), Sstar);
+        if Trace(Evaluate(f, Tr)) eq 0 then
+            return true, Sprintf("There is exactly 1 kernel polynomial for T_%o, and it has trace 0 on the Atkin-Lehner +1 eigenspace of S_2(N).", r);
+        else
+            return false, Sprintf("There is exactly 1 kernel polynomial for T_%o, but it does not have trace 0 on the Atkin-Lehner +1 eigenspace of S_2(N).", r);
+        end if;
         return Trace(Evaluate(f, Tr)) eq 0;
     else
-        return false;
+        return false, Sprintf("There are no kernel polynomials for T_%o, so there is no good correspondence.", r_list[i]);
     end if;
 end function;
 

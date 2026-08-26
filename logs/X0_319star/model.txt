@@ -1,4 +1,4 @@
-Magma V2.29-4     Sat Jun 13 2026 01:50:44 on mordell  [Seed = 1562083907]
+Magma V2.29-4     Thu Aug 20 2026 20:54:46 on mordell  [Seed = 285017162]
 Type ? for help.  Type <Ctrl>-D to quit.
 
 Loading file "computations/X0_319star/model.m"
@@ -39,9 +39,9 @@ You can print the entire input by entering:
 
 Version: 2.29-4
 Machine type: avx2-linux
-Initial seed: 1562083907
-Time to this point: 363637
-Memory usage: 212554.34MB
-Segmentation fault
+Initial seed: 285017162
+Time to this point: 359294
+Memory usage: 174565.12MB
+Internal error in integer_to_ulong() at integer/conv.c, line 261
 
-Total time: 363637.049 seconds, Total memory usage: 212554.34MB
+Total time: 359294.400 seconds, Total memory usage: 174565.12MB
