@@ -1,4 +1,4 @@
-Magma V2.29-4     Sat Jun 13 2026 01:50:55 on mordell  [Seed = 2134483050]
+Magma V2.29-4     Thu Aug 20 2026 20:54:48 on mordell  [Seed = 1319328282]
 Type ? for help.  Type <Ctrl>-D to quit.
 
 Loading file "computations/X0_319star/qc_polys.m"
@@ -34,4 +34,4 @@ p = 7
 System error: Out of memory (too many memory blocks allocated).
 Magma cannot perform this statement.
 
-Total time: 124792.830 seconds, Total memory usage: 175877.47MB
+Total time: 121054.850 seconds, Total memory usage: 175877.47MB

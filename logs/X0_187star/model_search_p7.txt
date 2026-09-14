@@ -1,4 +1,4 @@
-Magma V2.29-4     Sat Jun 13 2026 01:49:04 on mordell  [Seed = 1696840668]
+Magma V2.29-4     Thu Aug 20 2026 20:54:46 on mordell  [Seed = 1070738277]
 Type ? for help.  Type <Ctrl>-D to quit.
 
 Loading file "computations/X0_187star/model_search_p7.m"
@@ -18,220 +18,288 @@ Loading "QCMod/hodge.m"
 Loading "QCMod/frobenius.m"
 Loading "QCMod/heights.m"
 Loading "QCMod/second_patch_quartic.m"
-Trying combination 13: L1=-X + Y + Z, L2=-X - Y - Z, L3=-X - 2*Y, L4=-2*X + 2*Y 
-+ Z
-Trying combination 37: L1=-X + Y - 2*Z, L2=2*X + 2*Y + 2*Z, L3=-X + 2*Y - 2*Z, 
-L4=X + 2*Y - Z
-Trying combination 61: L1=-X + 2*Y + 2*Z, L2=-X + Y + 2*Z, L3=X + 2*Y, L4=-2*X -
-2*Y
-Trying combination 73: L1=-2*X - 2*Y - Z, L2=X + 2*Y - Z, L3=-2*X + Z, L4=X + 
-2*Y
-Trying combination 97: L1=-2*X + Z, L2=2*Z, L3=X + Z, L4=-2*X - Z
-Trying combination 109: L1=-X - 2*Z, L2=0, L3=X - 2*Y - 2*Z, L4=X - 2*Y
-Trying combination 157: L1=2*X - 2*Y, L2=-2*Y + 2*Z, L3=-2*X - 2*Z, L4=-2*X - 
-2*Y - 2*Z
-Trying combination 181: L1=-X + Y - 2*Z, L2=-2*X + 2*Y - 2*Z, L3=2*X + Z, L4=2*X
-- Y
-Trying combination 193: L1=X - 2*Y + 2*Z, L2=-2*X - 2*Y + Z, L3=-2*X + 2*Y - 
-2*Z, L4=2*X
-Trying combination 229: L1=X + Y + 2*Z, L2=-2*X - 2*Y + Z, L3=-X + 2*Y - Z, 
-L4=2*X + Y
-Trying combination 241: L1=2*X + Y - 2*Z, L2=-X + 2*Z, L3=-2*Y + Z, L4=-X - 2*Y
-Trying combination 277: L1=X + 2*Y + 2*Z, L2=-X - Y - Z, L3=2*X + Y + Z, L4=X - 
-2*Y
-Trying combination 313: L1=2*X + 2*Y, L2=X + 2*Y - 2*Z, L3=-2*X + 2*Y, L4=-2*X +
-Z
-Trying combination 337: L1=X + 2*Y + Z, L2=X + 2*Y + 2*Z, L3=X + 2*Y - Z, L4=-X 
-- 2*Y - 2*Z
-Trying combination 349: L1=-X - Z, L2=-2*X + Y, L3=X - Y - Z, L4=-2*X + 2*Y - Z
-Trying combination 373: L1=X + Y + Z, L2=Y + Z, L3=2*X - 2*Z, L4=-2*X - 2*Z
-Trying combination 397: L1=Y + Z, L2=X + 2*Y + 2*Z, L3=X - Y + 2*Z, L4=-2*X + 
-2*Y - Z
-Trying combination 409: L1=-2*Y + Z, L2=-X - Y + 2*Z, L3=2*X + Y - Z, L4=Y
-Trying combination 421: L1=-X + 2*Y + Z, L2=-Y - Z, L3=-2*Y + 2*Z, L4=-2*X + Y +
-2*Z
-Trying combination 433: L1=X + Y - 2*Z, L2=X - 2*Y + Z, L3=Y, L4=X - 2*Y
-Trying combination 457: L1=X + 2*Y - Z, L2=X - Y + 2*Z, L3=-X - 2*Y - 2*Z, L4=X 
-+ 2*Y - Z
-Trying combination 541: L1=2*X - Y + Z, L2=-2*X - 2*Y + Z, L3=X + Y + 2*Z, L4=X 
-+ 2*Y + 2*Z
-Trying combination 577: L1=-2*Y, L2=-X + 2*Y - Z, L3=-2*Y + Z, L4=-2*X + Y
-Trying combination 601: L1=X - 2*Y - 2*Z, L2=-Y, L3=2*X - 2*Z, L4=2*X - 2*Y + 
-2*Z
-Trying combination 613: L1=-2*X - 2*Y + Z, L2=-2*X - Z, L3=-2*Z, L4=Y - Z
-Trying combination 661: L1=2*X - 2*Z, L2=-X + Y, L3=2*X + Y - 2*Z, L4=-2*X + Y +
-2*Z
-Trying combination 673: L1=X - Z, L2=-2*Y, L3=-2*X + 2*Y + Z, L4=-2*Y + 2*Z
-Trying combination 709: L1=-X + Y, L2=2*X - Y + 2*Z, L3=X + Y + 2*Z, L4=X
-Trying combination 733: L1=Y - Z, L2=-2*Y - Z, L3=X + Y + Z, L4=-2*X - Y - 2*Z
-SUCCESS! Good primes found.
-L1 = X - Y
-L2 = -X - 2*Y - Z
-L3 = 2*X + Y + 2*Z
-L4 = -X - Y - Z
-Trying combination 757: L1=2*X + Y - Z, L2=X + Y + 2*Z, L3=-X - 2*Y - Z, L4=X - 
-Y - 2*Z
-Trying combination 769: L1=2*X + Y + 2*Z, L2=2*X - 2*Y - Z, L3=Y - 2*Z, L4=-2*X 
-- 2*Y - 2*Z
-SUCCESS! Good primes found.
-L1 = 2*X + Y + 2*Z
-L2 = 2*X - 2*Y - Z
-L3 = Y - 2*Z
-L4 = -2*X - 2*Y - 2*Z
-Trying combination 829: L1=-2*X + 2*Y + Z, L2=X + 2*Z, L3=-2*X + 2*Z, L4=-Y + Z
-Trying combination 853: L1=0, L2=X - Y - 2*Z, L3=2*X + Y, L4=-X - 2*Y
-SUCCESS! Good primes found.
-L1 = -X + 2*Y
-L2 = -X - Y - Z
-L3 = -X - Y - Z
-L4 = -X - Y - 2*Z
-Trying combination 877: L1=2*X - 2*Y, L2=2*X - 2*Z, L3=-2*X + 2*Y, L4=Y + Z
-Trying combination 937: L1=2*X, L2=Z, L3=-2*X - Z, L4=Y - Z
-Trying combination 997: L1=Y - Z, L2=-2*X + Y, L3=-X - Y + Z, L4=-2*X - Z
-Trying combination 1009: L1=X - 2*Y + Z, L2=-X - Y - Z, L3=X - Y + 2*Z, L4=2*X -
-2*Y - 2*Z
-Trying combination 1021: L1=X - Y + Z, L2=X + 2*Z, L3=2*X + 2*Y - Z, L4=X - 2*Y 
-- Z
-Trying combination 1033: L1=X + 2*Y - 2*Z, L2=-Y, L3=X + Y + Z, L4=-Y
-Trying combination 1069: L1=2*X + Z, L2=-2*Z, L3=X + 2*Y, L4=2*X - Z
-Trying combination 1093: L1=-2*X - 2*Y, L2=-X - Y + Z, L3=-X + Y - 2*Z, L4=X + Z
-Trying combination 1117: L1=Y - Z, L2=-X + Y - 2*Z, L3=-X - Y + 2*Z, L4=2*X
-Trying combination 1129: L1=2*X + Y + 2*Z, L2=-X + 2*Y - Z, L3=-2*X - Y - 2*Z, 
-L4=2*X - 2*Y
-Trying combination 1153: L1=2*X + 2*Y + Z, L2=X - 2*Z, L3=-Y, L4=X - 2*Y - 2*Z
-Trying combination 1201: L1=-2*X - 2*Y - 2*Z, L2=2*X - 2*Z, L3=-X - Y, L4=-Z
-Trying combination 1213: L1=-X - 2*Z, L2=Z, L3=2*X + Y + 2*Z, L4=2*X - 2*Z
-Trying combination 1237: L1=2*Z, L2=-2*Y + Z, L3=2*X + 2*Y - 2*Z, L4=-X
-Trying combination 1249: L1=X - Y - Z, L2=-X - Y - Z, L3=-2*X - 2*Y + 2*Z, L4=X 
-+ Y - Z
-Trying combination 1297: L1=-2*X - 2*Y, L2=-2*X + 2*Y - Z, L3=X + Y - Z, L4=-X +
-Y + Z
-Trying combination 1321: L1=X + Y + 2*Z, L2=2*X - 2*Y, L3=X + Y - 2*Z, L4=X + 
-2*Y - 2*Z
-Trying combination 1381: L1=X - Y, L2=-2*X, L3=Y + 2*Z, L4=2*X + Y
-Trying combination 1429: L1=-Y, L2=2*X + Y, L3=2*X - Y - 2*Z, L4=-2*X - 2*Y
-Trying combination 1453: L1=-2*X + Z, L2=2*X - Y, L3=X + Y - Z, L4=2*X + 2*Y - Z
-Trying combination 1489: L1=-2*X + Y, L2=-2*X - Y + Z, L3=2*X + Z, L4=-X - Y - 
-2*Z
-Trying combination 1549: L1=2*X - 2*Y - 2*Z, L2=-2*X - 2*Y, L3=-X + Y + Z, L4=X 
-- 2*Y + Z
-Trying combination 1597: L1=-Y + Z, L2=X + Y + Z, L3=-2*Y, L4=2*X - 2*Y - Z
-Trying combination 1609: L1=-2*X + 2*Y, L2=-2*X - 2*Y - 2*Z, L3=2*X + Y, L4=-X +
+Trying combination 13: L1=-X - 2*Y + 2*Z, L2=X + 2*Y - 2*Z, L3=-X - Y, L4=-2*X -
 2*Y + 2*Z
-Trying combination 1621: L1=2*X - Y + 2*Z, L2=-X - Z, L3=-2*Y + 2*Z, L4=2*X - Y
-Trying combination 1657: L1=Y - 2*Z, L2=2*X - 2*Y - 2*Z, L3=-Y - Z, L4=-2*Z
-Trying combination 1669: L1=Y - Z, L2=2*X - 2*Y - 2*Z, L3=Z, L4=-Y + Z
-Trying combination 1693: L1=-X - Y + Z, L2=2*X - 2*Y + 2*Z, L3=2*X + Y - 2*Z, 
-L4=-X - 2*Y - 2*Z
-Trying combination 1741: L1=2*X - Y + 2*Z, L2=2*Y + Z, L3=-2*X + 2*Y - 2*Z, 
-L4=-2*Z
-Trying combination 1753: L1=2*Y - Z, L2=X - Y - 2*Z, L3=-2*X, L4=2*X - Y - 2*Z
-Trying combination 1777: L1=Y + Z, L2=-2*Y, L3=-Y + Z, L4=-Y - 2*Z
-Trying combination 1789: L1=-X + Z, L2=2*X + 2*Y, L3=2*X + Y + 2*Z, L4=X + 2*Y +
-Z
-Trying combination 1801: L1=2*X - 2*Y + 2*Z, L2=-2*Y - Z, L3=-X - 2*Y, L4=X - Z
-Trying combination 1861: L1=-X - Y + Z, L2=-X + Y - 2*Z, L3=X - 2*Y - Z, L4=2*X 
-+ Y - Z
-Trying combination 1873: L1=X - Y, L2=-2*X + 2*Z, L3=X - Z, L4=2*X - 2*Y + 2*Z
-Trying combination 1933: L1=X + Y - Z, L2=-2*X + 2*Y + 2*Z, L3=2*X + 2*Y + Z, 
-L4=2*X - 2*Y
-Trying combination 1993: L1=X - 2*Y - 2*Z, L2=X + 2*Y, L3=-2*X + Y + Z, L4=-2*Z
-Trying combination 2017: L1=2*X - 2*Y, L2=2*X + Y - 2*Z, L3=2*Y - Z, L4=-X - Y -
-Z
-Trying combination 2029: L1=-2*X + 2*Y - 2*Z, L2=X - Y, L3=-X + 2*Z, L4=2*X + Y 
+Trying combination 37: L1=-2*X + 2*Y + Z, L2=-2*X + 2*Y, L3=X - 2*Y, L4=-X + 2*Y
 + Z
-Trying combination 2053: L1=-X - 2*Z, L2=2*X - Y + 2*Z, L3=-X + Y - Z, L4=-X - 
-2*Y - 2*Z
-Trying combination 2089: L1=-2*X - 2*Y + Z, L2=-X - Y - 2*Z, L3=2*X + 2*Y - 2*Z,
-L4=2*X + 2*Y
-Trying combination 2113: L1=X + Y + Z, L2=X - 2*Y + 2*Z, L3=-X + 2*Y, L4=X - Y +
+Trying combination 61: L1=-2*X + Y - Z, L2=X - 2*Y + 2*Z, L3=-X + Z, L4=-X - Y +
 Z
-Trying combination 2137: L1=2*X - 2*Y + 2*Z, L2=-2*X + 2*Y, L3=-Y - 2*Z, L4=2*Z
-Trying combination 2161: L1=2*X + 2*Y + 2*Z, L2=X - 2*Y - Z, L3=-X - 2*Y - 2*Z, 
-L4=-X + Y - Z
-Trying combination 2221: L1=-2*X - Y, L2=2*X + Y + 2*Z, L3=2*X + Z, L4=-X - Y + 
+Trying combination 73: L1=-2*X + Z, L2=X - Y - Z, L3=-X - Y + 2*Z, L4=2*X - Y - 
 Z
-Trying combination 2269: L1=-X + 2*Z, L2=X - 2*Y, L3=2*X - 2*Y - 2*Z, L4=-X - Y
-Trying combination 2281: L1=-2*X - Y - Z, L2=2*X + 2*Y, L3=-X + Y, L4=-2*X + 2*Y
-- 2*Z
-Trying combination 2293: L1=-X + 2*Z, L2=2*X + 2*Y + 2*Z, L3=X - 2*Y - 2*Z, L4=X
-+ Y - 2*Z
-SUCCESS! Good primes found.
-L1 = -X + 2*Y - 2*Z
-L2 = -2*X + 2*Y + Z
-L3 = 2*X + 2*Y + 2*Z
-L4 = 2*X - 2*Y - Z
-Trying combination 2341: L1=-X - 2*Y + 2*Z, L2=Y - 2*Z, L3=X + Y, L4=X + 2*Y - 
-2*Z
-Trying combination 2377: L1=-2*X - Y + 2*Z, L2=X - 2*Y + 2*Z, L3=-X - 2*Y, L4=X 
-+ Y - 2*Z
-Trying combination 2389: L1=-2*X + 2*Y + Z, L2=Y - Z, L3=2*X + Y + 2*Z, L4=2*X +
-2*Y + Z
-Trying combination 2437: L1=2*Z, L2=-X + Y, L3=X - Y - Z, L4=-2*X + 2*Z
-Trying combination 2473: L1=2*X + 2*Y - Z, L2=X + 2*Y - Z, L3=2*Y - 2*Z, L4=-2*X
-- Z
-Trying combination 2521: L1=-X - Y, L2=-X - Y + Z, L3=2*X - Y - 2*Z, L4=-2*X
-Trying combination 2557: L1=-Y + Z, L2=-X + 2*Y, L3=2*X + Y + 2*Z, L4=X - Y - Z
-Trying combination 2593: L1=-2*X + Y, L2=-X - 2*Y + Z, L3=X + Y, L4=2*X + Y + Z
-SUCCESS! Good primes found.
-L1 = -2*X + Y
-L2 = -X - 2*Y + Z
-L3 = X + Y
-L4 = 2*X + Y + Z
-Trying combination 2617: L1=X + Y - Z, L2=X - 2*Y, L3=2*Y + Z, L4=2*Y - Z
-Trying combination 2677: L1=-Y + Z, L2=-Y, L3=-2*Y, L4=2*Z
-Trying combination 2689: L1=-X - 2*Y + Z, L2=X + 2*Y, L3=X - 2*Y - Z, L4=2*Y
-Trying combination 2713: L1=-2*X - 2*Y - 2*Z, L2=2*Y, L3=-Y - 2*Z, L4=0
-Trying combination 2749: L1=-Y, L2=2*X + 2*Y + 2*Z, L3=X + 2*Y - 2*Z, L4=2*X - 
-2*Y + 2*Z
-Trying combination 2797: L1=2*X + Y, L2=-X + 2*Z, L3=2*X + Y + 2*Z, L4=X + Y + 
-2*Z
-Trying combination 2833: L1=-X + Y + Z, L2=-2*X + 2*Y - Z, L3=X + Y - Z, L4=2*X 
-+ Y - Z
-Trying combination 2857: L1=-2*X + 2*Y - Z, L2=2*X - Z, L3=-X + Y - 2*Z, L4=-2*X
+Trying combination 97: L1=X - Y - Z, L2=0, L3=2*X - 2*Y + 2*Z, L4=2*X + Y
+Trying combination 109: L1=-X - 2*Y - 2*Z, L2=-2*X + 2*Y, L3=-2*X + 2*Y - 2*Z, 
+L4=-2*X + 2*Y - Z
+Trying combination 157: L1=-Y + Z, L2=2*X + Y + 2*Z, L3=2*X - Y - 2*Z, L4=X - Y 
 + 2*Z
-Trying combination 2917: L1=-2*X + 2*Y + 2*Z, L2=-Y, L3=-2*X + Y + Z, L4=-X + Y 
-- 2*Z
-Trying combination 2953: L1=-X, L2=X - 2*Y + 2*Z, L3=2*X - Y + 2*Z, L4=-X + Y
-Trying combination 3001: L1=-2*Z, L2=2*X + 2*Y, L3=Z, L4=-2*X + 2*Y - 2*Z
-Trying combination 3037: L1=X + Y - Z, L2=2*X + Z, L3=2*Y + 2*Z, L4=-2*X + Y + 
-2*Z
-Trying combination 3049: L1=-X - Y - Z, L2=-X - 2*Z, L3=X - 2*Y + Z, L4=-2*X - Y
-+ Z
-Trying combination 3061: L1=2*Y - Z, L2=X - 2*Y + 2*Z, L3=2*Y, L4=-X + Y
-Trying combination 3109: L1=-2*X - Y - 2*Z, L2=X - Y, L3=-2*X - Y + Z, L4=-2*X +
+Trying combination 181: L1=-2*X + Y + 2*Z, L2=X + 2*Y, L3=2*X - 2*Y, L4=X - Y
+Trying combination 193: L1=-X + Y - 2*Z, L2=-X - Y + 2*Z, L3=X + Y + 2*Z, 
+L4=-2*X + 2*Y + Z
+Trying combination 229: L1=X - Y - 2*Z, L2=2*X - Y + Z, L3=2*X + 2*Y - 2*Z, L4=Y
+- Z
+Trying combination 241: L1=-X + Y + Z, L2=-2*X + Y - Z, L3=-2*X - Y - Z, L4=X - 
+Y - 2*Z
+Trying combination 277: L1=-X + Y, L2=X - 2*Y + Z, L3=X + Y, L4=-2*Y + 2*Z
+Trying combination 313: L1=X - Y + 2*Z, L2=-X - 2*Y + Z, L3=-X + 2*Y + Z, L4=-Z
+Trying combination 337: L1=-X - Y - Z, L2=X + 2*Z, L3=-X + 2*Y - Z, L4=-X - 2*Y 
++ 2*Z
+Trying combination 349: L1=-2*X - Y + 2*Z, L2=2*Y, L3=2*X - 2*Y + 2*Z, L4=-2*X +
+Y + Z
+SUCCESS! Good primes found.
+L1 = X - 2*Z
+L2 = -2*X - Y - Z
+L3 = X - 2*Y - 2*Z
+L4 = -2*X - Y + 2*Z
+Trying combination 373: L1=-2*X - 2*Y + 2*Z, L2=2*Y, L3=2*X + 2*Z, L4=-X + 2*Z
+Trying combination 397: L1=X - Y - 2*Z, L2=X + 2*Z, L3=-X + 2*Y - 2*Z, L4=X
+Trying combination 409: L1=2*X - Y - 2*Z, L2=X + Y, L3=-X + Z, L4=2*X + 2*Y
+Trying combination 421: L1=-X + 2*Y + Z, L2=-Y - 2*Z, L3=2*X + Y + Z, L4=-2*X + 
 Z
-Trying combination 3121: L1=Y, L2=2*X - Y, L3=-X - Y, L4=2*X - 2*Y - 2*Z
-Trying combination 3169: L1=-2*X - Y - Z, L2=-Y + Z, L3=X + Y - Z, L4=-2*X + 2*Y
-+ Z
-Trying combination 3181: L1=-X - 2*Y - 2*Z, L2=-2*X, L3=-2*X + 2*Y + Z, L4=2*Y +
+Trying combination 433: L1=-Y - Z, L2=2*X - Y - 2*Z, L3=2*X - 2*Y - Z, L4=-2*Y +
 Z
-Trying combination 3217: L1=2*X + 2*Y - 2*Z, L2=-X, L3=-2*Z, L4=2*X - 2*Y + 2*Z
-Trying combination 3229: L1=-2*X + 2*Y - Z, L2=2*X - Y - Z, L3=2*X - Y + 2*Z, 
-L4=-X - 2*Y + 2*Z
-Trying combination 3253: L1=-2*X + 2*Y, L2=-X + 2*Z, L3=-2*X - Y, L4=2*X - Y + Z
-Trying combination 3301: L1=-X + Y + 2*Z, L2=-2*Z, L3=2*X - Y - 2*Z, L4=-X - 2*Y
-Trying combination 3313: L1=-X + 2*Y - Z, L2=-X + 2*Z, L3=-2*Z, L4=-2*Y - Z
-Trying combination 3361: L1=-2*X + Y, L2=-2*X + 2*Z, L3=2*X - Z, L4=-2*X - 2*Y -
+Trying combination 457: L1=2*X + 2*Y, L2=-2*X + Y + 2*Z, L3=-X + 2*Y + Z, 
+L4=-2*X - Y - 2*Z
+Trying combination 541: L1=2*Y, L2=X + Y - 2*Z, L3=-X + 2*Y, L4=2*X + Y + Z
+Trying combination 577: L1=-2*Y + 2*Z, L2=X - 2*Y - Z, L3=2*X - 2*Y + Z, L4=-2*X
+- 2*Y
+Trying combination 601: L1=-X + 2*Y - 2*Z, L2=-2*X - Y - Z, L3=X - Y - 2*Z, L4=X
++ 2*Y - 2*Z
+Trying combination 613: L1=X + Z, L2=-2*X - Z, L3=X - Y + 2*Z, L4=X + 2*Z
+Trying combination 661: L1=Y + 2*Z, L2=2*X - 2*Y - 2*Z, L3=-X + Y + Z, L4=-X - Z
+Trying combination 673: L1=-Y, L2=2*X - 2*Y + 2*Z, L3=2*X - 2*Y + 2*Z, L4=-2*X -
+Y + Z
+Trying combination 709: L1=-X - 2*Y, L2=X + 2*Y - Z, L3=-2*Z, L4=-2*X + Z
+Trying combination 733: L1=-X - 2*Y - 2*Z, L2=-X, L3=Y + Z, L4=2*Z
+Trying combination 757: L1=-2*X + 2*Y, L2=-X + Y - Z, L3=-Y + 2*Z, L4=-2*X + Y -
 2*Z
-Trying combination 3373: L1=2*X - 2*Y, L2=X - 2*Y - Z, L3=-X - Y + 2*Z, L4=-X
-Trying combination 3433: L1=-X + 2*Y + Z, L2=-X - Y + Z, L3=-X - 2*Y - Z, L4=X -
+Trying combination 769: L1=-2*X - Y - 2*Z, L2=-X - 2*Y - Z, L3=-2*Z, L4=2*Y
+Trying combination 829: L1=2*X + 2*Y + 2*Z, L2=-2*Y, L3=-2*X + Y, L4=-2*X - 2*Y 
++ 2*Z
+Trying combination 853: L1=2*Z, L2=-2*X + 2*Y + 2*Z, L3=Z, L4=-X + 2*Y + Z
+Trying combination 877: L1=Y, L2=Y - Z, L3=-2*X - Y, L4=-2*X + Y + 2*Z
+Trying combination 937: L1=-2*X - Y + Z, L2=X + 2*Y + Z, L3=X - 2*Y + 2*Z, L4=-X
++ 2*Y - Z
+Trying combination 997: L1=-X + 2*Y + Z, L2=-X - 2*Y + Z, L3=X + 2*Y, L4=-X + 
 2*Y
-Trying combination 3457: L1=2*X - Y - 2*Z, L2=X + Y, L3=-2*X - Y + Z, L4=-Y + 
-2*Z
-Trying combination 3469: L1=X + 2*Y + 2*Z, L2=-X + 2*Y - Z, L3=-X + Z, L4=-X - 
-2*Y + 2*Z
-Trying combination 3517: L1=X - Z, L2=2*X - 2*Y - Z, L3=-X + 2*Z, L4=X + 2*Z
-Trying combination 3529: L1=-X - 2*Y + Z, L2=-X + Y, L3=-X - 2*Y - 2*Z, L4=2*X -
+Trying combination 1009: L1=2*X + Y, L2=-2*X - 2*Y, L3=-X - Y - Z, L4=-X + Y - Z
+Trying combination 1021: L1=2*X - Z, L2=2*X - Y - Z, L3=X + 2*Y, L4=2*Y - Z
+Trying combination 1033: L1=-2*X + Z, L2=-Y + Z, L3=-2*X - 2*Y, L4=-X + Y
+Trying combination 1069: L1=-2*Y, L2=2*Y + 2*Z, L3=-X - 2*Y + Z, L4=X - Z
+Trying combination 1093: L1=X + 2*Y - 2*Z, L2=-2*X + Y - 2*Z, L3=2*X + Y + Z, 
+L4=-X + 2*Y - Z
+Trying combination 1117: L1=-X + Y - Z, L2=-X + Y - 2*Z, L3=2*X + 2*Y - 2*Z, 
+L4=-2*X + 2*Y
+Trying combination 1129: L1=-X - 2*Z, L2=-2*X + Z, L3=2*X - 2*Y + 2*Z, L4=-X - 
 2*Y - Z
-Trying combination 3541: L1=-2*X - Y - Z, L2=Y + Z, L3=-X - 2*Z, L4=2*X - 2*Y - 
+Trying combination 1153: L1=-2*X + 2*Y - Z, L2=2*X - 2*Y - 2*Z, L3=-2*Y, L4=-X +
+2*Y + Z
+Trying combination 1201: L1=X - 2*Y + Z, L2=X - 2*Y + 2*Z, L3=X + 2*Y - 2*Z, 
+L4=-2*X - 2*Y + Z
+Trying combination 1213: L1=-X + 2*Z, L2=2*X - 2*Y + 2*Z, L3=-X + Y + 2*Z, 
+L4=2*X - Y - Z
+Trying combination 1237: L1=-2*Y + 2*Z, L2=2*Y - 2*Z, L3=-Y - Z, L4=-X + 2*Y + Z
+Trying combination 1249: L1=-2*X + 2*Y - Z, L2=-2*X + Y + Z, L3=-2*Y - 2*Z, 
+L4=2*X + 2*Y + Z
+Trying combination 1297: L1=2*Y - Z, L2=-2*X - 2*Y, L3=X - 2*Y - Z, L4=2*X
+Trying combination 1321: L1=X + Y, L2=-2*X - Y - 2*Z, L3=-2*X - 2*Y, L4=X - Y + 
+Z
+Trying combination 1381: L1=2*X - Y, L2=Y - Z, L3=-X - 2*Y - 2*Z, L4=2*X - 2*Y +
+Z
+Trying combination 1429: L1=-2*X - Y - Z, L2=-2*X, L3=2*X + Z, L4=-2*X - 2*Y + 
 2*Z
-Trying combination 3613: L1=X - 2*Y - 2*Z, L2=-X - Y - 2*Z, L3=X + 2*Z, L4=2*X +
+Trying combination 1453: L1=-2*X + Y - Z, L2=-2*X + 2*Y, L3=-X + Y - Z, L4=-2*Y 
+- Z
+Trying combination 1489: L1=2*X - 2*Y, L2=-2*X + 2*Y, L3=2*X, L4=-X + Y + 2*Z
+Trying combination 1549: L1=-X + 2*Y + 2*Z, L2=2*Y - 2*Z, L3=2*X + 2*Z, L4=-2*Y 
+- Z
+Trying combination 1597: L1=Y - 2*Z, L2=X - 2*Y + 2*Z, L3=2*X - Y - Z, L4=-Y
+Trying combination 1609: L1=-X - Y + 2*Z, L2=X + Y + 2*Z, L3=2*X - Y, L4=2*Y
+Trying combination 1621: L1=-Y + Z, L2=2*X - Y - Z, L3=X + 2*Y - Z, L4=2*X + Y +
+Z
+Trying combination 1657: L1=X - Y, L2=X + Y - 2*Z, L3=-2*X + Y + Z, L4=-X - Y - 
+2*Z
+Trying combination 1669: L1=X, L2=2*Y + 2*Z, L3=-X - Y - Z, L4=-Y + 2*Z
+Trying combination 1693: L1=-2*X + Y - 2*Z, L2=-Y + Z, L3=X + 2*Y - Z, L4=Y - 
+2*Z
+Trying combination 1741: L1=-Z, L2=2*X + 2*Y + 2*Z, L3=2*X - Y - 2*Z, L4=-2*Y + 
+Z
+Trying combination 1753: L1=X + 2*Y, L2=2*X - 2*Z, L3=X - Y + 2*Z, L4=-X - 2*Y -
+2*Z
+Trying combination 1777: L1=-Z, L2=2*X + 2*Y - 2*Z, L3=-2*X - Y - 2*Z, L4=X + 
+2*Y + Z
+Trying combination 1789: L1=2*X + 2*Y - Z, L2=-2*X + Y + Z, L3=X + 2*Y + 2*Z, 
+L4=-Y - 2*Z
+Trying combination 1801: L1=-2*X - Y, L2=X + Y - Z, L3=-X - Y - Z, L4=X - Y + Z
+Trying combination 1861: L1=-2*X + 2*Z, L2=-X, L3=-X + Z, L4=-2*X + Z
+Trying combination 1873: L1=2*X + Y + 2*Z, L2=-2*X, L3=-X - 2*Y + 2*Z, L4=X - Y 
+- 2*Z
+Trying combination 1933: L1=-Y + Z, L2=X - Y - 2*Z, L3=Y - 2*Z, L4=2*X + 2*Y - 
+2*Z
+Trying combination 1993: L1=2*X + Z, L2=X - Y, L3=-X + Y - Z, L4=2*X + 2*Y - Z
+Trying combination 2017: L1=-2*X - 2*Y + Z, L2=X - 2*Y + 2*Z, L3=-2*Y + Z, L4=-X
++ Y
+Trying combination 2029: L1=X + Y + Z, L2=-2*X - 2*Y + 2*Z, L3=-X - 2*Z, L4=-X -
+Y - Z
+Trying combination 2053: L1=-X - 2*Y, L2=-2*X + Y - 2*Z, L3=-X + 2*Y + Z, L4=-X 
++ 2*Y + 2*Z
+Trying combination 2089: L1=X + 2*Z, L2=2*X - Y - 2*Z, L3=-X + 2*Z, L4=-Y
+Trying combination 2113: L1=2*X - 2*Y, L2=-Y + Z, L3=-2*X + Y + Z, L4=X - Z
+Trying combination 2137: L1=-X + 2*Y - 2*Z, L2=-X - 2*Z, L3=2*X - 2*Y, L4=2*X + 
+2*Y + 2*Z
+Trying combination 2161: L1=Y - 2*Z, L2=-Y + 2*Z, L3=2*X - Y - 2*Z, L4=-2*X - Y 
+- Z
+Trying combination 2221: L1=-2*Y + 2*Z, L2=2*X - 2*Y + Z, L3=X + 2*Z, L4=-2*Y + 
+2*Z
+Trying combination 2269: L1=2*X - Y + Z, L2=-2*X - Y - 2*Z, L3=-2*X + Y + 2*Z, 
+L4=X + 2*Z
+Trying combination 2281: L1=-X - Y - 2*Z, L2=-2*X + 2*Y, L3=X + 2*Z, L4=-2*X - 
+2*Z
+Trying combination 2293: L1=2*X + 2*Y - 2*Z, L2=-2*X - Y + Z, L3=0, L4=Y - Z
+Trying combination 2341: L1=X - 2*Y, L2=2*X + Z, L3=Z, L4=X + Y - 2*Z
+Trying combination 2377: L1=-X + Z, L2=-X - 2*Y + Z, L3=2*Y + 2*Z, L4=-X - Y + 
+2*Z
+Trying combination 2389: L1=2*Y, L2=-X + Y, L3=-2*Y, L4=X + 2*Y + 2*Z
+Trying combination 2437: L1=2*X - Y + Z, L2=2*X + Y, L3=X + 2*Y + Z, L4=-2*X + Y
++ 2*Z
+Trying combination 2473: L1=2*X + 2*Z, L2=2*X - Y + Z, L3=-Z, L4=-X - 2*Z
+Trying combination 2521: L1=2*X + 2*Y + 2*Z, L2=-2*X - Y, L3=2*X + Y - 2*Z, L4=Y
+- Z
+SUCCESS! Good primes found.
+L1 = X - 2*Y + 2*Z
+L2 = -X - 2*Y + Z
+L3 = 2*X - Y - 2*Z
+L4 = X + Y + Z
+Trying combination 2557: L1=Y + Z, L2=-2*X + 2*Y, L3=2*Z, L4=-2*X + Y - 2*Z
+Trying combination 2593: L1=-X - Y + Z, L2=-2*X - Y - 2*Z, L3=X - Y + 2*Z, L4=-X
++ 2*Y
+Trying combination 2617: L1=Y, L2=-2*X + 2*Z, L3=X + 2*Y + 2*Z, L4=2*X - 2*Y
+Trying combination 2677: L1=-X + Y, L2=-Y - Z, L3=-Y - Z, L4=-2*X - 2*Y + 2*Z
+Trying combination 2689: L1=-X + 2*Y - 2*Z, L2=2*X - Y, L3=-Y - 2*Z, L4=2*X - Y 
++ Z
+Trying combination 2713: L1=2*X - Y, L2=-2*X - 2*Y - 2*Z, L3=X - Y + Z, L4=-2*X 
+- Y
+Trying combination 2749: L1=-2*X - Y + 2*Z, L2=-2*X - Y + Z, L3=-2*X + Y + Z, 
+L4=-2*X - 2*Z
+Trying combination 2797: L1=-2*X - 2*Y - 2*Z, L2=X - Y - Z, L3=X - 2*Z, L4=-2*X 
+- 2*Y - 2*Z
+Trying combination 2833: L1=X + 2*Y, L2=-X + Y - 2*Z, L3=-2*X + 2*Y + 2*Z, L4=-X
++ 2*Z
+Trying combination 2857: L1=2*X + 2*Y + 2*Z, L2=X - 2*Z, L3=X - Y + Z, L4=-2*X -
+2*Y + 2*Z
+Trying combination 2917: L1=-X + 2*Y - Z, L2=X + Y + 2*Z, L3=-2*X + Y, L4=X + Y
+Trying combination 2953: L1=-X + 2*Y - Z, L2=2*X + Z, L3=-Y + 2*Z, L4=-2*Y - Z
+SUCCESS! Good primes found.
+L1 = -2*Y + 2*Z
+L2 = -X + 2*Y - Z
+L3 = 2*X - 2*Y + Z
+L4 = 2*X + Y + Z
+Trying combination 3001: L1=X - Y, L2=-2*X - Y + Z, L3=-2*Y + Z, L4=-X + 2*Y
+Trying combination 3037: L1=-X - 2*Y + 2*Z, L2=X - 2*Y, L3=X + Z, L4=-2*X + 2*Y 
+- Z
+Trying combination 3049: L1=-X + 2*Y - Z, L2=2*X - 2*Y + Z, L3=-X + Z, L4=-X - 
+2*Y + Z
+Trying combination 3061: L1=-2*Y - 2*Z, L2=X - Y + Z, L3=2*X + 2*Y + 2*Z, 
+L4=-2*X - Y - 2*Z
+Trying combination 3109: L1=-X - Y + Z, L2=-X + Y - 2*Z, L3=-X - Y - 2*Z, L4=X +
+Y
+Trying combination 3121: L1=-2*X - 2*Y + Z, L2=-X + Y, L3=2*X - Y, L4=2*X - Y + 
+Z
+Trying combination 3169: L1=-2*X + 2*Y - Z, L2=2*X + 2*Y - Z, L3=2*X + Y + 2*Z, 
+L4=-X - Y + Z
+Trying combination 3181: L1=X, L2=-X - Y, L3=-2*X + Y + 2*Z, L4=2*X - 2*Y
+Trying combination 3217: L1=X - Y + 2*Z, L2=-2*X - 2*Y + Z, L3=2*X - Z, L4=2*X +
+2*Y + 2*Z
+Trying combination 3229: L1=-X + Y - 2*Z, L2=2*X + Y - Z, L3=-2*X - 2*Y - Z, 
+L4=Y - 2*Z
+Trying combination 3253: L1=2*Y - Z, L2=-2*X + 2*Y + 2*Z, L3=-X - Y, L4=-Y
+Trying combination 3301: L1=-Y + Z, L2=-X - Y + Z, L3=2*Z, L4=X + 2*Y + 2*Z
+Trying combination 3313: L1=X + Z, L2=-2*X + 2*Y + 2*Z, L3=2*X + 2*Y - 2*Z, 
+L4=2*X + Y + Z
+Trying combination 3361: L1=X + 2*Y - Z, L2=X + Y - Z, L3=Y, L4=2*X - Y
+Trying combination 3373: L1=X - 2*Y - 2*Z, L2=Y + Z, L3=2*X - 2*Y + Z, L4=2*X + 
+Y
+Trying combination 3433: L1=2*X + Y + Z, L2=-X - 2*Y, L3=2*X - Y - Z, L4=-2*X - 
+2*Y - Z
+Trying combination 3457: L1=-X - Y + 2*Z, L2=X - Y, L3=2*X + 2*Y, L4=X - Y
+Trying combination 3469: L1=-X - Y + Z, L2=X - Y, L3=2*X + Z, L4=Y + Z
+Trying combination 3517: L1=-Z, L2=-2*Z, L3=-2*X + Z, L4=X - 2*Y - Z
+Trying combination 3529: L1=-2*X - 2*Y - 2*Z, L2=-2*X - 2*Y + 2*Z, L3=2*X - 2*Y 
+- 2*Z, L4=-2*X - Y + 2*Z
+Trying combination 3541: L1=2*X - Z, L2=-2*X - 2*Y + 2*Z, L3=-2*Y - 2*Z, L4=-2*X
+- 2*Y - Z
+Trying combination 3613: L1=-Y + Z, L2=-2*X + 2*Y + Z, L3=-2*X + 2*Y + 2*Z, 
+L4=-2*X + Y + 2*Z
+Trying combination 3637: L1=-X + 2*Y - Z, L2=X + 2*Y + 2*Z, L3=-2*Y, L4=-2*X + Y
+- 2*Z
+Trying combination 3673: L1=2*Y - Z, L2=2*X - 2*Y + 2*Z, L3=X + 2*Y - 2*Z, 
+L4=-2*X - Y - 2*Z
+Trying combination 3697: L1=2*Y + Z, L2=-2*X - Y + 2*Z, L3=2*X + 2*Y + 2*Z, 
+L4=-2*X - 2*Y
+Trying combination 3709: L1=-X + Y + Z, L2=Y - 2*Z, L3=-X - Y - Z, L4=-2*X - 2*Y
+- Z
+Trying combination 3733: L1=-2*X + 2*Y + Z, L2=2*X + 2*Y + Z, L3=-2*X + 2*Z, 
+L4=X + Y - 2*Z
+Trying combination 3769: L1=-X + Y - 2*Z, L2=-X - Y - 2*Z, L3=2*X + Y - 2*Z, 
+L4=-2*X + 2*Y - 2*Z
+Trying combination 3793: L1=-2*X + Y + Z, L2=-2*X - 2*Y - Z, L3=2*X + Y + Z, 
+L4=2*Y
+Trying combination 3853: L1=X - Y - 2*Z, L2=2*X - 2*Y - Z, L3=2*X - 2*Y, L4=2*Y 
++ 2*Z
+Trying combination 3877: L1=-X - 2*Y - 2*Z, L2=-X - Y + 2*Z, L3=Y - 2*Z, L4=2*Y 
+- 2*Z
+Trying combination 3889: L1=-Y - 2*Z, L2=2*Y + 2*Z, L3=-2*X + 2*Y + 2*Z, L4=Y
+SUCCESS! Good primes found.
+L1 = X - 2*Z
+L2 = 2*X + Y + Z
+L3 = -X
+L4 = -X - Y - 2*Z
+Trying combination 4021: L1=-Y + Z, L2=-2*X + 2*Y - Z, L3=2*X - Y - Z, L4=2*X + 
+Y - Z
+Trying combination 4057: L1=X - Y - 2*Z, L2=2*X + Y - Z, L3=-2*Y + Z, L4=-X - 
+2*Y + 2*Z
+Trying combination 4093: L1=-X + 2*Y - 2*Z, L2=-2*X + 2*Y + Z, L3=-2*X - Z, 
+L4=-2*X - Y
+Trying combination 4129: L1=-X + Z, L2=Z, L3=X + 2*Y - 2*Z, L4=X - 2*Y + 2*Z
+Trying combination 4153: L1=Z, L2=2*Y + 2*Z, L3=-2*X + Y, L4=-2*X - Y
+Trying combination 4177: L1=-2*X - 2*Y + Z, L2=-X - 2*Z, L3=2*X + Y - 2*Z, 
+L4=2*X + Y
+Trying combination 4201: L1=-X - Z, L2=-Y + 2*Z, L3=X - Y + 2*Z, L4=X + Y
+Trying combination 4261: L1=-X + Y - Z, L2=2*X + 2*Z, L3=-Y + Z, L4=2*X - Y + Z
+Trying combination 4273: L1=-X - Y + 2*Z, L2=X + 2*Y + Z, L3=-2*X + Y, L4=X - Y 
++ Z
+Trying combination 4297: L1=2*Y + 2*Z, L2=2*Z, L3=2*Y - 2*Z, L4=X - Y + Z
+SUCCESS! Good primes found.
+L1 = 2*X + Y - Z
+L2 = -2*X - Y - Z
+L3 = -2*X + 2*Y - Z
+L4 = X + 2*Y + Z
+Trying combination 4357: L1=-2*X + Y - Z, L2=X - Y - Z, L3=2*X + Y + 2*Z, 
+L4=-2*X - Z
+Trying combination 4441: L1=-2*Z, L2=2*X + 2*Y - Z, L3=X + Y, L4=-Y - 2*Z
+Trying combination 4513: L1=-2*X + Y + 2*Z, L2=X + Y + 2*Z, L3=2*X - Y - 2*Z, 
+L4=-2*Y - 2*Z
+Trying combination 4549: L1=-2*X + 2*Z, L2=-X + 2*Y - Z, L3=-2*X + 2*Y - Z, 
+L4=-2*X - 2*Y + Z
+Trying combination 4561: L1=X + 2*Z, L2=2*X - Z, L3=-2*X + Y - Z, L4=-2*X - 2*Y 
++ Z
+Trying combination 4597: L1=-X - 2*Y - 2*Z, L2=X - 2*Y, L3=2*X + 2*Y + Z, L4=X +
+2*Y - 2*Z
+Trying combination 4621: L1=X + 2*Y + 2*Z, L2=X - Y - 2*Z, L3=2*X - Z, L4=2*X - 
+2*Z
+Trying combination 4657: L1=X - 2*Y + Z, L2=2*X - Y + Z, L3=-X + 2*Y + Z, L4=2*Z
+Trying combination 4729: L1=X + 2*Y, L2=-Y - 2*Z, L3=-X + Y - Z, L4=2*X + 2*Y - 
+Z
+Trying combination 4789: L1=Z, L2=-2*X - Y - Z, L3=-Y - Z, L4=-X - 2*Y + Z
+Trying combination 4801: L1=-X - 2*Y, L2=X - Y - 2*Z, L3=-2*X - 2*Y - 2*Z, 
+L4=-2*X - 2*Y - Z
+Trying combination 4813: L1=2*X, L2=-X + Y, L3=-X - 2*Z, L4=-X - 2*Y
+Trying combination 4861: L1=-X - Y, L2=2*X + Y + 2*Z, L3=X + 2*Y + 2*Z, L4=2*Y +
+2*Z
+Trying combination 4909: L1=-X + 2*Y + 2*Z, L2=2*X - Z, L3=-2*X - Z, L4=-2*Y - 
 2*Z
 SUCCESS! Good primes found.
-L1 = -2*X + 2*Y
-L2 = 2*X - Y - 2*Z
-L3 = -2*Y
-L4 = -2*X - 2*Y - Z
+L1 = X + 2*Y + Z
+L2 = 2*X + Y + Z
+L3 = 2*X
+L4 = X + Y + 2*Z
 
-Total time: 654.940 seconds, Total memory usage: 96.16MB
+Total time: 871.409 seconds, Total memory usage: 105.84MB
