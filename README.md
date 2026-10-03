@@ -65,6 +65,14 @@ Alternatively one can run the `verify_all.sh` script manually using
 
 Output from each script is captured to `logs/<curve>/<script>.txt`, mirroring the `computations/` layout.
 
+`computations/general/existence_of_relations.m` reads class numbers from LMFDB data files
+(about 1.1 GB uncompressed) that are not part of this repository.  Either run
+`verify_all.sh`, which downloads them to `data/` if they are missing (this needs `curl` and
+`gunzip`), or download the four files ($|d| \equiv 3 \pmod 8$, $7 \pmod 8$, $4 \pmod{16}$,
+$8 \pmod{16}$, with $k = 0$ for all four) from
+<https://www.lmfdb.org/NumberField/QuadraticImaginaryClassGroups> and uncompress them into
+`data/` as `cl3mod8.0`, `cl7mod8.0`, `cl4mod16.0`, `cl8mod16.0`.
+
 Note: QC computations (especially for X_0(319)^*) can take many hours.
 
 ## Running on a remote machine

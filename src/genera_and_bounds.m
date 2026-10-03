@@ -2,11 +2,11 @@
 // counts nu(N,d) and nu_ell(N,d), the genus of X_0(N) and of its star quotient, and
 // the bound B(ell,N,W) on the number of loops of length > 1 in the dual graph at ell.
 // Class numbers h(-d), h(-4d) are tabulated once and cached on disk.
-// N_max is the largest squarefree level with Phi_2(N) <= 0, so the analytic bound
+// N_max is the largest squarefree level with Phi(N) <= 0, so the analytic bound
 // ensures there's a fantastic correspondence for every N > N_max;
 // it is computed in final_inequality.m/txt.
 
-N_max := 1231230;
+N_max := 2589510;
 
 // ===========================================================================
 // Lazy-initialised class number tables, loaded/computed on first use.
@@ -116,12 +116,14 @@ function hprime(d)
     end if;
 end function;
 
-// H(d) (def:H_of_d): h'(-d) for d odd, h(-4d) for d even.
+// H(d) (def:H_of_d): h'(-d) for d odd, h(-4d) for even d > 2, and H(2) = 2.
 function H(d)
     if IsOdd(d) then
         return hprime(d);
+    elif d eq 2 then
+        return 2;   // h(-4) + h(-8), as in nu(N, 2)
     else
-        return CL4(d); //BUG! This should return 2 for d=2 (ClassNumber(-8)=1!)
+        return CL4(d);
     end if;
 end function;
 

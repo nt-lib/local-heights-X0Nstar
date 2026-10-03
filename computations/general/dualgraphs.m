@@ -6,3 +6,6 @@ for N in Ns do
     StarQuotientDualGraph(N, [2]);
     printf "\n";
 end for;
+
+printf "N = 290:\n";
+StarQuotientDualGraph(290, [3]);
