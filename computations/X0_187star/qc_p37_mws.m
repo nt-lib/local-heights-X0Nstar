@@ -1,7 +1,3 @@
-//N.B. This example serves to show that running QCModAffine
-//directly does not work since there are non-trivial
-//height contributions
-
 load "src/StarQuotientMeasures.m";
 load "src/rank.m";
 SetPath("QCMod");
