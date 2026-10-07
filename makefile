@@ -5,7 +5,7 @@ clean:
 	find . -type f -name "*.sig" -delete
 
 test:
-	@echo "No tests configured yet - override this target"
+	magma -n tests/test_all.m
 
 verify:
 	bash verify_all.sh

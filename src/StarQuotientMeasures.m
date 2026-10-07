@@ -166,23 +166,21 @@ function StarQuotientHeightRelations(N, r_list)
     return relations, is_hecke_generator;
 end function;
 
-procedure StarQuotientDualGraph(N, r_list)
+procedure StarQuotientDualGraph(N)
     assert IsSquarefree(N);
 
     g := StarQuotientGenus(N);
 
     for q in PrimeDivisors(N) do
         printf "q = %o:\n", q;
-        hecke, stabiliser_sizes, weights := StarQuotientMeasures(q, N div q, r_list);
+        _, stabiliser_sizes, weights := StarQuotientMeasures(q, N div q, []);
 
-        for i in [1..#r_list] do
-            for j in [1..#stabiliser_sizes] do
-                /*if stabiliser_sizes[j]*weights[j] eq 1 then
-                    printf "Edge #%o of length 1.\n", j;
-                    continue;
-                end if;*/
-                printf "Edge #%o of length %o.\n", j, stabiliser_sizes[j]*weights[j];
-            end for;
+        for j in [1..#stabiliser_sizes] do
+            /*if stabiliser_sizes[j]*weights[j] eq 1 then
+                printf "Edge #%o of length 1.\n", j;
+                continue;
+            end if;*/
+            printf "Edge #%o of length %o.\n", j, stabiliser_sizes[j]*weights[j];
         end for;
     end for;
 end procedure;

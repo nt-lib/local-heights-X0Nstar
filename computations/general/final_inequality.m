@@ -27,6 +27,7 @@ Phi(Pk(10), 10);
 // Magma doesn't seem to have a function supporting this!
 Zk := function(k)
     lo := RR!1; hi := RR!10^13;
+    assert Phi(lo, k) lt 0 and Phi(hi, k) gt 0;
     for i in [1..300] do
         m := (lo + hi)/2;
         if Phi(m, k) gt 0 then hi := m; else lo := m; end if;
@@ -86,51 +87,52 @@ PhiN(2589510);
 
 
 // For the reader who still wants this confirmed in Magma, uncomment the following:
-//
-// // Theta: differentiation with respect to x, with a, b, e, C0 constants;
-// // sqrt(x) and log(x) are adjoined as an algebraic and a logarithmic extension.
-// C<a,b,e,C0> := RationalFunctionField(Rationals(), 4);
-// F<x> := RationalDifferentialField(C);
-// H<Z> := PolynomialRing(F);
-// K<sqrtx> := ext<F | Z^2-x>;
-// E<logx> := LogarithmicFieldExtension(K, K!(1/x));
-// x := E!x;
-// sqrtx := E!sqrtx;
-// assert sqrtx^2 eq x;
-// assert Derivative(x) eq 1;
-// assert Derivative(sqrtx) eq 1/(2*sqrtx);
-// assert Derivative(logx) eq 1/x;
-//
-// theta := a*x - b*sqrtx*(2*logx+C0) - e;
-// assert Derivative(sqrtx*(2*logx+C0)) eq (2*logx+C0+4)/(2*sqrtx);
-// assert Derivative((2*logx+C0+4)/(2*sqrtx)) eq -(2*logx+C0)/(4*x*sqrtx);
-// assert Derivative(theta) eq a - b*(2*logx+C0+4)/(2*sqrtx);
-// assert Derivative(Derivative(theta)) eq b*(2*logx+C0)/(4*x*sqrtx);
-//
-// // gamma: differentiation with respect to p. As P = P_k is constant in p, sqrt(P) and log(P)
-// // are separate constants sqrtP, logP (with P = sqrtP^2); T = 2^k.
-// CP<pb,pi,c0,T,A,sqrtP,logP> := RationalFunctionField(Rationals(), 7);
-// FP<p> := RationalDifferentialField(CP);
-// HP<W> := PolynomialRing(FP);
-// KP<sqrtp> := ext<FP | W^2-p>;
-// EP<logp> := LogarithmicFieldExtension(KP, KP!(1/p));
-// p := EP!p;
-// sqrtp := EP!sqrtp;
-// sqrtP := EP!sqrtP;
-// logP := EP!logP;
-// P := sqrtP^2;
-// assert Derivative(sqrtp) eq 1/(2*sqrtp);
-// assert Derivative(logp) eq 1/p;
-// assert Derivative(sqrtP) eq 0 and Derivative(logP) eq 0;
-//
-// // L_k, M_k and how they change for k -> k+1:
-// // P -> p*P, T -> 2*T, pb -> (1/2 + 1/sqrt(p))*pb, log(P) -> log(P) + log(p)
-// Lk := func< P, T | P/(12*T) >;
-// Mk := func< pb, sqrtP, logP | 3*pb/(4*pi)*sqrtP*(2*logP + c0) >;
-// assert Lk(p*P, 2*T)/Lk(P, T) eq p/2;
-// gamma := func< sqrtp, logp, A | (1/sqrtp + 2/sqrtp^2)*(1 + 2*logp/A) >;
-// assert Mk((1/2 + 1/sqrtp)*pb, sqrtp*sqrtP, logP + logp)/(Mk(pb, sqrtP, logP)*p/2)
-//     eq gamma(sqrtp, logp, 2*logP + c0);
-// assert Derivative(gamma(sqrtp, logp, A))/gamma(sqrtp, logp, A)
-//     eq (1/2)/(p + 2*sqrtp) + 2/(p*(A + 2*logp)) - 1/p;
-// print "All derivative identities confirmed.";
+/*
+// Theta: differentiation with respect to x, with a, b, e, C0 constants;
+// sqrt(x) and log(x) are adjoined as an algebraic and a logarithmic extension.
+C<a,b,e,C0> := RationalFunctionField(Rationals(), 4);
+F<x> := RationalDifferentialField(C);
+H<Z> := PolynomialRing(F);
+K<sqrtx> := ext<F | Z^2-x>;
+E<logx> := LogarithmicFieldExtension(K, K!(1/x));
+x := E!x;
+sqrtx := E!sqrtx;
+assert sqrtx^2 eq x;
+assert Derivative(x) eq 1;
+assert Derivative(sqrtx) eq 1/(2*sqrtx);
+assert Derivative(logx) eq 1/x;
+
+theta := a*x - b*sqrtx*(2*logx+C0) - e;
+assert Derivative(sqrtx*(2*logx+C0)) eq (2*logx+C0+4)/(2*sqrtx);
+assert Derivative((2*logx+C0+4)/(2*sqrtx)) eq -(2*logx+C0)/(4*x*sqrtx);
+assert Derivative(theta) eq a - b*(2*logx+C0+4)/(2*sqrtx);
+assert Derivative(Derivative(theta)) eq b*(2*logx+C0)/(4*x*sqrtx);
+
+// gamma: differentiation with respect to p. As P = P_k is constant in p, sqrt(P) and log(P)
+// are separate constants sqrtP, logP (with P = sqrtP^2); T = 2^k.
+CP<pb,pi,c0,T,A,sqrtP,logP> := RationalFunctionField(Rationals(), 7);
+FP<p> := RationalDifferentialField(CP);
+HP<W> := PolynomialRing(FP);
+KP<sqrtp> := ext<FP | W^2-p>;
+EP<logp> := LogarithmicFieldExtension(KP, KP!(1/p));
+p := EP!p;
+sqrtp := EP!sqrtp;
+sqrtP := EP!sqrtP;
+logP := EP!logP;
+P := sqrtP^2;
+assert Derivative(sqrtp) eq 1/(2*sqrtp);
+assert Derivative(logp) eq 1/p;
+assert Derivative(sqrtP) eq 0 and Derivative(logP) eq 0;
+
+// L_k, M_k and how they change for k -> k+1:
+// P -> p*P, T -> 2*T, pb -> (1/2 + 1/sqrt(p))*pb, log(P) -> log(P) + log(p)
+Lk := func< P, T | P/(12*T) >;
+Mk := func< pb, sqrtP, logP | 3*pb/(4*pi)*sqrtP*(2*logP + c0) >;
+assert Lk(p*P, 2*T)/Lk(P, T) eq p/2;
+gamma := func< sqrtp, logp, A | (1/sqrtp + 2/sqrtp^2)*(1 + 2*logp/A) >;
+assert Mk((1/2 + 1/sqrtp)*pb, sqrtp*sqrtP, logP + logp)/(Mk(pb, sqrtP, logP)*p/2)
+    eq gamma(sqrtp, logp, 2*logP + c0);
+assert Derivative(gamma(sqrtp, logp, A))/gamma(sqrtp, logp, A)
+    eq (1/2)/(p + 2*sqrtp) + 2/(p*(A + 2*logp)) - 1/p;
+print "All derivative identities confirmed.";
+*/

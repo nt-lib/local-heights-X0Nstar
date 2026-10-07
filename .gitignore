@@ -1,3 +1,5 @@
 *.sig
 /scratch
+/data/*
+!/data/classnumbers_upto_*.dat
 .ipynb_checkpoints/

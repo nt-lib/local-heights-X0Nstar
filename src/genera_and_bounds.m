@@ -1,7 +1,7 @@
 // Auxiliary file for existence_of_relations.m: exact formulae for the fixed-point
 // counts nu(N,d) and nu_ell(N,d), the genus of X_0(N) and of its star quotient, and
 // the bound B(ell,N,W) on the number of loops of length > 1 in the dual graph at ell.
-// Class numbers h(-d), h(-4d) are tabulated once and cached on disk.
+// Class numbers h(-d), h(-4d) are read once from data/classnumbers_upto_<N_max>.dat.
 // N_max is the largest squarefree level with Phi(N) <= 0, so the analytic bound
 // ensures there's a fantastic correspondence for every N > N_max;
 // it is computed in final_inequality.m/txt.
@@ -9,18 +9,19 @@
 N_max := 2589510;
 
 // ===========================================================================
-// Lazy-initialised class number tables, loaded/computed on first use.
+// Lazy-initialised class number tables, loaded on first use.
 //
-// nu, nuell, hprime only ever call ClassNumber(-4d) and ClassNumber(-d) with d a
-// squarefree divisor of some squarefree N <= N_max.  Since every squarefree
-// d <= N_max divides itself, the *whole* set of squarefree d <= N_max is needed,
-// so we compute h4[d] = ClassNumber(-4d) (all squarefree d) and
-// h1[d] = ClassNumber(-d) (squarefree d = 3 mod 4, so -d is a fundamental disc)
-// once, into dense arrays stored in a NewStore so the tables survive across calls.
+// nu, nuell, hprime only ever need h(-4d) and h(-d) with d a squarefree divisor of
+// some squarefree N <= N_max.  Since every squarefree d <= N_max divides itself, the
+// *whole* set of squarefree d <= N_max is needed, so we tabulate h4[d] = h(-4d)
+// (all squarefree d) and h1[d] = h(-d) (squarefree d = 3 mod 4, so -d is a fundamental
+// disc), and 0 otherwise, once, into dense arrays stored in a NewStore so the tables
+// survive across calls.
 //
-// The real win for repeated runs is PERSISTENCE: we save the tables to disk and
-// reload them (seconds) on every later run, so the ~20 min is paid only once.
-// Loading this file is now instant; the cost is deferred to the first CL4/CL1 call.
+// The tables are stored in data/classnumbers_upto_<N_max>.dat, which is part of this
+// repository; initialize_class_numbers.sh (optional) rewrites it from the LMFDB tables
+// https://www.lmfdb.org/NumberField/QuadraticImaginaryClassGroups (k = 0).
+// Loading this file is instant; the tables are read at the first CL4/CL1 call.
 _cl_store := NewStore();
 StoreSet(_cl_store, "loaded", false);
 
@@ -28,42 +29,20 @@ procedure _EnsureClassNumbers()
     if StoreGet(_cl_store, "loaded") then return; end if;
 
     clfile := Sprintf("data/classnumbers_upto_%o.dat", N_max);
-    ok := false;
+    ok := true;
     try
         fh := Open(clfile, "r");
-        h4 := ReadObject(fh);
-        h1 := ReadObject(fh);
-        delete fh;
-        ok := (#h4 eq N_max) and (#h1 eq N_max);
     catch e
         ok := false;
     end try;
-    if ok then
-        printf "Loaded precomputed class numbers from %o.\n", clfile;
-    else
-        printf "Precomputing class numbers for squarefree d <= %o (one-off, ~minutes) ...\n", N_max;
-        tprecomp := Cputime();
-        h4 := [Integers()| 0 : i in [1..N_max]];
-        h1 := [Integers()| 0 : i in [1..N_max]];
-        for d in [1..N_max] do
-            if IsSquarefree(d) then
-                h4[d] := ClassNumber(-4*d);
-                if d mod 4 eq 3 then
-                    h1[d] := ClassNumber(-d);
-                end if;
-            end if;
-            if IsDivisibleBy(d, 100000) then
-                printf "  ... %o  (%o s)\n", d, Cputime(tprecomp);
-            end if;
-        end for;
-        printf "Class numbers precomputed in %o s; saving to %o.\n", Cputime(tprecomp), clfile;
-        f := Open(clfile, "w");
-        WriteObject(f, h4);
-        WriteObject(f, h1);
-        delete f;
-    end if;
+    error if not ok, Sprintf("Cannot open %o; run initialize_class_numbers.sh to create it.", clfile);
+    h4 := ReadObject(fh);
+    h1 := ReadObject(fh);
+    delete fh;
+    assert #h4 eq N_max and #h1 eq N_max;
+    printf "Loaded class numbers for d <= %o from %o.\n", N_max, clfile;
 
-    // Sanity: a few known values to catch a corrupted or mismatched cache.
+    // Sanity: a few known values to catch a corrupted or mismatched data file.
     assert h4[1] eq 1;    // h(-4)  = 1
     assert h4[5] eq 2;    // h(-20) = 2
     assert h1[3] eq 1;    // h(-3)  = 1

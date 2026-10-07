@@ -1,8 +1,7 @@
-Magma V2.29-4     Wed Sep 30 2026 12:27:30 on mordell  [Seed = 3474548332]
+Magma V2.29-4     Wed Oct  7 2026 12:47:36 on mordell  [Seed = 1358698195]
 Type ? for help.  Type <Ctrl>-D to quit.
 
-Loading startup file "dualgraphs.m"
-
+Loading file "computations/general/dualgraphs.m"
 Loading "src/StarQuotientMeasures.m"
 N = 161:
 q = 7:
@@ -58,4 +57,5 @@ Edge #1 of length 1.
 Edge #2 of length 1.
 Edge #3 of length 1.
 
-Total time: 9.029 seconds, Total memory usage: 32.09MB
+
+Total time: 5.339 seconds, Total memory usage: 32.09MB
