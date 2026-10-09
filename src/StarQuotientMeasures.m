@@ -169,17 +169,11 @@ end function;
 procedure StarQuotientDualGraph(N)
     assert IsSquarefree(N);
 
-    g := StarQuotientGenus(N);
-
-    for q in PrimeDivisors(N) do
-        printf "q = %o:\n", q;
-        _, stabiliser_sizes, weights := StarQuotientMeasures(q, N div q, []);
+    for ell in PrimeDivisors(N) do
+        printf "Edges of the dual graph in characteristic ell = %o:\n", ell;
+        _, stabiliser_sizes, weights := StarQuotientMeasures(ell, N div ell, []);
 
         for j in [1..#stabiliser_sizes] do
-            /*if stabiliser_sizes[j]*weights[j] eq 1 then
-                printf "Edge #%o of length 1.\n", j;
-                continue;
-            end if;*/
             printf "Edge #%o of length %o.\n", j, stabiliser_sizes[j]*weights[j];
         end for;
     end for;

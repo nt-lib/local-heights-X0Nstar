@@ -18,13 +18,15 @@ end procedure;
 
 procedure test_CL_against_ClassNumber()
     // 1000 random entries and the last one, against Magma's ClassNumber.
+    // The d are not seeded, so a failing d is printed to make the failure reproducible.
     for d in [Random(1, N_max) : i in [1..1000]] cat [N_max] do
-        if IsSquarefree(d) then
-            TSTAssertEQ(CL4(d), ClassNumber(-4*d));
-            if d mod 4 eq 3 then
-                TSTAssertEQ(CL1(d), ClassNumber(-d));
-            end if;
+        if not IsSquarefree(d) then continue; end if;
+        computed := [CL4(d)] cat ((d mod 4 eq 3) select [CL1(d)] else []);
+        expected := [ClassNumber(-4*d)] cat ((d mod 4 eq 3) select [ClassNumber(-d)] else []);
+        if computed ne expected then
+            printf "Class number mismatch at d = %o: table %o, ClassNumber %o.\n", d, computed, expected;
         end if;
+        TSTAssertEQ(computed, expected);
     end for;
 end procedure;
 

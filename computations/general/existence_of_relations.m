@@ -1,8 +1,6 @@
 load "src/StarQuotientMeasures.m";
 load "src/genera_and_bounds.m";
 
-SetMemoryLimit(64 * 1024^3);
-
 // A good correspondence exists if g > B+1, since at most B conditions are imposed on the
 // (g-1)-dimensional space of non-scalar polynomials; for g <= B+1 we check directly.
 for N in [1..N_max] do

@@ -3,13 +3,15 @@
 // Theorem: N_0 = 2 589 510=2*3*5*7*11*19*59. Then N_0 is
 // the largest squarefree level with Phi(N) <= 0. In particular
 // g_0^*(N)>B(N)+1 for every squarefree N>N_0.
+// N_0 must equal N_max in src/genera_and_bounds.m, up to which existence_of_relations.m
+// checks the remaining levels directly; this is asserted below.
 
+load "src/genera_and_bounds.m";   // for N_max
 
 // Lemma.
 RR := RealField(30);
 C0 := 10 - 4*Log(RR!3);
-C0 gt 4;
-// -> true
+assert C0 gt 4;
 pb := func< k | &*[RR| 1/2 + 1/Sqrt(RR!NthPrime(i)) : i in [1..k]] >;
 Pk := func< k | &*[Integers()| NthPrime(i) : i in [1..k]] >;
 Ak := func< k | 2*Log(RR!Pk(k)) + C0 >;
@@ -18,10 +20,12 @@ Phi := func< x, k | (RR!x)/(12*2^k) - 3*pb(k)/(4*Pi(RR))*Sqrt(RR!x)*(2*Log(RR!x)
 gamma := func< p, A | (1/Sqrt(RR!p) + 2/(RR!p))*(1 + 2*Log(RR!p)/A) >;
 gamma(NthPrime(10), Ak(9));
 // -> 0.293593178000983694262562428554
+assert gamma(NthPrime(10), Ak(9)) lt 1;
 
 // base case
 Phi(Pk(10), 10);
 // -> 353541.447464298701224548679871
+assert Phi(Pk(10), 10) gt 0;
 
 // Z_k, the unique zero of Phi_k, by bisection/binary search
 // Magma doesn't seem to have a function supporting this!
@@ -37,14 +41,15 @@ end function;
 
 // Z_1 < ... < Z_9 < 2.87*10^8
 Zs := [Zk(k) : k in [1..9]];
-&and[Zs[k] lt Zs[k+1] : k in [1..8]], Zs[9] lt 287*10^6;
-// -> true true
+assert &and[Zs[k] lt Zs[k+1] : k in [1..8]] and Zs[9] lt 287*10^6;
 
 
 // Theorem.
 // we now move to computing the largest squarefree level N with Phi(N) negative
-// Phi(N) for squarefree N, from its factorisation Fac = Factorisation(N)
+// Phi(N) for squarefree N, from its factorisation Fac = Factorisation(N).
+// The paper only defines Phi(N) for N > 6.
 PhiF := function(N, Fac)
+    error if N le 6, Sprintf("Phi(N) is only defined for N > 6, not for N = %o.", N);
     psi := &*[Integers()| t[1]+1 : t in Fac];
     pi_k := &*[RR| 1/2 + 1/Sqrt(RR!t[1]) : t in Fac];
     return psi/(12*2^#Fac) - 3*pi_k/(4*Pi(RR))*Sqrt(RR!N)*(2*Log(RR!N) + C0) - 5*#Fac - (RR!13)/12;
@@ -71,9 +76,11 @@ for N in [7..Bound] do
 end for;
 largest, cnt;
 // -> 2589510 23189
+assert largest eq N_max;
 
-PhiN(2589510);
+PhiN(N_max);
 // -> -15.0507895145218108862184033655
+assert PhiN(N_max) le 0;
 
 
 // Facts used in the proof of the lemma, easily checked by hand:

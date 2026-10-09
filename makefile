@@ -4,8 +4,12 @@ REMOTE_DIR := /tmp/$(shell basename $(CURDIR))
 clean:
 	find . -type f -name "*.sig" -delete
 
+# Magma exits 0 even after a failed assert, so check the output as well. Any occurrence of
+# "error" (case insensitive) counts as a failure: better a false alarm than a missed error.
 test:
-	magma -n tests/test_all.m
+	@out=$$(magma -n tests/test_all.m < /dev/null 2>&1); echo "$$out"; \
+	if echo "$$out" | grep -qi "error"; then echo "TESTS FAILED"; exit 1; fi; \
+	echo "$$out" | grep -q "All tests finished!"
 
 verify:
 	bash verify_all.sh
