@@ -36,10 +36,15 @@ procedure _EnsureClassNumbers()
         ok := false;
     end try;
     error if not ok, Sprintf("Cannot open %o; run initialize_class_numbers.sh to create it.", clfile);
-    h4 := ReadObject(fh);
-    h1 := ReadObject(fh);
+    try
+        h4 := ReadObject(fh);
+        h1 := ReadObject(fh);
+    catch e
+        ok := false;
+    end try;
     delete fh;
-    assert #h4 eq N_max and #h1 eq N_max;
+    ok := ok and Type(h4) eq SeqEnum and Type(h1) eq SeqEnum and #h4 eq N_max and #h1 eq N_max;
+    error if not ok, Sprintf("%o was found but is not compatible with this version of Magma (or is corrupted); run initialize_class_numbers.sh to regenerate it.", clfile);
     printf "Loaded class numbers for d <= %o from %o.\n", N_max, clfile;
 
     // Sanity: a few known values to catch a corrupted or mismatched data file.

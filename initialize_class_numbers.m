@@ -11,7 +11,7 @@ load "src/genera_and_bounds.m";   // for N_max
 function LMFDBClassNumbers(r, m, Dmax)
     file := Sprintf("data/cl%omod%o.0", r, m);
     n := (Dmax - r) div m;
-    H := [Integers()| 0 : i in [0..n]];
+    H_list := [Integers()| 0 : i in [0..n]];
     try
         fh := Open(file, "r");
     catch e
@@ -24,10 +24,10 @@ function LMFDBClassNumbers(r, m, Dmax)
         entry := Split(line, "\t ");
         i +:= StringToInteger(entry[1]);
         if i gt n then break; end if;
-        H[i+1] := StringToInteger(entry[2]);
+        H_list[i+1] := StringToInteger(entry[2]);
     end while;
     delete fh;
-    return H;
+    return H_list;
 end function;
 
 h4 := [Integers()| 0 : d in [1..N_max]];
@@ -38,11 +38,11 @@ h1 := [Integers()| 0 : d in [1..N_max]];
 // h(-4d) = 3*h(-d) for d = 3 mod 8 (except h(-12) = 1, as u = 3 for d = 3) and
 // h(-4d) = h(-d) for d = 7 mod 8. Reference: Cox, Theorem 7.24.
 for r in [3, 7] do
-    H := LMFDBClassNumbers(r, 8, N_max);
-    for i in [1..#H] do
+    H_list := LMFDBClassNumbers(r, 8, N_max);
+    for i in [1..#H_list] do
         d := r + 8*(i-1);
-        h1[d] := H[i];
-        h4[d] := (r eq 3) select 3*H[i] else H[i];
+        h1[d] := H_list[i];
+        h4[d] := (r eq 3) select 3*H_list[i] else H_list[i];
     end for;
 end for;
 h4[3] := 1;
@@ -50,9 +50,9 @@ h4[3] := 1;
 // d = 1 mod 4 and d = 2 mod 4: -4d is a fundamental discriminant, and 4d = 4 mod 16
 // resp. 4d = 8 mod 16.
 for r in [4, 8] do
-    H := LMFDBClassNumbers(r, 16, 4*N_max);
-    for i in [1..#H] do
-        h4[(r div 4) + 4*(i-1)] := H[i];
+    H_list := LMFDBClassNumbers(r, 16, 4*N_max);
+    for i in [1..#H_list] do
+        h4[(r div 4) + 4*(i-1)] := H_list[i];
     end for;
 end for;
 
