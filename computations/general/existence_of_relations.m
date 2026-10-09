@@ -1,12 +1,10 @@
 load "src/StarQuotientMeasures.m";
 load "src/genera_and_bounds.m";
 
-// Main loop: verify  g_0^*(N) > B + 1,  B := sum_{p|N} B(p,N,W_N),  for all squarefree N <= N_max.
-// The existence guarantee is g > B+1 (not g > B): the trace-zero normalization frees the c_0
-// (identity) direction, so the thick-loop conditions live on the (g-1)-dimensional space of
-// non-scalar polynomials, and at most B conditions there leave a non-scalar solution as soon as
-// (g-1) - B > 0, i.e. g > B+1.  The borderline g = B+1 is inconclusive by the dimension count,
-// so the exhaustive Brandt-module check below must also cover it: we run it whenever g <= B+1.
+SetMemoryLimit(64 * 1024^3);
+
+// A good correspondence exists if g > B+1, since at most B conditions are imposed on the
+// (g-1)-dimensional space of non-scalar polynomials; for g <= B+1 we check directly.
 for N in [1..N_max] do
     if IsDivisibleBy(N, 10000) then
         print N;

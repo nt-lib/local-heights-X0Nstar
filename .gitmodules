@@ -4,3 +4,6 @@
 [submodule "ModularCurvesX0plusG4-6"]
 	path = ModularCurvesX0plusG4-6
 	url = https://github.com/AWS2020QC/ModularCurvesX0plusG4-6
+[submodule "tests/magma-unittest"]
+	path = tests/magma-unittest
+	url = https://github.com/nt-lib/magma-unittest.git
