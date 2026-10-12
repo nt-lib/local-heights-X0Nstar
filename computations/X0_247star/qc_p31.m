@@ -17,8 +17,10 @@ L3 := -Y - 2*Z;
 L4 := 2*W + Z;
 S, Q, model_map, model_pts, good_primes, inf_pts, bad_pts :=
     find_and_test_model(L1, L2, L3, L4, X247star, x, y, pts);
-good_primes;
-Q;
+printf "Plane model Q(x, y) = 0 with\nQ = %o\n", Q;
+printf "Good primes for the plane model: %o\n", good_primes;
+printf "Known rational points on X_0(247)^* (PointSearch, height bound 30):\n%o\n", pts;
+printf "Their images on the plane model:\n%o\n", model_pts;
 
 p := 31;
 assert p in good_primes;
@@ -30,13 +32,12 @@ SetMemoryLimit(20 * 1024^3);
 good_pts, boo, bad_pts, data, fake_pts, bad_disks := QCModAffine(Q, p : printlevel:=2,
     use_polys := use_polys, N:=20, number_of_correspondences := #use_polys - 1);
 
-good_pts;
-boo;
-print "bad pts, fake pts, and bad disks:";
-bad_pts;
-fake_pts;
-bad_disks;
+printf "Affine rational points on the plane model in good residue disks, found by quadratic Chabauty at p = %o:\n%o\n", p, good_pts;
 assert boo;
 assert #bad_pts eq 0;
 assert #fake_pts eq 0;
 assert #bad_disks eq 0;
+// The points found by quadratic Chabauty are exactly the images of the known rational points.
+assert forall{P : P in model_pts | P[3] eq 1};
+assert Set(good_pts) eq {[P[1], P[2]] : P in model_pts};
+printf "There are no bad points, fake points or bad disks, and the points found are exactly the images of the %o known rational points.\n", #pts;
