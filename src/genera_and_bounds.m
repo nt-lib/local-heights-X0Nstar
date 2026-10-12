@@ -4,16 +4,16 @@ counts nu(N,d) and nu_ell(N,d), the genus of X_0(N) and of its star quotient, an
 the bound B(ell,N,W) on the number of loops of length > 1 in the dual graph at ell.
 Class numbers h(-d), h(-4d) are read once from data/classnumbers_upto_<N_max>.dat.
 N_max is the largest squarefree level with Phi(N) <= 0, so the analytic bound
-ensures there's a fantastic correspondence for every N > N_max;
+ensures there's a clean correspondence for every N > N_max;
 it is computed in final_inequality.m/txt.
 */
 
 intrinsic NTLNMax() -> RngIntElt
 {Return N_max, the largest squarefree level with Phi(N) <= 0.
 
-For every N > N_max the analytic bound ensures there is a fantastic correspondence. It is
-computed in computations/general/final_inequality.m. The class number tables cover all d
-<= N_max.
+For every N > N_max the analytic bound ensures there is a clean correspondence. It is
+computed in computations/general/final_inequality.m. The class number tables cover all
+d <= N_max.
 
 OUTPUT: a positive integer
 }

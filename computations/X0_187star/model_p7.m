@@ -21,7 +21,7 @@ assert p in good_primes;
 SetMemoryLimit(16 * 1024^3);
 
 AttachSpec("local_heights.spec");
-corrs := NTLStarQuotientGoodCorrespondences(187, [p]);
+corrs := NTLStarQuotientCleanCorrespondences(187, [p]);
 
 polys := corrs[1];
 good_pts, boo, bad_pts, data, fake_pts, bad_disks := QCModAffine(Q, p : use_polys := polys, number_of_correspondences := #polys-1, printlevel:=2 );

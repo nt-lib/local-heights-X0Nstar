@@ -238,7 +238,7 @@ function run_QC(p, N1, N2)
 
     printf "\nStarting quadratic Chabauty for p = %o.\n", p;
     R<x> := PolynomialRing(Rationals());
-    corrs := NTLStarQuotientGoodCorrespondences(187, [p]);
+    corrs := NTLStarQuotientCleanCorrespondences(187, [p]);
     polys := corrs[1];
     time good_affine_rat_pts_xy, no_fake_pts, bad_affine_rat_pts_xy, data, fake_rat_pts, bad_Qppoints := QCModAffine(Q, p : use_polys := polys,
         number_of_correspondences := #polys-1, printlevel:=1, N := N1, prec := 40, base_point := base_pt);

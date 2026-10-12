@@ -29,18 +29,18 @@ procedure test_relations_only_for_visible_loops()
 end procedure;
 
 procedure test_has_good_correspondence()
-    // Levels from sec:examples, and N = 85, where there is no good correspondence.
-    TSTAssertEQ([NTLStarQuotientHasGoodCorrespondence(N) : N in [187, 247, 319, 85]],
+    // Levels from sec:examples, and N = 85, where there is no clean correspondence.
+    TSTAssertEQ([NTLStarQuotientHasCleanCorrespondence(N) : N in [187, 247, 319, 85]],
                 [true, true, true, false]);
     // Exactly 1 kernel polynomial, so the verdict depends on the trace relation:
     // trace 0 for N = 170, non-zero trace for N = 106.
-    TSTAssertEQ([NTLStarQuotientHasGoodCorrespondence(N) : N in [170, 106]], [true, false]);
+    TSTAssertEQ([NTLStarQuotientHasCleanCorrespondence(N) : N in [170, 106]], [true, false]);
 end procedure;
 
 procedure test_has_good_correspondence_does_not_hide_errors()
     // Errors other than "no Hecke generator" must propagate (here: N is not squarefree),
     // instead of being swallowed while searching for a Hecke generator.
-    TSTAssertRaises(NTLStarQuotientHasGoodCorrespondence, "Assertion failed", 12);
+    TSTAssertRaises(NTLStarQuotientHasCleanCorrespondence, "Assertion failed", 12);
 end procedure;
 
 test_dual_graph_lengths_are_integers();

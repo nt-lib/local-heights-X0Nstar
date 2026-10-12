@@ -1,7 +1,7 @@
 AttachSpec("local_heights.spec");
 N_max := NTLNMax();
 
-// A good correspondence exists if g > B+1, since at most B conditions are imposed on the
+// A clean correspondence exists if g > B+1, since at most B conditions are imposed on the
 // (g-1)-dimensional space of non-scalar polynomials; for g <= B+1 we check directly.
 for N in [1..N_max] do
     if IsDivisibleBy(N, 10000) then
@@ -20,11 +20,11 @@ for N in [1..N_max] do
             // Brandt-module genus before running the explicit correspondence search.
             assert NTLStarQuotientGenus(N) eq g;
             printf "N = %o: has g = %o <= %o = B+1", N, g, B+1;
-            hasGoodCorrespondence, message := NTLStarQuotientHasGoodCorrespondence(N);
-            if hasGoodCorrespondence then
-                printf ": there is a good correspondence: %o\n", message;
+            hasCleanCorrespondence, message := NTLStarQuotientHasCleanCorrespondence(N);
+            if hasCleanCorrespondence then
+                printf ": there is a clean correspondence: %o\n", message;
             else
-                printf ": there is no good correspondence: %o\n", message;
+                printf ": there is no clean correspondence: %o\n", message;
             end if;
         end if;
     end if;

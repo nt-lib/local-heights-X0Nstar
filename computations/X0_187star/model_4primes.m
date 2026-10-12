@@ -21,7 +21,7 @@ print "good primes for this model are ", good_primes;
 p1 := good_primes[1];
 
 AttachSpec("local_heights.spec");
-corrs := NTLStarQuotientGoodCorrespondences(N, [p1]);
+corrs := NTLStarQuotientCleanCorrespondences(N, [p1]);
 
 polys := corrs[1];
 

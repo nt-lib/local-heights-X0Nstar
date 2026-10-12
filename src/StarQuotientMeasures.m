@@ -388,14 +388,14 @@ INPUT:
     end for;
 end intrinsic;
 
-intrinsic NTLStarQuotientGoodCorrespondences(N::RngIntElt, r_list::SeqEnum) -> SeqEnum, SeqEnum, SeqEnum
+intrinsic NTLStarQuotientCleanCorrespondences(N::RngIntElt, r_list::SeqEnum) -> SeqEnum, SeqEnum, SeqEnum
 {Return, for each r in r_list, a basis of the polynomials f in Z[x] such that the
 correspondence T_f = f(T_r) has trivial height contribution at all primes q | N.
 
-The T_f are not normalised to have trace 0. So a good correspondence is only guaranteed to
-exist if there are at least two polynomials for some r such that T_r generates the Hecke
-algebra. If there is exactly one, there might still be a good correspondence, but one has
-to check directly that it has trace 0 on S_2(Gamma_0(N))^W_N.
+The T_f are not normalised to have trace 0. So a clean correspondence is only guaranteed
+to exist if there are at least two polynomials for some r such that T_r generates the
+Hecke algebra. If there is exactly one, there might still be a clean correspondence, but
+one has to check directly that it has trace 0 on S_2(Gamma_0(N))^W_N.
 
 The output can be passed to QCModAffine, since it takes suitable linear combinations to
 ensure trace 0 automatically. At the time of writing QCModAffine raises an error if all
@@ -426,8 +426,8 @@ OUTPUT: a triple use_polys, is_hecke_generator, trace_relations where
     return use_polys, is_hecke_generator, trace_relations;
 end intrinsic;
 
-intrinsic NTLStarQuotientHasGoodCorrespondenceList(N::RngIntElt, r_list::SeqEnum) -> BoolElt, MonStgElt
-{Return whether X_0(N)^* has at least one good Hecke correspondence, using the first T_r
+intrinsic NTLStarQuotientHasCleanCorrespondenceList(N::RngIntElt, r_list::SeqEnum) -> BoolElt, MonStgElt
+{Return whether X_0(N)^* has at least one clean Hecke correspondence, using the first T_r
 with r in r_list that generates the Hecke algebra.
 
 When there are at least two kernel polynomials, a trace-zero linear combination always
@@ -445,7 +445,7 @@ answer
 
 An error is raised if no T_r with r in r_list generates the Hecke algebra.
 }
-    use_polys, is_hecke_generator, trace_relations := NTLStarQuotientGoodCorrespondences(N, r_list);
+    use_polys, is_hecke_generator, trace_relations := NTLStarQuotientCleanCorrespondences(N, r_list);
     hecke_gen_indices := [i : i in [1..#r_list] | is_hecke_generator[i]];
     error if #hecke_gen_indices eq 0,
         Sprintf("No T_r in r_list generates the Hecke algebra for N = %o.", N);
@@ -461,24 +461,24 @@ An error is raised if no T_r with r in r_list generates the Hecke algebra.
             return false, Sprintf("There is exactly 1 kernel polynomial for T_%o, but it does not have trace 0 on the Atkin-Lehner +1 eigenspace of S_2(N).", r);
         end if;
     else
-        return false, Sprintf("There are no kernel polynomials for T_%o, so there is no good correspondence.", r_list[i]);
+        return false, Sprintf("There are no kernel polynomials for T_%o, so there is no clean correspondence.", r_list[i]);
     end if;
 end intrinsic;
 
-intrinsic NTLStarQuotientHasGoodCorrespondence(N::RngIntElt) -> BoolElt, MonStgElt
-{Return whether X_0(N)^* has at least one good Hecke correspondence.
+intrinsic NTLStarQuotientHasCleanCorrespondence(N::RngIntElt) -> BoolElt, MonStgElt
+{Return whether X_0(N)^* has at least one clean Hecke correspondence.
 
 INPUT:
 
 - N -- squarefree positive integer
 
-OUTPUT: a pair b, message as returned by NTLStarQuotientHasGoodCorrespondenceList
+OUTPUT: a pair b, message as returned by NTLStarQuotientHasCleanCorrespondenceList
 
 ALGORITHM:
 
 Find the smallest prime r coprime to N such that T_r generates the Hecke algebra (this
 only needs modular symbols, which is cheap compared to the Brandt modules), and decide
-using NTLStarQuotientHasGoodCorrespondenceList for that r.
+using NTLStarQuotientHasCleanCorrespondenceList for that r.
 
 An error is raised if no such r < 10000 exists.
 
@@ -486,7 +486,7 @@ TODO:
 
 If g >= B + 2, where B is NTLNrOfStarQuotientComponentConditions, then the
 (g-1)-dimensional space of non-scalar polynomials has dimension strictly greater than B,
-so a good correspondence exists by a dimension argument. This precheck is skipped for now
+so a clean correspondence exists by a dimension argument. This precheck is skipped for now
 since NTLStarQuotientGenus is rather slow.
 }
     // if NTLStarQuotientGenus(N) ge NTLNrOfStarQuotientComponentConditions(N) + 2 then
@@ -495,7 +495,7 @@ since NTLStarQuotientGenus is rather slow.
     S, Sstar := NTLStarQuotientCuspForms(N);
     for r in [p : p in PrimesUpTo(10000) | not IsDivisibleBy(N, p)] do
         if NTLIsHeckeGenerator(NTLHeckeMatrixOnFixedSubspace(S, Sstar, r)) then
-            return NTLStarQuotientHasGoodCorrespondenceList(N, [r]);
+            return NTLStarQuotientHasCleanCorrespondenceList(N, [r]);
         end if;
     end for;
     error Sprintf("No Hecke generator found for N = %o among primes up to 10000.", N);
@@ -522,6 +522,6 @@ values_of_local_heights(7*23, 29);
 
 */
 /*
-assert NTLStarQuotientHasGoodCorrespondence(246);
-assert not NTLStarQuotientHasGoodCorrespondence(249);
+assert NTLStarQuotientHasCleanCorrespondence(246);
+assert not NTLStarQuotientHasCleanCorrespondence(249);
 */

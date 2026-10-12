@@ -16,7 +16,7 @@ Q;
 p := good_primes[1];
 
 AttachSpec("local_heights.spec");
-corrs := NTLStarQuotientGoodCorrespondences(247, [p]);
+corrs := NTLStarQuotientCleanCorrespondences(247, [p]);
 
 polys := corrs[1];
 
