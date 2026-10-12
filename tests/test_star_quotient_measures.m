@@ -20,16 +20,21 @@ end procedure;
 procedure test_relations_only_for_visible_loops()
     // X_0(187)^* has a single visible loop: the loop of length 2 at ell = 17. At ell = 11 all
     // loops have length 1, which only contributes a zero row.
-    relations, is_hecke_generator, hecke_on_S := StarQuotientHeightRelations(187, [2]);
+    relations, is_hecke_generator, trace_relations := StarQuotientHeightRelations(187, [2]);
     TSTAssertEQ(#[row : row in relations[1] | row ne [0, 0, 0]], 1);
     TSTAssertEQ(is_hecke_generator, [true]);
-    TSTAssertEQ(Nrows(hecke_on_S[1]), 3);
+    // Tr(T_2^0) = g = 3
+    TSTAssertEQ(#trace_relations[1], 3);
+    TSTAssertEQ(trace_relations[1][1], 3);
 end procedure;
 
 procedure test_has_good_correspondence()
     // Levels from sec:examples, and N = 85, where there is no good correspondence.
     TSTAssertEQ([StarQuotientHasGoodCorrespondence(N) : N in [187, 247, 319, 85]],
                 [true, true, true, false]);
+    // Exactly 1 kernel polynomial, so the verdict depends on the trace relation:
+    // trace 0 for N = 170, non-zero trace for N = 106.
+    TSTAssertEQ([StarQuotientHasGoodCorrespondence(N) : N in [170, 106]], [true, false]);
 end procedure;
 
 procedure test_has_good_correspondence_does_not_hide_errors()

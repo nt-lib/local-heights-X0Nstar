@@ -178,8 +178,9 @@ function StarQuotientHeightRelations(N, r_list)
     // of lists of length g, one for each r in r_list. The i-th list contains the relations for T_{r_i}.
     // If the list contains only zero rows, then there are no relations for T_{r_i} (i.e. any polynomial
     // in T_{r_i} has trivial height contribution at all q | N). The function also returns a list of
-    // booleans indicating whether T_{r_i} generates the Hecke algebra (true) or not (false), and the
-    // matrices of the T_{r_i} on S_2(Gamma_0(N))^{W_N}.
+    // booleans indicating whether T_{r_i} generates the Hecke algebra (true) or not (false), and for
+    // each r the trace relation [Tr(T_r^0), ..., Tr(T_r^(g-1))], traces taken on S_2(Gamma_0(N))^{W_N}:
+    // T_a has trace 0 iff sum_k a_k Tr(T_r^k) = 0 (Step 1 of alg:clean_correspondences).
     //
     // These relations are just that T_{a,i,i} = 0 for all i corresponding to visible loops in the dual
     // graph of X_0(N)^* in characteristic q, for all q | N (Step 3 of alg:clean_correspondences).
@@ -195,6 +196,7 @@ function StarQuotientHeightRelations(N, r_list)
     hecke_on_S := StarQuotientHeckeMatrices(N, r_list);
     is_hecke_generator := [IsHeckeGenerator(T) : T in hecke_on_S];
     assert forall{T : T in hecke_on_S | Nrows(T) eq g};
+    trace_relations := [[Trace(T^k) : k in [0..g-1]] : T in hecke_on_S];
 
     for q in PrimeDivisors(N) do
         hecke, stabiliser_sizes, weights := StarQuotientMeasures(q, N div q, r_list);
@@ -215,7 +217,7 @@ function StarQuotientHeightRelations(N, r_list)
             end if;
         end for;
     end for;
-    return relations, is_hecke_generator, hecke_on_S;
+    return relations, is_hecke_generator, trace_relations;
 end function;
 
 procedure StarQuotientDualGraph(N)
@@ -235,7 +237,7 @@ function StarQuotientGoodCorrespondences(N, r_list)
     // Returns for each r in r_list a list of polynomials f(x) in Z[x] such that the correspondence
     // T_f := f(T_r) has trivial height contribution at all primes q | N. The function also returns 
     // a list of booleans indicating whether T_{r_i} generates the Hecke algebra (true) or not (false),
-    // and the matrices of the T_{r_i} on S_2(Gamma_0(N))^{W_N}.
+    // and the trace relations [Tr(T_r^0), ..., Tr(T_r^(g-1))] from StarQuotientHeightRelations.
     // Note that these T_f have not yet been normalized to have trace 0. So an actualy good correspondence
     // is only guaranteed to exists if there are at least 2 polynomials in the list for some r
     // such that T_r generates the Hecke algebra.
@@ -246,7 +248,7 @@ function StarQuotientGoodCorrespondences(N, r_list)
     // Actually at the time of writing QCModAffine will raise an error if all correspondence you pass to it have trace 0.
     R<x> := PolynomialRing(Integers());
     use_polys := [[] : i in [1..#r_list]];
-    relations, is_hecke_generator, hecke_on_S := StarQuotientHeightRelations(N, r_list);
+    relations, is_hecke_generator, trace_relations := StarQuotientHeightRelations(N, r_list);
     for i in [1..#r_list] do
         if #relations[i] eq 0 then
             continue;
@@ -255,7 +257,7 @@ function StarQuotientGoodCorrespondences(N, r_list)
             Append(~use_polys[i],&+[v[j]*x^(j-1) : j in [1..NumberOfColumns(v)]]);
         end for;
     end for;
-    return use_polys, is_hecke_generator, hecke_on_S;
+    return use_polys, is_hecke_generator, trace_relations;
 end function;
 
 function StarQuotientHasGoodCorrespondenceList(N, r_list)
@@ -265,7 +267,7 @@ function StarQuotientHasGoodCorrespondenceList(N, r_list)
     // T_r generates the Hecke algebra, which has dimension g, it is non-zero.
     // When there is exactly 1, we check directly: f(T_r) has trace 0 on the weight-2
     // cuspidal modular symbols of sign +1, restricted to the Atkin-Lehner +1 eigenspace.
-    use_polys, is_hecke_generator, hecke_on_S := StarQuotientGoodCorrespondences(N, r_list);
+    use_polys, is_hecke_generator, trace_relations := StarQuotientGoodCorrespondences(N, r_list);
     hecke_gen_indices := [i : i in [1..#r_list] | is_hecke_generator[i]];
     error if #hecke_gen_indices eq 0,
         Sprintf("No T_r in r_list generates the Hecke algebra for N = %o.", N);
@@ -275,7 +277,7 @@ function StarQuotientHasGoodCorrespondenceList(N, r_list)
     elif #use_polys[i] eq 1 then
         r := r_list[i];
         f := use_polys[i][1];
-        if Trace(Evaluate(f, hecke_on_S[i])) eq 0 then
+        if &+[Rationals()| Coefficient(f, k)*trace_relations[i][k+1] : k in [0..#trace_relations[i]-1]] eq 0 then
             return true, Sprintf("There is exactly 1 kernel polynomial for T_%o, and it has trace 0 on the Atkin-Lehner +1 eigenspace of S_2(N).", r);
         else
             return false, Sprintf("There is exactly 1 kernel polynomial for T_%o, but it does not have trace 0 on the Atkin-Lehner +1 eigenspace of S_2(N).", r);
