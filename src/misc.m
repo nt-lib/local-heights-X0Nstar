@@ -1,3 +1,14 @@
+/*
+Modified copy of misc.m from QCMod (https://github.com/steffenmueller/QCMod), as of commit
+c939520a837f5144c44acae0e8ac6b8ca93746cd, which is the commit of the QCMod submodule.
+
+The only change is in coefficients_mod_pN, which now works for curves of any genus g
+instead of only g = 2.
+
+This file is loaded after QCMod so that its definitions replace those of QCMod/misc.m.
+It is not part of the local_heights.spec package, since it uses functions from QCMod.
+*/
+
 //////////////////////////
 // Some extra functions //
 //////////////////////////

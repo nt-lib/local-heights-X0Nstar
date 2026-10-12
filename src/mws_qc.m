@@ -1,3 +1,21 @@
+/*
+Modified copy of mws_qc.m from QCMod (https://github.com/steffenmueller/QCMod), as of commit
+c939520a837f5144c44acae0e8ac6b8ca93746cd, which is the commit of the QCMod submodule.
+
+Changes:
+- MWSieve takes a curve C instead of its Jacobian J and computes in the class group of C
+  over F_p, so it also works for curves that are not hyperelliptic. The generators in bas
+  are pairs of points [P, Q] representing P - Q, and there is an extra optional parameter
+  d by which all images in J(F_p) are multiplied. Bad primes are no longer excluded
+  automatically; pass them in excluded.
+- The unused functions MakeLookup1, MakeDLp1, MakeDL, prerun_mwsieve_g2r2 and
+  is_saturated_at_p are commented out.
+- Fixed the format string %n in an error message of coeffs_CRT.
+
+This file is loaded after QCMod so that its definitions replace those of QCMod/mws_qc.m.
+It is not part of the local_heights.spec package.
+*/
+
 // Code for the Mordell-Weil sieve
 // Mostly copied from an earlier version of magma's Mordell-Weil sieve, due to Michael Stoll.
 // Some tweaks added for use with quadratic Chabauty, but not optimised.
