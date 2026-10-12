@@ -17,6 +17,9 @@ d <= N_max.
 
 OUTPUT: a positive integer
 }
+    // computations/general/final_inequality.m verifies this value: it checks every N up to
+    // the bound from the lemma and asserts that the largest squarefree N with
+    // Phi(N) <= 0 equals NTLNMax().
     return 2589510;
 end intrinsic;
 
