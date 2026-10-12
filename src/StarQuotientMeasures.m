@@ -43,11 +43,13 @@ WARNING:
 This function is not implemented for all values of p, N and r_list; it is guaranteed to
 raise an error if it hits an edge case it cannot handle.
 }
-    assert GCD(p,N) eq 1 and forall{r : r in r_list | GCD(p*N,r) eq 1};
+    require GCD(p,N) eq 1: "p and N must be coprime";
+    require forall{r : r in r_list | GCD(p*N,r) eq 1}: "Every r in r_list must be coprime to p*N";
     B := BrandtModule(p,N);
     al_primes := AtkinLehnerPrimes(B);
     // need this since otherwise we cannot compute all the needed AL operators
-    assert al_primes eq PrimeDivisors(Level(B));
+    require al_primes eq PrimeDivisors(Level(B)):
+        "Not implemented: Magma cannot compute all Atkin-Lehner operators on BrandtModule(p, N)";
     al_operators := [AtkinLehnerOperator(B,q) : q in al_primes];
 
     M := &* [w+1 : w in al_operators];
@@ -78,7 +80,7 @@ INPUT:
 
 OUTPUT: a positive integer
 }
-    assert N mod p ne 0;
+    require N mod p ne 0: "p must not divide N";
     _,stabiliser_sizes, weights := NTLStarQuotientMeasures(p, N, []);
     return 1 + &+([stabiliser_sizes[i]*weights[i]-1 : i in [1..#stabiliser_sizes]] cat [0]);
 end intrinsic;
@@ -98,7 +100,7 @@ INPUT:
 
 OUTPUT: a non-negative integer
 }
-    assert N mod p ne 0;
+    require N mod p ne 0: "p must not divide N";
     _,stabiliser_sizes, weights := NTLStarQuotientMeasures(p, N, []);
     return #[i : i in [1..#stabiliser_sizes] | stabiliser_sizes[i]*weights[i] gt 1];
 end intrinsic;
@@ -116,7 +118,7 @@ SEEALSO:
 
 NTLNrOfStarQuotientThickPoints
 }
-    assert IsSquarefree(N);
+    require IsSquarefree(N): "N must be squarefree";
     return &+[NTLNrOfStarQuotientThickPoints(p, N div p) : p in PrimeDivisors(N)];
 end intrinsic;
 
@@ -140,7 +142,7 @@ SEEALSO:
 
 NTLGenusX0Nstar for a much faster closed formula.
 }
-    assert IsSquarefree(N);
+    require IsSquarefree(N): "N must be squarefree";
     if N eq 1 then return 0; end if;
     p := PrimeDivisors(N)[1];
     g0 := NTLStarQuotientGenus(N div p);
@@ -376,7 +378,7 @@ INPUT:
 
 - N -- squarefree positive integer
 }
-    assert IsSquarefree(N);
+    require IsSquarefree(N): "N must be squarefree";
 
     for ell in PrimeDivisors(N) do
         printf "Edges of the dual graph in characteristic ell = %o:\n", ell;

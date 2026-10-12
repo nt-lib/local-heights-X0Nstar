@@ -11,15 +11,12 @@ it is computed in final_inequality.m/txt.
 intrinsic NTLNMax() -> RngIntElt
 {Return N_max, the largest squarefree level with Phi(N) <= 0.
 
-For every N > N_max the analytic bound ensures there is a clean correspondence. It is
-computed in computations/general/final_inequality.m. The class number tables cover all
-d <= N_max.
+For every N > N_max the analytic bound ensures there is a clean correspondence. The
+value is verified in computations/general/final_inequality.m. The class number tables
+cover all d <= N_max.
 
 OUTPUT: a positive integer
 }
-    // computations/general/final_inequality.m verifies this value: it checks every N up to
-    // the bound from the lemma and asserts that the largest squarefree N with
-    // Phi(N) <= 0 equals NTLNMax().
     return 2589510;
 end intrinsic;
 
@@ -216,7 +213,7 @@ INPUT:
 
 OUTPUT: a non-negative integer
 }
-    assert d ge 1 and IsDivisibleBy(N, d);
+    require d ge 1 and IsDivisibleBy(N, d): "d must be a positive divisor of N";
 
     q := N div d;
 
@@ -283,9 +280,11 @@ INPUT:
 
 OUTPUT: a non-negative integer, as an element of the rationals
 }
-    assert IsSquarefree(N) and IsPrime(ell) and IsDivisibleBy(N, ell);
+    require IsSquarefree(N): "N must be squarefree";
+    require IsPrime(ell) and IsDivisibleBy(N, ell): "ell must be a prime dividing N";
     M := N div ell;                 // ell does not divide M; M squarefree
-    assert d gt 1 and IsDivisibleBy(M, d);   // d | (N/ell), so ell does not divide d
+    require d gt 1 and IsDivisibleBy(M, d): "d must be a divisor of N/ell with d > 1";
+    // d | (N/ell), so ell does not divide d
     // (In B(ell,N,W) the sum is over d | M, so the ramified prime ell never divides d.)
 
     if IsOdd(ell) then

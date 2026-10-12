@@ -28,7 +28,7 @@ procedure test_relations_only_for_visible_loops()
     TSTAssertEQ(trace_relations[1][1], 3);
 end procedure;
 
-procedure test_has_good_correspondence()
+procedure test_has_clean_correspondence()
     // Levels from sec:examples, and N = 85, where there is no clean correspondence.
     TSTAssertEQ([NTLStarQuotientHasCleanCorrespondence(N) : N in [187, 247, 319, 85]],
                 [true, true, true, false]);
@@ -37,14 +37,14 @@ procedure test_has_good_correspondence()
     TSTAssertEQ([NTLStarQuotientHasCleanCorrespondence(N) : N in [170, 106]], [true, false]);
 end procedure;
 
-procedure test_has_good_correspondence_does_not_hide_errors()
+procedure test_has_clean_correspondence_does_not_hide_errors()
     // Errors other than "no Hecke generator" must propagate (here: N is not squarefree),
     // instead of being swallowed while searching for a Hecke generator.
-    TSTAssertRaises(NTLStarQuotientHasCleanCorrespondence, "Assertion failed", 12);
+    TSTAssertRaises(NTLStarQuotientHasCleanCorrespondence, "N must be squarefree", 12);
 end procedure;
 
 test_dual_graph_lengths_are_integers();
 test_hecke_generator_is_checked_on_all_cusp_forms();
 test_relations_only_for_visible_loops();
-test_has_good_correspondence();
-test_has_good_correspondence_does_not_hide_errors();
+test_has_clean_correspondence();
+test_has_clean_correspondence_does_not_hide_errors();
