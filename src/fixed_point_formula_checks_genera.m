@@ -1,9 +1,7 @@
 /*
-The following checks our formulas for nu(N,d):
- # fixed points of w_d on X0(N) for squarefree N.
-To be more precise, we compare the genus of the star quotient
-computed by them and the one computed "directly" in Magma
-it seems to align. There is some Magma internal bug for 222.
+Formulas for nu(N,d), the number of fixed points of w_d on X0(N) for squarefree N,
+using Magma's ClassNumber. They are checked in tests/test_fixed_point_formula_checks_genera.m
+by comparing the genus of the star quotient computed by them with Magma's GenusX0NQuotient.
 */
 
 function ProdInt(seq)
@@ -211,85 +209,4 @@ OUTPUT: a non-negative integer, as an element of the rationals
     gstar := Q!1 + (Q!(g0-1))/tw - (Q!S)/(2*tw);
 
     return gstar;
-end intrinsic;
-
-intrinsic NTLCompareStarGenus(Nmax::RngIntElt)
-{Print every squarefree N with 220 <= N <= Nmax for which NTLg0star_squarefree disagrees
-with the genus of Magma's X0Nstar(N).
-
-If Genus fails on X0Nstar(N), the genus is taken to be 0.
-
-INPUT:
-
-- Nmax -- positive integer
-}
-    for N in [220..Nmax] do
-        if IsSquarefree(N) then
-            g_ours := NTLg0star_squarefree(N);
-
-            // Always use X0Nstar; Genus may fail if X0Nstar(N) is literally P^1.
-            g_magma := 0;
-            try
-                Xs := X0Nstar(N);
-                g_magma := Genus(Xs);
-            catch e
-                // If Genus fails, treat as genus 0 (P^1 case).
-                g_magma := 0;
-            end try;
-
-            if g_ours ne g_magma then
-                printf "Mismatch at N=%o: ours=%o, magma=%o\n", N, g_ours, g_magma;
-            end if;
-        end if;
-    end for;
-end intrinsic;
-
-
-
-intrinsic NTLCompareStarGenus(Nmin::RngIntElt, Nmax::RngIntElt)
-{Print every squarefree N with Nmin <= N <= Nmax for which NTLg0star_squarefree disagrees
-with the genus of Magma's X0Nstar(N).
-
-Levels for which X0Nstar or Genus fails are reported and skipped.
-
-INPUT:
-
-- Nmin -- positive integer
-- Nmax -- positive integer
-}
-    for N in [Nmin..Nmax] do
-        if IsSquarefree(N) then
-            g_ours := NTLg0star_squarefree(N);
-
-            // Step 1: construct X0(N)^*
-            Xs := [];
-            try
-                Xs := X0Nstar(N);
-            catch e
-                printf "SKIP N=%o: X0Nstar(N) failed with error:\n%o\n", N, e;
-                continue;
-            end try;
-
-            // Step 2: handle the P^1 case safely
-            g_magma := -1;
-
-            // X0Nstar(N) sometimes returns a projective space object.
-            if Type(Xs) eq Prj then
-                g_magma := 0;
-            else
-                // Step 3: otherwise try Genus
-                try
-                    g_magma := Genus(Xs);
-                catch e2
-                    printf "SKIP N=%o: Genus(X0Nstar(N)) failed with error:\n%o\n", N, e2;
-                    continue;
-                end try;
-            end if;
-
-            if g_ours ne g_magma then
-                printf "Mismatch at N=%o: ours=%o, magma=%o\n", N, g_ours, g_magma;
-            end if;
-        end if;
-    end for;
-	printf "All squarefree N between %o and %o conform to the fixed-point-count formulas\n", Nmin, Nmax;
 end intrinsic;
