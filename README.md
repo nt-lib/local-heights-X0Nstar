@@ -46,7 +46,6 @@ Within each `computations/X0_<N>star/` directory the naming convention is:
 | `qc_p<prime>_mws.m` | QC run followed by a Mordell-Weil sieve step |
 | `model_p<prime>.m` | Model search via `model_equation_finder` at the given prime |
 | `model_search_*.m` | Ad-hoc / random model search |
-| `gonality.m` | Gonality / gonal map computation |
 
 ## Running computations
 
