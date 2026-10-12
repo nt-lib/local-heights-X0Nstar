@@ -32,11 +32,10 @@ git submodule update --init
 
 | Path | Contents |
 |------|----------|
-| `src/` | Shared library code: star-quotient measures, rank computations, Mordell-Weil sieve, misc utilities |
+| `src/` | Shared library code: the Magma package `local_heights.spec` (star-quotient measures, genera and bounds), attached with `AttachSpec("local_heights.spec")`, and patched copies of QCMod files (Mordell-Weil sieve, misc utilities), loaded with `load` |
 | `computations/X0_<N>star/` | Scripts for the curve X_0(N)^* |
-| `computations/general/` | Cross-cutting verifications: genus tables, fixed-point formulas, dual graphs, etc. |
+| `computations/general/` | Cross-cutting verifications: existence of clean correspondences, fixed-point formulas, dual graphs, etc. |
 | `logs/` | Output committed as a record of past computations |
-| `notebooks/` | Exploratory Jupyter notebooks |
 | `data/` | Precomputed data files (e.g. class numbers) |
 
 Within each `computations/X0_<N>star/` directory the naming convention is:
