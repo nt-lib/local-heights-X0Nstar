@@ -340,8 +340,7 @@ OUTPUT: a triple relations, is_hecke_generator, trace_relations where
     require IsSquarefree(N): "N must be squarefree";
     relations := [[] : i in [1..#r_list]];
 
-    // The genus of X_0(N)^*. Magma's GenusX0NQuotient is cheap, unlike NTLStarQuotientGenus,
-    // and it is independent of the modular symbols, so the assert below remains a real check.
+    // The genus of X_0(N)^*. Magma's GenusX0NQuotient is cheap, unlike NTLStarQuotientGenus.
     g := GenusX0NQuotient(N, PrimeDivisors(N));
 
     // Whether T_r generates the Hecke algebra has to be decided on all of S_2(Gamma_0(N))^{W_N},
