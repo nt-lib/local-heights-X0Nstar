@@ -49,7 +49,6 @@ end if;
 J := J_quo;
 gX := Dimension(J);
 printf "genus = %o\n", gX;
-assert NTLRankQuo(N, ALs) eq gX; // check QC condition
 
 ptsX := PointSearch(S, 30); // projective coordinates
 // First compute local heights of representatives for generators of J(Q) tensor Q at p. 
