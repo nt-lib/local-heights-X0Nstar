@@ -1,5 +1,4 @@
-load "src/StarQuotientMeasures.m";
-load "src/rank.m";
+AttachSpec("local_heights.spec");
 SetPath("QCMod");
 load "qc_modular.m";
 load "divisor_heights.m";
@@ -50,7 +49,7 @@ end if;
 J := J_quo;
 gX := Dimension(J);
 printf "genus = %o\n", gX;
-assert rank_quo(N, ALs) eq gX; // check QC condition
+assert NTLRankQuo(N, ALs) eq gX; // check QC condition
 
 ptsX := PointSearch(S, 30); // projective coordinates
 // First compute local heights of representatives for generators of J(Q) tensor Q at p. 
@@ -240,7 +239,7 @@ function run_QC(p, N1, N2)
 
     printf "\nStarting quadratic Chabauty for p = %o.\n", p;
     R<x> := PolynomialRing(Rationals());
-    corrs := StarQuotientGoodCorrespondences(187, [p]);
+    corrs := NTLStarQuotientGoodCorrespondences(187, [p]);
     polys := corrs[1];
     time good_affine_rat_pts_xy, no_fake_pts, bad_affine_rat_pts_xy, data, fake_rat_pts, bad_Qppoints := QCModAffine(Q, p : use_polys := polys,
         number_of_correspondences := #polys-1, printlevel:=1, N := N1, prec := 40, base_point := base_pt);

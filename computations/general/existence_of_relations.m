@@ -1,5 +1,5 @@
-load "src/StarQuotientMeasures.m";
-load "src/genera_and_bounds.m";
+AttachSpec("local_heights.spec");
+N_max := NTLNMax();
 
 // A good correspondence exists if g > B+1, since at most B conditions are imposed on the
 // (g-1)-dimensional space of non-scalar polynomials; for g <= B+1 we check directly.
@@ -8,19 +8,19 @@ for N in [1..N_max] do
         print N;
     end if;
     if IsSquarefree(N) then
-        WN := HallDivisors(N);
-        g := GenusX0Nstar(N);
+        WN := NTLHallDivisors(N);
+        g := NTLGenusX0Nstar(N);
         if g in {0,1} then
             printf "N = %o: g = %o is known\n", N, g;
             continue;
         end if;
-        B := BoundOnB(N, WN);
+        B := NTLBoundOnB(N, WN);
         if g le B+1 then
             // Borderline (rare): cross-check the closed-form genus against the geometric
             // Brandt-module genus before running the explicit correspondence search.
-            assert StarQuotientGenus(N) eq g;
+            assert NTLStarQuotientGenus(N) eq g;
             printf "N = %o: has g = %o <= %o = B+1", N, g, B+1;
-            hasGoodCorrespondence, message := StarQuotientHasGoodCorrespondence(N);
+            hasGoodCorrespondence, message := NTLStarQuotientHasGoodCorrespondence(N);
             if hasGoodCorrespondence then
                 printf ": there is a good correspondence: %o\n", message;
             else

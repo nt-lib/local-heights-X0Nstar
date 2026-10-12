@@ -1,11 +1,11 @@
-load "src/StarQuotientMeasures.m";
+AttachSpec("local_heights.spec");
 
 
 data := [];
 for N in [2..999] do
     if not IsSquarefree(N) then continue; end if;
-    g := StarQuotientGenus(N);
-    c := NrOfStarQuotientComponentConditions(N);
+    g := NTLStarQuotientGenus(N);
+    c := NTLNrOfStarQuotientComponentConditions(N);
     Append(~data, <g, N, c>);
 end for;
 
@@ -22,7 +22,7 @@ for t in data do
         continue;
     end if;
     r_list := [p : p in PrimesUpTo(100) | not IsDivisibleBy(N, p)];
-    polys, is_hecke_generator := StarQuotientGoodCorrespondences(N, r_list);
+    polys, is_hecke_generator := NTLStarQuotientGoodCorrespondences(N, r_list);
     print polys, is_hecke_generator; // TODO: empty polys for N = 249
     if not exists{i : i in [1..#polys] | is_hecke_generator[i]} then
         printf "For N = %o, there is no poly in T_r.\n", N;

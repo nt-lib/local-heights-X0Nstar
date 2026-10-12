@@ -21,8 +21,8 @@ assert IsIrreducible(S);
 
 SetMemoryLimit(16 * 1024^3);
 
-load "src/StarQuotientMeasures.m";
-corrs := StarQuotientGoodCorrespondences(187, [p]);
+AttachSpec("local_heights.spec");
+corrs := NTLStarQuotientGoodCorrespondences(187, [p]);
 
 polys := corrs[1];
 good_pts, boo, bad_pts, data, fake_pts, bad_disks := QCModAffine(Q, p : use_polys := polys, number_of_correspondences := #polys-1, printlevel:=2 );

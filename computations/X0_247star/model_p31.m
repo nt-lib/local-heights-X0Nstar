@@ -15,8 +15,8 @@ good_primes;
 Q;
 p := good_primes[1];
 
-load "src/StarQuotientMeasures.m";
-corrs := StarQuotientGoodCorrespondences(247, [p]);
+AttachSpec("local_heights.spec");
+corrs := NTLStarQuotientGoodCorrespondences(247, [p]);
 
 polys := corrs[1];
 

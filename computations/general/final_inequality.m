@@ -6,7 +6,8 @@
 // N_0 must equal N_max in src/genera_and_bounds.m, up to which existence_of_relations.m
 // checks the remaining levels directly; this is asserted below.
 
-load "src/genera_and_bounds.m";   // for N_max
+AttachSpec("local_heights.spec");
+N_max := NTLNMax();
 
 // Lemma.
 RR := RealField(30);
