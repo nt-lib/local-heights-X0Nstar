@@ -8,19 +8,19 @@ it seems to align. There is some Magma internal bug for 222.
 
 function ProdInt(seq)
     /*
-    Return the product of the integers in ``seq``, or `1` if ``seq`` is empty.
+    Return the product of the integers in seq, or 1 if seq is empty.
     */
     return (#seq eq 0) select 1 else &*seq;
 end function;
 
-intrinsic NTLNuSquarefreeD2(N::RngIntElt) -> RngIntElt
-{Return `\\nu(N, 2)` for even squarefree ``N`` (Kluit), or `-1` if ``N`` is odd.
+intrinsic NTLnu_squarefree_d2(N::RngIntElt) -> RngIntElt
+{Return nu(N, 2) for even squarefree N (Kluit), or -1 if N is odd.
 
 INPUT:
 
-- ``N`` -- squarefree positive integer
+- N -- squarefree positive integer
 
-OUTPUT: a non-negative integer, or `-1` on invalid input
+OUTPUT: a non-negative integer, or -1 on invalid input
 }
     if (N mod 2) ne 0 then
         return -1;
@@ -32,15 +32,14 @@ OUTPUT: a non-negative integer, or `-1` on invalid input
     return prod1 + prod2;
 end intrinsic;
 
-intrinsic NTLNuSquarefreeD3(N::RngIntElt) -> RngIntElt
-{Return `\\nu(N, 3)` for squarefree ``N`` divisible by `3` (Kluit, FH), or `-1` if `3`
-does not divide ``N``.
+intrinsic NTLnu_squarefree_d3(N::RngIntElt) -> RngIntElt
+{Return nu(N, 3) for squarefree N divisible by 3 (Kluit, FH), or -1 if 3 does not divide N.
 
 INPUT:
 
-- ``N`` -- squarefree positive integer
+- N -- squarefree positive integer
 
-OUTPUT: a non-negative integer, or `-1` on invalid input
+OUTPUT: a non-negative integer, or -1 on invalid input
 }
     if (N mod 3) ne 0 then
         return -1;
@@ -54,18 +53,18 @@ OUTPUT: a non-negative integer, or `-1` on invalid input
     return 2*prod;
 end intrinsic;
 
-intrinsic NTLNuSquarefreeOld(N::RngIntElt, d::RngIntElt) -> RngIntElt
-{Return `\\nu(N, d)` for squarefree ``N``, using the special cases
-:func:`NTLNuSquarefreeD2` and :func:`NTLNuSquarefreeD3`.
+intrinsic NTLnu_squarefree_old(N::RngIntElt, d::RngIntElt) -> RngIntElt
+{Return nu(N, d) for squarefree N, using the special cases NTLnu_squarefree_d2 and
+NTLnu_squarefree_d3.
 
-This is the old version of :func:`NTLNuSquarefree`.
+This is the old version of NTLnu_squarefree.
 
 INPUT:
 
-- ``N`` -- squarefree positive integer
-- ``d`` -- divisor of ``N`` with `d > 1`
+- N -- squarefree positive integer
+- d -- divisor of N with d > 1
 
-OUTPUT: a non-negative integer, or `-1` on invalid input
+OUTPUT: a non-negative integer, or -1 on invalid input
 }
     if d le 1 then
         return -1;
@@ -76,10 +75,10 @@ OUTPUT: a non-negative integer, or `-1` on invalid input
 
     // Special cases
     if d eq 2 then
-        return NTLNuSquarefreeD2(N);
+        return NTLnu_squarefree_d2(N);
     end if;
     if d eq 3 then
-        return NTLNuSquarefreeD3(N);
+        return NTLnu_squarefree_d3(N);
     end if;
 
     q := N div d;
@@ -115,20 +114,20 @@ OUTPUT: a non-negative integer, or `-1` on invalid input
     end if;
 end intrinsic;
 
-intrinsic NTLNuSquarefree(N::RngIntElt, d::RngIntElt) -> RngIntElt
-{Return `\\nu(N, d)`, the number of fixed points of `w_d` on `X_0(N)` for squarefree
-``N``, using Magma's ``ClassNumber``.
+intrinsic NTLnu_squarefree(N::RngIntElt, d::RngIntElt) -> RngIntElt
+{Return nu(N, d), the number of fixed points of w_d on X_0(N) for squarefree N, using
+Magma's ClassNumber.
 
 INPUT:
 
-- ``N`` -- squarefree positive integer
-- ``d`` -- divisor of ``N`` with `d > 1`
+- N -- squarefree positive integer
+- d -- divisor of N with d > 1
 
-OUTPUT: a non-negative integer, or `-1` on invalid input
+OUTPUT: a non-negative integer, or -1 on invalid input
 
-.. SEEALSO::
+SEEALSO:
 
-    :func:`NTLNu`, which reads the class numbers from a precomputed table.
+NTLnu, which reads the class numbers from a precomputed table.
 }
     if d le 1 then
         return -1;
@@ -186,23 +185,23 @@ OUTPUT: a non-negative integer, or `-1` on invalid input
 end intrinsic;
 
 
-intrinsic NTLG0StarSquarefree(N::RngIntElt) -> FldRatElt
-{Return the genus of `X_0(N)^*` for squarefree ``N``, computed with the Riemann-Hurwitz
-formula from ``Genus(Gamma0(N))`` and :func:`NTLNuSquarefree`.
+intrinsic NTLg0star_squarefree(N::RngIntElt) -> FldRatElt
+{Return the genus of X_0(N)^* for squarefree N, computed with the Riemann-Hurwitz formula
+from Genus(Gamma0(N)) and NTLnu_squarefree.
 
 INPUT:
 
-- ``N`` -- squarefree positive integer
+- N -- squarefree positive integer
 
 OUTPUT: a non-negative integer, as an element of the rationals
 }
-    w := NTLOmega(N);
+    w := NTLomega(N);
     g0 := Genus(Gamma0(N));
 
     S := 0;
     for d in Divisors(N) do
         if d ne 1 then
-            S +:= NTLNuSquarefree(N, d);
+            S +:= NTLnu_squarefree(N, d);
         end if;
     end for;
 
@@ -215,18 +214,18 @@ OUTPUT: a non-negative integer, as an element of the rationals
 end intrinsic;
 
 intrinsic NTLCompareStarGenus(Nmax::RngIntElt)
-{Print every squarefree `N` with `220 \\leq N \\leq` ``Nmax`` for which
-:func:`NTLG0StarSquarefree` disagrees with the genus of Magma's ``X0Nstar(N)``.
+{Print every squarefree N with 220 <= N <= Nmax for which NTLg0star_squarefree disagrees
+with the genus of Magma's X0Nstar(N).
 
-If ``Genus`` fails on ``X0Nstar(N)``, the genus is taken to be `0`.
+If Genus fails on X0Nstar(N), the genus is taken to be 0.
 
 INPUT:
 
-- ``Nmax`` -- positive integer
+- Nmax -- positive integer
 }
     for N in [220..Nmax] do
         if IsSquarefree(N) then
-            g_ours := NTLG0StarSquarefree(N);
+            g_ours := NTLg0star_squarefree(N);
 
             // Always use X0Nstar; Genus may fail if X0Nstar(N) is literally P^1.
             g_magma := 0;
@@ -248,19 +247,19 @@ end intrinsic;
 
 
 intrinsic NTLCompareStarGenus(Nmin::RngIntElt, Nmax::RngIntElt)
-{Print every squarefree `N` with ``Nmin`` `\\leq N \\leq` ``Nmax`` for which
-:func:`NTLG0StarSquarefree` disagrees with the genus of Magma's ``X0Nstar(N)``.
+{Print every squarefree N with Nmin <= N <= Nmax for which NTLg0star_squarefree disagrees
+with the genus of Magma's X0Nstar(N).
 
-Levels for which ``X0Nstar`` or ``Genus`` fails are reported and skipped.
+Levels for which X0Nstar or Genus fails are reported and skipped.
 
 INPUT:
 
-- ``Nmin`` -- positive integer
-- ``Nmax`` -- positive integer
+- Nmin -- positive integer
+- Nmax -- positive integer
 }
     for N in [Nmin..Nmax] do
         if IsSquarefree(N) then
-            g_ours := NTLG0StarSquarefree(N);
+            g_ours := NTLg0star_squarefree(N);
 
             // Step 1: construct X0(N)^*
             Xs := [];

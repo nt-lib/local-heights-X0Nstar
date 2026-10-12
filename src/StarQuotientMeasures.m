@@ -1,12 +1,12 @@
 intrinsic NTLRestrictMatrix(A::Mtrx, W::ModTupRng) -> Mtrx
-{Return the matrix of the action of ``A`` restricted to the invariant subspace ``W``.
+{Return the matrix of the action of A restricted to the invariant subspace W.
 
 INPUT:
 
-- ``A`` -- square matrix acting on row vectors
-- ``W`` -- subspace of the row space of ``A`` that is invariant under ``A``
+- A -- square matrix acting on row vectors
+- W -- subspace of the row space of A that is invariant under A
 
-OUTPUT: the matrix of ``A`` on ``W`` with respect to ``Basis(W)``
+OUTPUT: the matrix of A on W with respect to Basis(W)
 }
     B := Basis(W);
     TB := [b * A : b in B];
@@ -14,36 +14,34 @@ OUTPUT: the matrix of ``A`` on ``W`` with respect to ``Basis(W)``
 end intrinsic;
 
 intrinsic NTLStarQuotientMeasures(p::RngIntElt, N::RngIntElt, r_list::SeqEnum) -> SeqEnum, SeqEnum, SeqEnum
-{Return the Hecke matrices on the edges of the dual graph of `X_0(pN)^*` in characteristic `p`,
+{Return the Hecke matrices on the edges of the dual graph of X_0(pN)^* in characteristic p,
 together with the stabiliser sizes and weights of the edges.
 
-The edges of the dual graph of the semistable model of `X_0(pN)^*` in characteristic `p`
-correspond to the supersingular points on `X_0(pN)` modulo the Atkin-Lehner involutions.
-The `i`-th edge has length exactly ``stabilisers[i]*weights[i]``, so the semistable model
-of `X_0(pN)^*` has ``stabilisers[i]*weights[i] - 1`` extra components coming from the
-subdivision of the `i`-th edge.
+The edges of the dual graph of the semistable model of X_0(pN)^* in characteristic p
+correspond to the supersingular points on X_0(pN) modulo the Atkin-Lehner involutions. The
+i-th edge has length exactly stabilisers[i]*weights[i], so the semistable model of
+X_0(pN)^* has stabilisers[i]*weights[i] - 1 extra components coming from the subdivision
+of the i-th edge.
 
 INPUT:
 
-- ``p`` -- prime not dividing ``N``
-- ``N`` -- positive integer
-- ``r_list`` -- sequence of integers coprime to `pN`
+- p -- prime not dividing N
+- N -- positive integer
+- r_list -- sequence of integers coprime to pN
 
-OUTPUT: a triple ``T, stabilisers, weights`` where
+OUTPUT: a triple T, stabilisers, weights where
 
-- ``T`` -- sequence of matrices; ``T[k]`` is the Hecke matrix `T_r` on the edges, for
-  ``r = r_list[k]``
-- ``stabilisers`` -- sequence of integers; ``stabilisers[i]`` is the number of
-  Atkin-Lehner involutions fixing the supersingular point on `X_0(pN)` corresponding to
-  the `i`-th edge
-- ``weights`` -- sequence of integers; ``weights[i]`` is half the number of automorphisms
-  of the pair `(E, G)` representing the supersingular point on `X_0(pN)` corresponding to
-  the `i`-th edge
+- T -- sequence of matrices; T[k] is the Hecke matrix T_r on the edges, for r = r_list[k]
+- stabilisers -- sequence of integers; stabilisers[i] is the number of Atkin-Lehner
+  involutions fixing the supersingular point on X_0(pN) corresponding to the i-th edge
+- weights -- sequence of integers; weights[i] is half the number of automorphisms of the
+  pair (E, G) representing the supersingular point on X_0(pN) corresponding to the i-th
+  edge
 
-.. WARNING::
+WARNING:
 
-    This function is not implemented for all values of ``p``, ``N`` and ``r_list``; it is
-    guaranteed to raise an error if it hits an edge case it cannot handle.
+This function is not implemented for all values of p, N and r_list; it is guaranteed to
+raise an error if it hits an edge case it cannot handle.
 }
     assert GCD(p,N) eq 1 and forall{r : r in r_list | GCD(p*N,r) eq 1};
     B := BrandtModule(p,N);
@@ -70,13 +68,13 @@ OUTPUT: a triple ``T, stabilisers, weights`` where
 end intrinsic;
 
 intrinsic NTLNrOfStarQuotientComponents(p::RngIntElt, N::RngIntElt) -> RngIntElt
-{Return the number of components in characteristic `p` of the minimal regular model of
-`X_0(pN)^*`.
+{Return the number of components in characteristic p of the minimal regular model of
+X_0(pN)^*.
 
 INPUT:
 
-- ``p`` -- prime not dividing ``N``
-- ``N`` -- positive integer
+- p -- prime not dividing N
+- N -- positive integer
 
 OUTPUT: a positive integer
 }
@@ -86,17 +84,17 @@ OUTPUT: a positive integer
 end intrinsic;
 
 intrinsic NTLNrOfStarQuotientThickPoints(p::RngIntElt, N::RngIntElt) -> RngIntElt
-{Return the number of supersingular points in characteristic `p` on `X_0(pN)^*` of
-thickness `> 1`.
+{Return the number of supersingular points in characteristic p on X_0(pN)^* of thickness >
+1.
 
-This equals the number of loops of length `> 1` in the dual graph in characteristic `p` of
-the minimal regular model of `X_0(pN)^*`. This dual graph is one central vertex with a
-number of loops attached to it.
+This equals the number of loops of length > 1 in the dual graph in characteristic p of the
+minimal regular model of X_0(pN)^*. This dual graph is one central vertex with a number of
+loops attached to it.
 
 INPUT:
 
-- ``p`` -- prime not dividing ``N``
-- ``N`` -- positive integer
+- p -- prime not dividing N
+- N -- positive integer
 
 OUTPUT: a non-negative integer
 }
@@ -106,17 +104,17 @@ OUTPUT: a non-negative integer
 end intrinsic;
 
 intrinsic NTLNrOfStarQuotientComponentConditions(N::RngIntElt) -> RngIntElt
-{Return the total number of thick points of `X_0(N)^*` over all primes `p` dividing `N`.
+{Return the total number of thick points of X_0(N)^* over all primes p dividing N.
 
 INPUT:
 
-- ``N`` -- squarefree positive integer
+- N -- squarefree positive integer
 
 OUTPUT: a non-negative integer
 
-.. SEEALSO::
+SEEALSO:
 
-    :func:`NTLNrOfStarQuotientThickPoints`
+NTLNrOfStarQuotientThickPoints
 }
     assert IsSquarefree(N);
     return &+[NTLNrOfStarQuotientThickPoints(p, N div p) : p in PrimeDivisors(N)];
@@ -124,23 +122,23 @@ end intrinsic;
 
 
 intrinsic NTLStarQuotientGenus(N::RngIntElt) -> RngIntElt
-{Return the genus of `X_0(N)^*`, computed from the dual graphs of its bad reductions.
+{Return the genus of X_0(N)^*, computed from the dual graphs of its bad reductions.
 
 INPUT:
 
-- ``N`` -- squarefree positive integer
+- N -- squarefree positive integer
 
 OUTPUT: a non-negative integer
 
 ALGORITHM:
 
-Recursion on the number of prime divisors: for the smallest prime `p | N` the genus of
-`X_0(N)^*` is the genus of `X_0(N/p)^*` plus the number of edges of the dual graph of
-`X_0(N)^*` in characteristic `p`.
+Recursion on the number of prime divisors: for the smallest prime p | N the genus of
+X_0(N)^* is the genus of X_0(N/p)^* plus the number of edges of the dual graph of X_0(N)^*
+in characteristic p.
 
-.. SEEALSO::
+SEEALSO:
 
-    :func:`NTLGenusX0Nstar` for a much faster closed formula.
+NTLGenusX0Nstar for a much faster closed formula.
 }
     assert IsSquarefree(N);
     if N eq 1 then return 0; end if;
@@ -151,27 +149,26 @@ Recursion on the number of prime divisors: for the smallest prime `p | N` the ge
 end intrinsic;
 
 intrinsic NTLLocalHeightsAtp(p::RngIntElt, N::RngIntElt, rs::SeqEnum : warn := true) -> SeqEnum
-{Return, for each `r` in ``rs``, the set of values of the local height at `p` on the
-dual graph of `X_0(N)^*` for the trace-zero part of `T_r`.
+{Return, for each r in rs, the set of values of the local height at p on the dual graph of
+X_0(N)^* for the trace-zero part of T_r.
 
 Intermediate results are printed.
 
 INPUT:
 
-- ``p`` -- prime exactly dividing ``N``
-- ``N`` -- squarefree positive integer
-- ``rs`` -- sequence of integers coprime to ``N``
-- ``warn`` -- boolean (default: ``true``); if ``true``, raise an error explaining that
-  this function is likely to be wrong
+- p -- prime exactly dividing N
+- N -- squarefree positive integer
+- rs -- sequence of integers coprime to N
+- warn -- boolean (default: true); if true, raise an error explaining that this function
+  is likely to be wrong
 
-OUTPUT: a sequence of sets of rationals, one for each element of ``rs``
+OUTPUT: a sequence of sets of rationals, one for each element of rs
 
-.. WARNING::
+WARNING:
 
-    This function is likely to have a bug: it computes traces of Hecke operators on the
-    dual graph of `X_0(N)^*` in characteristic `p`, but traces should be computed in
-    characteristic `0`, as the dual graph in characteristic `p` only gives part of the
-    trace.
+This function is likely to have a bug: it computes traces of Hecke operators on the dual
+graph of X_0(N)^* in characteristic p, but traces should be computed in characteristic 0,
+as the dual graph in characteristic p only gives part of the trace.
 }
     if warn then
         error "This function is likely to have a bug, as it computes traces of hecke operators on the dual graph of X_0(N)^* in characteristic p, but we should compute traces in characterstic 0, as the dual graph in characteristic p only give a part of the trace! Pass warn := false to ignore this warning.";
@@ -224,13 +221,13 @@ end intrinsic;
 
 
 intrinsic NTLAtkinLehnerFixedSubspace(S::ModSym) -> ModTupFld
-{Return the subspace of ``S`` fixed by all Atkin-Lehner operators.
+{Return the subspace of S fixed by all Atkin-Lehner operators.
 
 INPUT:
 
-- ``S`` -- space of weight-2 cuspidal modular symbols
+- S -- space of weight-2 cuspidal modular symbols
 
-OUTPUT: a subspace of ``VectorSpace(Rationals(), Dimension(S))``, in the coordinates of ``S``
+OUTPUT: a subspace of VectorSpace(Rationals(), Dimension(S)), in the coordinates of S
 }
     N := Level(S);
     if Dimension(S) eq 0 then
@@ -247,35 +244,34 @@ OUTPUT: a subspace of ``VectorSpace(Rationals(), Dimension(S))``, in the coordin
 end intrinsic;
 
 intrinsic NTLStarQuotientCuspForms(N::RngIntElt) -> ModSym, ModTupFld
-{Return the weight-2 cuspidal modular symbols of level ``N`` and sign `+1`, together with
-the subspace fixed by all Atkin-Lehner operators.
+{Return the weight-2 cuspidal modular symbols of level N and sign +1, together with the
+subspace fixed by all Atkin-Lehner operators.
 
-The fixed subspace models `S_2(\\Gamma_0(N))^\{W_N\}`; in particular its dimension is the
-genus of `X_0(N)^*`.
+The fixed subspace models S_2(Gamma_0(N))^W_N; in particular its dimension is the genus of
+X_0(N)^*.
 
 INPUT:
 
-- ``N`` -- positive integer
+- N -- positive integer
 
-OUTPUT: a pair ``S, Sstar`` where
+OUTPUT: a pair S, Sstar where
 
-- ``S`` -- the space of cuspidal modular symbols
-- ``Sstar`` -- the Atkin-Lehner fixed subspace, as returned by
-  :func:`NTLAtkinLehnerFixedSubspace`
+- S -- the space of cuspidal modular symbols
+- Sstar -- the Atkin-Lehner fixed subspace, as returned by NTLAtkinLehnerFixedSubspace
 }
     S := CuspidalSubspace(ModularSymbols(N, 2, 1));
     return S, NTLAtkinLehnerFixedSubspace(S);
 end intrinsic;
 
 intrinsic NTLHeckeMatrixOnFixedSubspace(S::ModSym, Sstar::ModTupFld, r::RngIntElt) -> Mtrx
-{Return the matrix of `T_r` on ``Sstar``.
+{Return the matrix of T_r on Sstar.
 
 INPUT:
 
-- ``S``, ``Sstar`` -- as returned by :func:`NTLStarQuotientCuspForms`
-- ``r`` -- positive integer
+- S, Sstar -- as returned by NTLStarQuotientCuspForms
+- r -- positive integer
 
-OUTPUT: a square matrix over the rationals of size ``Dimension(Sstar)``
+OUTPUT: a square matrix over the rationals of size Dimension(Sstar)
 }
     if Dimension(Sstar) eq 0 then
         return ZeroMatrix(Rationals(), 0, 0);
@@ -284,29 +280,28 @@ OUTPUT: a square matrix over the rationals of size ``Dimension(Sstar)``
 end intrinsic;
 
 intrinsic NTLStarQuotientHeckeMatrices(N::RngIntElt, r_list::SeqEnum) -> SeqEnum
-{Return, for each `r` in ``r_list``, the matrix of `T_r` acting on
-`S_2(\\Gamma_0(N))^\{W_N\}`.
+{Return, for each r in r_list, the matrix of T_r acting on S_2(Gamma_0(N))^W_N.
 
 INPUT:
 
-- ``N`` -- positive integer
-- ``r_list`` -- sequence of positive integers
+- N -- positive integer
+- r_list -- sequence of positive integers
 
-OUTPUT: a sequence of square matrices of size `g(X_0(N)^*)`
+OUTPUT: a sequence of square matrices of size g(X_0(N)^*)
 }
     S, Sstar := NTLStarQuotientCuspForms(N);
     return [NTLHeckeMatrixOnFixedSubspace(S, Sstar, r) : r in r_list];
 end intrinsic;
 
 intrinsic NTLIsHeckeGenerator(T::Mtrx) -> BoolElt
-{Return whether ``T`` generates the Hecke algebra.
+{Return whether T generates the Hecke algebra.
 
-Since the Hecke algebra tensor `\\QQ` is a product of number fields, `T_r` generates it
-if and only if its characteristic polynomial is squarefree (rem:Tp_generator in the paper).
+Since the Hecke algebra tensor Q is a product of number fields, T_r generates it if and
+only if its characteristic polynomial is squarefree (rem:Tp_generator in the paper).
 
 INPUT:
 
-- ``T`` -- the matrix of `T_r` on `S_2(\\Gamma_0(N))^\{W_N\}`
+- T -- the matrix of T_r on S_2(Gamma_0(N))^W_N
 
 OUTPUT: a boolean
 }
@@ -314,33 +309,31 @@ OUTPUT: a boolean
 end intrinsic;
 
 intrinsic NTLStarQuotientHeightRelations(N::RngIntElt, r_list::SeqEnum) -> SeqEnum, SeqEnum, SeqEnum
-{Return, for each `r` in ``r_list``, the linear relations on `a = (a_0, \\ldots, a_\{g-1\})`
-for the correspondence `T_a = a_0 T_r^0 + \\cdots + a_\{g-1\} T_r^\{g-1\}` to have trivial
-height contribution at all primes `q | N`.
+{Return, for each r in r_list, the linear relations on a = (a_0, ..., a_(g-1)) for the
+correspondence T_a = a_0 T_r^0 + ... + a_(g-1) T_r^(g-1) to have trivial height
+contribution at all primes q | N.
 
-These relations say that `(T_a)_\{j,j\} = 0` for every `j` corresponding to a visible loop in
-the dual graph of `X_0(N)^*` in characteristic `q`, for all `q | N` (Step 3 of
-alg:clean_correspondences). All double points of `X_0(N)^*` in characteristic `q` are
+These relations say that (T_a)_(j,j) = 0 for every j corresponding to a visible loop in
+the dual graph of X_0(N)^* in characteristic q, for all q | N (Step 3 of
+alg:clean_correspondences). All double points of X_0(N)^* in characteristic q are
 non-split (lem:nonsplit), so a loop is visible if and only if its length is even
 (def:visible_edge). Loops of odd length impose no condition
 (lem:local_height_vanishes_long_edges).
 
 INPUT:
 
-- ``N`` -- squarefree positive integer
-- ``r_list`` -- sequence of integers coprime to ``N``
+- N -- squarefree positive integer
+- r_list -- sequence of integers coprime to N
 
-OUTPUT: a triple ``relations, is_hecke_generator, trace_relations`` where
+OUTPUT: a triple relations, is_hecke_generator, trace_relations where
 
-- ``relations`` -- sequence of sequences of rows of length `g`; ``relations[i]`` contains
-  the relations for `T_r` with ``r = r_list[i]``. If it only contains zero rows, then any
-  polynomial in `T_r` has trivial height contribution at all `q | N`
-- ``is_hecke_generator`` -- sequence of booleans; whether `T_r` generates the Hecke
-  algebra
-- ``trace_relations`` -- sequence of sequences
-  `[\\mathrm\{Tr\}(T_r^0), \\ldots, \\mathrm\{Tr\}(T_r^\{g-1\})]`, traces taken on
-  `S_2(\\Gamma_0(N))^\{W_N\}`; `T_a` has trace `0` if and only if
-  `\\sum_k a_k \\mathrm\{Tr\}(T_r^k) = 0` (Step 1 of alg:clean_correspondences)
+- relations -- sequence of sequences of rows of length g; relations[i] contains the
+  relations for T_r with r = r_list[i]. If it only contains zero rows, then any polynomial
+  in T_r has trivial height contribution at all q | N
+- is_hecke_generator -- sequence of booleans; whether T_r generates the Hecke algebra
+- trace_relations -- sequence of sequences [Tr(T_r^0), ..., Tr(T_r^(g-1))], traces taken
+  on S_2(Gamma_0(N))^W_N; T_a has trace 0 if and only if sum_k a_k Tr(T_r^k) = 0 (Step 1
+  of alg:clean_correspondences)
 }
     relations := [[] : i in [1..#r_list]];
 
@@ -376,12 +369,12 @@ OUTPUT: a triple ``relations, is_hecke_generator, trace_relations`` where
 end intrinsic;
 
 intrinsic NTLStarQuotientDualGraph(N::RngIntElt)
-{Print the lengths of the edges of the dual graph of `X_0(N)^*` in characteristic `\\ell`,
-for every prime `\\ell | N`.
+{Print the lengths of the edges of the dual graph of X_0(N)^* in characteristic ell, for
+every prime ell | N.
 
 INPUT:
 
-- ``N`` -- squarefree positive integer
+- N -- squarefree positive integer
 }
     assert IsSquarefree(N);
 
@@ -396,30 +389,28 @@ INPUT:
 end intrinsic;
 
 intrinsic NTLStarQuotientGoodCorrespondences(N::RngIntElt, r_list::SeqEnum) -> SeqEnum, SeqEnum, SeqEnum
-{Return, for each `r` in ``r_list``, a basis of the polynomials `f \\in \\ZZ[x]` such that
-the correspondence `T_f = f(T_r)` has trivial height contribution at all primes `q | N`.
+{Return, for each r in r_list, a basis of the polynomials f in Z[x] such that the
+correspondence T_f = f(T_r) has trivial height contribution at all primes q | N.
 
-The `T_f` are not normalised to have trace `0`. So a good correspondence is only
-guaranteed to exist if there are at least two polynomials for some `r` such that `T_r`
-generates the Hecke algebra. If there is exactly one, there might still be a good
-correspondence, but one has to check directly that it has trace `0` on
-`S_2(\\Gamma_0(N))^\{W_N\}`.
+The T_f are not normalised to have trace 0. So a good correspondence is only guaranteed to
+exist if there are at least two polynomials for some r such that T_r generates the Hecke
+algebra. If there is exactly one, there might still be a good correspondence, but one has
+to check directly that it has trace 0 on S_2(Gamma_0(N))^W_N.
 
-The output can be passed to ``QCModAffine``, since it takes suitable linear combinations
-to ensure trace `0` automatically. At the time of writing ``QCModAffine`` raises an error
-if all correspondences passed to it have trace `0`.
+The output can be passed to QCModAffine, since it takes suitable linear combinations to
+ensure trace 0 automatically. At the time of writing QCModAffine raises an error if all
+correspondences passed to it have trace 0.
 
 INPUT:
 
-- ``N`` -- squarefree positive integer
-- ``r_list`` -- sequence of integers coprime to ``N``
+- N -- squarefree positive integer
+- r_list -- sequence of integers coprime to N
 
-OUTPUT: a triple ``use_polys, is_hecke_generator, trace_relations`` where
+OUTPUT: a triple use_polys, is_hecke_generator, trace_relations where
 
-- ``use_polys`` -- sequence of sequences of polynomials over the integers, one for each
-  element of ``r_list``
-- ``is_hecke_generator``, ``trace_relations`` -- as returned by
-  :func:`NTLStarQuotientHeightRelations`
+- use_polys -- sequence of sequences of polynomials over the integers, one for each
+  element of r_list
+- is_hecke_generator, trace_relations -- as returned by NTLStarQuotientHeightRelations
 }
     R<x> := PolynomialRing(Integers());
     use_polys := [[] : i in [1..#r_list]];
@@ -436,23 +427,23 @@ OUTPUT: a triple ``use_polys, is_hecke_generator, trace_relations`` where
 end intrinsic;
 
 intrinsic NTLStarQuotientHasGoodCorrespondenceList(N::RngIntElt, r_list::SeqEnum) -> BoolElt, MonStgElt
-{Return whether `X_0(N)^*` has at least one good Hecke correspondence, using the first
-`T_r` with `r` in ``r_list`` that generates the Hecke algebra.
+{Return whether X_0(N)^* has at least one good Hecke correspondence, using the first T_r
+with r in r_list that generates the Hecke algebra.
 
 When there are at least two kernel polynomials, a trace-zero linear combination always
-exists, and as `T_r` generates the Hecke algebra, which has dimension `g`, it is non-zero.
-When there is exactly one, it is checked directly whether it has trace `0` on
-`S_2(\\Gamma_0(N))^\{W_N\}`.
+exists, and as T_r generates the Hecke algebra, which has dimension g, it is non-zero.
+When there is exactly one, it is checked directly whether it has trace 0 on
+S_2(Gamma_0(N))^W_N.
 
 INPUT:
 
-- ``N`` -- squarefree positive integer
-- ``r_list`` -- sequence of integers coprime to ``N``
+- N -- squarefree positive integer
+- r_list -- sequence of integers coprime to N
 
-OUTPUT: a pair ``b, message`` where ``b`` is a boolean and ``message`` is a string
-explaining the answer
+OUTPUT: a pair b, message where b is a boolean and message is a string explaining the
+answer
 
-An error is raised if no `T_r` with `r` in ``r_list`` generates the Hecke algebra.
+An error is raised if no T_r with r in r_list generates the Hecke algebra.
 }
     use_polys, is_hecke_generator, trace_relations := NTLStarQuotientGoodCorrespondences(N, r_list);
     hecke_gen_indices := [i : i in [1..#r_list] | is_hecke_generator[i]];
@@ -475,29 +466,28 @@ An error is raised if no `T_r` with `r` in ``r_list`` generates the Hecke algebr
 end intrinsic;
 
 intrinsic NTLStarQuotientHasGoodCorrespondence(N::RngIntElt) -> BoolElt, MonStgElt
-{Return whether `X_0(N)^*` has at least one good Hecke correspondence.
+{Return whether X_0(N)^* has at least one good Hecke correspondence.
 
 INPUT:
 
-- ``N`` -- squarefree positive integer
+- N -- squarefree positive integer
 
-OUTPUT: a pair ``b, message`` as returned by
-:func:`NTLStarQuotientHasGoodCorrespondenceList`
+OUTPUT: a pair b, message as returned by NTLStarQuotientHasGoodCorrespondenceList
 
 ALGORITHM:
 
-Find the smallest prime `r` coprime to ``N`` such that `T_r` generates the Hecke algebra
-(this only needs modular symbols, which is cheap compared to the Brandt modules), and
-decide using :func:`NTLStarQuotientHasGoodCorrespondenceList` for that `r`.
+Find the smallest prime r coprime to N such that T_r generates the Hecke algebra (this
+only needs modular symbols, which is cheap compared to the Brandt modules), and decide
+using NTLStarQuotientHasGoodCorrespondenceList for that r.
 
-An error is raised if no such `r < 10000` exists.
+An error is raised if no such r < 10000 exists.
 
-.. TODO::
+TODO:
 
-    If `g \\geq B + 2`, where `B` is :func:`NTLNrOfStarQuotientComponentConditions`,
-    then the `(g-1)`-dimensional space of non-scalar polynomials has dimension strictly
-    greater than `B`, so a good correspondence exists by a dimension argument. This
-    precheck is skipped for now since :func:`NTLStarQuotientGenus` is rather slow.
+If g >= B + 2, where B is NTLNrOfStarQuotientComponentConditions, then the
+(g-1)-dimensional space of non-scalar polynomials has dimension strictly greater than B,
+so a good correspondence exists by a dimension argument. This precheck is skipped for now
+since NTLStarQuotientGenus is rather slow.
 }
     // if NTLStarQuotientGenus(N) ge NTLNrOfStarQuotientComponentConditions(N) + 2 then
     //    return true;

@@ -9,11 +9,11 @@ it is computed in final_inequality.m/txt.
 */
 
 intrinsic NTLNMax() -> RngIntElt
-{Return `N_\{\\max\}`, the largest squarefree level with `\\Phi(N) \\leq 0`.
+{Return N_max, the largest squarefree level with Phi(N) <= 0.
 
-For every `N > N_\{\\max\}` the analytic bound ensures there is a fantastic correspondence.
-It is computed in ``computations/general/final_inequality.m``. The class number tables
-cover all `d \\leq N_\{\\max\}`.
+For every N > N_max the analytic bound ensures there is a fantastic correspondence. It is
+computed in computations/general/final_inequality.m. The class number tables cover all d
+<= N_max.
 
 OUTPUT: a positive integer
 }
@@ -23,7 +23,7 @@ end intrinsic;
 // ===========================================================================
 // Lazy-initialised class number tables, loaded on first use.
 //
-// NTLNu, NTLNuEll, NTLHPrime only ever need h(-4d) and h(-d) with d a squarefree divisor of
+// NTLnu, NTLnuell, NTLhprime only ever need h(-4d) and h(-d) with d a squarefree divisor of
 // some squarefree N <= N_max.  Since every squarefree d <= N_max divides itself, the
 // *whole* set of squarefree d <= N_max is needed, so we tabulate h4[d] = h(-4d)
 // (all squarefree d) and h1[d] = h(-d) (squarefree d = 3 mod 4, so -d is a fundamental
@@ -38,8 +38,8 @@ declare attributes RngInt: NTLClassNumbersH4, NTLClassNumbersH1;
 
 procedure _EnsureClassNumbers()
     /*
-    Read the class number tables from ``data/classnumbers_upto_<N_max>.dat`` and store
-    them as attributes of ``Integers()``, unless this has already been done.
+    Read the class number tables from data/classnumbers_upto_<N_max>.dat and store
+    them as attributes of Integers(), unless this has already been done.
 
     The file path is relative to the working directory, so Magma has to be run from the
     repository root. An error is raised if the file is missing or corrupted.
@@ -78,35 +78,34 @@ procedure _EnsureClassNumbers()
 end procedure;
 
 intrinsic NTLCL4(d::RngIntElt) -> RngIntElt
-{Return the class number `h(-4d)` if `d` is squarefree, and `0` otherwise.
+{Return the class number h(-4d) if d is squarefree, and 0 otherwise.
 
 INPUT:
 
-- ``d`` -- integer with `1 \\leq d \\leq N_\{\\max\}`
+- d -- integer with 1 <= d <= N_max
 
 OUTPUT: a non-negative integer
 
-.. SEEALSO::
+SEEALSO:
 
-    :func:`NTLNMax`
+NTLNMax
 }
     _EnsureClassNumbers();
     return Integers()`NTLClassNumbersH4[d];
 end intrinsic;
 
 intrinsic NTLCL1(d::RngIntElt) -> RngIntElt
-{Return the class number `h(-d)` if `d` is squarefree and `d \\equiv 3 \\pmod 4`, and `0`
-otherwise.
+{Return the class number h(-d) if d is squarefree and d = 3 mod 4, and 0 otherwise.
 
 INPUT:
 
-- ``d`` -- integer with `1 \\leq d \\leq N_\{\\max\}`
+- d -- integer with 1 <= d <= N_max
 
 OUTPUT: a non-negative integer
 
-.. SEEALSO::
+SEEALSO:
 
-    :func:`NTLNMax`
+NTLNMax
 }
     _EnsureClassNumbers();
     return Integers()`NTLClassNumbersH1[d];
@@ -115,32 +114,33 @@ end intrinsic;
 // ===========================================================================
 
 intrinsic NTLGenusX0N(N::RngIntElt) -> RngIntElt
-{Return the genus of `X_0(N)` for squarefree `N`.
+{Return the genus of X_0(N) for squarefree N.
 
 This is the closed form (rem:genusX0)
 
-.. MATH::
+    g = 1 + psi(N)/12 - e_2/4 - e_3/3 - #cusps/2,
 
-    g = 1 + \\psi(N)/12 - e_2/4 - e_3/3 - \\#\\mathrm\{cusps\}/2,
+where
 
-with `\\psi(N) = \\prod_\{\\ell | N\} (\\ell + 1)`,
-`e_2 = \\prod_\{\\ell | N, \\ell \\text\{ odd\}\} (1 + (-1/\\ell))` (the factor at `\\ell = 2` is
-`1`), `e_3 = \\prod_\{\\ell | N\} (1 + (-3/\\ell))` (Kronecker symbol, correct at
-`\\ell = 2, 3`) and `\\#\\mathrm\{cusps\} = 2^\{\\omega(N)\}`.
+- psi(N) = prod_(ell | N) (ell + 1),
+- e_2 = prod_(ell | N, ell odd) (1 + (-1/ell)); the factor at ell = 2 is 1,
+- e_3 = prod_(ell | N) (1 + (-3/ell)), with the Kronecker symbol, which is also correct at
+  ell = 2, 3,
+- #cusps = 2^omega(N).
 
-It has been verified to agree with ``Genus(Gamma0(N))`` for all squarefree `N \\leq 5000`,
-and is about 25 times faster than Magma's ``Genus(Gamma0(N))``, which is otherwise the
-dominant per-`N` cost.
+It has been verified to agree with Genus(Gamma0(N)) for all squarefree N <= 5000, and is
+about 25 times faster than Magma's Genus(Gamma0(N)), which is otherwise the dominant per-N
+cost.
 
 INPUT:
 
-- ``N`` -- squarefree positive integer
+- N -- squarefree positive integer
 
 OUTPUT: a non-negative integer
 
-.. WARNING::
+WARNING:
 
-    The result is only correct for squarefree ``N``; this is not checked.
+The result is only correct for squarefree N; this is not checked.
 }
     P := PrimeDivisors(N);
     psi := &*[Integers()| ell+1 : ell in P];
@@ -149,26 +149,26 @@ OUTPUT: a non-negative integer
     return Integers()!(1 + psi/12 - e2/4 - e3/3 - 2^(#P)/2);
 end intrinsic;
 
-intrinsic NTLOmega(N::RngIntElt) -> RngIntElt
-{Return `\\omega(N)`, the number of distinct prime divisors of ``N``.
+intrinsic NTLomega(N::RngIntElt) -> RngIntElt
+{Return omega(N), the number of distinct prime divisors of N.
 
 INPUT:
 
-- ``N`` -- positive integer
+- N -- positive integer
 
 OUTPUT: a non-negative integer
 }
     return #PrimeDivisors(N);
 end intrinsic;
 
-intrinsic NTLHPrime(d::RngIntElt) -> RngIntElt
-{Return the modified class number `h'(-d)` (def:modified_classnumber).
+intrinsic NTLhprime(d::RngIntElt) -> RngIntElt
+{Return the modified class number h'(-d) (def:modified_classnumber).
 
-This is `h(-4d)` if `d \\equiv 1 \\pmod 4` and `h(-4d) + h(-d)` if `d \\equiv 3 \\pmod 4`.
+This is h(-4d) if d = 1 mod 4 and h(-4d) + h(-d) if d = 3 mod 4.
 
 INPUT:
 
-- ``d`` -- odd squarefree positive integer
+- d -- odd squarefree positive integer
 
 OUTPUT: a positive integer
 }
@@ -180,22 +180,22 @@ OUTPUT: a positive integer
 end intrinsic;
 
 intrinsic NTLH(d::RngIntElt) -> RngIntElt
-{Return `H(d)` (def:H_of_d).
+{Return H(d) (def:H_of_d).
 
-This is `h'(-d)` for odd `d`, `h(-4d)` for even `d > 2`, and `H(2) = 2`.
+This is h'(-d) for odd d, h(-4d) for even d > 2, and H(2) = 2.
 
 INPUT:
 
-- ``d`` -- squarefree positive integer
+- d -- squarefree positive integer
 
 OUTPUT: a positive integer
 
-.. SEEALSO::
+SEEALSO:
 
-    :func:`NTLHPrime`
+NTLhprime
 }
     if IsOdd(d) then
-        return NTLHPrime(d);
+        return NTLhprime(d);
     elif d eq 2 then
         return 2;   // h(-4) + h(-8), as in nu(N, 2)
     else
@@ -203,14 +203,13 @@ OUTPUT: a positive integer
     end if;
 end intrinsic;
 
-intrinsic NTLNu(N::RngIntElt, d::RngIntElt) -> RngIntElt
-{Return `\\nu(N, d)`, the number of `w_d`-fixed points on `X_0(N)` in characteristic `0`
-(Kluit).
+intrinsic NTLnu(N::RngIntElt, d::RngIntElt) -> RngIntElt
+{Return nu(N, d), the number of w_d-fixed points on X_0(N) in characteristic 0 (Kluit).
 
 INPUT:
 
-- ``N`` -- squarefree positive integer
-- ``d`` -- divisor of ``N`` with `d > 1`
+- N -- squarefree positive integer
+- d -- divisor of N with d > 1
 
 OUTPUT: a non-negative integer
 }
@@ -264,21 +263,20 @@ OUTPUT: a non-negative integer
     end if;
 end intrinsic;
 
-intrinsic NTLNuEll(N::RngIntElt, d::RngIntElt, ell::RngIntElt) -> FldRatElt
-{Return `\\nu_\\ell(N, d)`, the number of `w_d`-fixed supersingular points on
-`X_0(N)_\{\\overline\{\\FF\}_\\ell\}`.
+intrinsic NTLnuell(N::RngIntElt, d::RngIntElt, ell::RngIntElt) -> FldRatElt
+{Return nu_ell(N, d), the number of w_d-fixed supersingular points on X_0(N) over Fbar_ell.
 
-All primes `\\ell` are covered, including `\\ell = 2, 3` and even ``N``. The formulae are
+All primes ell are covered, including ell = 2, 3 and even N. The formulae are
 
-- `\\ell` odd, `N` odd: cor:nuell_odd_level
-- `\\ell` odd, `N` even: cor:nuell_even_level_ell_odd (parts (i), (ii), (iii))
-- `\\ell = 2`: cor:nuell_ell_eq_2 (here `d | N/2` is odd)
+- ell odd, N odd: cor:nuell_odd_level
+- ell odd, N even: cor:nuell_even_level_ell_odd (parts (i), (ii), (iii))
+- ell = 2: cor:nuell_ell_eq_2 (here d | N/2 is odd)
 
 INPUT:
 
-- ``N`` -- squarefree positive integer
-- ``d`` -- divisor of `N/\\ell` with `d > 1`
-- ``ell`` -- prime dividing ``N``, the characteristic
+- N -- squarefree positive integer
+- d -- divisor of N/ell with d > 1
+- ell -- prime dividing N, the characteristic
 
 OUTPUT: a non-negative integer, as an element of the rationals
 }
@@ -291,7 +289,7 @@ OUTPUT: a non-negative integer, as an element of the rationals
         if IsOdd(N) then
             // ---- Odd level (cor:nuell_odd_level) ----
             prod := &*[Integers()| 1 + KroneckerSymbol(-d, q) : q in PrimeDivisors(M div d)];
-            return 1/2 * NTLHPrime(d) * (1 - KroneckerSymbol(-d, ell)) * prod;
+            return 1/2 * NTLhprime(d) * (1 - KroneckerSymbol(-d, ell)) * prod;
         else
             // ---- Even level, ell odd (cor:nuell_even_level_ell_odd).  M = N/ell even; Modd := M/2 odd. ----
             Modd := M div 2;
@@ -329,22 +327,21 @@ OUTPUT: a non-negative integer, as an element of the rationals
 end intrinsic;
 
 intrinsic NTLAutTerm(N::RngIntElt, ell::RngIntElt) -> RngIntElt
-{Return `A_\\ell(N)`, an upper bound on the number of supersingular points `(E, G)` on
-`X_0(N)_\{\\overline\{\\FF\}_\\ell\}` with `\\#\\mathrm\{Aut\}(E, G) > 2`.
+{Return A_ell(N), an upper bound on the number of supersingular points (E, G) on X_0(N)
+over Fbar_ell with #Aut(E, G) > 2.
 
-For `\\ell > 3` these lie above `j = 0, 1728`. For `\\ell \\in \\\{2, 3\\\}` the supersingular
-curve is unique with `\\mathrm\{Aut\}(E) = 2T` (order 24, seven maximal cyclic subgroups of
-order `> 2`) resp. `2D_6` (order 12, four), each fixing at most `2^\{\\omega(N)-1\}`
-subgroups `G` of order `M = N/\\ell`.
+For ell > 3 these lie above j = 0, 1728. For ell = 2, 3 the supersingular curve is unique
+with Aut(E) = 2T (order 24, seven maximal cyclic subgroups of order > 2) resp. 2D_6 (order
+12, four), each fixing at most 2^(omega(N)-1) subgroups G of order M = N/ell.
 
 INPUT:
 
-- ``N`` -- squarefree positive integer
-- ``ell`` -- prime dividing ``N``
+- N -- squarefree positive integer
+- ell -- prime dividing N
 
 OUTPUT: a positive integer
 }
-    w := NTLOmega(N);
+    w := NTLomega(N);
     if ell eq 2 then
         return 7 * 2^(w-1);
     elif ell eq 3 then
@@ -355,74 +352,72 @@ OUTPUT: a positive integer
 end intrinsic;
 
 intrinsic NTLB(ell::RngIntElt, N::RngIntElt, W::SeqEnum) -> RngIntElt
-{Return `B(\\ell, N, W)`, an upper bound on the number of double points of thickness `> 1`
-of `(X_0(N)/W)_\{\\overline\{\\FF\}_\\ell\}` (cor:Bpnw).
+{Return B(ell, N, W), an upper bound on the number of double points of thickness > 1 of
+X_0(N)/W over Fbar_ell (cor:Bpnw).
 
-The raw expression `2/\\#W \\cdot (A_\\ell(N) + \\sum_d \\nu_\\ell(N, d))` bounds an integer
-count but can be a half-integer, so the floor is returned.
+The raw expression 2/#W * (A_ell(N) + sum_d nu_ell(N, d)) bounds an integer count but can
+be a half-integer, so the floor is returned.
 
 INPUT:
 
-- ``ell`` -- prime dividing ``N``
-- ``N`` -- squarefree positive integer
-- ``W`` -- sequence of Hall divisors of ``N``, representing a group of Atkin-Lehner
-  involutions
+- ell -- prime dividing N
+- N -- squarefree positive integer
+- W -- sequence of Hall divisors of N, representing a group of Atkin-Lehner involutions
 
 OUTPUT: a non-negative integer
 
-.. SEEALSO::
+SEEALSO:
 
-    :func:`NTLAutTerm`, :func:`NTLNuEll`
+NTLAutTerm, NTLnuell
 }
     M := N div ell;
-    S := &+[Rationals()| NTLNuEll(N, d, ell) : d in Divisors(M) | d ne 1 and d in W];
+    S := &+[Rationals()| NTLnuell(N, d, ell) : d in Divisors(M) | d ne 1 and d in W];
     return Floor(2/#W * (NTLAutTerm(N, ell) + S));
 end intrinsic;
 
 intrinsic NTLBoundOnB(N::RngIntElt, W::SeqEnum) -> RngIntElt
-{Return `\\sum_\{\\ell | N\} B(\\ell, N, W)`.
+{Return sum_(ell | N) B(ell, N, W).
 
 INPUT:
 
-- ``N`` -- squarefree positive integer
-- ``W`` -- sequence of Hall divisors of ``N``, representing a group of Atkin-Lehner
-  involutions
+- N -- squarefree positive integer
+- W -- sequence of Hall divisors of N, representing a group of Atkin-Lehner involutions
 
 OUTPUT: a non-negative integer
 
-.. SEEALSO::
+SEEALSO:
 
-    :func:`NTLB`
+NTLB
 }
     return &+[Integers()| NTLB(ell, N, W) : ell in PrimeDivisors(N)];
 end intrinsic;
 
 intrinsic NTLGenusX0Nstar(N::RngIntElt) -> RngIntElt
-{Return the genus of `X_0(N)^*` for squarefree `N`, using the Riemann-Hurwitz formula and
-the fixed-point counts `\\nu(N, d)`.
+{Return the genus of X_0(N)^* for squarefree N, using the Riemann-Hurwitz formula and the
+fixed-point counts nu(N, d).
 
 INPUT:
 
-- ``N`` -- squarefree positive integer
+- N -- squarefree positive integer
 
 OUTPUT: a non-negative integer
 
-.. SEEALSO::
+SEEALSO:
 
-    :func:`NTLStarQuotientGenus` for a (slow) independent computation.
+NTLStarQuotientGenus for a (slow) independent computation.
 }
-    g := 1 + (NTLGenusX0N(N) - 1)/2^NTLOmega(N) - 1/(2^(NTLOmega(N)+1)) * &+[Integers()| NTLNu(N,d) : d in Divisors(N) | d ne 1];
+    g := 1 + (NTLGenusX0N(N) - 1)/2^NTLomega(N) - 1/(2^(NTLomega(N)+1)) * &+[Integers()| NTLnu(N,d) : d in Divisors(N) | d ne 1];
     // The genus is an integer; coercing it asserts the rational formula came out integral
-    // (a non-integer here would signal a bug in NTLGenusX0N or NTLNu).
+    // (a non-integer here would signal a bug in NTLGenusX0N or NTLnu).
     return Integers()!g;
 end intrinsic;
 
 intrinsic NTLHallDivisors(N::RngIntElt) -> SeqEnum
-{Return the Hall divisors of ``N``, i.e. the divisors `d` with `\\gcd(d, N/d) = 1`.
+{Return the Hall divisors of N, i.e. the divisors d with gcd(d, N/d) = 1.
 
 INPUT:
 
-- ``N`` -- positive integer
+- N -- positive integer
 
 OUTPUT: a sequence of positive integers
 }
