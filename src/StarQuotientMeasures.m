@@ -337,9 +337,12 @@ OUTPUT: a triple relations, is_hecke_generator, trace_relations where
   on S_2(Gamma_0(N))^W_N; T_a has trace 0 if and only if sum_k a_k Tr(T_r^k) = 0 (Step 1
   of alg:clean_correspondences)
 }
+    require IsSquarefree(N): "N must be squarefree";
     relations := [[] : i in [1..#r_list]];
 
-    g := NTLStarQuotientGenus(N);
+    // The genus of X_0(N)^*. Magma's GenusX0NQuotient is cheap, unlike NTLStarQuotientGenus,
+    // and it is independent of the modular symbols, so the assert below remains a real check.
+    g := GenusX0NQuotient(N, PrimeDivisors(N));
 
     // Whether T_r generates the Hecke algebra has to be decided on all of S_2(Gamma_0(N))^{W_N},
     // not on the dual graphs: otherwise polynomials f with f(T_r) = 0 can satisfy all relations.
