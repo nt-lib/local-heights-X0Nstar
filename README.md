@@ -100,3 +100,8 @@ sudo apt install parallel
 # RHEL / Fedora
 sudo dnf install parallel
 ```
+
+## License
+
+This repository is licensed under the GNU General Public License v3.0; see [LICENSE](LICENSE).
+The submodules (QCMod, ModularCurvesX0plusG4-6 and magma-unittest) are separate projects with their own terms.
