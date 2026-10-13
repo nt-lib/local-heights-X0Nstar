@@ -1,61 +1,60 @@
-Magma V2.29-4     Wed Oct  7 2026 12:47:36 on mordell  [Seed = 1358698195]
+Magma V2.29-10    Tue Oct 13 2026 01:21:53 on mordell  [Seed = 3228036456]
 Type ? for help.  Type <Ctrl>-D to quit.
 
 Loading file "computations/general/dualgraphs.m"
-Loading "src/StarQuotientMeasures.m"
 N = 161:
-q = 7:
+Edges of the dual graph in characteristic ell = 7:
 Edge #1 of length 2.
 Edge #2 of length 2.
-q = 23:
+Edges of the dual graph in characteristic ell = 23:
 Edge #1 of length 1.
 Edge #2 of length 1.
 
 N = 187:
-q = 11:
+Edges of the dual graph in characteristic ell = 11:
 Edge #1 of length 1.
 Edge #2 of length 1.
 Edge #3 of length 1.
-q = 17:
+Edges of the dual graph in characteristic ell = 17:
 Edge #1 of length 1.
 Edge #2 of length 1.
 Edge #3 of length 2.
 
 N = 247:
-q = 13:
+Edges of the dual graph in characteristic ell = 13:
 Edge #1 of length 1.
 Edge #2 of length 1.
 Edge #3 of length 1.
 Edge #4 of length 2.
-q = 19:
+Edges of the dual graph in characteristic ell = 19:
 Edge #1 of length 1.
 Edge #2 of length 1.
 Edge #3 of length 1.
 Edge #4 of length 1.
 
 N = 319:
-q = 11:
+Edges of the dual graph in characteristic ell = 11:
 Edge #1 of length 1.
 Edge #2 of length 1.
 Edge #3 of length 1.
 Edge #4 of length 1.
-q = 29:
-Edge #1 of length 1.
+Edges of the dual graph in characteristic ell = 29:
+Edge #1 of length 2.
 Edge #2 of length 1.
 Edge #3 of length 1.
-Edge #4 of length 2.
+Edge #4 of length 1.
 
 N = 290:
-q = 2:
+Edges of the dual graph in characteristic ell = 2:
 Edge #1 of length 2.
 Edge #2 of length 4.
-q = 5:
+Edges of the dual graph in characteristic ell = 5:
 Edge #1 of length 1.
 Edge #2 of length 1.
-q = 29:
+Edges of the dual graph in characteristic ell = 29:
 Edge #1 of length 1.
 Edge #2 of length 1.
 Edge #3 of length 1.
 
 
-Total time: 5.339 seconds, Total memory usage: 32.09MB
+Total time: 4.490 seconds, Total memory usage: 32.09MB

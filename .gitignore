@@ -3,3 +3,4 @@
 /data/*
 !/data/classnumbers_upto_*.dat
 .ipynb_checkpoints/
+/logs/nohup.out
