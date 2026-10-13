@@ -430,45 +430,6 @@ OUTPUT: a triple use_polys, is_hecke_generator, trace_relations where
     return use_polys, is_hecke_generator, trace_relations;
 end intrinsic;
 
-intrinsic NTLStarQuotientHasCleanCorrespondenceList(N::RngIntElt, r_list::SeqEnum) -> BoolElt, MonStgElt
-{Return whether X_0(N)^* has at least one clean Hecke correspondence, using the first T_r
-with r in r_list that generates the Hecke algebra.
-
-When there are at least two kernel polynomials, a trace-zero linear combination always
-exists, and as T_r generates the Hecke algebra, which has dimension g, it is non-zero.
-When there is exactly one, it is checked directly whether it has trace 0 on
-S_2(Gamma_0(N))^W_N.
-
-INPUT:
-
-- N -- squarefree positive integer
-- r_list -- sequence of integers coprime to N
-
-OUTPUT: a pair b, message where b is a boolean and message is a string explaining the
-answer
-
-An error is raised if no T_r with r in r_list generates the Hecke algebra.
-}
-    use_polys, is_hecke_generator, trace_relations := NTLStarQuotientCleanCorrespondences(N, r_list);
-    hecke_gen_indices := [i : i in [1..#r_list] | is_hecke_generator[i]];
-    error if #hecke_gen_indices eq 0,
-        Sprintf("No T_r in r_list generates the Hecke algebra for N = %o.", N);
-    i := hecke_gen_indices[1];
-    if #use_polys[i] gt 1 then
-        return true, Sprintf("There are at least 2 kernel polynomials for T_%o, so a trace-zero linear combination exists.", r_list[i]);
-    elif #use_polys[i] eq 1 then
-        r := r_list[i];
-        f := use_polys[i][1];
-        if &+[Rationals()| Coefficient(f, k)*trace_relations[i][k+1] : k in [0..#trace_relations[i]-1]] eq 0 then
-            return true, Sprintf("There is exactly 1 kernel polynomial for T_%o, and it has trace 0 on the Atkin-Lehner +1 eigenspace of S_2(N).", r);
-        else
-            return false, Sprintf("There is exactly 1 kernel polynomial for T_%o, but it does not have trace 0 on the Atkin-Lehner +1 eigenspace of S_2(N).", r);
-        end if;
-    else
-        return false, Sprintf("There are no kernel polynomials for T_%o, so there is no clean correspondence.", r_list[i]);
-    end if;
-end intrinsic;
-
 intrinsic NTLStarQuotientHasCleanCorrespondence(N::RngIntElt) -> BoolElt, MonStgElt
 {Return whether X_0(N)^* has at least one clean Hecke correspondence.
 
@@ -476,33 +437,41 @@ INPUT:
 
 - N -- squarefree positive integer
 
-OUTPUT: a pair b, message as returned by NTLStarQuotientHasCleanCorrespondenceList
+OUTPUT: a pair b, message where b is a boolean and message is a string explaining the
+answer
 
 ALGORITHM:
 
 Find the smallest prime r coprime to N such that T_r generates the Hecke algebra (this
-only needs modular symbols, which is cheap compared to the Brandt modules), and decide
-using NTLStarQuotientHasCleanCorrespondenceList for that r.
+only needs modular symbols, which is cheap compared to the Brandt modules), and compute
+the kernel polynomials for T_r with NTLStarQuotientCleanCorrespondences. When there are at
+least two, a trace-zero linear combination exists, and as T_r generates the Hecke algebra,
+which has dimension g, it is non-zero. When there is exactly one, it is checked directly
+whether it has trace 0 on S_2(Gamma_0(N))^W_N.
 
 An error is raised if no such r < 10000 exists.
-
-TODO:
-
-If g >= B + 2, where B is NTLNrOfStarQuotientComponentConditions, then the
-(g-1)-dimensional space of non-scalar polynomials has dimension strictly greater than B,
-so a clean correspondence exists by a dimension argument. This precheck is skipped for now
-since NTLStarQuotientGenus is rather slow.
 }
-    // if NTLStarQuotientGenus(N) ge NTLNrOfStarQuotientComponentConditions(N) + 2 then
-    //    return true;
-    // end if;
+    require IsSquarefree(N): "N must be squarefree";
     S, Sstar := NTLStarQuotientCuspForms(N);
-    for r in [p : p in PrimesUpTo(10000) | not IsDivisibleBy(N, p)] do
-        if NTLIsHeckeGenerator(NTLHeckeMatrixOnFixedSubspace(S, Sstar, r)) then
-            return NTLStarQuotientHasCleanCorrespondenceList(N, [r]);
-        end if;
-    end for;
-    error Sprintf("No Hecke generator found for N = %o among primes up to 10000.", N);
+    primes := [p : p in PrimesUpTo(10000) | not IsDivisibleBy(N, p)];
+    error if not exists(r){r : r in primes | NTLIsHeckeGenerator(NTLHeckeMatrixOnFixedSubspace(S, Sstar, r))},
+        Sprintf("No Hecke generator found for N = %o among primes up to 10000.", N);
+
+    use_polys, _, trace_relations := NTLStarQuotientCleanCorrespondences(N, [r]);
+    polys := use_polys[1];
+    traces := trace_relations[1];
+    case #polys:
+        when 0:
+            return false, Sprintf("There are no kernel polynomials for T_%o, so there is no clean correspondence.", r);
+        when 1:
+            f := polys[1];
+            if &+[Rationals()| Coefficient(f, k)*traces[k+1] : k in [0..#traces-1]] eq 0 then
+                return true, Sprintf("There is exactly 1 kernel polynomial for T_%o, and it has trace 0 on the Atkin-Lehner +1 eigenspace of S_2(N).", r);
+            end if;
+            return false, Sprintf("There is exactly 1 kernel polynomial for T_%o, but it does not have trace 0 on the Atkin-Lehner +1 eigenspace of S_2(N).", r);
+        else
+            return true, Sprintf("There are at least 2 kernel polynomials for T_%o, so a trace-zero linear combination exists.", r);
+    end case;
 end intrinsic;
 
 
@@ -524,8 +493,4 @@ end procedure;
 
 values_of_local_heights(7*23, 29);
 
-*/
-/*
-assert NTLStarQuotientHasCleanCorrespondence(246);
-assert not NTLStarQuotientHasCleanCorrespondence(249);
 */
