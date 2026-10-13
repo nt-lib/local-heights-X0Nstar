@@ -240,6 +240,9 @@ function run_QC(p, N1, N2)
     R<x> := PolynomialRing(Rationals());
     corrs := NTLStarQuotientCleanCorrespondences(187, [p]);
     polys := corrs[1];
+    printf "Polynomials in T_p passed to QCModAffine (use_polys): %o\n", polys;
+    printf "Clean correspondences of trace 0, as polynomials in T_p: %o\n",
+        NTLStarQuotientCleanCorrespondences(187, [p] : trace_zero := true)[1];
     time good_affine_rat_pts_xy, no_fake_pts, bad_affine_rat_pts_xy, data, fake_rat_pts, bad_Qppoints := QCModAffine(Q, p : use_polys := polys,
         number_of_correspondences := #polys-1, printlevel:=1, N := N1, prec := 40, base_point := base_pt);
     printf "There are %o fake rational points: %o\n", #fake_rat_pts, fake_rat_pts;

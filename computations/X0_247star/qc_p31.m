@@ -26,7 +26,9 @@ p := 31;
 assert p in good_primes;
 
 use_polys := NTLStarQuotientCleanCorrespondences(N, [p])[1];
-printf "use_polys: %o\n", use_polys;
+printf "Polynomials in T_p passed to QCModAffine (use_polys): %o\n", use_polys;
+printf "Clean correspondences of trace 0, as polynomials in T_p: %o\n",
+    NTLStarQuotientCleanCorrespondences(N, [p] : trace_zero := true)[1];
 
 SetMemoryLimit(20 * 1024^3);
 good_pts, boo, bad_pts, data, fake_pts, bad_disks := QCModAffine(Q, p : printlevel:=2,
