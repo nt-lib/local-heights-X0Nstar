@@ -413,7 +413,10 @@ INPUT:
 OUTPUT: a triple use_polys, is_hecke_generator, trace_relations where
 
 - use_polys -- sequence of sequences of polynomials over the integers, one for each
-  element of r_list
+  element of r_list. Each is the basis obtained from the reduced row echelon form with
+  respect to decreasing degree, with every polynomial scaled to have coprime integer
+  coefficients and a positive leading coefficient. So the polynomials have distinct
+  degrees, which are as small as possible, and they are sorted by increasing degree
 - is_hecke_generator, trace_relations -- as returned by NTLStarQuotientHeightRelations
 }
     R<x> := PolynomialRing(Integers());
@@ -423,8 +426,17 @@ OUTPUT: a triple use_polys, is_hecke_generator, trace_relations where
         if #relations[i] eq 0 then
             continue;
         end if;
-        for v in Basis(Kernel(Transpose(Matrix(relations[i])))) do
-            Append(~use_polys[i],&+[v[j]*x^(j-1) : j in [1..NumberOfColumns(v)]]);
+        K := Kernel(Transpose(Matrix(Rationals(), relations[i])));
+        if Dimension(K) eq 0 then
+            continue;
+        end if;
+        // Write the coefficients from the highest degree down, so that the pivots of the
+        // reduced row echelon form are the degrees, which are then as small as possible.
+        E := EchelonForm(Matrix([Reverse(Eltseq(v)) : v in Basis(K)]));
+        for row in Reverse(RowSequence(E)) do
+            c := Reverse(row);
+            c := [Integers()| LCM([Denominator(a) : a in c]) * a : a in c];
+            Append(~use_polys[i], R![a div GCD(c) : a in c]);
         end for;
     end for;
     return use_polys, is_hecke_generator, trace_relations;
