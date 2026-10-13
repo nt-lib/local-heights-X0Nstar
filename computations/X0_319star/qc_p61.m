@@ -8,6 +8,14 @@ X319star := X0NQuotient(N, [11, 29]);
 _<W,X,Y,Z> := AmbientSpace(X319star);
 pts := PointSearch(X319star, 30);
 
+// The rational CM points found below are distinct and differ from the unique cusp of
+// X_0(N)^*, so if they number one less than the rational points, all other points are CM.
+AttachSpec("ShimuraCurveALQuotients/ShimuraQuotients.spec");
+discs := RationalCMDiscs(CreateShimuraQuot(1, N, Set(Divisors(N))));
+printf "Discriminants of the rational CM points, with the number of points: %o\n",
+    [<d, discs[d]> : d in Reverse(Sort(Setseq(Keys(discs))))];
+assert #pts eq 1 + &+[discs[d] : d in Keys(discs)];
+
 // The plane model is the image of the map (x, y) = (L1/L2, L3/L4). The linear forms
 // L1, ..., L4 were found by trying random linear forms with coefficients between -2 and 2
 // until p was a good prime for the model.
@@ -43,11 +51,3 @@ assert #bad_disks eq 0;
 assert forall{P : P in model_pts | P[3] eq 1};
 assert Set(good_pts) eq {[P[1], P[2]] : P in model_pts};
 printf "There are no bad points, fake points or bad disks, and the points found are exactly the images of the %o known rational points.\n", #pts;
-
-// The rational CM points found below are distinct and differ from the unique cusp of
-// X_0(N)^*, so if they number one less than the rational points, all other points are CM.
-AttachSpec("ShimuraCurveALQuotients/ShimuraQuotients.spec");
-discs := RationalCMDiscs(CreateShimuraQuot(1, N, Set(Divisors(N))));
-printf "Discriminants of the rational CM points, with the number of points: %o\n",
-    [<d, discs[d]> : d in Reverse(Sort(Setseq(Keys(discs))))];
-assert #pts eq 1 + &+[discs[d] : d in Keys(discs)];
