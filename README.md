@@ -21,8 +21,10 @@ $X_0(187)^{\ast}$, $X_0(247)^{\ast}$, and $X_0(319)^{\ast}$.
 |-----------|------|
 | `QCMod/` | Quadratic Chabauty engine |
 | `ModularCurvesX0plusG4-6/` | Model-finding code for X_0(N)^* |
+| `ShimuraCurveALQuotients/` | Rational CM points on Atkin-Lehner quotients (Assaf-Hashimoto) |
 
-Initialise before running any computations:
+`make verify` initialises any submodules that are missing, and `make test` initialises
+`tests/magma-unittest`. To initialise them by hand:
 
 ```bash
 git submodule update --init
@@ -46,6 +48,7 @@ Within each `computations/X0_<N>star/` directory the naming convention is:
 | `qc_p<prime>_mws.m` | QC run followed by a Mordell-Weil sieve step |
 | `model_p<prime>.m` | Model search via `model_equation_finder` at the given prime |
 | `model_search_*.m` | Ad-hoc / random model search |
+| `cm_points.m` | Discriminants of the rational CM points |
 
 ## Running computations
 
