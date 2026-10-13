@@ -334,3 +334,11 @@ time done_fake := MWSieve(X, mws_primes, M, bas, base_point, fake_coeffs_mod_M :
 printf "done with the MW sieve: %o\n", done_fake;
 assert done_fake;
 printf "No additional solutions are rational.\n";
+
+// The rational CM points found below are distinct and differ from the unique cusp of
+// X_0(N)^*, so if they number one less than the rational points, all other points are CM.
+AttachSpec("ShimuraCurveALQuotients/ShimuraQuotients.spec");
+discs := RationalCMDiscs(CreateShimuraQuot(1, N, Set(Divisors(N))));
+printf "Discriminants of the rational CM points, with the number of points: %o\n",
+    [<d, discs[d]> : d in Reverse(Sort(Setseq(Keys(discs))))];
+assert #PointSearch(X187star, 30) eq 1 + &+[discs[d] : d in Keys(discs)];
