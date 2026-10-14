@@ -1,4 +1,4 @@
-Magma V2.29-4     Wed Oct 14 2026 14:23:59 on mordell  [Seed = 2987888356]
+Magma V2.29-4     Wed Oct 14 2026 19:12:22 on mordell  [Seed = 3997907209]
 Type ? for help.  Type <Ctrl>-D to quit.
 
 Loading startup file "computations/X0_187star/qc_p37_mws.m"
@@ -194,7 +194,7 @@ least 37^8.
 [ 36163208511822 + O(37^9), -58421094891706 + O(37^9) ]
 ] 
 
-Time: 156.210
+Time: 228.700
 There are 54 fake rational points: [*
 [ -485233728982*37 + O(37^9), -43956769758186 + O(37^9) ],
 [ -1349152663061*37 + O(37^9), -10984083486483 + O(37^9) ],
@@ -387,8 +387,6 @@ Use the Mordell-Weil sieve to show that the additional [ 54 ] solutions aren't
 rational.
 generating cosets ...
 number of cosets: 54
-adding information modulo 1
-number of cosets: 54
 sieving with M = 50653, S = [ 2, 29, 3617, 4127 ]
 starting Mordell Weil sieve
   47 cosets eliminated at v = 2
@@ -399,8 +397,8 @@ starting Mordell Weil sieve
         4 cosets remaining after v=3617
   4 cosets eliminated at v = 4127
         0 cosets remaining after v=4127
-Time: 638.100
+Time: 925.640
 done with the MW sieve: true
 No additional solutions are rational.
 
-Total time: 2169.579 seconds, Total memory usage: 2350.06MB
+Total time: 3060.969 seconds, Total memory usage: 2350.06MB
