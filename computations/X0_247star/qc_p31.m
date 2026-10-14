@@ -18,9 +18,9 @@ printf "Discriminants of the rational CM points, with the number of points: %o\n
     [<d, discs[d]> : d in Reverse(Sort(Setseq(Keys(discs))))];
 assert #pts eq 1 + &+[discs[d] : d in Keys(discs)];
 
-// The plane model is the image of the map (x, y) = (L1/L2, L3/L4). The linear forms
-// L1, ..., L4 were found by trying random linear forms with coefficients between -2 and 2
-// until p was a good prime for the model.
+// The plane model is the image of the map (x, y) = (L1/L2, L3/L4). We tried random
+// linear forms L1, ..., L4 with coefficients between -2 and 2 until the model had a good
+// prime <= 50.
 L1 := -2*W;
 L2 := -2*W - 2*X;
 L3 := -Y - 2*Z;
