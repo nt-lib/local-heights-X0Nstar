@@ -5,6 +5,8 @@ AttachSpec("local_heights.spec");
 
 N := 319;
 X319star := X0NQuotient(N, [11, 29]);
+// Smooth, so no rational point below has several points above it on the desingularisation.
+assert not IsSingular(X319star);
 _<W,X,Y,Z> := AmbientSpace(X319star);
 pts := PointSearch(X319star, 30);
 

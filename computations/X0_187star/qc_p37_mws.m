@@ -15,6 +15,8 @@ ALs := [11, 17];
 seq_al := ALs;
 
 X187star := X0NQuotient(N, ALs);
+// Smooth, so no rational point below has several points above it on the desingularisation.
+assert not IsSingular(X187star);
 pts := PointSearch(X187star, 30);
 
 // The rational CM points found below are distinct and differ from the unique cusp of
