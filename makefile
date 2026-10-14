@@ -1,17 +1,29 @@
-.PHONY: clean test verify copy_remote copy_logs test_remote verify_remote status_remote status
+.PHONY: clean submodules test_submodules test verify copy_remote copy_logs test_remote verify_remote status_remote status
 REMOTE_DIR := /tmp/$(shell basename $(CURDIR))
 
 clean:
 	find . -type f -name "*.sig" -delete
 
+# Initialise the given submodules (all if none are given) that are not checked out yet.
+# Submodules that are already checked out are left alone, so this never moves them to a
+# different commit.
+init_missing_submodules = git submodule status $(1) | awk '/^-/ {print $$2}' | xargs -r git submodule update --init --
+
+submodules:
+	@$(call init_missing_submodules,)
+
+# The tests only need magma-unittest, not the large ShimuraCurveALQuotients.
+test_submodules:
+	@$(call init_missing_submodules,tests/magma-unittest)
+
 # Magma exits 0 even after a failed assert, so check the output as well. Any occurrence of
 # "error" (case insensitive) counts as a failure: better a false alarm than a missed error.
-test:
+test: test_submodules
 	@out=$$(magma -n tests/test_all.m < /dev/null 2>&1); echo "$$out"; \
 	if echo "$$out" | grep -qi "error"; then echo "TESTS FAILED"; exit 1; fi; \
 	echo "$$out" | grep -q "All tests finished!"
 
-verify:
+verify: submodules
 	bash verify_all.sh
 
 copy_remote:

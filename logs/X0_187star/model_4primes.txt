@@ -1,4 +1,4 @@
-Magma V2.29-4     Thu Aug 20 2026 20:54:46 on mordell  [Seed = 3627404419]
+Magma V2.29-10    Tue Oct 13 2026 01:21:53 on mordell  [Seed = 2301535265]
 Type ? for help.  Type <Ctrl>-D to quit.
 
 Loading file "computations/X0_187star/model_4primes.m"
@@ -23,7 +23,6 @@ y^4 + (44/5*x - 2)*y^3 + (573/20*x^2 - 25/2*x + 29/20)*y^2 + (329/8*x^3 -
     9/10*x + 1/16
 Is this model singular: false
 good primes for this model are  [ 19, 31, 47, 59 ]
-Loading "src/StarQuotientMeasures.m"
  Computing a symplectic basis of H^1
  Computed Coleman data at p=19 to precision 20.
 
@@ -243,4 +242,4 @@ bad pts, fake pts, and bad disks:
 *]
 []
 
-Total time: 113.189 seconds, Total memory usage: 134.84MB
+Total time: 119.200 seconds, Total memory usage: 134.84MB

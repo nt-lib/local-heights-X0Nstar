@@ -3,7 +3,8 @@
 // (uncompressed in data/; from https://www.lmfdb.org/NumberField/QuadraticImaginaryClassGroups
 // with k=0): h4[d] = h(-4d) for squarefree d, h1[d] = h(-d) for squarefree d = 3 mod 4,
 // and 0 otherwise.
-load "src/genera_and_bounds.m";   // for N_max
+AttachSpec("local_heights.spec");
+N_max := NTLNMax();
 
 // Returns [h(-D) : D = r, r+m, ... <= Dmax], with 0 where -D is not fundamental, read from
 // data/cl<r>mod<m>.0. Its lines "a b ..." list the fundamental -D in increasing order, with

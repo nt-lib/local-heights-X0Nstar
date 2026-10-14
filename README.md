@@ -21,8 +21,10 @@ $X_0(187)^{\ast}$, $X_0(247)^{\ast}$, and $X_0(319)^{\ast}$.
 |-----------|------|
 | `QCMod/` | Quadratic Chabauty engine |
 | `ModularCurvesX0plusG4-6/` | Model-finding code for X_0(N)^* |
+| `ShimuraCurveALQuotients/` | Rational CM points on Atkin-Lehner quotients (Assaf-Hashimoto) |
 
-Initialise before running any computations:
+`make verify` initialises any submodules that are missing, and `make test` initialises
+`tests/magma-unittest`. To initialise them by hand:
 
 ```bash
 git submodule update --init
@@ -32,11 +34,10 @@ git submodule update --init
 
 | Path | Contents |
 |------|----------|
-| `src/` | Shared library code: star-quotient measures, rank computations, Mordell-Weil sieve, misc utilities |
+| `src/` | Shared library code: the Magma package `local_heights.spec` (star-quotient measures, genera and bounds), attached with `AttachSpec("local_heights.spec")`, and patched copies of QCMod files (Mordell-Weil sieve, misc utilities), loaded with `load` |
 | `computations/X0_<N>star/` | Scripts for the curve X_0(N)^* |
-| `computations/general/` | Cross-cutting verifications: genus tables, fixed-point formulas, dual graphs, etc. |
+| `computations/general/` | Cross-cutting verifications: existence of clean correspondences, fixed-point formulas, dual graphs, etc. |
 | `logs/` | Output committed as a record of past computations |
-| `notebooks/` | Exploratory Jupyter notebooks |
 | `data/` | Precomputed data files (e.g. class numbers) |
 
 Within each `computations/X0_<N>star/` directory the naming convention is:
@@ -47,8 +48,6 @@ Within each `computations/X0_<N>star/` directory the naming convention is:
 | `qc_p<prime>_mws.m` | QC run followed by a Mordell-Weil sieve step |
 | `model_p<prime>.m` | Model search via `model_equation_finder` at the given prime |
 | `model_search_*.m` | Ad-hoc / random model search |
-| `gonality.m` | Gonality / gonal map computation |
-| `reductions.m` | Reduction checks |
 
 ## Running computations
 
@@ -103,3 +102,8 @@ sudo apt install parallel
 # RHEL / Fedora
 sudo dnf install parallel
 ```
+
+## License
+
+This repository is licensed under the GNU General Public License v3.0; see [LICENSE](LICENSE).
+The submodules (QCMod, ModularCurvesX0plusG4-6 and magma-unittest) are separate projects with their own terms.

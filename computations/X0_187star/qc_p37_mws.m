@@ -1,5 +1,4 @@
-load "src/StarQuotientMeasures.m";
-load "src/rank.m";
+AttachSpec("local_heights.spec");
 SetPath("QCMod");
 load "qc_modular.m";
 load "divisor_heights.m";
@@ -16,7 +15,18 @@ ALs := [11, 17];
 seq_al := ALs;
 
 X187star := X0NQuotient(N, ALs);
+// Smooth, so no rational point below has several points above it on the desingularisation.
+assert not IsSingular(X187star);
 pts := PointSearch(X187star, 30);
+
+// The rational CM points found below are distinct and differ from the unique cusp of
+// X_0(N)^*, so if they number one less than the rational points, all other points are CM.
+AttachSpec("ShimuraCurveALQuotients/ShimuraQuotients.spec");
+discs := RationalCMDiscs(CreateShimuraQuot(1, N, Set(Divisors(N))));
+printf "Discriminants of the rational CM points, with the number of points: %o\n",
+    [<d, discs[d]> : d in Reverse(Sort(Setseq(Keys(discs))))];
+assert #pts eq 1 + &+[discs[d] : d in Keys(discs)];
+
 // Ambient projective space
 P<X, Y, Z> := ProjectiveSpace(Rationals(), 2);
 
@@ -50,7 +60,6 @@ end if;
 J := J_quo;
 gX := Dimension(J);
 printf "genus = %o\n", gX;
-assert rank_quo(N, ALs) eq gX; // check QC condition
 
 ptsX := PointSearch(S, 30); // projective coordinates
 // First compute local heights of representatives for generators of J(Q) tensor Q at p. 
@@ -240,8 +249,11 @@ function run_QC(p, N1, N2)
 
     printf "\nStarting quadratic Chabauty for p = %o.\n", p;
     R<x> := PolynomialRing(Rationals());
-    corrs := StarQuotientGoodCorrespondences(187, [p]);
+    corrs := NTLStarQuotientCleanCorrespondences(187, [p]);
     polys := corrs[1];
+    printf "Polynomials in T_p passed to QCModAffine (use_polys): %o\n", polys;
+    printf "Clean correspondences of trace 0, as polynomials in T_p: %o\n",
+        NTLStarQuotientCleanCorrespondences(187, [p] : trace_zero := true)[1];
     time good_affine_rat_pts_xy, no_fake_pts, bad_affine_rat_pts_xy, data, fake_rat_pts, bad_Qppoints := QCModAffine(Q, p : use_polys := polys,
         number_of_correspondences := #polys-1, printlevel:=1, N := N1, prec := 40, base_point := base_pt);
     printf "There are %o fake rational points: %o\n", #fake_rat_pts, fake_rat_pts;

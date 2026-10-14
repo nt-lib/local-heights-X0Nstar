@@ -1,4 +1,4 @@
-Magma V2.29-4     Thu Aug 20 2026 20:54:46 on mordell  [Seed = 633876863]
+Magma V2.29-10    Tue Oct 13 2026 01:21:53 on mordell  [Seed = 4267299670]
 Type ? for help.  Type <Ctrl>-D to quit.
 
 Loading file "computations/X0_187star/model_p7_v2.m"
@@ -18,7 +18,6 @@ Loading "QCMod/hodge.m"
 Loading "QCMod/frobenius.m"
 Loading "QCMod/heights.m"
 Loading "QCMod/second_patch_quartic.m"
-Loading "src/StarQuotientMeasures.m"
  Computing a symplectic basis of H^1
  Computed Coleman data at p=7 to precision 15.
 
@@ -181,4 +180,4 @@ bad pts, fake pts, and bad disks:
 *]
 []
 
-Total time: 66.180 seconds, Total memory usage: 64.12MB
+Total time: 69.060 seconds, Total memory usage: 64.12MB

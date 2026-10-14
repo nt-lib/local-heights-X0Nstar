@@ -1,5 +1,17 @@
 #!/usr/bin/env bash
 set -e
+
+# The computations load code from the submodules (QCMod, ModularCurvesX0plusG4-6, ...).
+# Without them every such script fails, but Magma still exits with status 0.
+missing=$(git submodule status | awk '/^-/ {print $2}')
+if [ -n "$missing" ]; then
+    echo "Error: the following submodules are not checked out:" >&2
+    echo "$missing" | sed 's/^/    /' >&2
+    echo "Run the following command from the repository root and try again:" >&2
+    echo "    git submodule update --init" >&2
+    exit 1
+fi
+
 mkdir -p logs
 
 shopt -s nullglob
