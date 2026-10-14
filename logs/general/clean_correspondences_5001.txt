@@ -1,17 +1,15 @@
-Magma V2.29-10    Wed Oct 14 2026 01:25:02 on mordell  [Seed = 3446211526]
+Magma V2.29-10    Wed Oct 14 2026 02:09:33 on mordell  [Seed = 3632028755]
 Type ? for help.  Type <Ctrl>-D to quit.
 
 Loading file "computations/general/clean_correspondences_5001.m"
 Loaded class numbers for d <= 2589510 from data/classnumbers_upto_2589510.dat.
 Genus of X_0(5001)^*: 117
-T_2 generates the Hecke algebra.
 Basis of the clean correspondences as polynomials in T_2: 116 polynomials of 
 degrees [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 
 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 
 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 
 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100,
-101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116 
-], computed in 345.750 seconds.
+101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116 ]
 
-Total time: 348.670 seconds, Total memory usage: 176.69MB
+Total time: 379.339 seconds, Total memory usage: 176.69MB

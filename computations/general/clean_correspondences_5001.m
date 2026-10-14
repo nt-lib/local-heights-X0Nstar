@@ -1,5 +1,4 @@
-// The genus of X_0(5001)^*, and the time it takes to compute a basis of its clean
-// correspondences as polynomials in T_q.
+// The genus of X_0(5001)^*, and a basis of its clean correspondences as polynomials in T_q.
 AttachSpec("local_heights.spec");
 
 N := 5001;
@@ -12,9 +11,7 @@ assert g eq 117;
 S, Sstar := NTLStarQuotientCuspForms(N);
 assert exists(q){q : q in PrimesUpTo(100) | not IsDivisibleBy(N, q)
     and NTLIsHeckeGenerator(NTLHeckeMatrixOnFixedSubspace(S, Sstar, q))};
-printf "T_%o generates the Hecke algebra.\n", q;
 
-t := Cputime();
 polys := NTLStarQuotientCleanCorrespondences(N, [q] : trace_zero := true)[1];
-printf "Basis of the clean correspondences as polynomials in T_%o: %o polynomials of degrees %o, computed in %o seconds.\n",
-    q, #polys, [Degree(f) : f in polys], Cputime(t);
+printf "Basis of the clean correspondences as polynomials in T_%o: %o polynomials of degrees %o\n",
+    q, #polys, [Degree(f) : f in polys];
