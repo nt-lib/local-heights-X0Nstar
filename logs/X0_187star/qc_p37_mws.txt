@@ -1,5 +1,5 @@
-Magma V2.29-4     Wed Oct 14 2026 19:12:22 on mordell  [Seed = 3997907209]
-Type ? for help.  Type <Ctrl>-D to quit.
+Magma V2.30-1     Sun Oct 18 2026 23:07:16 on mordell  [Seed = 630868000]
+Type <Ctrl>-D to quit.
 
 Loading startup file "computations/X0_187star/qc_p37_mws.m"
 
@@ -39,6 +39,7 @@ Loading "QCMod/frobenius.m"
 Loading "QCMod/heights.m"
 Loading "QCMod/second_patch_quartic.m"
 Loading "src/misc.m"
+Loading "src/mws_qc.m"
 Discriminants of the rational CM points, with the number of points: [ <-8, 1>, 
 <-19, 1>, <-43, 1>, <-51, 1>, <-187, 1> ]
 genus = 3
@@ -49,7 +50,6 @@ p = 2: im = [ 37 ], exp([ 37, 37 ]) = 37
 p = 29: im = [ 37 ], exp([ 37, 37 ]) = 37
 p = 3617: im = [ 37, 37 ], exp([ 37 ]) = 37
 p = 4127: im = [ 37 ], exp([ 37, 37 ]) = 37
-q = 37: rank(im/q) = 5
 []
 d = 1
 p = 2: [J(F_p) : red(G)] = []
@@ -194,7 +194,7 @@ least 37^8.
 [ 36163208511822 + O(37^9), -58421094891706 + O(37^9) ]
 ] 
 
-Time: 228.700
+Time: 217.190
 There are 54 fake rational points: [*
 [ -485233728982*37 + O(37^9), -43956769758186 + O(37^9) ],
 [ -1349152663061*37 + O(37^9), -10984083486483 + O(37^9) ],
@@ -381,7 +381,6 @@ fake integrals [
         -46562903061 + O(37^7) 9522867963 + O(37^7) 33022319611 + O(37^7))
 ]
 done.
-Loading "src/mws_qc.m"
 
 Use the Mordell-Weil sieve to show that the additional [ 54 ] solutions aren't 
 rational.
@@ -397,8 +396,8 @@ starting Mordell Weil sieve
         4 cosets remaining after v=3617
   4 cosets eliminated at v = 4127
         0 cosets remaining after v=4127
-Time: 925.640
+Time: 666.810
 done with the MW sieve: true
 No additional solutions are rational.
 
-Total time: 3060.969 seconds, Total memory usage: 2350.06MB
+Total time: 2460.559 seconds, Total memory usage: 2382.09MB
