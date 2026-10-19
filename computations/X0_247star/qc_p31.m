@@ -1,4 +1,5 @@
 // Quadratic Chabauty for X_0(247)^* at p = 31.
+SetMemoryLimit(20 * 1024^3);
 SetPath("QCMod");
 load "ModularCurvesX0plusG4-6/model_equation_finder.m";
 AttachSpec("local_heights.spec");
@@ -40,7 +41,6 @@ printf "Polynomials in T_p passed to QCModAffine (use_polys): %o\n", use_polys;
 printf "Clean correspondences of trace 0, as polynomials in T_p: %o\n",
     NTLStarQuotientCleanCorrespondences(N, [p] : trace_zero := true)[1];
 
-SetMemoryLimit(20 * 1024^3);
 good_pts, boo, bad_pts, data, fake_pts, bad_disks := QCModAffine(Q, p : printlevel:=2,
     use_polys := use_polys, N:=20, number_of_correspondences := #use_polys - 1);
 
@@ -53,3 +53,15 @@ assert #bad_disks eq 0;
 assert forall{P : P in model_pts | P[3] eq 1};
 assert Set(good_pts) eq {[P[1], P[2]] : P in model_pts};
 printf "There are no bad points, fake points or bad disks, and the points found are exactly the images of the %o known rational points.\n", #pts;
+
+// Once https://github.com/AWS2020QC/ModularCurvesX0plusG4-6/pull/2 is merged, the following
+// assertion can replace the additional_preimage check below:
+// assert forall{P : P in model_pts | #Places(P) eq 1 and Degree(Places(P)[1]) eq 1};
+
+// The plane model is only birational to X_0(N)^*: check that there are no rational points
+// other than the known ones where the map to the plane model is undefined or that map to the
+// images of the known ones.
+load "ModularCurvesX0plusG4-6/preimage_checker.m";
+additional_pts := additional_preimage(L1, L2, L3, L4, X247star, x, y, pts);
+printf "Additional rational points where the map to the plane model is undefined or that map to the images of the known ones: %o\n", additional_pts;
+assert #additional_pts eq 0;
