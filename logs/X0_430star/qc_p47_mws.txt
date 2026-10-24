@@ -1,4 +1,4 @@
-Magma V2.30-1     Mon Oct 19 2026 10:12:38 on mordell  [Seed = 3697497354]
+Magma V2.30-1     Sat Oct 24 2026 11:46:43 on mordell  [Seed = 1274889560]
 Type <Ctrl>-D to quit.
 
 Loading startup file "computations/X0_430star/qc_p47_mws.m"
@@ -191,7 +191,7 @@ least 47^14.
 [ 1 + O(47^14), -119777926887578124356033 + O(47^14) ]
 ] 
 
-Time: 80.990
+Time: 137.220
 There are 40 fake rational points.
 There are 0 bad Q_47-points.
 Re-computing Coleman data with N2 = 8.
@@ -224,8 +224,8 @@ sieving with M = 705, S = [ 13, 17, 23, 29, 59, 61, 89, 157, 163, 257, 263, 397
         16 cosets remaining after v=257
   16 cosets eliminated at v = 263
         0 cosets remaining after v=263
-Time: 29.120
+Time: 55.260
 done with the MW sieve: true
 No additional solutions are rational.
 
-Total time: 308.829 seconds, Total memory usage: 403.03MB
+Total time: 543.460 seconds, Total memory usage: 403.03MB

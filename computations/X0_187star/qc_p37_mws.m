@@ -2,9 +2,6 @@ SetMemoryLimit(40 * 1024^3);
 AttachSpec("local_heights.spec");
 SetPath("QCMod");
 load "qc_modular.m";
-load "divisor_heights.m";
-load "qc_init_g2.m";
-load "howe_zhu.m";
 SetPath("QCMod");
 load "ModularCurvesX0plusG4-6/model_equation_finder.m";
 load "src/misc.m";
@@ -39,8 +36,7 @@ S, Q, model_map, pts187, good_primes, inf_pts, bad_pts :=
                         find_and_test_model(L1, L2, L3, L4, X187star, x, y, pts
 : printlevel:=1);
 
-primes := [37];
-exponents := [Integers()| 1 : i in [1..#primes]];
+p := 37;
 
 
 J := JZero(N);
@@ -87,8 +83,7 @@ splitting_indices := [ [1,0,0], [0,1,0], [0,0,1] ];
 X := Curve(P, DefiningEquations(S)[1]);
 printf "%o known points beside base point.\n", #pts;
 
-exponents := [3];
-qc_M := &*[primes[i]^exponents[i] : i in [1..#primes]];  // modulus
+qc_M := p^3;
 M := qc_M; // no 2-adic part: the d-check at 2 fails, so [J(Q) : G] might be even
 
 // J(F_4127) is cyclic of order 67963257526 = 37^3 * 1341742
@@ -166,33 +161,21 @@ function run_QC(p, N1, N2)
   return fake_coeffs_mod_pN, rat_coeffs_mod_pN, good_affine_rat_pts_xy;
 end function;
 
-fake_coeffs := [];
-rat_coeffs := [];
-for p in primes do
-  fake_coeffs_mod_pN, rat_coeffs_mod_pN, rat_pts_xy := run_QC(p, 20, 8);
-  // QC uses the basis bas: its coordinates of the known points agree with known_coords mod qc_M = 37^3
-  assert {P : P in rat_pts_xy} eq {t[1] : t in known_coords};
-  for i in [1..#rat_pts_xy] do
-    coords := [t[2] : t in known_coords | t[1] eq rat_pts_xy[i]][1];
-    assert forall{j : j in [1..gX] | IsDivisibleBy(rat_coeffs_mod_pN[i,j] - coords[j], qc_M)};
-  end for;
-  Append(~fake_coeffs, [fake_coeffs_mod_pN]);
-  Append(~rat_coeffs, [rat_coeffs_mod_pN]);
+fake_coeffs_mod_pN, rat_coeffs_mod_pN, rat_pts_xy := run_QC(p, 20, 8);
+// QC uses the basis bas: its coordinates of the known points agree with known_coords mod qc_M = 37^3
+assert {P : P in rat_pts_xy} eq {t[1] : t in known_coords};
+for i in [1..#rat_pts_xy] do
+  coords := [t[2] : t in known_coords | t[1] eq rat_pts_xy[i]][1];
+  assert forall{j : j in [1..gX] | IsDivisibleBy(rat_coeffs_mod_pN[i,j] - coords[j], qc_M)};
 end for;
-
 print "done.";
 
-printf "\nUse the Mordell-Weil sieve to show that the additional %o solutions aren't rational.\n", [#fake_coeffs_mod_pN[1] : fake_coeffs_mod_pN in fake_coeffs];
-printf "generating cosets ...\n";
-qc_fake_coeffs_mod_M := coeffs_CRT(fake_coeffs, primes, exponents);
-printf "number of cosets: %o\n", #qc_fake_coeffs_mod_M;
-qc_rat_coeffs_mod_M := [t[2] : t in known_coords];
+printf "\nUse the Mordell-Weil sieve to show that the additional %o solutions aren't rational.\n", #fake_coeffs_mod_pN;
 printf "sieving with M = %o, S = %o\n", M, mws_primes;
 
 printf "starting Mordell Weil sieve\n";
-// SmoothBound exceeds every prime factor of #J(F_p), so MWSieve skips no prime
-time done_fake := MWSieve(X, mws_primes, M, bas, base_point, qc_fake_coeffs_mod_M : 
-  known_rat_coeffs := qc_rat_coeffs_mod_M, d := d, excluded := PrimeDivisors(N) cat [7, 457], SmoothBound := 77963257526, printlevel := 0);
+time done_fake := MWSieve(X, mws_primes, M, bas, base_point, fake_coeffs_mod_pN :
+  known_rat_coeffs := [t[2] : t in known_coords], d := d, excluded := PrimeDivisors(N) cat [7, 457]);
 
 printf "done with the MW sieve: %o\n", done_fake;
 assert done_fake;

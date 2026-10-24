@@ -1,4 +1,4 @@
-Magma V2.30-1     Sun Oct 18 2026 23:07:16 on mordell  [Seed = 630868000]
+Magma V2.30-1     Sat Oct 24 2026 13:04:56 on mordell  [Seed = 95675344]
 Type <Ctrl>-D to quit.
 
 Loading startup file "computations/X0_187star/qc_p37_mws.m"
@@ -18,10 +18,6 @@ Loading "QCMod/hodge.m"
 Loading "QCMod/frobenius.m"
 Loading "QCMod/heights.m"
 Loading "QCMod/second_patch_quartic.m"
-Loading "QCMod/divisor_heights.m"
-Loading "QCMod/qc_init_g2.m"
-Loading "QCMod/mws_qc.m"
-Loading "QCMod/howe_zhu.m"
 Loading "ModularCurvesX0plusG4-6/model_equation_finder.m"
 Loading "QCMod/qc_modular.m"
 Loading "QCMod/coleman.m"
@@ -194,7 +190,7 @@ least 37^8.
 [ 36163208511822 + O(37^9), -58421094891706 + O(37^9) ]
 ] 
 
-Time: 217.190
+Time: 471.870
 There are 54 fake rational points: [*
 [ -485233728982*37 + O(37^9), -43956769758186 + O(37^9) ],
 [ -1349152663061*37 + O(37^9), -10984083486483 + O(37^9) ],
@@ -382,10 +378,8 @@ fake integrals [
 ]
 done.
 
-Use the Mordell-Weil sieve to show that the additional [ 54 ] solutions aren't 
+Use the Mordell-Weil sieve to show that the additional 54 solutions aren't 
 rational.
-generating cosets ...
-number of cosets: 54
 sieving with M = 50653, S = [ 2, 29, 3617, 4127 ]
 starting Mordell Weil sieve
   47 cosets eliminated at v = 2
@@ -396,8 +390,8 @@ starting Mordell Weil sieve
         4 cosets remaining after v=3617
   4 cosets eliminated at v = 4127
         0 cosets remaining after v=4127
-Time: 666.810
+Time: 929.100
 done with the MW sieve: true
 No additional solutions are rational.
 
-Total time: 2460.559 seconds, Total memory usage: 2382.09MB
+Total time: 3316.909 seconds, Total memory usage: 2382.09MB

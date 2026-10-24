@@ -163,9 +163,8 @@ printf "\nUse the Mordell-Weil sieve to show that the additional %o solutions ar
 fake_coeffs_mod_M := combine_fake_good([[c mod qc_M : c in v] : v in fake_coeffs_mod_pN], qc_M, aux_int);
 printf "adding information modulo %o: %o cosets\n", aux_int, #fake_coeffs_mod_M;
 printf "sieving with M = %o, S = %o\n", M, sieve_primes;
-// SmoothBound exceeds every prime factor of #J(F_v), so MWSieve skips no prime
 time done_fake := MWSieve(X, mws_primes, M, bas, base_point, fake_coeffs_mod_M :
-  known_rat_coeffs := [t[2] : t in known_coords], d := u, excluded := PrimeDivisors(N), SmoothBound := 10^15, printlevel := 0);
+  known_rat_coeffs := [t[2] : t in known_coords], d := u, excluded := PrimeDivisors(N));
 
 printf "done with the MW sieve: %o\n", done_fake;
 assert done_fake;
