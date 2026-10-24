@@ -343,7 +343,7 @@ function coefficients_mod_pN(fake_rat_pts, rat_pts, divisors, base_pt, splitting
 
   basis_integrals := [coleman_integrals_on_basis_divisors(t[2], t[1], data) : t in divisors];
   //M := (Matrix(pAdicField(data`p, data`N), data`g, data`g, [basis_integrals[1,1], basis_integrals[2,1], basis_integrals[1,2], basis_integrals[2,2]]))^-1;
-  M := (Matrix(pAdicField(data`p, data`N), data`g, data`g, [basis_integrals[i,j] : i,j in [1..data`g]]))^-1;
+  M := (Matrix(pAdicField(data`p, data`N), data`g, data`g, [basis_integrals[j,i] : i,j in [1..data`g]]))^-1;
   index_matrix := Transpose(Matrix(splitting_indices));
 
   if printlevel gt 2 then "compute integrals for rational points"; end if;
