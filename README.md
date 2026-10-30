@@ -98,11 +98,11 @@ regexes.  This is only a convenience; plain `git diff` shows everything.
 git diff -I '^Magma V2\.' -I '^Type ' -I '^Total time: ' -I '^Time: '
 git diff --stat -I '^Magma V2\.' -I '^Type ' -I '^Total time: ' -I '^Time: '   # only list the files
 ```
-The remaining differences should only be in the output of scripts that make random choices,
-such as the model searches in `computations/X0_187star/model_*.m`, which print randomly chosen
-correspondences, or in the order in which Magma lists objects, such as the edges of the dual
-graphs in `logs/general/dualgraphs.txt`.  Every script checks its claims with `assert`, so a
-script that runs to the end without an error has verified its claims.
+Other differences do not mean that the reproduction failed; they are there to be reviewed.
+For example, the model searches in `computations/X0_187star/model_*.m` print randomly chosen
+correspondences, and Magma may list objects in a different order, such as the edges of the
+dual graphs in `logs/general/dualgraphs.txt`.  Every script checks its claims with `assert`, so
+a script that runs to the end without an error has verified its claims.
 
 After inspecting the differences, `git restore logs` restores our logs.
 
