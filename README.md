@@ -135,7 +135,7 @@ There are two sources of timing information.
 
 | Path | Contents |
 |------|----------|
-| `src/` | Shared library code: the Magma package `local_heights.spec` (star-quotient measures, genera and bounds), attached with `AttachSpec("local_heights.spec")`, and patched copies of QCMod files (Mordell-Weil sieve, misc utilities), loaded with `load` |
+| `src/` | Shared library code: the Magma package `local_heights.spec` (star-quotient measures, genera and bounds), attached with `AttachSpec("local_heights.spec")`, and patched copies of QCMod files (Mordell-Weil sieve, misc utilities) and a random search for plane models (`model_search.m`), loaded with `load` |
 | `computations/X0_<N>star/` | Scripts for the curve X_0(N)^* |
 | `computations/general/` | Cross-cutting verifications: existence of clean correspondences, fixed-point formulas, dual graphs, etc. |
 | `logs/` | Output committed as a record of past computations |
@@ -153,7 +153,7 @@ Within each `computations/X0_<N>star/` directory the naming convention is:
 | `qc_p<prime>.m` | Full quadratic Chabauty run at the given prime |
 | `qc_p<prime>_mws.m` | QC run followed by a Mordell-Weil sieve step |
 | `model_p<prime>.m` | Model search via `model_equation_finder` at the given prime |
-| `model_search_*.m` | Ad-hoc / random model search |
+| `model_search_*.m` | Example of a random model search; the output is not deterministic and not used in the proofs |
 
 ## Running on a remote machine
 
