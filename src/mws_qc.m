@@ -1,8 +1,9 @@
 /*
-Mordell-Weil sieve for quadratic Chabauty, computing in the class group of the curve over F_p, and checks of
-its hypotheses. Based on mws_qc.m from QCMod (https://github.com/steffenmueller/QCMod), which goes back to an
-earlier version of Mordell-Weil sieve by Michael Stoll.
-Not part of the local_heights.spec package; load it after QCMod.
+Mordell-Weil sieve for quadratic Chabauty, computing in the class group of the curve over F_p, checks of its
+hypotheses, and quadratic Chabauty on X_0(N)^* giving the input of the sieve. Based on mws_qc.m from QCMod
+(https://github.com/steffenmueller/QCMod), which goes back to an earlier version of Mordell-Weil sieve by
+Michael Stoll.
+Not part of the local_heights.spec package; load it after QCMod and src/misc.m.
 */
 
 // scale a sequence of rationals to integers, e.g. projective coordinates before reducing mod p
@@ -152,4 +153,75 @@ function filter_is_harmless(C, bas, ps, qs : mult := 1)
     ok := ok and forall{q : q in PrimeDivisors(index) | q in qs};
   end for;
   return ok;
+end function;
+
+
+// Quadratic Chabauty, giving the input of MWSieve
+
+// quadratic Chabauty at p on the plane model Q(x, y) = 0 of X_0(N)^* (Coleman data to precision N1), then the
+// coefficients mod p^N2 of the fake and the known rational points in the basis divisors; retries with larger
+// N1 on errors. Returns these coefficients, the known points and the bad Q_p-points.
+function run_QC(Q, N, p, N1, N2, divisors, base_pt, splitting_indices)
+  assert N1 ge N2;
+
+  try
+    printf "Computing Coleman data with N1 = %o.\n", N1;
+    data := coleman_data(Q, p, N1 : useU := false);
+
+    printf "\nStarting quadratic Chabauty for p = %o.\n", p;
+    polys := NTLStarQuotientCleanCorrespondences(N, [p])[1];
+    printf "Polynomials in T_p passed to QCModAffine (use_polys): %o\n", polys;
+    printf "Clean correspondences of trace 0, as polynomials in T_p: %o\n",
+        NTLStarQuotientCleanCorrespondences(N, [p] : trace_zero := true)[1];
+    time good_affine_rat_pts_xy, no_fake_pts, bad_affine_rat_pts_xy, data, fake_rat_pts, bad_Qppoints := QCModAffine(Q, p : use_polys := polys,
+        number_of_correspondences := #polys-1, printlevel:=1, N := N1, prec := 40, base_point := base_pt);
+    printf "There are %o fake rational points.\n", #fake_rat_pts;
+    printf "There are %o bad Q_%o-points.\n", #bad_Qppoints, p;
+
+    // coefficients of the solutions in the basis divisors, from Coleman data to precision N2;
+    // retries with larger N2 (up to N1) on errors
+    function recompute_Coleman_data(N1, N2, fake_rat_pts)
+      try
+        fake_rat_pts_new := [];
+        for i in [1..#fake_rat_pts] do
+          fake_rat_pts_new[i] := [ChangePrecision(fake_rat_pts[i,j], N2) : j in [1..2]];
+        end for;
+        printf "Re-computing Coleman data with N2 = %o.\n", N2;
+        data := coleman_data(Q, p, N2 : useU := false);
+        fake_coeffs_mod_pN, rat_coeffs_mod_pN := coefficients_mod_pN(fake_rat_pts_new, good_affine_rat_pts_xy, divisors, base_pt, splitting_indices, data);
+      catch e
+        printf "%o\n", e;
+        if N2 lt N1 then
+          N2 +:= 1;
+        else
+          error "reached N2 = N1";
+        end if;
+        printf "trying N1 = %o, N2 = %o ...\n", N1, N2;
+        return $$(N1, N2, fake_rat_pts);
+      end try;
+      return fake_coeffs_mod_pN, rat_coeffs_mod_pN;
+    end function;
+
+    fake_coeffs_mod_pN, rat_coeffs_mod_pN := recompute_Coleman_data(N1, N2, fake_rat_pts);
+  catch e
+    N1 +:= 1;
+    return $$(Q, N, p, N1, N2, divisors, base_pt, splitting_indices);
+  end try;
+
+  return fake_coeffs_mod_pN, rat_coeffs_mod_pN, good_affine_rat_pts_xy, bad_Qppoints;
+end function;
+
+// whether QC finds exactly the known points, with coordinates congruent mod M to those in known_coords
+// (a sequence of pairs <affine point, coordinates>); this shows that QC uses the same basis as the sieve
+function check_known_coords(rat_pts_xy, rat_coeffs_mod_pN, known_coords, M)
+  if {P : P in rat_pts_xy} ne {t[1] : t in known_coords} then
+    return false;
+  end if;
+  for i in [1..#rat_pts_xy] do
+    coords := [t[2] : t in known_coords | t[1] eq rat_pts_xy[i]][1];
+    if not forall{j : j in [1..#coords] | IsDivisibleBy(rat_coeffs_mod_pN[i,j] - coords[j], M)} then
+      return false;
+    end if;
+  end for;
+  return true;
 end function;
