@@ -4,10 +4,10 @@
 // depend on this file.
 //
 // This file is an example of a random search for plane models of X_0(187)^*: it maps the canonical
-// model of X_0(187)^* to plane models given by random linear forms with coefficients in [-2..2] and
-// reports those that are good for quadratic Chabauty at p = 7 (no F_7-points of the canonical model
-// map to bad or infinite points of the plane model).  It stops after finding five such models or
-// after 100000 trials.  See random_model_search in src/model_search.m.
+// model of X_0(187)^* to plane models given by random linear forms and reports those that have a
+// good prime for quadratic Chabauty (a prime p such that no F_p-points of the canonical model map
+// to bad or infinite points of the plane model).  See random_model_search in src/model_search.m
+// for the default search parameters.
 
 SetPath("QCMod");
 load "ModularCurvesX0plusG4-6/model_equation_finder.m";
@@ -18,12 +18,5 @@ pts := PointSearch(X187star, 30);
 // name the coordinates, so that the linear forms found are printed in X, Y, Z
 P<X, Y, Z> := AmbientSpace(X187star);
 
-p := 7;
-models := random_model_search(X187star, pts, p, x, y : coefficient_bound := 2, max_trials := 100000,
-  max_successes := 5);
-
-if #models eq 0 then
-  printf "No model that is good at p = %o found.\n", p;
-else
-  printf "Found %o models that are good at p = %o.\n", #models, p;
-end if;
+models := random_model_search(X187star, pts, x, y);
+printf "Found %o models with a good prime.\n", #models;
