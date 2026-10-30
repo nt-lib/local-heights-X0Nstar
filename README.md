@@ -66,7 +66,7 @@ An optional second argument selects the Magma executable (default: `magma` from 
 ./verify_all.sh 4 ~/magma-2.29-10/magma
 ```
 Magma refuses to load package files (`*.sig`) compiled by a newer Magma version; if you switch to
-an older Magma, delete `src/*.sig` first.
+an older Magma, run `make clean` first (see Troubleshooting below).
 
 Output from each script is captured to `logs/<curve>/<script>.txt`, mirroring the `computations/` layout.
 
@@ -108,6 +108,18 @@ sudo apt install parallel
 # RHEL / Fedora
 sudo dnf install parallel
 ```
+
+**`Package ... is compiled for newer version than current executable`, or `Undefined reference`
+errors inside a package (e.g. in `ShimuraCurveALQuotients/`)**
+
+Magma caches compiled packages as `*.sig` files next to the sources.  These can be stale, e.g.
+after switching to an older Magma version or after checking out a different version of a
+submodule.  Delete all of them, including those in the submodules, with
+```bash
+make clean
+```
+and run the computations again; Magma recompiles the packages as needed.  Do not do this while
+computations are running in the same checkout.
 
 ## License
 

@@ -1,8 +1,10 @@
 .PHONY: clean submodules test_submodules test verify copy_remote copy_logs test_remote verify_remote status_remote status
 REMOTE_DIR := /tmp/$(shell basename $(CURDIR))
 
+# Delete the compiled Magma package files (*.sig), also those in the submodules. Skips
+# scratch/, which may contain separate git worktrees with their own *.sig files.
 clean:
-	find . -type f -name "*.sig" -delete
+	find . -path ./scratch -prune -o -type f -name "*.sig" -print -delete
 
 # Initialise the given submodules (all if none are given) that are not checked out yet.
 # Submodules that are already checked out are left alone, so this never moves them to a
