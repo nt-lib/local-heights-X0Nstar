@@ -1,7 +1,8 @@
 // NOTE: the output of this file is not deterministic.  It chooses the linear forms at random, so
-// every run finds different models (or none).  The plane model used in qc_p37_mws.m was found by
-// such a random search; its linear forms L1, L2, L3, L4 are hardcoded there, so the proof does not
-// depend on this file.
+// every run finds different models (or none).  This file is only meant to show how to find new
+// models, not to reproduce ours.  The plane model used in qc_p37_mws.m was found once by a similar
+// random search (not targeting a specific prime), and the linear forms L1, L2, L3, L4 found are
+// hardcoded in qc_p37_mws.m, so that our computations are reproducible.
 //
 // This file is an example of a random search for plane models of X_0(187)^*: it maps the canonical
 // model of X_0(187)^* to plane models given by random linear forms and reports those that have a

@@ -99,9 +99,9 @@ git diff -I '^Magma V2\.' -I '^Type ' -I '^Total time: ' -I '^Time: '
 git diff --stat -I '^Magma V2\.' -I '^Type ' -I '^Total time: ' -I '^Time: '   # only list the files
 ```
 Other differences do not mean that the reproduction failed; they are there to be reviewed.
-For example, the model searches in `computations/X0_187star/model_*.m` print randomly chosen
-correspondences, and Magma may list objects in a different order, such as the edges of the
-dual graphs in `logs/general/dualgraphs.txt`.  Every script checks its claims with `assert`, so
+For example, `computations/X0_187star/model_search_example.m` prints randomly chosen plane
+models, and Magma may list objects in a different order, such as the edges of the dual graphs
+in `logs/general/dualgraphs.txt`.  Every script checks its claims with `assert`, so
 a script that runs to the end without an error has verified its claims.
 
 After inspecting the differences, `git restore logs` restores our logs.
@@ -152,8 +152,7 @@ Within each `computations/X0_<N>star/` directory the naming convention is:
 |--------|---------|
 | `qc_p<prime>.m` | Full quadratic Chabauty run at the given prime |
 | `qc_p<prime>_mws.m` | QC run followed by a Mordell-Weil sieve step |
-| `model_p<prime>.m` | Model search via `model_equation_finder` at the given prime |
-| `model_search_*.m` | Example of a random model search; the output is not deterministic and not used in the proofs |
+| `model_search_example.m` | Example of how to find new plane models with a random search; the output is not deterministic and not used in the proofs (the model used is hardcoded in the QC script) |
 
 ## Running on a remote machine
 
