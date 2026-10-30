@@ -54,8 +54,10 @@ Within each `computations/X0_<N>star/` directory the naming convention is:
 All commands below should be run from the **repo root**:
 
 ```bash
-make verify           # uses 10 parallel jobs by default
+make verify           # uses 10 parallel jobs and `magma` from the PATH by default
+make verify JOBS=4 MAGMA=~/magma-2.29-10/magma
 ```
+`make test` also accepts `MAGMA=...`.
 
 Alternatively one can run the `verify_all.sh` script manually using
 ```bash
