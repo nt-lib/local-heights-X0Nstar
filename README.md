@@ -14,42 +14,22 @@ $X_0(187)^{\ast}$, $X_0(247)^{\ast}$, and $X_0(319)^{\ast}$.
 
 - Magma v2.28 or higher
 - GNU parallel (for `make verify`)
+- Optional: git 2.30 or higher, for filtering `git diff` output with `-I` (see [Checking the logs after a rerun](#checking-the-logs-after-a-rerun))
 
-## Submodule dependencies
+## Running computations
 
-| Submodule | Role |
-|-----------|------|
-| `QCMod/` | Quadratic Chabauty engine |
-| `ModularCurvesX0plusG4-6/` | Model-finding code for X_0(N)^* |
-| `ShimuraCurveALQuotients/` | Rational CM points on Atkin-Lehner quotients (Assaf-Hashimoto) |
-
-`make verify` initialises any submodules that are missing, and `make test` initialises
-`tests/magma-unittest`. To initialise them by hand:
-
+The code depends on several git submodules (see [Project layout](#project-layout)), so clone
+the repository with
+```bash
+git clone --recurse-submodules https://github.com/nt-lib/local-heights-X0Nstar
+cd local-heights-X0Nstar
+```
+In an existing clone the submodules can be initialised with
 ```bash
 git submodule update --init
 ```
-
-## Project layout
-
-| Path | Contents |
-|------|----------|
-| `src/` | Shared library code: the Magma package `local_heights.spec` (star-quotient measures, genera and bounds), attached with `AttachSpec("local_heights.spec")`, and patched copies of QCMod files (Mordell-Weil sieve, misc utilities), loaded with `load` |
-| `computations/X0_<N>star/` | Scripts for the curve X_0(N)^* |
-| `computations/general/` | Cross-cutting verifications: existence of clean correspondences, fixed-point formulas, dual graphs, etc. |
-| `logs/` | Output committed as a record of past computations |
-| `data/` | Precomputed data files (e.g. class numbers) |
-
-Within each `computations/X0_<N>star/` directory the naming convention is:
-
-| Prefix | Meaning |
-|--------|---------|
-| `qc_p<prime>.m` | Full quadratic Chabauty run at the given prime |
-| `qc_p<prime>_mws.m` | QC run followed by a Mordell-Weil sieve step |
-| `model_p<prime>.m` | Model search via `model_equation_finder` at the given prime |
-| `model_search_*.m` | Ad-hoc / random model search |
-
-## Running computations
+`make verify` initialises any submodules that are missing, and `make test` initialises
+`tests/magma-unittest`.
 
 All commands below should be run from the **repo root**:
 
@@ -71,6 +51,7 @@ Magma refuses to load package files (`*.sig`) compiled by a newer Magma version;
 an older Magma, run `make clean` first (see Troubleshooting below).
 
 Output from each script is captured to `logs/<curve>/<script>.txt`, mirroring the `computations/` layout.
+The file `logs/magma_verify_joblog.txt` is the GNU parallel job log, with one line per completed job.
 
 `computations/general/existence_of_relations.m` reads class numbers from
 `data/classnumbers_upto_2589510.dat`, which is part of this repository.  This file was written
@@ -85,7 +66,94 @@ $8 \pmod{16}$, with $k = 0$ for all four) from
 <https://www.lmfdb.org/NumberField/QuadraticImaginaryClassGroups> and uncompress them into
 `data/` as `cl3mod8.0`, `cl7mod8.0`, `cl4mod16.0`, `cl8mod16.0`.
 
-Note: QC computations (especially for X_0(319)^*) can take many hours.
+Note: some computations take many hours, see [Hardware and timings](#hardware-and-timings).
+
+## Checking the logs after a rerun
+
+The logs in `logs/` are committed, and a rerun overwrites them.  After the rerun has finished,
+```bash
+git diff
+```
+shows the differences between our logs and those of the rerun.  Some lines always differ: the
+Magma version, date and random seed on the first line, the total time and memory usage on the
+last line, and the timings that QCMod prints along the way.  For example:
+
+```diff
+--- a/logs/general/dualgraphs.txt
++++ b/logs/general/dualgraphs.txt
+@@ -1,5 +1,5 @@
+-Magma V2.29-10    Tue Oct 13 2026 01:21:53 on mordell  [Seed = 3228036456]
+-Type ? for help.  Type <Ctrl>-D to quit.
++Magma V2.30-1     Fri Oct 30 2026 14:20:29 on mordell  [Seed = 312278796]
++Type <Ctrl>-D to quit.
+@@ -57,4 +57,4 @@
+-Total time: 4.490 seconds, Total memory usage: 32.09MB
++Total time: 6.530 seconds, Total memory usage: 32.09MB
+```
+
+Optionally, these lines can be hidden with the `-I<regex>` option of `git diff` (git 2.30 or
+higher), which ignores changes in which all added and removed lines match one of the given
+regexes.  This is only a convenience; plain `git diff` shows everything.
+```bash
+git diff -I '^Magma V2\.' -I '^Type ' -I '^Total time: ' -I '^Time: '
+git diff --stat -I '^Magma V2\.' -I '^Type ' -I '^Total time: ' -I '^Time: '   # only list the files
+```
+The remaining differences should only be in the output of scripts that make random choices,
+such as the model searches in `computations/X0_187star/model_*.m`, which print randomly chosen
+correspondences, or in the order in which Magma lists objects, such as the edges of the dual
+graphs in `logs/general/dualgraphs.txt`.  Every script checks its claims with `assert`, so a
+script that runs to the end without an error has verified its claims.
+
+After inspecting the differences, `git restore logs` restores our logs.
+
+## Hardware and timings
+
+The logs in `logs/` were produced on a server at the University of Zagreb with an AMD EPYC 9175F
+CPU with 16 cores (32 threads) and 384 GB of RAM, running Ubuntu 24.04.4 LTS, using Magma V2.30-1
+and running all computations in parallel with `make verify JOBS=14`.  The server is shared, so
+the timings depend on its load at the time.
+
+There are two sources of timing information.
+
+- GNU parallel records the wall-clock time of each job (column `JobRuntime`, in seconds) in
+  `logs/magma_verify_joblog.txt`.  To list the jobs by running time:
+  ```bash
+  awk -F'\t' 'NR>1 {match($NF, /computations\/[^ ]*\.m/); printf "%10.1f  %s\n", $4, substr($NF, RSTART, RLENGTH)}' logs/magma_verify_joblog.txt | sort -n
+  ```
+  and to get the total running time when run sequentially and the wall-clock time of the
+  parallel run:
+  ```bash
+  awk -F'\t' 'NR>1 {s += $4; if (!min || $3 < min) min = $3; if ($3 + $4 > max) max = $3 + $4} END {printf "sequential: %.1f h, parallel: %.1f h\n", s/3600, (max-min)/3600}' logs/magma_verify_joblog.txt
+  ```
+- Magma prints the CPU time and the memory usage of each script on the last line of its log,
+  e.g. `Total time: 4.490 seconds, Total memory usage: 32.09MB`.  To list them all:
+  ```bash
+  grep -r "Total time" logs
+  ```
+
+## Project layout
+
+| Path | Contents |
+|------|----------|
+| `src/` | Shared library code: the Magma package `local_heights.spec` (star-quotient measures, genera and bounds), attached with `AttachSpec("local_heights.spec")`, and patched copies of QCMod files (Mordell-Weil sieve, misc utilities), loaded with `load` |
+| `computations/X0_<N>star/` | Scripts for the curve X_0(N)^* |
+| `computations/general/` | Cross-cutting verifications: existence of clean correspondences, fixed-point formulas, dual graphs, etc. |
+| `logs/` | Output committed as a record of past computations |
+| `data/` | Precomputed data files (e.g. class numbers) |
+| `tests/` | Unit tests for `src/`, run with `make test` |
+| `QCMod/` | Submodule: quadratic Chabauty engine |
+| `ModularCurvesX0plusG4-6/` | Submodule: model-finding code for X_0(N)^* |
+| `ShimuraCurveALQuotients/` | Submodule: rational CM points on Atkin-Lehner quotients (Assaf-Hashimoto) |
+| `tests/magma-unittest/` | Submodule: unit test framework, only needed for `make test` |
+
+Within each `computations/X0_<N>star/` directory the naming convention is:
+
+| Prefix | Meaning |
+|--------|---------|
+| `qc_p<prime>.m` | Full quadratic Chabauty run at the given prime |
+| `qc_p<prime>_mws.m` | QC run followed by a Mordell-Weil sieve step |
+| `model_p<prime>.m` | Model search via `model_equation_finder` at the given prime |
+| `model_search_*.m` | Ad-hoc / random model search |
 
 ## Running on a remote machine
 
