@@ -1,5 +1,14 @@
 #!/usr/bin/env bash
+# Usage: ./verify_all.sh [jobs] [magma]
+#   jobs   number of parallel jobs (default 10)
+#   magma  Magma executable to use (default: magma from the PATH)
 set -e
+
+export MAGMA="${2:-magma}"
+if ! command -v "$MAGMA" > /dev/null; then
+    echo "Error: Magma executable '$MAGMA' not found" >&2
+    exit 1
+fi
 
 # The computations load code from the submodules (QCMod, ModularCurvesX0plusG4-6, ...).
 # Without them every such script fails, but Magma still exits with status 0.
@@ -21,7 +30,7 @@ mapfile -t sage_files  < <(find computations -name '*.sage' | sort)
 if [ ${#magma_files[@]} -gt 0 ]; then
     printf '%s\n' "${magma_files[@]}" | \
         parallel --joblog logs/magma_verify_joblog.txt -j "${1:-10}" \
-        'dir={//}; subdir=logs/${dir#computations/}; mkdir -p "$subdir"; magma -n {} >| "$subdir"/{/.}.txt'
+        'dir={//}; subdir=logs/${dir#computations/}; mkdir -p "$subdir"; "$MAGMA" -n {} >| "$subdir"/{/.}.txt'
 fi
 
 if [ ${#sage_files[@]} -gt 0 ]; then

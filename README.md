@@ -61,6 +61,12 @@ Alternatively one can run the `verify_all.sh` script manually using
 ```bash
 ./verify_all.sh 4     # the 4 means use 4 parallel jobs
 ```
+An optional second argument selects the Magma executable (default: `magma` from the `PATH`):
+```bash
+./verify_all.sh 4 ~/magma-2.29-10/magma
+```
+Magma refuses to load package files (`*.sig`) compiled by a newer Magma version; if you switch to
+an older Magma, delete `src/*.sig` first.
 
 Output from each script is captured to `logs/<curve>/<script>.txt`, mirroring the `computations/` layout.
 
