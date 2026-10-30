@@ -1,14 +1,15 @@
-// NOTE: the output of this file is not deterministic.  It chooses the linear forms at random, so
-// every run finds different models (or none).  This file is only meant to show how to find new
-// models, not to reproduce ours.  The plane model used in qc_p37_mws.m was found once by a similar
-// random search (not targeting a specific prime), and the linear forms L1, L2, L3, L4 found are
-// hardcoded in qc_p37_mws.m, so that our computations are reproducible.
-//
-// This file is an example of a random search for plane models of X_0(187)^*: it maps the canonical
-// model of X_0(187)^* to plane models given by random linear forms and reports those that have a
-// good prime for quadratic Chabauty (a prime p such that no F_p-points of the canonical model map
-// to bad or infinite points of the plane model).  See random_model_search in src/model_search.m
-// for the default search parameters.
+/* 
+This file is an example of a random search for plane models of X_0(187)^*: it maps the canonical
+model of X_0(187)^* to plane models given by random linear forms and reports those that have a
+good prime for quadratic Chabauty (a prime p such that no F_p-points of the canonical model map
+to bad or infinite points of the plane model).  See random_model_search in src/model_search.m
+for the default search parameters.
+
+NOTE: the output of this file is not deterministic. A random set of linear forms L1, L2, L3 and L4
+that produced a particularly nice model mod 37 have been hardcoded in qc_p37_mws.m in order to make
+the rational point computations in this repository reproducible. Searches similar to those in this 
+file have also been carried out for X_0(247)^*, X_0(319)^* and X_0(430)^*. 
+*/
 
 SetPath("QCMod");
 load "ModularCurvesX0plusG4-6/model_equation_finder.m";
