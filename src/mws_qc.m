@@ -1,295 +1,74 @@
 /*
-Modified copy of mws_qc.m from QCMod (https://github.com/steffenmueller/QCMod), as of commit
-c939520a837f5144c44acae0e8ac6b8ca93746cd, which is the commit of the QCMod submodule.
-
-Changes:
-- MWSieve takes a curve C instead of its Jacobian J and computes in the class group of C
-  over F_p, so it also works for curves that are not hyperelliptic. The generators in bas
-  are pairs of points [P, Q] representing P - Q, and there is an extra optional parameter
-  d by which all images in J(F_p) are multiplied. Bad primes are no longer excluded
-  automatically; pass them in excluded.
-- The unused functions MakeLookup1, MakeDLp1, MakeDL, prerun_mwsieve_g2r2 and
-  is_saturated_at_p are commented out.
-- Fixed the format string %n in an error message of coeffs_CRT.
-
-This file is loaded after QCMod so that its definitions replace those of QCMod/mws_qc.m.
-It is not part of the local_heights.spec package.
+Mordell-Weil sieve for quadratic Chabauty, computing in the class group of the curve over F_p, checks of its
+hypotheses, and quadratic Chabauty on X_0(N)^* giving the input of the sieve. Based on mws_qc.m from QCMod
+(https://github.com/steffenmueller/QCMod), which goes back to an earlier version of Mordell-Weil sieve by
+Michael Stoll.
+Not part of the local_heights.spec package; load it after QCMod and src/misc.m.
 */
 
-// Code for the Mordell-Weil sieve
-// Mostly copied from an earlier version of magma's Mordell-Weil sieve, due to Michael Stoll.
-// Some tweaks added for use with quadratic Chabauty, but not optimised.
-
-
-/*
-function MakeLookup1(G, m)
-  return pmap<Codomain(m) -> G| [<m(g), g> : g in G]>;
+// scale a sequence of rationals to integers, e.g. projective coordinates before reducing mod p
+function clear_denominators(seq)
+  d := LCM([Denominator(s) : s in seq]);
+  return [d*s : s in seq];
 end function;
 
-function MakeDLp1(G, m, p)
-  // G a p-group
-  if #G le 25 then
-    return MakeLookup1(G, m);
-  end if;
-  invs := Invariants(G);
-  // printf "MakeDLp: Invariants(G) = %o\n", invs;
-  pp := ExactQuotient(invs[#invs], p);
-  if pp eq 1 then
-    return MakeLookup1(G, m);
-  end if;
-  // printf "MakeDLp: pp = %o\n", pp;
-  h := hom<G -> G | [pp*G.i : i in [1..#invs]]>;
-  G1 := Image(h);
-  // printf "MakeDLp: Invariants(Image(h)) = %o\n", Invariants(G1);
-  m1 := map<G1 -> Codomain(m) | x:->m(x)>;
-  f1 := MakeLookup1(G1, m1);
-  G2 := Kernel(h);
-  // printf "MakeDLp: Invariants(Kernel(h)) = %o\n", Invariants(G2);
-  m2 := map<G2 -> Codomain(m) | x:->m(x)>;
-  f2 := MakeDLp1(G2, m2, p);
-  return pmap<Codomain(m) -> G |
-               x :-> f2(x - m(a)) + a where a := f1(pp*x) @@ h>;
-end function;
-
-
-function MakeDL(G, m) 
-// Given bijection  m : G -> X, where X has group structure, compute the
-//  inverse of m. Assumes that #G is smooth.
-  n := #Invariants(G);
-  f := Factorization(#G);
-  cofs := [&*[Integers()|f[i,1]^f[i,2] : i in [1..#f] | i ne j] : j in [1..#f]];
-  _, refs := XGCD(cofs);
-  assert &+[Integers()|refs[i]*cofs[i] : i in [1..#f]] eq 1;
-  DLs := [**];
-  for i := 1 to #f do
-    p := f[i,1];
-    hp := hom<G -> G | [cofs[i]*G.j : j in [1..n]]>;
-    Gp := Image(hp);
-    mp := map<Gp -> Codomain(m) | x:->m(x)>;
-    DLp := MakeDLp1(Gp, mp, p);
-    Append(~DLs, DLp);
-  end for;
-  return pmap<Codomain(m) -> G
-               | x :-> &+[G|refs[i]*G!(DLs[i](cofs[i]*x)) : i in [1..#f]]>;
-end function;*/
-
-/*
-function prerun_mwsieve_g2r2(J, bas, base_pt, modulus, p, modp_points : printlevel := 0)
-// Compute all classes in J(Q)/modulus*J(Q) whose image mod p
-// contains the image of an Fp-point on the curve
-// J is assumed to have rank=genus=2
-// TODO: generalize to several primes and higher genus
-  
-  C := Curve(J);
-  Cp := BaseChange(C, Bang(Rationals(), GF(p)));
-  Jp := BaseChange(J, GF(p));
-  G, m := AbelianGroup(Jp);
-  if printlevel gt 0 then        printf " GroupInfo: p = %o...\n", p; end if;
-  I := Invariants(G);
-  //if printlevel gt 0 then        printf "   #C(F_p) = %o, Invariants(G) = %o\n", #pts, I; end if;
-  fI := Factorization(I[#I]);
-  if printlevel gt 0 then        printf  "   Exponent = %o\n", fI; end if;
-  if printlevel gt 0 then        printf  "   Group Structure = %o\n", G; end if;
-
-  inj := func<pt | Cp!pt - Cp!base_pt>;
-  if printlevel gt 1 then        "make DL"; end if;
-  DL := MakeDL(G, m); 
-  
-  if printlevel gt 1 then        "starting DL of generators"; end if;
-  imbas := [DL(Jp!b) : b in bas]; // ... @@ m
-  if printlevel gt 1 then        "finished DL of generators"; end if;
-  orders := [Order(g) : g in imbas];
-  lcm_orders := LCM(orders);
-
-  if printlevel gt 0 then        "starting DL of points on curve over F_p"; end if;
-  imC := {DL(inj(Cp!Eltseq(pt_seq))) : pt_seq in modp_points};
-  if printlevel gt 0 then        "finished DL"; end if;
-
-  Gsub := sub<G | imbas>;
-  imbas := ChangeUniverse(imbas, Gsub);
-  e1 := GCD(modulus, lcm_orders);
-  if e1 lt lcm_orders then
-    // throw away the part that we don't need
-    Gq, qmap := quo<Gsub | [e1*g : g in Generators(Gsub)]>;
-    imbas := [qmap(b) : b in imbas];
-    imC := {qmap(c) : c in imC};
-  end if; // e1 lt LCM(orders)
-  G := Parent(imbas[1]);
-  Cv_p := [P : P in SetToSequence(imC)];
-  coeffs := [];
-  for i,j in [1..modulus] do 
-    if i*imbas[1]+j*imbas[2] in Cv_p then
-      Append(~coeffs, [i,j]);
-    end if;
-  end for;
-  printf "  %o cosets eliminated at v = %o\n", modulus^2 - #coeffs, p;
-  return coeffs;
-
-end function;*/
-
-
-function MWSieve(C, sieving_primes, modulus, bas, base_pt, fake_coeffs : GIlb := 2, SmoothBound := 10000, satknown := {Integers()|}, excluded := {Integers()|}, satunknown := {Integers() | }, known_rat_coeffs := {}, bool_list := [true : i in [1..#fake_coeffs]], unsat := {Integers()|}, special_p_points := [], d := 1, printlevel := 0) 
-
-  bp := /*Seqset(BadPrimes(J)) join*/ {p : p in excluded};
-  lb := Max(3, IsEven(GIlb) select GIlb+1 else GIlb);
-  assert #unsat lt 2;
+// G is generated by bas (a pair [P, Q] stands for P - Q) and fake_coeffs are cosets of modulus*G, given by
+// coefficient vectors. At each p in sieving_primes not in excluded, let H be the subgroup of J(F_p) generated
+// by the d*red_p(b) for b in bas; a coset is kept only if d times its image is congruent to d*(P - base_pt)
+// (mod modulus*H) for some P in C(F_p). Asserts that the cosets known_rat_coeffs of the known rational points
+// are kept. Returns whether no coset is left, and for each coset whether it is left.
+function MWSieve(C, sieving_primes, modulus, bas, base_pt, fake_coeffs : excluded := {Integers()|}, known_rat_coeffs := {}, d := 1)
+  bool_list := [true : i in [1..#fake_coeffs]]; // bool_list[i]: coset i is still left
   for p in sieving_primes do
-    if IsPrime(p) and p notin bp then
+    if IsPrime(p) and p notin excluded then
       Cp := BaseChange(C, Bang(Rationals(), GF(p)));
-      G, m, DL := ClassGroup(Cp);
-      G := TorsionSubgroup(G);
-      oG := #G;
-      if Max(PrimeDivisors(oG)) lt SmoothBound then
-        pts := Places(Cp, 1); // all F_p-points of [CHECKME: nice?] model
-        if printlevel gt 0 then        printf " GroupInfo: p = %o...\n", p; end if;
-        I := Invariants(G);
-        if printlevel gt 0 then        printf "   #C(F_p) = %o, Invariants(G) = %o\n", #pts, I; end if;
-        fI := Factorization(I[#I]);
-        if printlevel gt 0 then        printf  "   Exponent = %o\n", fI; end if;
-        if printlevel gt 0 then        printf  "   Group Structure = %o\n", G; end if;
+      G, _, DL := ClassGroup(Cp);
+      G := TorsionSubgroup(G); // J(F_p)
+      red := func<pt | Place(Cp!ChangeUniverse(clear_denominators(Eltseq(pt)), GF(p)))>;
 
-        scalar := #unsat eq 0 select 1 else unsat[1]^Valuation(I[#I], unsat[1]);
-        if printlevel gt 1 then        printf  "   Look at %o-multiples \n", scalar; end if;
+      // H = d*red_p(G), and the classes d*(P - base_pt) for P in C(F_p) that lie in H
+      imbas := [d*DL(red(b[1]) - red(b[2])) : b in bas];
+      lcm_orders := LCM([Order(g) : g in imbas]);
+      imC := {d*DL(pt - red(base_pt)) : pt in Places(Cp, 1)};
+      H := sub<G | imbas>;
+      imC := {H | pt : pt in imC | pt in H};
+      imbas := ChangeUniverse(imbas, H);
 
-        function clear_denominators(seq)
-          d := LCM([Denominator(s) : s in seq]);
-          return [d*s : s in seq];
-        end function;
-        red := func<pt | Place(Cp!ChangeUniverse(clear_denominators(Eltseq(pt)), GF(p)))>;
-        if printlevel gt 1 then        "make DL"; end if;
-        
-        if printlevel gt 1 then        "starting DL of generators"; end if;
-        imbas := [d*DL(red(b[1]) - red(b[2])) : b in bas]; // ... @@ m // TODO: what if points are not smooth? Work with smooth model? (is it enough if our divisors consist of smooth points?)
-        if printlevel gt 1 then        "finished DL of generators"; end if;
-        orders := [Order(g) : g in imbas];
-        lcm_orders := LCM(orders);
+      // pass to H/(modulus*H); since lcm_orders*H = 0, modulus*H = e1*H
+      e1 := GCD(modulus, lcm_orders);
+      if e1 lt lcm_orders then
+        Hq, qmap := quo<H | [e1*g : g in Generators(H)]>;
+        imbas := [qmap(b) : b in imbas];
+        imC := {qmap(c) : c in imC};
+      end if;
+      // M is the exponent of H/(modulus*H), so the coefficients only matter mod M
+      M := GCD(modulus, Exponent(Parent(imbas[1])));
+      assert IsOne(Exponent(Parent(imbas[1])) div M);
 
-        // We assume saturation has been checked at primes dividing the torsion order.
-        // Find new primes at which saturation is known
-        // (all primes q such that image of ptJ (= bas[1]) is not in q*J(F_p)).
-        satknown join:= {a[1] : a in fI | imbas[1] notin a[1]*G};
-        // Find primes where saturation needs to be checked
-        // (all prime divisors of #J(F_p) for which saturation is not yet known).
-        satunknown join:= {a[1] : a in fI};
-        satunknown diff:= satknown;
+      // the cosets of the known rational points are kept
+      assert &and[&+[imbas[i]*t[i] : i in [1..#imbas]] in imC : t in known_rat_coeffs];
 
-        if printlevel gt 0 then        "starting DL of points on curve over F_p"; end if;
-        if p notin [t[1] : t in special_p_points] then
-          imC := {d*DL(pt - red(base_pt)) : pt in pts};
-        else 
-          indp := Index([t[1] : t in special_p_points], p);
-          imC := {d*DL(Place(Cp!clear_denominators(Eltseq(pt_seq))) - red(base_pt)) : pt_seq in special_p_points[indp,2]};
+      // keep a coset only if its image lies in imC
+      old_left := #[b : b in bool_list | b];
+      for i in [1..#bool_list] do
+        if bool_list[i] then
+          bool_list[i] := &+[imbas[j]*(fake_coeffs[i][j] mod M) : j in [1..#imbas]] in imC;
         end if;
-        if printlevel gt 0 then        "finished DL"; end if;
-        imC := {scalar*pt : pt in imC};
-        Gsub := sub<G | imbas>;
-        imC := {Gsub | pt : pt in imC | pt in Gsub};
+      end for;
+      left := #[b : b in bool_list | b];
+      if left lt old_left then printf "  %o cosets eliminated at v = %o\n", old_left - left, p; end if;
+      printf "        %o cosets remaining after v=%o\n", left, p;
 
-        imbas := ChangeUniverse(imbas, Gsub);
-        e1 := GCD(modulus, lcm_orders);
-        if e1 lt lcm_orders then
-          // throw away the part that we don't need
-          Gq, qmap := quo<Gsub | [e1*g : g in Generators(Gsub)]>;
-          imbas := [qmap(b) : b in imbas];
-          imC := {qmap(c) : c in imC};
-        end if; // e1 lt LCM(orders)
-        G := Parent(imbas[1]);
-        M := GCD(modulus, Exponent(G));
-        assert IsOne(Exponent(G) div M);
-        Cv_p := [P : P in SetToSequence(imC)];
-        assert &and[ &+[imbas[i]*t[i] : i in [1..#imbas]]  in Cv_p : t in known_rat_coeffs];
-        old_left := #[b : b in bool_list | b];
-        for i in [1..#bool_list] do
-          if bool_list[i] then
-            bool_list[i] := &+[imbas[j]*(fake_coeffs[i][j] mod M) : j in [1..#imbas]] in Cv_p;
-          end if;
-        end for;
-        left := #[b : b in bool_list | b];
-        if left lt old_left then printf "  %o cosets eliminated at v = %o\n", old_left - left, p; end if;;
-        printf "        %o cosets remaining after v=%o\n", left, p;
-        if not &or bool_list then
-           return true, bool_list, satknown, satunknown, _;
-        end if; 
- 
-      end if; // Max(PrimeDivisors(oG)) lt SmoothBound
-    end if; // IsPrime(p) and p notin bp
-  end for; // p
-  return false, bool_list, satknown, satunknown, 
-    [fake_coeffs[i] : i in [1..    #fake_coeffs] | bool_list[i]];
-end function;
-
-
-function coeffs_CRT(coeffs, primes, exponents)
-  // TODO: Rewrite this and make it work in general. 
-    assert #primes eq #exponents;
-    assert #coeffs eq #primes;
-    order_of_T := #coeffs[1];
-    assert &and [#a eq order_of_T : a in coeffs];
-    coeffs_mod_M := [];
-    moduli := [primes[i]^exponents[i] : i in [1..#primes]];
-
-    error if #primes gt 5, 
-        "The case of %o primes is not implemented yet!", #primes;
-    if #primes eq 1 then
-        coeffs_mod_M := &cat coeffs[1]; 
-    elif #primes eq 2 then 
-        rank := #coeffs[1, 1, 1]; 
-        for j := 1 to order_of_T do
-            for i := 1 to #coeffs[1, j] do
-                for k := 1 to #coeffs[2, j] do
-                    Append(~coeffs_mod_M, [CRT([coeffs[1, j, i, l], coeffs[2, j, k, l]], 
-                                moduli) : l in [1..rank]]);
-                end for;
-            end for;
-        end for;
-    elif #primes eq 3 then 
-        rank := #coeffs[1, 1, 1]; 
-        for j := 1 to order_of_T do
-            for i := 1 to #coeffs[1, j] do
-                for k := 1 to #coeffs[2, j] do
-                    for m := 1 to #coeffs[3, j] do
-                        Append(~coeffs_mod_M, [CRT([coeffs[1, j, i, l], coeffs[2, j, k, l], 
-                                    coeffs[3, j, m, l]], moduli) : l in [1..rank]]);
-                    end for;
-                end for;
-            end for;
-        end for;
-    elif #primes eq 4 then 
-        rank := #coeffs[1, 1, 1]; 
-        for j := 1 to order_of_T do
-            for i := 1 to #coeffs[1, j] do
-                for k := 1 to #coeffs[2, j] do
-                    for m := 1 to #coeffs[3, j] do
-                      for n := 1 to #coeffs[4, j] do
-                          Append(~coeffs_mod_M, [CRT([coeffs[1, j, i, l], coeffs[2, j, k, l], 
-                                      coeffs[3, j, m, l], coeffs[4, j, n, l]], moduli) : l in [1..rank]]);
-                      end for;
-                    end for;
-                end for;
-            end for;
-        end for;
-    elif #primes eq 5 then 
-        rank := #coeffs[1, 1, 1]; 
-        for j := 1 to order_of_T do
-            for i := 1 to #coeffs[1, j] do
-                for k := 1 to #coeffs[2, j] do
-                    for m := 1 to #coeffs[3, j] do
-                      for n := 1 to #coeffs[4, j] do
-                        for o := 1 to #coeffs[4, j] do
-                          Append(~coeffs_mod_M, [CRT([coeffs[1, j, i, l], coeffs[2, j, k, l], 
-                                      coeffs[3, j, m, l], coeffs[4, j, n, l], coeffs[5, j, o, l]], moduli) : l in [1..rank]]);
-                        end for;
-                      end for;
-                    end for;
-                end for;
-            end for;
-        end for;
+      if left eq 0 then
+        return true, bool_list;
+      end if;
     end if;
-    return coeffs_mod_M;
+  end for;
+  return false, bool_list;
 end function;
 
+// all vectors [a_1, ..., a_g] with 0 <= a_i < N
 function all_coeffs(N, g)
-    // return all lists a = [a_1,...,a_g], where a_i = 0,...,N-1
     coeffs := [[j] : j in [0..N-1]];
     for i := 1 to g-1 do
         old_coeffs := coeffs;
@@ -303,18 +82,15 @@ function all_coeffs(N, g)
     return coeffs;
 end function;
 
-
-
+// the vectors mod M*N that are congruent mod M to one in fake_coeffs_mod_M (M and N coprime): the cosets
+// mod M*N when there is no information mod N
 function combine_fake_good(fake_coeffs_mod_M, M, N)
-    // fake_as_mod_M contains all solutions mod M.
-    // N is a prime power for which we have no information where 
-    // the rational points could lie.
     as := [];
     rank := #fake_coeffs_mod_M[1];
     as_mod_N := all_coeffs(N, rank);
     for i in [1..#fake_coeffs_mod_M] do
         for j in [1..#as_mod_N] do
-            Append(~as, [CRT([fake_coeffs_mod_M[i,l], as_mod_N[j,l]], 
+            Append(~as, [CRT([fake_coeffs_mod_M[i,l], as_mod_N[j,l]],
                         [M, N]) : l in [1..rank]]);
         end for;
     end for;
@@ -322,82 +98,130 @@ function combine_fake_good(fake_coeffs_mod_M, M, N)
 end function;
 
 
+// Checks of the hypotheses of MWSieve
 
-function sieving_primes(M, primes, groups, bound : printlevel := 0)
-    // Given a modulus M, a list of primes, a list of abelian groups, one for each
-    // prime in primes, and a bound on the quality of the expected information per prime,
-    // compute a list of promising primes for the  Mordell-Weil sieve.
-    s_primes := [];
-    quots := [];
-    for i := 1 to #primes do
-        v := primes[i];
-        A := groups[i];
-        if GCD(M, #A) ne 1 then
-          MA := sub<A | [M*g : g in Generators(A)]>;
-          QA := A/MA;
-          if v+1 lt #QA*bound then
-             if printlevel gt 0 then <v, FactoredOrder(A), (v+1.)/#QA>; end if;
-            Append(~s_primes, v);
-            Append(~quots, (v+1.)/#QA);
-          end if;
-        end if;
-    end for;
-    // now sort according to quotient
-    //ParallelSort(~quotients, ~s_primes);
-    return s_primes, quots;
+// the map Z^#bas -> prod_{p in ps} J(F_p)/M J(F_p) sending the i-th generator to red_p(bas[i])
+function reduction_homomorphism(C, bas, M, ps)
+  Gamma := FreeAbelianGroup(#bas); // Gamma will be Z^3 for us
+  JpMs := [];
+  imbases := [* *];
+  for p in ps do
+    Cp := BaseChange(C, Bang(Rationals(), GF(p)));
+    Jp, _, DL := ClassGroup(Cp);
+    Jp := TorsionSubgroup(Jp);
+    JpM, quot := quo<Jp | M*Jp>;
+    red := func<pt | Place(Cp!ChangeUniverse(clear_denominators(Eltseq(pt)), GF(p)))>;
+    imbas := [quot(DL(red(b[1]) - red(b[2]))) : b in bas];
+    redJM := hom<Gamma -> JpM | imbas>;
+    ker := Kernel(redJM);
+    printf "p = %o: im = %o, exp(%o) = %o\n", p, AbelianInvariants(Image(redJM)), AbelianInvariants(quo<ker | M*Gamma>), Exponent(quo<ker | M*Gamma>);
+    Append(~JpMs, JpM);
+    Append(~imbases, imbas);
+  end for;
+  JpM, inclusions := DirectProduct(JpMs);
+  return hom<Gamma -> JpM | [&+[inclusions[j](imbases[j][i]) : j -> p in ps] : i in [1..#bas]]>;
 end function;
 
-/*
-function is_saturated_at_p(bas, torsion_bas, p, AuxPrimes)
-    // Check whether the subgroup of the MW group generated by bas and torsion_bas is saturated at p
-    assert IsPrime(p);
-    J := Universe(bas);
-    assert BaseField(J) cmpeq Rationals();
-    // find a number (rank + AuxPrimes) of good primes q s.t. p|#J(F_q)
-    C := Curve(J);
-    assert IsHyperelliptic(C);
-    f, h := HyperellipticPolynomials(C);
-    assert h eq 0;
-    assert IsIntegral(C);
+// d = exponent of the kernel of G/MG -> prod_{p in ps} J(F_p)/M J(F_p), G generated by bas;
+// d = 1 shows that [J(Q) : G] is prime to M (J(Q) torsion-free)
+function compute_d(C, bas, M, ps)
+  redJM := reduction_homomorphism(C, bas, M, ps);
+  ker := Kernel(redJM);
+  _, quot := quo<Domain(redJM) | M*Domain(redJM)>;
+  print AbelianInvariants(quot(ker));
+  return Exponent(quot(ker));
+end function;
 
-    torsion_orders := [Order(P) : P in torsion_bas]; 
-    rank := #bas + #[i : i in torsion_orders | IsDivisibleBy(i, p)];
-    num := rank + AuxPrimes;
-    disc := Integers()!Discriminant(Curve(J));
-    q := 2;
-    MW := AbelianGroup(torsion_orders cat [0 : b in bas]);
-    genMW := torsion_bas cat bas;
-    printf "Generators of known subgroup (torsion first):\n%o\n", genMW;
-    mMW := map<MW -> J | x :-> &+[J | s[i]*genMW[i] : i in [1..#genMW]]
-                        where s := Eltseq(x)>;
-    MWp, qmap := quo<MW | [p*g : g in Generators(MW)]>;
-    curr := MWp;
-    // curr is the subgroup of MW/p*MW of potentially p-divisible elements
-    count := 0;
-    while count lt num do
-    repeat
-        q := NextPrime(q);
-        while IsDivisibleBy(disc, q) do q := NextPrime(q); end while;
-        Jq := BaseChange(J, Bang(Rationals(), GF(q)));
-        h := #Jq;
-    //    "q=",q;
-    until IsDivisibleBy(h, p);
-    printf "Found relevant prime q = %o\n", q;
-    Gq, mGq := AbelianGroup(Jq);
-    Gqp, Gqmap := quo<Gq | [p*g : g in Generators(Gq)]>;
-    m := hom<curr -> Gqp
-             | [Gqmap((Jq!mMW((MWp!g) @@ qmap)) @@ mGq)
-                 : g in OrderedGenerators(curr)]>;
-    curr := Kernel(m);
-    printf "Dimension of remaining space is %o\n", Valuation(#curr, p);
-    if #curr eq 1 then
-        // no potential p-divisible elements left
-        return true;
+// MWSieve only keeps the F_p-points whose class lies in red_p(G). Since [J(Q) : G] is prime to the primes qs,
+// no rational point is lost if [J(F_p) : red_p(G)] has no prime factors outside qs (for X_0(187)^*: qs = [37], so no prime factor outside 37).
+// If MWSieve is called with a multiplier d := mult, it compares mult-multiples, and the index to check is
+// [mult J(F_p) : mult red_p(G)].
+function filter_is_harmless(C, bas, ps, qs : mult := 1)
+  ok := true;
+  for p in ps do
+    Cp := BaseChange(C, Bang(Rationals(), GF(p)));
+    Jp, _, DL := ClassGroup(Cp);
+    Jp := TorsionSubgroup(Jp);
+    red := func<pt | Place(Cp!ChangeUniverse(clear_denominators(Eltseq(pt)), GF(p)))>;
+    H := sub<Jp | [mult*DL(red(b[1]) - red(b[2])) : b in bas]>;
+    index := #sub<Jp | [mult*g : g in Generators(Jp)]> div #H;
+    if mult eq 1 then
+      printf "p = %o: [J(F_p) : red(G)] = %o\n", p, Factorization(index);
+    else
+      printf "p = %o: [m J(F_p) : m red(G)] = %o with m = %o\n", p, Factorization(index), mult;
     end if;
-    count +:= 1;
-    end while;
-    "increase AuxPrimes!";
-    return false;
+    ok := ok and forall{q : q in PrimeDivisors(index) | q in qs};
+  end for;
+  return ok;
 end function;
-*/
 
+
+// Quadratic Chabauty, giving the input of MWSieve
+
+// quadratic Chabauty at p on the plane model Q(x, y) = 0 of X_0(N)^* (Coleman data to precision N1), then the
+// coefficients mod p^N2 of the fake and the known rational points in the basis divisors; retries with larger
+// N1 on errors. Returns these coefficients, the known points and the bad Q_p-points.
+function run_QC(Q, N, p, N1, N2, divisors, base_pt, splitting_indices)
+  assert N1 ge N2;
+
+  try
+    printf "Computing Coleman data with N1 = %o.\n", N1;
+    data := coleman_data(Q, p, N1 : useU := false);
+
+    printf "\nStarting quadratic Chabauty for p = %o.\n", p;
+    polys := NTLStarQuotientCleanCorrespondences(N, [p])[1];
+    printf "Polynomials in T_p passed to QCModAffine (use_polys): %o\n", polys;
+    printf "Clean correspondences of trace 0, as polynomials in T_p: %o\n",
+        NTLStarQuotientCleanCorrespondences(N, [p] : trace_zero := true)[1];
+    time good_affine_rat_pts_xy, no_fake_pts, bad_affine_rat_pts_xy, data, fake_rat_pts, bad_Qppoints := QCModAffine(Q, p : use_polys := polys,
+        number_of_correspondences := #polys-1, printlevel:=1, N := N1, prec := 40, base_point := base_pt);
+    printf "There are %o fake rational points.\n", #fake_rat_pts;
+    printf "There are %o bad Q_%o-points.\n", #bad_Qppoints, p;
+
+    // coefficients of the solutions in the basis divisors, from Coleman data to precision N2;
+    // retries with larger N2 (up to N1) on errors
+    function recompute_Coleman_data(N1, N2, fake_rat_pts)
+      try
+        fake_rat_pts_new := [];
+        for i in [1..#fake_rat_pts] do
+          fake_rat_pts_new[i] := [ChangePrecision(fake_rat_pts[i,j], N2) : j in [1..2]];
+        end for;
+        printf "Re-computing Coleman data with N2 = %o.\n", N2;
+        data := coleman_data(Q, p, N2 : useU := false);
+        fake_coeffs_mod_pN, rat_coeffs_mod_pN := coefficients_mod_pN(fake_rat_pts_new, good_affine_rat_pts_xy, divisors, base_pt, splitting_indices, data);
+      catch e
+        printf "%o\n", e;
+        if N2 lt N1 then
+          N2 +:= 1;
+        else
+          error "reached N2 = N1";
+        end if;
+        printf "trying N1 = %o, N2 = %o ...\n", N1, N2;
+        return $$(N1, N2, fake_rat_pts);
+      end try;
+      return fake_coeffs_mod_pN, rat_coeffs_mod_pN;
+    end function;
+
+    fake_coeffs_mod_pN, rat_coeffs_mod_pN := recompute_Coleman_data(N1, N2, fake_rat_pts);
+  catch e
+    N1 +:= 1;
+    return $$(Q, N, p, N1, N2, divisors, base_pt, splitting_indices);
+  end try;
+
+  return fake_coeffs_mod_pN, rat_coeffs_mod_pN, good_affine_rat_pts_xy, bad_Qppoints;
+end function;
+
+// whether QC finds exactly the known points, with coordinates congruent mod M to those in known_coords
+// (a sequence of pairs <affine point, coordinates>); this shows that QC uses the same basis as the sieve
+function check_known_coords(rat_pts_xy, rat_coeffs_mod_pN, known_coords, M)
+  if {P : P in rat_pts_xy} ne {t[1] : t in known_coords} then
+    return false;
+  end if;
+  for i in [1..#rat_pts_xy] do
+    coords := [t[2] : t in known_coords | t[1] eq rat_pts_xy[i]][1];
+    if not forall{j : j in [1..#coords] | IsDivisibleBy(rat_coeffs_mod_pN[i,j] - coords[j], M)} then
+      return false;
+    end if;
+  end for;
+  return true;
+end function;
