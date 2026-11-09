@@ -116,14 +116,7 @@ the timings depend on its load at the time.
 There are two sources of timing information.
 
 - GNU parallel records the wall-clock time of each job (column `JobRuntime`, in seconds) in
-  `logs/magma_verify_joblog.txt`.  To list the jobs by running time:
-  ```bash
-  awk -F'\t' 'NR>1 {match($NF, /computations\/[^ ]*\.m/); printf "%10.1f  %s\n", $4, substr($NF, RSTART, RLENGTH)}' logs/magma_verify_joblog.txt | sort -n
-  ```
-  and to get the total running time when run sequentially and the wall-clock time of the
-  parallel run:
-  ```bash
-  awk -F'\t' 'NR>1 {s += $4; if (!min || $3 < min) min = $3; if ($3 + $4 > max) max = $3 + $4} END {printf "sequential: %.1f h, parallel: %.1f h\n", s/3600, (max-min)/3600}' logs/magma_verify_joblog.txt
+  [logs/magma_verify_joblog.txt](logs/magma_verify_joblog.txt). 
   ```
 - Magma prints the CPU time and the memory usage of each script on the last line of its log,
   e.g. `Total time: 4.490 seconds, Total memory usage: 32.09MB`.  To list them all:
