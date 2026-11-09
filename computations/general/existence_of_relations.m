@@ -3,6 +3,7 @@ N_max := NTLNMax();
 
 // A clean correspondence exists if g > B+1, since at most B conditions are imposed on the
 // (g-1)-dimensional space of non-scalar polynomials; for g <= B+1 we check directly.
+notClean := [];
 for N in [1..N_max] do
     if IsDivisibleBy(N, 10000) then
         print N;
@@ -25,8 +26,10 @@ for N in [1..N_max] do
                 printf ": there is a clean correspondence: %o\n", message;
             else
                 printf ": there is no clean correspondence: %o\n", message;
+                Append(~notClean, N);
             end if;
         end if;
     end if;
 end for;
+print "N without a clean correspondence:", notClean;
 printf "Done!\n";
