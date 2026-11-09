@@ -39,7 +39,7 @@ make verify JOBS=4 MAGMA=~/magma-2.29-10/magma
 ```
 `make test` also accepts `MAGMA=...`.
 
-Alternatively one can run the `verify_all.sh` script manually using
+Alternatively one can run the [`verify_all.sh`](verify_all.sh) script manually using
 ```bash
 ./verify_all.sh 4     # the 4 means use 4 parallel jobs
 ```
@@ -51,15 +51,15 @@ Magma refuses to load package files (`*.sig`) compiled by a newer Magma version;
 an older Magma, run `make clean` first (see Troubleshooting below).
 
 Output from each script is captured to `logs/<curve>/<script>.txt`, mirroring the `computations/` layout.
-The file `logs/magma_verify_joblog.txt` is the GNU parallel job log, with one line per completed job.
+The file [`logs/magma_verify_joblog.txt`](logs/magma_verify_joblog.txt) is the GNU parallel job log, with one line per completed job.
 
-`computations/general/existence_of_relations.m` reads class numbers from
-`data/classnumbers_upto_2589510.dat`, which is part of this repository.  This file was written
+[`computations/general/existence_of_relations.m`](computations/general/existence_of_relations.m) reads class numbers from
+[`data/classnumbers_upto_2589510.dat`](data/classnumbers_upto_2589510.dat), which is part of this repository.  This file was written
 from the LMFDB data files (about 1.1 GB uncompressed, not part of this repository) by
 ```bash
 ./initialize_class_numbers.sh
 ```
-which you can run to check or rebuild it (`verify_all.sh` does not run it).  It downloads the
+which you can run to check or rebuild it ([`verify_all.sh`](verify_all.sh) does not run it).  It downloads the
 LMFDB files to `data/` if they are missing (this needs `curl` and `gunzip`); alternatively,
 download the four files ($|d| \equiv 3 \pmod 8$, $7 \pmod 8$, $4 \pmod{16}$,
 $8 \pmod{16}$, with $k = 0$ for all four) from
@@ -99,9 +99,9 @@ git diff -I '^Magma V2\.' -I '^Type ' -I '^Total time: ' -I '^Time: '
 git diff --stat -I '^Magma V2\.' -I '^Type ' -I '^Total time: ' -I '^Time: '   # only list the files
 ```
 Other differences do not mean that the reproduction failed; they are there to be reviewed.
-For example, `computations/X0_187star/model_search_example.m` prints randomly chosen plane
+For example, [`computations/X0_187star/model_search_example.m`](computations/X0_187star/model_search_example.m) prints randomly chosen plane
 models, and Magma may list objects in a different order, such as the edges of the dual graphs
-in `logs/general/dualgraphs.txt`.  Every script checks its claims with `assert`, so
+in [`logs/general/dualgraphs.txt`](logs/general/dualgraphs.txt).  Every script checks its claims with `assert`, so
 a script that runs to the end without an error has verified its claims.
 
 After inspecting the differences, `git restore logs` restores our logs.
@@ -116,8 +116,7 @@ the timings depend on its load at the time.
 There are two sources of timing information.
 
 - GNU parallel records the wall-clock time of each job (column `JobRuntime`, in seconds) in
-  [logs/magma_verify_joblog.txt](logs/magma_verify_joblog.txt). 
-  ```
+  [`logs/magma_verify_joblog.txt`](logs/magma_verify_joblog.txt).
 - Magma prints the CPU time and the memory usage of each script on the last line of its log,
   e.g. `Total time: 4.490 seconds, Total memory usage: 32.09MB`.  To list them all:
   ```bash
@@ -128,7 +127,7 @@ There are two sources of timing information.
 
 | Path | Contents |
 |------|----------|
-| `src/` | Shared library code: the Magma package `local_heights.spec` (star-quotient measures, genera and bounds), attached with `AttachSpec("local_heights.spec")`, and patched copies of QCMod files (Mordell-Weil sieve, misc utilities) and a random search for plane models (`model_search.m`), loaded with `load` |
+| `src/` | Shared library code: the Magma package [`local_heights.spec`](local_heights.spec) (star-quotient measures, genera and bounds), attached with `AttachSpec("local_heights.spec")`, and patched copies of QCMod files (Mordell-Weil sieve, misc utilities) and a random search for plane models ([`model_search.m`](src/model_search.m)), loaded with `load` |
 | `computations/X0_<N>star/` | Scripts for the curve X_0(N)^* |
 | `computations/general/` | Cross-cutting verifications: existence of clean correspondences, fixed-point formulas, dual graphs, etc. |
 | `logs/` | Output committed as a record of past computations |
@@ -145,7 +144,7 @@ Within each `computations/X0_<N>star/` directory the naming convention is:
 |--------|---------|
 | `qc_p<prime>.m` | Full quadratic Chabauty run at the given prime |
 | `qc_p<prime>_mws.m` | QC run followed by a Mordell-Weil sieve step |
-| `model_search_example.m` | Example of how to find new plane models with a random search; the output is not deterministic and not used in the proofs (the model used is hardcoded in the QC script) |
+| [`model_search_example.m`](computations/X0_187star/model_search_example.m) | Example of how to find new plane models with a random search; the output is not deterministic and not used in the proofs (the model used is hardcoded in the QC script) |
 
 ## Running on a remote machine
 
