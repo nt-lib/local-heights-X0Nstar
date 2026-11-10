@@ -12,9 +12,12 @@ $X_0(187)^{\ast}$, $X_0(247)^{\ast}$, and $X_0(319)^{\ast}$.
 
 ## Requirements
 
-- Magma v2.28 or higher
+- Magma V2.29-10 or higher, for a
+  [bug fix in `Embed`](https://magma.maths.usyd.edu.au/magma/releasenotes/2/29/10); verified
+  with V2.30-1
 - GNU parallel (for `make verify`)
-- Optional: git 2.30 or higher, for filtering `git diff` output with `-I` (see [Checking the logs after a rerun](#checking-the-logs-after-a-rerun))
+- Optional: git 2.30 or higher, for filtering `git diff` output with `-I` (see
+  [Checking the logs after a rerun](#checking-the-logs-after-a-rerun))
 
 ## Running computations
 
@@ -29,7 +32,7 @@ In an existing clone the submodules can be initialised with
 git submodule update --init
 ```
 `make verify` initialises any submodules that are missing, and `make test` initialises
-`tests/magma-unittest`.
+[`tests/magma-unittest`](tests/magma-unittest).
 
 All commands below should be run from the **repo root**:
 
@@ -50,27 +53,32 @@ An optional second argument selects the Magma executable (default: `magma` from 
 Magma refuses to load package files (`*.sig`) compiled by a newer Magma version; if you switch to
 an older Magma, run `make clean` first (see Troubleshooting below).
 
-Output from each script is captured to `logs/<curve>/<script>.txt`, mirroring the `computations/` layout.
-The file [`logs/magma_verify_joblog.txt`](logs/magma_verify_joblog.txt) is the GNU parallel job log, with one line per completed job.
+Output from each script is captured to `logs/<curve>/<script>.txt`, mirroring the
+[`computations/`](computations/) layout.  The file
+[`logs/magma_verify_joblog.txt`](logs/magma_verify_joblog.txt) is the GNU parallel job log,
+with one line per completed job.
 
-[`computations/general/existence_of_relations.m`](computations/general/existence_of_relations.m) reads class numbers from
-[`data/classnumbers_upto_2589510.dat`](data/classnumbers_upto_2589510.dat), which is part of this repository.  This file was written
-from the LMFDB data files (about 1.1 GB uncompressed, not part of this repository) by
+[`computations/general/existence_of_relations.m`](computations/general/existence_of_relations.m)
+reads class numbers from
+[`data/classnumbers_upto_2589510.dat`](data/classnumbers_upto_2589510.dat), which is part of
+this repository.  This file was written from the LMFDB data files (about 1.1 GB uncompressed,
+not part of this repository) by
 ```bash
 ./initialize_class_numbers.sh
 ```
-which you can run to check or rebuild it ([`verify_all.sh`](verify_all.sh) does not run it).  It downloads the
-LMFDB files to `data/` if they are missing (this needs `curl` and `gunzip`); alternatively,
-download the four files ($|d| \equiv 3 \pmod 8$, $7 \pmod 8$, $4 \pmod{16}$,
-$8 \pmod{16}$, with $k = 0$ for all four) from
+which you can run to check or rebuild it ([`verify_all.sh`](verify_all.sh) does not run it).  It
+downloads the LMFDB files to [`data/`](data/) if they are missing (this needs `curl` and
+`gunzip`); alternatively, download the four files ($|d| \equiv 3 \pmod 8$, $7 \pmod 8$,
+$4 \pmod{16}$, $8 \pmod{16}$, with $k = 0$ for all four) from
 <https://www.lmfdb.org/NumberField/QuadraticImaginaryClassGroups> and uncompress them into
-`data/` as `cl3mod8.0`, `cl7mod8.0`, `cl4mod16.0`, `cl8mod16.0`.
+[`data/`](data/) as `cl3mod8.0`, `cl7mod8.0`, `cl4mod16.0`, `cl8mod16.0`.
 
 Note: some computations take many hours, see [Hardware and timings](#hardware-and-timings).
 
 ## Checking the logs after a rerun
 
-The logs in `logs/` are committed, and a rerun overwrites them.  After the rerun has finished,
+The [`logs/`](logs/) are committed, and a rerun overwrites them.  After the rerun has
+finished,
 ```bash
 git diff
 ```
@@ -99,19 +107,26 @@ git diff -I '^Magma V2\.' -I '^Type ' -I '^Total time: ' -I '^Time: '
 git diff --stat -I '^Magma V2\.' -I '^Type ' -I '^Total time: ' -I '^Time: '   # only list the files
 ```
 Other differences do not mean that the reproduction failed; they are there to be reviewed.
-For example, [`computations/X0_187star/model_search_example.m`](computations/X0_187star/model_search_example.m) prints randomly chosen plane
-models, and Magma may list objects in a different order, such as the edges of the dual graphs
-in [`logs/general/dualgraphs.txt`](logs/general/dualgraphs.txt).  Every script checks its claims with `assert`, so
-a script that runs to the end without an error has verified its claims.
+For example,
+[`computations/X0_187star/model_search_example.m`](computations/X0_187star/model_search_example.m)
+prints randomly chosen plane models, and Magma may list objects in a different order, such as
+the edges of the dual graphs in [`logs/general/dualgraphs.txt`](logs/general/dualgraphs.txt).
+Every script checks its claims with `assert`, so a script that runs to the end without an error
+has verified its claims.
 
 After inspecting the differences, `git restore logs` restores our logs.
 
 ## Hardware and timings
 
-The logs in `logs/` were produced on a server at the University of Zagreb with an AMD EPYC 9175F
-CPU with 16 cores (32 threads) and 384 GB of RAM, running Ubuntu 24.04.4 LTS, using Magma V2.30-1
-and running all computations in parallel with `make verify JOBS=14`.  The server is shared, so
-the timings depend on its load at the time.
+The [`logs/`](logs/) were produced on a server at the University of Zagreb with an AMD
+EPYC 9175F CPU with 16 cores (32 threads) and 384 GiB of RAM (6 x 64 GiB DIMMs), running Ubuntu
+24.04.4 LTS, using Magma V2.30-1 and running all computations in parallel with
+`./verify_all.sh 10`.  The server is shared, so the timings depend on its load at the time.
+
+The [`logs/`](logs/) were produced from commit
+[`bca6965`](https://github.com/nt-lib/local-heights-X0Nstar/commit/bca696529fbebf9983e84bcacdd6492f28e32851).
+Later commits in the v1.0.0 release only change the README and the logs, so the code under
+[`computations/`](computations/), [`src/`](src/) and the submodules is the same.
 
 There are two sources of timing information.
 
@@ -127,16 +142,16 @@ There are two sources of timing information.
 
 | Path | Contents |
 |------|----------|
-| `src/` | Shared library code: the Magma package [`local_heights.spec`](local_heights.spec) (star-quotient measures, genera and bounds), attached with `AttachSpec("local_heights.spec")`, and patched copies of QCMod files (Mordell-Weil sieve, misc utilities) and a random search for plane models ([`model_search.m`](src/model_search.m)), loaded with `load` |
+| [`src/`](src/) | Shared library code: the Magma package [`local_heights.spec`](local_heights.spec) (star-quotient measures, genera and bounds), attached with `AttachSpec("local_heights.spec")`, and patched copies of QCMod files (Mordell-Weil sieve, misc utilities) and a random search for plane models ([`model_search.m`](src/model_search.m)), loaded with `load` |
 | `computations/X0_<N>star/` | Scripts for the curve X_0(N)^* |
-| `computations/general/` | Cross-cutting verifications: existence of clean correspondences, fixed-point formulas, dual graphs, etc. |
-| `logs/` | Output committed as a record of past computations |
-| `data/` | Precomputed data files (e.g. class numbers) |
-| `tests/` | Unit tests for `src/`, run with `make test` |
-| `QCMod/` | Submodule: quadratic Chabauty engine |
-| `ModularCurvesX0plusG4-6/` | Submodule: model-finding code for X_0(N)^* |
-| `ShimuraCurveALQuotients/` | Submodule: rational CM points on Atkin-Lehner quotients (Assaf-Hashimoto) |
-| `tests/magma-unittest/` | Submodule: unit test framework, only needed for `make test` |
+| [`computations/general/`](computations/general/) | Cross-cutting verifications: existence of clean correspondences, fixed-point formulas, dual graphs, etc. |
+| [`logs/`](logs/) | Output committed as a record of past computations |
+| [`data/`](data/) | Precomputed data files (e.g. class numbers) |
+| [`tests/`](tests/) | Unit tests for [`src/`](src/), run with `make test` |
+| [`QCMod/`](QCMod/) | Submodule: quadratic Chabauty engine |
+| [`ModularCurvesX0plusG4-6/`](ModularCurvesX0plusG4-6/) | Submodule: model-finding code for X_0(N)^* |
+| [`ShimuraCurveALQuotients/`](ShimuraCurveALQuotients/) | Submodule: rational CM points on Atkin-Lehner quotients (Assaf-Hashimoto) |
+| [`tests/magma-unittest/`](tests/magma-unittest/) | Submodule: unit test framework, only needed for `make test` |
 
 Within each `computations/X0_<N>star/` directory the naming convention is:
 
@@ -171,7 +186,7 @@ sudo dnf install parallel
 ```
 
 **`Package ... is compiled for newer version than current executable`, or `Undefined reference`
-errors inside a package (e.g. in `ShimuraCurveALQuotients/`)**
+errors inside a package (e.g. in [`ShimuraCurveALQuotients/`](ShimuraCurveALQuotients/))**
 
 Magma caches compiled packages as `*.sig` files next to the sources.  These can be stale, e.g.
 after switching to an older Magma version or after checking out a different version of a
@@ -185,4 +200,5 @@ computations are running in the same checkout.
 ## License
 
 This repository is licensed under the GNU General Public License v3.0; see [LICENSE](LICENSE).
-The submodules (QCMod, ModularCurvesX0plusG4-6 and magma-unittest) are separate projects with their own terms.
+The submodules (QCMod, ModularCurvesX0plusG4-6, ShimuraCurveALQuotients and magma-unittest) are
+separate projects with their own terms.

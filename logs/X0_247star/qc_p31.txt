@@ -1,4 +1,4 @@
-Magma V2.30-1     Fri Oct 16 2026 11:04:56 on mordell  [Seed = 3831453651]
+Magma V2.30-1     Mon Nov  9 2026 19:09:52 on mordell  [Seed = 3328095183]
 Type <Ctrl>-D to quit.
 
 Loading file "computations/X0_247star/qc_p31.m"
@@ -1113,4 +1113,4 @@ Loading "QCMod/second_patch_quartic.m"
 Additional rational points where the map to the plane model is undefined or that
 map to the images of the known ones: {@ @}
 
-Total time: 11956.719 seconds, Total memory usage: 761.28MB
+Total time: 8184.310 seconds, Total memory usage: 729.25MB
