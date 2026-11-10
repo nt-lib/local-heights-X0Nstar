@@ -12,7 +12,9 @@ $X_0(187)^{\ast}$, $X_0(247)^{\ast}$, and $X_0(319)^{\ast}$.
 
 ## Requirements
 
-- Magma v2.28 or higher
+- Magma V2.29-10 or higher, for a
+  [bug fix in `Embed`](https://magma.maths.usyd.edu.au/magma/releasenotes/2/29/10); verified
+  with V2.30-1
 - GNU parallel (for `make verify`)
 - Optional: git 2.30 or higher, for filtering `git diff` output with `-I` (see
   [Checking the logs after a rerun](#checking-the-logs-after-a-rerun))
