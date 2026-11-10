@@ -113,6 +113,10 @@ CPU with 16 cores (32 threads) and 384 GB of RAM, running Ubuntu 24.04.4 LTS, us
 and running all computations in parallel with `make verify JOBS=14`.  The server is shared, so
 the timings depend on its load at the time.
 
+The logs in `logs/` were produced from commit `bca696529fbebf9983e84bcacdd6492f28e32851`
+(the tip of `develop` at the time).  Later commits on `develop` only change the README, so the
+code under `computations/`, `src/` and the submodules is the same.
+
 There are two sources of timing information.
 
 - GNU parallel records the wall-clock time of each job (column `JobRuntime`, in seconds) in

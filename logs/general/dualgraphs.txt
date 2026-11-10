@@ -1,5 +1,5 @@
-Magma V2.29-10    Tue Oct 13 2026 01:21:53 on mordell  [Seed = 3228036456]
-Type ? for help.  Type <Ctrl>-D to quit.
+Magma V2.30-1     Mon Nov  9 2026 19:09:52 on mordell  [Seed = 2721765291]
+Type <Ctrl>-D to quit.
 
 Loading file "computations/general/dualgraphs.m"
 N = 161:
@@ -17,8 +17,8 @@ Edge #2 of length 1.
 Edge #3 of length 1.
 Edges of the dual graph in characteristic ell = 17:
 Edge #1 of length 1.
-Edge #2 of length 1.
-Edge #3 of length 2.
+Edge #2 of length 2.
+Edge #3 of length 1.
 
 N = 247:
 Edges of the dual graph in characteristic ell = 13:
@@ -39,10 +39,10 @@ Edge #2 of length 1.
 Edge #3 of length 1.
 Edge #4 of length 1.
 Edges of the dual graph in characteristic ell = 29:
-Edge #1 of length 2.
+Edge #1 of length 1.
 Edge #2 of length 1.
 Edge #3 of length 1.
-Edge #4 of length 1.
+Edge #4 of length 2.
 
 N = 290:
 Edges of the dual graph in characteristic ell = 2:
@@ -57,4 +57,4 @@ Edge #2 of length 1.
 Edge #3 of length 1.
 
 
-Total time: 4.490 seconds, Total memory usage: 32.09MB
+Total time: 3.950 seconds, Total memory usage: 32.09MB

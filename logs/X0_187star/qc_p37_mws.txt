@@ -1,8 +1,7 @@
-Magma V2.30-1     Fri Oct 30 2026 12:12:34 on mordell  [Seed = 193267447]
+Magma V2.30-1     Mon Nov  9 2026 19:09:52 on mordell  [Seed = 3227039177]
 Type <Ctrl>-D to quit.
 
-Loading startup file "computations/X0_187star/qc_p37_mws.m"
-
+Loading file "computations/X0_187star/qc_p37_mws.m"
 Loading "QCMod/qc_modular.m"
 Loading "QCMod/coleman.m"
 Loading "QCMod/auxpolys.m"
@@ -190,7 +189,7 @@ least 37^8.
 [ 36163208511822 + O(37^9), -58421094891706 + O(37^9) ]
 ] 
 
-Time: 348.890
+Time: 371.040
 There are 54 fake rational points.
 There are 0 bad Q_37-points.
 Re-computing Coleman data with N2 = 8.
@@ -208,8 +207,8 @@ starting Mordell Weil sieve
         4 cosets remaining after v=3617
   4 cosets eliminated at v = 4127
         0 cosets remaining after v=4127
-Time: 711.650
+Time: 641.850
 done with the MW sieve: true
 No additional solutions are rational.
 
-Total time: 2420.789 seconds, Total memory usage: 2382.09MB
+Total time: 2341.099 seconds, Total memory usage: 2382.09MB
