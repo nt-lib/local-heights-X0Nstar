@@ -110,7 +110,7 @@ After inspecting the differences, `git restore logs` restores our logs.
 
 The logs in `logs/` were produced on a server at the University of Zagreb with an AMD EPYC 9175F
 CPU with 16 cores (32 threads) and 384 GB of RAM, running Ubuntu 24.04.4 LTS, using Magma V2.30-1
-and running all computations in parallel with `make verify JOBS=14`.  The server is shared, so
+and running all computations in parallel with `./verify_all.sh 10`.  The server is shared, so
 the timings depend on its load at the time.
 
 The logs in `logs/` were produced from commit `bca696529fbebf9983e84bcacdd6492f28e32851`
