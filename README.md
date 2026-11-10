@@ -109,7 +109,7 @@ After inspecting the differences, `git restore logs` restores our logs.
 ## Hardware and timings
 
 The logs in `logs/` were produced on a server at the University of Zagreb with an AMD EPYC 9175F
-CPU with 16 cores (32 threads) and 384 GB of RAM, running Ubuntu 24.04.4 LTS, using Magma V2.30-1
+CPU with 16 cores (32 threads) and 384 GiB of RAM (6 x 64 GiB DIMMs), running Ubuntu 24.04.4 LTS, using Magma V2.30-1
 and running all computations in parallel with `./verify_all.sh 10`.  The server is shared, so
 the timings depend on its load at the time.
 
