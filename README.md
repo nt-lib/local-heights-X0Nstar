@@ -77,7 +77,7 @@ Note: some computations take many hours, see [Hardware and timings](#hardware-an
 
 ## Checking the logs after a rerun
 
-The logs in [`logs/`](logs/) are committed, and a rerun overwrites them.  After the rerun has
+The [`logs/`](logs/) are committed, and a rerun overwrites them.  After the rerun has
 finished,
 ```bash
 git diff
@@ -118,12 +118,12 @@ After inspecting the differences, `git restore logs` restores our logs.
 
 ## Hardware and timings
 
-The logs in [`logs/`](logs/) were produced on a server at the University of Zagreb with an AMD
+The [`logs/`](logs/) were produced on a server at the University of Zagreb with an AMD
 EPYC 9175F CPU with 16 cores (32 threads) and 384 GiB of RAM (6 x 64 GiB DIMMs), running Ubuntu
 24.04.4 LTS, using Magma V2.30-1 and running all computations in parallel with
 `./verify_all.sh 10`.  The server is shared, so the timings depend on its load at the time.
 
-The logs in [`logs/`](logs/) were produced from commit
+The [`logs/`](logs/) were produced from commit
 [`bca6965`](https://github.com/nt-lib/local-heights-X0Nstar/commit/bca696529fbebf9983e84bcacdd6492f28e32851).
 Later commits in the v1.0.0 release only change the README and the logs, so the code under
 [`computations/`](computations/), [`src/`](src/) and the submodules is the same.
