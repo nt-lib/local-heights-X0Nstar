@@ -3,6 +3,7 @@
 load "tests/magma-unittest/tst.m";
 load "tests/test_genera_and_bounds.m";
 load "tests/test_star_quotient_measures.m";
+load "tests/test_fixed_point_formula_checks_genera.m";
 
 print "All tests finished!";
 exit;

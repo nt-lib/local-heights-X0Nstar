@@ -7,3 +7,6 @@
 [submodule "tests/magma-unittest"]
 	path = tests/magma-unittest
 	url = https://github.com/nt-lib/magma-unittest.git
+[submodule "ShimuraCurveALQuotients"]
+	path = ShimuraCurveALQuotients
+	url = https://github.com/assaferan/ShimuraCurveALQuotients

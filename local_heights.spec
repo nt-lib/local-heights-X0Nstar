@@ -1,0 +1,8 @@
+{
+  src
+  {
+    StarQuotientMeasures.m
+    fixed_point_formula_checks_genera.m
+    genera_and_bounds.m
+  }
+}

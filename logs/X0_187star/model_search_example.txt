@@ -1,0 +1,28 @@
+Magma V2.30-1     Mon Nov  9 2026 19:09:52 on mordell  [Seed = 3394420675]
+Type <Ctrl>-D to quit.
+
+Loading file "computations/X0_187star/model_search_example.m"
+Loading "ModularCurvesX0plusG4-6/model_equation_finder.m"
+Loading "QCMod/qc_modular.m"
+Loading "QCMod/coleman.m"
+Loading "QCMod/auxpolys.m"
+Loading "QCMod/coho.m"
+Loading "QCMod/froblift.m"
+Loading "QCMod/reductions.m"
+Loading "QCMod/singleintegrals.m"
+Loading "QCMod/misc.m"
+Loading "QCMod/applications.m"
+Loading "QCMod/symplectic_basis.m"
+Loading "QCMod/hecke_correspondence.m"
+Loading "QCMod/hodge.m"
+Loading "QCMod/frobenius.m"
+Loading "QCMod/heights.m"
+Loading "QCMod/second_patch_quartic.m"
+Loading "src/model_search.m"
+Trial 32: found a model with good primes [ 19 ]: L1 = X + 2*Y, L2 = -2*X + Y - 
+2*Z, L3 = -X - 2*Y + 2*Z, L4 = -2*X - Y + 2*Z
+Trial 72: found a model with good primes [ 47 ]: L1 = -X + 2*Y - 2*Z, L2 = 2*X +
+Y - 2*Z, L3 = 2*X - 2*Y, L4 = -X - 2*Y + Z
+Found 2 models with a good prime.
+
+Total time: 52.310 seconds, Total memory usage: 150.12MB
