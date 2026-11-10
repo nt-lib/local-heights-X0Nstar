@@ -114,7 +114,7 @@ and running all computations in parallel with `./verify_all.sh 10`.  The server 
 the timings depend on its load at the time.
 
 The logs in [logs/](logs/) were produced from commit `bca696529fbebf9983e84bcacdd6492f28e32851`.  Later commits in the
-v1 release only change the README, so the code under `computations/`, `src/` and the submodules is the same.
+v1.0.0 release only change the README, so the code under `computations/`, `src/` and the submodules is the same.
 
 There are two sources of timing information.
 
